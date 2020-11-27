@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Document on 视点</title>
-    <link>https://visdot.com/search/document/</link>
-    <description>Recent content in Document on 视点</description>
+    <title>文档 on 视点</title>
+    <link>https://visdot.com/space/%E6%96%87%E6%A1%A3/</link>
+    <description>Recent content in 文档 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/document/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/space/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>前端基础学习笔记</title>
       <link>https://visdot.com/warehouse/html/</link>
@@ -23,6 +23,15 @@
       
       <guid>https://visdot.com/warehouse/speed_unit/</guid>
       <description>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。 容量单位 要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表字</description>
+    </item>
+    
+    <item>
+      <title>Git 基础语法</title>
+      <link>https://visdot.com/warehouse/git/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/warehouse/git/</guid>
+      <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     
     <item>

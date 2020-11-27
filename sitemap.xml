@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/warehouse/hugo_navbar/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/warehouse/hackintosh_install/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -188,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://visdot.com/search/document/</loc>
+    <loc>https://visdot.com/space/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -268,17 +273,17 @@
   </url>
   
   <url>
-    <loc>https://visdot.com/search/grammar/</loc>
-    <lastmod>2019-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://visdot.com/topic/hugo/</loc>
-    <lastmod>2019-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://visdot.com/topic/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/grammar/</loc>
     <lastmod>2019-09-15T00:00:00+00:00</lastmod>
   </url>
   
