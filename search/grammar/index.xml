@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grammar on 视点</title>
+    <link>/search/grammar/</link>
+    <description>Recent content in Grammar on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/grammar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>按需求添加 Hugo 文章列表</title>
+      <link>/warehouse/hugo_lists/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_lists/</guid>
+      <description>全站文章列表 在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 single.html 中的适当位置添加如下代码。 &amp;lt;ul&amp;gt; {{ $pages := .Pages }} {{ $pages = .Site.RegularPages }} {{ range (where $pages &amp;#34;Section&amp;#34; &amp;#34;!=&amp;#34; &amp;#34;&amp;#34;) }} &amp;lt;li&amp;gt; &amp;lt;a</description>
+    </item>
+    
+    <item>
+      <title>Hugo 模板的原理及使用</title>
+      <link>/warehouse/hugo_template/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_template/</guid>
+      <description>原理概述 Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块</description>
+    </item>
+    
+    <item>
+      <title>Git 基础语法</title>
+      <link>/warehouse/git/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/git/</guid>
+      <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
+    </item>
+    
+  </channel>
+</rss>

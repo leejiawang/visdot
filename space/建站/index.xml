@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>建站 on 视点</title>
+    <link>/space/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/space/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 pace.js 添加网页顶部加载进度条</title>
+      <link>/warehouse/loading_bar/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/loading_bar/</guid>
+      <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 建站教程</title>
+      <link>/warehouse/vuepress/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/vuepress/</guid>
+      <description>Vuepress 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。 相关站点 Vuepress 官网 Vuepress 仓库 Vuepress 模板 第1步 安装 Vuepress 框架</description>
+    </item>
+    
+    <item>
+      <title>HEXO 建站教程</title>
+      <link>/warehouse/hexo/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hexo/</guid>
+      <description>Hexo 是一款快速、简洁且高效的博客框架，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。 相关站点： Hexo官网 Hexo</description>
+    </item>
+    
+    <item>
+      <title>按需求添加 Hugo 文章列表</title>
+      <link>/warehouse/hugo_lists/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_lists/</guid>
+      <description>全站文章列表 在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 single.html 中的适当位置添加如下代码。 &amp;lt;ul&amp;gt; {{ $pages := .Pages }} {{ $pages = .Site.RegularPages }} {{ range (where $pages &amp;#34;Section&amp;#34; &amp;#34;!=&amp;#34; &amp;#34;&amp;#34;) }} &amp;lt;li&amp;gt; &amp;lt;a</description>
+    </item>
+    
+    <item>
+      <title>Hugo 模板的原理及使用</title>
+      <link>/warehouse/hugo_template/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_template/</guid>
+      <description>原理概述 Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块</description>
+    </item>
+    
+    <item>
+      <title>Hugo 常见问答 Q&amp;A</title>
+      <link>/warehouse/hugo_qa/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_qa/</guid>
+      <description>增加 Code 高亮 打开根目录下的 config.yaml，添加以下条目即可使用 Hugo 预制高亮效果。 pygmentsUseClasses:false如果想使</description>
+    </item>
+    
+    <item>
+      <title>从零开始 Hugo 建站教程</title>
+      <link>/warehouse/hugo_install/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_install/</guid>
+      <description>Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署,本站即为 Hugo 博客框架搭建。 相关站点： Hugo官网 Hugo主题 Hu</description>
+    </item>
+    
+    <item>
+      <title>前端基础学习笔记</title>
+      <link>/warehouse/html/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/html/</guid>
+      <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 和 CSS 过程中觉得实用的笔记。 Html 笔记 HTML 称为超</description>
+    </item>
+    
+    <item>
+      <title>浅谈网页设计与开发</title>
+      <link>/warehouse/web_design/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/web_design/</guid>
+      <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
+    </item>
+    
+  </channel>
+</rss>

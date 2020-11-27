@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>设计 on 视点</title>
+    <link>/space/%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 设计 on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/space/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅谈网页设计与开发</title>
+      <link>/warehouse/web_design/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/web_design/</guid>
+      <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
+    </item>
+    
+    <item>
+      <title>可直接引用特殊符号清单</title>
+      <link>/warehouse/symbol/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/symbol/</guid>
+      <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。
+绘文字表情（emoji） 绘文字（日语：絵文字/えもじ emoji），在中国大陆，emoji通常叫做“小黄脸”，或者直称emoji。在NTTDoCoMo的i-mode系统电话系统中，绘文字的尺寸是12x12 像素，在传送时，一个图形有2个字节。Unicode编码为E63E到E757，而在Shift-JIS编码则是从F89F到F9FC。基本的绘文字共有176个符号，在C-HTML4.0的编程语言中，则另增添了76个情感符号。
+最早由栗田穰崇（Shigetaka Kurita）创作，并在日本网络及手机用户中流行。自苹果公司发布的iOS 5输入法中加入了emoji后，这种表情符号开始席卷全球，目前emoji已被大多数现代计算机系统所兼容的Unicode编码采纳，普遍应用于各种手机短信和社交网络中。本段摘自百度百科。
+面部表情 Smileys 😀 😁 😂 🤣 😃 😄 😅 😆 😉 😊 😋 😎 😍 😘 🥰 😗 😙 😚 ☺️ 🙂 🤗 🤩 🤔 🤨 😐 😑 😶 🙄 😏 😣 😥 😮 🤐 😯 😪 😫 😴 😌 😛 😜 😝 🤤 😒 😓 😔 😕 🙃 🤑 😲 ☹️ 🙁 😖 😞 😟 😤 😢 😭 😦 😧 😨 😩 🤯 😬 😰 😱 🥵 🥶 😳 🤪 😵 😡 😠 🤬 😷 🤒 🤕 🤢 🤮 🤧 😇 🤠 🤡 🥳 🥴 🥺 🤥 🤫 🤭 🧐 🤓 😈 👿 👹 👺 💀 👻 👽 🤖 💩 😺 😸 😹 😻 😼 😽 🙀 😿 😾</description>
+    </item>
+    
+  </channel>
+</rss>

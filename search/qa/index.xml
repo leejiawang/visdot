@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Q&amp;A on 视点</title>
+    <link>/search/qa/</link>
+    <description>Recent content in Q&amp;A on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/search/qa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS 常见问题解决办法</title>
+      <link>/warehouse/macos_tips/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/macos_tips/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;对于刚接触 macOS 的用户来说，突如其来的各种弹窗警告会让他们措手不及，下面我就来介绍一下一些弹窗的解决措施。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统使用技巧</title>
+      <link>/warehouse/windows_tips/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/windows_tips/</guid>
+      <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
+    </item>
+    
+    <item>
+      <title>Hugo 常见问答 Q&amp;A</title>
+      <link>/warehouse/hugo_qa/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/warehouse/hugo_qa/</guid>
+      <description>增加 Code 高亮 打开根目录下的 config.yaml，添加以下条目即可使用 Hugo 预制高亮效果。 pygmentsUseClasses:false如果想使</description>
+    </item>
+    
+  </channel>
+</rss>
