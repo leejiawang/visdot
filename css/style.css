@@ -529,7 +529,7 @@ th {
     width: 100%;
     border-radius: 4px;
     background: #fff;
-    padding: 25px 25px 50px 25px;
+    padding: 0 25px 50px 25px;
     margin: 0 5px 10px 5px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
   }
@@ -765,7 +765,7 @@ th {
     font-size: 30px;
     font-weight: 500;
     line-height: 1.5em;
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   .post-date {
@@ -773,6 +773,31 @@ th {
     color: rgba(0,0,0,.3);
     font-size: 16px;
     padding-bottom: 20px;
+  }
+
+  .space-nav {
+    padding: 15px 0 0 0;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+
+  .space-btn {
+    color: rgba(0,0,0,.7);
+    font-weight: 500;
+    line-height: 2em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .list-count {
+    font-size: .8em;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  .space-btn:hover {
+    background: #f2f2f2;
   }
 
   .keywords {
@@ -785,29 +810,13 @@ th {
     font-size: 15px;
     line-height: 15px;
     padding: 6px 12px;
-    margin: 4px;
+    margin: 4px 3px;
     border-radius: 30px;
-    border: 2px solid #f2f2f2;
+    background-color: #F5F5F5;
   } 
 
   .keywords-btn:hover {
-    background: #f2f2f2;
-  }
-
-  .space-btn {
-    color: rgba(0,0,0,.7);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 15px;
-    padding: 6px 9px;
-    margin: 4px;
-    border-radius: 8px;
-    border: 2px solid #f2f2f2;
-    background: #fff;
-  }
-
-  .space-btn:hover {
-    background: #f2f2f2;
+    background: rgba(0,0,0,.1);
   }
 
   .keywords-terms {
@@ -817,23 +826,10 @@ th {
     padding-bottom: 20px;
   }
 
-  .list-count {
-    color: rgba(0,0,0,.2);
-    font-size: 10px;
-    font-weight: 600;
-    padding-left: 5px;
-  }
-
   .list-date {
     color: rgba(0,0,0,.2);
     font-size: 0.9em;
     float: right;
-  }
-
-  .post-list-title {
-    padding-top: 20px;
-    font-size: 50px;
-    color: #e36209;
   }
 
   .post-list{

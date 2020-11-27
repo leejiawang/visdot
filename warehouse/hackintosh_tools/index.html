@@ -36,7 +36,7 @@
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/nsk-b.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a href="/">首页</a></li><li class="menu-button"><a href="/warehouse">仓库</a></li><li class="menu-button"><a  href="/projects">项目</a></li><li class="menu-button"><a href="/search">检索</a></li>
+        <li id="NavHome" class="menu-button active"><a href="/">首页</a></li><li id="NavWarehouse" class="menu-button"><a href="/warehouse">仓库</a></li><li id="NavProjects" class="menu-button"><a href="/projects">项目</a></li><li id="NavSearch" class="menu-button"><a href="/search">检索</a></li>
       </ul>
       <ul class="nav-search">
         <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
@@ -93,6 +93,9 @@
 
   </div>
 </div>
+<style type="text/css">
+	#NavWarehouse {border-bottom: 3px solid #212121;margin-bottom: 0;}
+</style>
 <div class="container w-1150">
 	<div class="flex">
 		<div class="main">
