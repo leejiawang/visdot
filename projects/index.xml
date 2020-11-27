@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on 视点</title>
-    <link>/projects/</link>
+    <link>https://visdot.com/projects/</link>
     <description>Recent content in Projects on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>eyecus 品牌</title>
-      <link>/projects/eyecus/</link>
+      <link>https://visdot.com/projects/eyecus/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/eyecus/</guid>
+      <guid>https://visdot.com/projects/eyecus/</guid>
       <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     
     <item>
       <title>项目003</title>
-      <link>/projects/p_003/</link>
+      <link>https://visdot.com/projects/p_003/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/p_003/</guid>
+      <guid>https://visdot.com/projects/p_003/</guid>
       <description>XXX</description>
     </item>
     
     <item>
       <title>项目002</title>
-      <link>/projects/p_002/</link>
+      <link>https://visdot.com/projects/p_002/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/p_002/</guid>
+      <guid>https://visdot.com/projects/p_002/</guid>
       <description>XXX</description>
     </item>
     
     <item>
       <title>项目001</title>
-      <link>/projects/p_001/</link>
+      <link>https://visdot.com/projects/p_001/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/p_001/</guid>
+      <guid>https://visdot.com/projects/p_001/</guid>
       <description>XXX</description>
     </item>
     

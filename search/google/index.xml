@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google on 视点</title>
-    <link>/search/google/</link>
+    <link>https://visdot.com/search/google/</link>
     <description>Recent content in Google on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/google/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Google Fonts 在线字体库</title>
-      <link>/warehouse/google_fonts/</link>
+      <link>https://visdot.com/warehouse/google_fonts/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/warehouse/google_fonts/</guid>
+      <guid>https://visdot.com/warehouse/google_fonts/</guid>
       <description>在线调用字体，省去本地字体管理。Google Fonts 中所有字体都是免费和开源的，任何项目的任何人都可以免费调用。 选择字体 首先进入 Google Fonts 官网，然后选择</description>
     </item>
     

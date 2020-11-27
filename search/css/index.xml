@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on 视点</title>
-    <link>/search/css/</link>
+    <link>https://visdot.com/search/css/</link>
     <description>Recent content in CSS on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/search/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
-      <link>/warehouse/loading_bar/</link>
+      <link>https://visdot.com/warehouse/loading_bar/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/warehouse/loading_bar/</guid>
+      <guid>https://visdot.com/warehouse/loading_bar/</guid>
       <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
     </item>
     
     <item>
       <title>前端基础学习笔记</title>
-      <link>/warehouse/html/</link>
+      <link>https://visdot.com/warehouse/html/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/warehouse/html/</guid>
+      <guid>https://visdot.com/warehouse/html/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 和 CSS 过程中觉得实用的笔记。 Html 笔记 HTML 称为超</description>
     </item>
     

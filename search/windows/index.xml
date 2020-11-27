@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 视点</title>
-    <link>/search/windows/</link>
+    <link>https://visdot.com/search/windows/</link>
     <description>Recent content in Windows on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 系统使用技巧</title>
-      <link>/warehouse/windows_tips/</link>
+      <link>https://visdot.com/warehouse/windows_tips/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/warehouse/windows_tips/</guid>
+      <guid>https://visdot.com/warehouse/windows_tips/</guid>
       <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
     </item>
     
     <item>
       <title>Windows 系统安装教程</title>
-      <link>/warehouse/windows_install/</link>
+      <link>https://visdot.com/warehouse/windows_install/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/warehouse/windows_install/</guid>
+      <guid>https://visdot.com/warehouse/windows_install/</guid>
       <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
     </item>
     
