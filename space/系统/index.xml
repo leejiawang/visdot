@@ -54,5 +54,14 @@
       <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
     </item>
     
+    <item>
+      <title>常用 DNS 速查表</title>
+      <link>https://visdot.com/warehouse/dns/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/warehouse/dns/</guid>
+      <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
+    </item>
+    
   </channel>
 </rss>

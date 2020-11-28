@@ -82,9 +82,18 @@
     <item>
       <title>macOS</title>
       <link>https://visdot.com/search/macos/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://visdot.com/search/windows/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/windows/</guid>
       <description></description>
     </item>
     
@@ -112,15 +121,6 @@
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/download/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://visdot.com/search/windows/</link>
-      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/windows/</guid>
       <description></description>
     </item>
     

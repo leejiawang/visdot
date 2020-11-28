@@ -68,7 +68,22 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/warehouse/bootstrap/</loc>
+    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/css/</loc>
+    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/warehouse/html/</loc>
+    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/javascript/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -88,8 +103,18 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/warehouse/dns/</loc>
+    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/warehouse/colors/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/markdown/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -193,6 +218,16 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/search/macos/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/windows/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/space/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
@@ -200,11 +235,6 @@
   <url>
     <loc>https://visdot.com/space/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/search/macos/</loc>
-    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -224,11 +254,6 @@
   
   <url>
     <loc>https://visdot.com/search/download/</loc>
-    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/search/windows/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -299,11 +324,6 @@
   
   <url>
     <loc>https://visdot.com/search/bootstrap/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/space/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url>
   

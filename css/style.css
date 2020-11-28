@@ -45,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-top: 65px;
   box-sizing: inherit;
-  background-color: #e9ecef;
+  background-color: #F5F5F5;
 }
 
 code {
@@ -137,7 +137,7 @@ figcaption {
 }
 
 figcaption:before {
-  content: "─ ";
+  content: "—— ";
 }
 
 svg {
@@ -270,6 +270,10 @@ th {
 
 .pt-50 {
   padding-top: 50px;
+}
+
+.pt-25 {
+  padding-top: 25px;
 }
 
 .pb-20 {
@@ -572,7 +576,7 @@ th {
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
     transition: all .3s;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,.132), 0 0.3px 0.9px 0 rgba(0,0,0,.108);
   }
 
   .sidebar-toc {
@@ -613,6 +617,9 @@ th {
     font-weight: 600;
     border-radius: 4px;
     background: #f2f2f2;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
   }
 
   .site-button a:hover {
@@ -720,6 +727,10 @@ th {
     margin: 0 auto;
     text-align: left;
     color: #5c5c5c;
+  }
+
+  .home-img img{
+    border-radius: 4px;
   }
 
   .footer a, .sidebar-list a, .markdown a, .sidebar-a a {
