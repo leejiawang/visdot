@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS 常见问题解决办法</title>
-      <link>https://visdot.com/warehouse/macos_tips/</link>
+      <link>https://visdot.com/data/macos_tips/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/macos_tips/</guid>
+      <guid>https://visdot.com/data/macos_tips/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;对于刚接触 macOS 的用户来说，突如其来的各种弹窗警告会让他们措手不及，下面我就来介绍一下一些弹窗的解决措施。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,37 +20,37 @@
     
     <item>
       <title>黑苹果系统简易安装教程</title>
-      <link>https://visdot.com/warehouse/hackintosh_install/</link>
+      <link>https://visdot.com/data/hackintosh_install/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/hackintosh_install/</guid>
+      <guid>https://visdot.com/data/hackintosh_install/</guid>
       <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
     </item>
     
     <item>
       <title>常用黑苹果系统安装相关工具</title>
-      <link>https://visdot.com/warehouse/hackintosh_tools/</link>
+      <link>https://visdot.com/data/hackintosh_tools/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/hackintosh_tools/</guid>
+      <guid>https://visdot.com/data/hackintosh_tools/</guid>
       <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
     </item>
     
     <item>
       <title>充斥互联网的各种单位</title>
-      <link>https://visdot.com/warehouse/speed_unit/</link>
+      <link>https://visdot.com/data/speed_unit/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/speed_unit/</guid>
+      <guid>https://visdot.com/data/speed_unit/</guid>
       <description>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。 容量单位 要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表字</description>
     </item>
     
     <item>
       <title>常用 DNS 速查表</title>
-      <link>https://visdot.com/warehouse/dns/</link>
+      <link>https://visdot.com/data/dns/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/dns/</guid>
+      <guid>https://visdot.com/data/dns/</guid>
       <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
     </item>
     

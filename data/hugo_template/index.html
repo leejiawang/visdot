@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>视点 › Hugo 模板的原理及使用</title>
+    
+    <meta name="keywords" content="Hugo, 模版, 排序, 视由, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="按需求添加 Hugo 文章列表，添加指定分类的列表，按时间、优先级排列。Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。">
+    
+    
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript">  
+      define(['pace'], function(pace){
+        pace.start({
+        document: false
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="mobile-header">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li>
+      </ul>
+      <ul class="nav-search">
+        <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
+          <ul id="searchResults"></ul></li><li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+
+  <h3>导航 Navigation</h3>
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/">主页</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <h3>目录 Contents</h3>     
+  <li>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#基本构成">基本构成</a></li>
+    <li><a href="#整体策略">整体策略</a></li>
+    <li><a href="#自定义页面模板">自定义页面模板</a></li>
+    <li><a href="#基本语法介绍">基本语法介绍</a>
+      <ul>
+        <li><a href="#循环">循环</a></li>
+        <li><a href="#条件判断">条件判断</a></li>
+        <li><a href="#注释写法">注释写法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </li>
+
+  <h3>空间 Space</h3>
+  <ul class="keywords-terms">
+  
+  </ul>
+
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {border-bottom: 3px solid #212121;margin-bottom: 0;color: rgba(0,0,0,.7);}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">Hugo 模板的原理及使用</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/grammar">Grammar</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20190914, have 1189 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<h2 id="原理概述">原理概述</h2>
+<p>Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块，每个模块都相当于一道「菜」，每个页面则通过不同的「菜单」来实现个性化的布局。</p>
+<p>这当中的「菜」就是 Hugo <code>layouts/partials/</code>路径下的各个组件。而「菜单」则是<code>layouts/_default/</code>路径下的模板文件。</p>
+<h2 id="基本构成">基本构成</h2>
+<p>下面是 Hugo 常见的模板及组件搭配，它包含了一个<code>404.html</code>404页面模板、一个<code>index.html</code>首页模板、一个<code>_default</code>文件夹内的三个默认页面模板及<code>partials</code>文件夹内的<code>footer.html</code>、<code>header.html</code>、<code>head.html</code>三个最基本的页面组件。</p>
+<pre><code>themes
+└── XXX
+    └── layouts
+        ├── 404.html
+        ├── _default
+        │   ├── baseof.html
+        │   ├── list.html 
+        │   └── single.html
+        ├── index.html
+        └── partials
+            ├── head.html
+            ├── header.html
+            └── footer.html 
+</code></pre><h2 id="整体策略">整体策略</h2>
+<p>当我们在建立多页面的网站时，首先要对整个网站的构成和布局有个大体概念，首先对各页面分类，找出布局相同的页面，给他们指定相同的页面模板。</p>
+<blockquote>
+<p>在具体操作环节，初学者可先不做组件独立，直接在页面模板中编辑出页面所要展示的全部内容，待该页面调整完毕，做其他页面模板时，如果用到了之前页面的某个元素，则将之前页面模板的该元素独立出来做成组件，然后引用进这两个页面模板。</p>
+</blockquote>
+<p>然后再找出那些在不同页面中重复出现的相同元素，进一步分类，把他们单独摘出来做成独立的组件，这样不同的页面就能通过页面模板提取组件。</p>
+<h2 id="自定义页面模板">自定义页面模板</h2>
+<p>在将页面分好类后，就要给他们定制专属页面模板了。</p>
+<p>在模板文件中使用下述代码导入组件，其中组件名为<code>header</code>，以<code>.html</code>为后缀名。</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//baseof.html
+</span><span class="c1"></span>
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//list.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+
+<span class="p">&lt;</span><span class="nx">ul</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="o">:=</span> <span class="p">.</span><span class="nx">Pages</span> <span class="p">}}</span>
+  <span class="p">{{</span> <span class="k">if</span> <span class="p">.</span><span class="nx">IsHome</span> <span class="p">}}{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="p">=</span> <span class="p">.</span><span class="nx">Site</span><span class="p">.</span><span class="nx">RegularPages</span> <span class="p">}}{{</span> <span class="nx">end</span> <span class="p">}}</span>
+  <span class="p">{{</span> <span class="k">range</span> <span class="p">(</span><span class="nx">where</span> <span class="err">$</span><span class="nx">pages</span> <span class="s">&#34;Section&#34;</span> <span class="s">&#34;!=&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">}}</span>
+  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">span</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;date&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Date</span><span class="p">.</span><span class="nx">Format</span> <span class="s">&#34;2006/01/02&#34;</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
+
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//single.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+
+<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
+
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//terms.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+
+<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nx">ul</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;terms&#34;</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="k">range</span> <span class="p">.</span><span class="nx">Data</span><span class="p">.</span><span class="nx">Terms</span> <span class="p">}}</span>
+  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .Page.RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Page</span><span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span> <span class="p">({{</span> <span class="p">.</span><span class="nx">Count</span> <span class="p">}})</span>
+  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
+
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><h2 id="基本语法介绍">基本语法介绍</h2>
+<h3 id="循环">循环</h3>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+
+<span class="c1">//遍历「变量」，输出「内容」。
+</span></code></pre></div><h3 id="条件判断">条件判断</h3>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+
+<span class="c1">//如果「条件」成立则输出「结果」，否则不输出。
+</span><span class="c1"></span>
+
+<span class="p">{{</span> <span class="k">if</span> <span class="nx">not</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+
+<span class="c1">//如果「条件」不成立则输出「结果」，否则不输出。
+</span><span class="c1"></span>
+
+<span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果1</span> <span class="p">{{</span><span class="k">else</span><span class="p">}}</span> <span class="nx">结果2</span> <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
+
+<span class="c1">//如果「条件」成立则输出「结果1」，否则输出「结果2」。
+</span></code></pre></div><p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
+<pre><code>{{ partial &quot;header.html&quot; . }}
+
+{{if not .IsHome }}
+&lt;h1&gt;{{ .Title | markdownify }}&lt;/h1&gt;
+{{ end }}
+
+{{ .Content }}
+
+&lt;ul&gt;
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
+  &lt;li&gt;
+    &lt;span class=&quot;date&quot;&gt;{{ .Date.Format &quot;2006/01/02&quot; }}&lt;/span&gt;
+    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title | markdownify }}&lt;/a&gt;
+  &lt;/li&gt;
+  {{ end }}
+&lt;/ul&gt;
+
+{{ partial &quot;footer.html&quot; . }}
+</code></pre><h3 id="注释写法">注释写法</h3>
+<pre><code>{{/* 注释 */}}
+</code></pre>
+			</main>
+		</div>
+		<div class="sidebar">
+  <a href="/warehouse"><div class="sidebar-items bg-blue">
+    <img src="/img/warehouse-w.png">
+  </div></a>
+    <img class="sidebar-photo" src="/img/si_item_2.jpg" width="348px">
+
+	<div class="pre-next">
+		
+	<a class="pre-next-btn" href="https://visdot.com/data/hugo_qa/"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>前一页</a>
+	
+	
+	<a class="pre-next-btn" href="https://visdot.com/data/hugo_lists/">后一页<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></a>
+	
+</div>
+
+	<div class="sidebar-toc sidebar-items bg">
+		<div class="sidebar-a pb-20">
+		    <div class="sidebar-list-title">Contents</div>
+		    	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#基本构成">基本构成</a></li>
+    <li><a href="#整体策略">整体策略</a></li>
+    <li><a href="#自定义页面模板">自定义页面模板</a></li>
+    <li><a href="#基本语法介绍">基本语法介绍</a>
+      <ul>
+        <li><a href="#循环">循环</a></li>
+        <li><a href="#条件判断">条件判断</a></li>
+        <li><a href="#注释写法">注释写法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		    </div>
+		<div class="site-button"><a href="javascript:scroll(0,0)">返回页首</a></div>
+	</div>
+		
+</div>
+
+	</div>
+	  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  </div>
+  
+  </body>
+	<script src="/js/fuse.min.js"></script>
+	<script src="/js/fastsearch.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script  data-pace-options='{ "ajax": false }'  src="https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js"></script>
+</html>
+
+</div>

@@ -130,7 +130,7 @@ h3 {
 figcaption {
   font-size: .8em;
   color: #9c9c9c;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 30px 10px;
   text-indent: 0px;
   clear: both;
   display: block;
@@ -193,16 +193,6 @@ img, iframe, video {
 
 img {
   position: relative;
-}
-
-img::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: url(/img/loading.svg) no-repeat center;
 }
 
 main { hyphens: auto; }
@@ -280,6 +270,10 @@ th {
   padding-bottom: 20px;
 }
 
+.px-20 {
+  padding: 0 15px;
+}
+
 .bg {
   background-color: #fff;
 }
@@ -298,6 +292,7 @@ th {
 
 .w-630{
   max-width: 630px;
+  margin: 0 auto;
 }
 
 .w-1150 {
@@ -356,7 +351,6 @@ th {
   .menu-button a{
     font-size: 16px;
     font-weight: bold;
-    color: rgba(0,0,0,.7);
     padding: 13px 0;
     margin: 0 12px;
     line-height: 50px;
@@ -364,8 +358,6 @@ th {
 
   .menu-button a:hover {
     color: rgba(0,0,0,.8);
-    border-bottom: 3px solid #212121;
-    margin-bottom: 0;
   }
 
   .nav-sub-button {
@@ -729,8 +721,13 @@ th {
     color: #5c5c5c;
   }
 
-  .home-img img{
-    border-radius: 4px;
+  .home-title {
+    padding: 20px 0;
+    color: rgba(0,0,0,.3);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
   }
 
   .footer a, .sidebar-list a, .markdown a, .sidebar-a a {
@@ -885,6 +882,25 @@ th {
     text-align: right;
   }
 
+/* projects */
+  .full-page {
+    width: 100%;
+    border-radius: 4px;
+    background: #fff;
+    margin: 0 5px 10px 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  }
+
+  .projects {
+    padding: 25px 25px 80px 25px;
+  }
+
+  .projects-img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 100%;
+  }
+
 /* About */
   .about {
     border-radius: 4px;
@@ -922,10 +938,16 @@ th {
   .container {
     margin: 0 15px;
   }
+  .projects-img {
+    border-radius: 4px;
+  }
+  .px-20 {
+    padding: 0;
+  }
   .gallery-items {
     min-width: 32%;
   }
-  .main {
+  .full-page, .projects, .main {
     padding: 0px;
     border: 0px solid #dadce0;
     box-shadow: none;

@@ -9,19 +9,19 @@
     <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/hexo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
-      <link>https://visdot.com/warehouse/loading_bar/</link>
+      <link>https://visdot.com/data/loading_bar/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/loading_bar/</guid>
+      <guid>https://visdot.com/data/loading_bar/</guid>
       <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
     </item>
     
     <item>
       <title>HEXO 建站教程</title>
-      <link>https://visdot.com/warehouse/hexo/</link>
+      <link>https://visdot.com/data/hexo/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/hexo/</guid>
+      <guid>https://visdot.com/data/hexo/</guid>
       <description>Hexo 是一款快速、简洁且高效的博客框架，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。 相关站点： Hexo官网 Hexo</description>
     </item>
     

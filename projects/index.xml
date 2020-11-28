@@ -8,39 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>eyecus 品牌</title>
+      <title>视由品牌 VI 设计</title>
       <link>https://visdot.com/projects/eyecus/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/projects/eyecus/</guid>
-      <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
+      <description>视由 全称「视界事由」，本品牌规范包含了品牌的设计原则以及使用规则，通过对标志、色彩、图案、排版等方面的描述，保证品牌使用过程中的视觉统一。 概</description>
     </item>
     
     <item>
-      <title>项目003</title>
-      <link>https://visdot.com/projects/p_003/</link>
-      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/projects/p_003/</guid>
-      <description>XXX</description>
-    </item>
-    
-    <item>
-      <title>项目002</title>
-      <link>https://visdot.com/projects/p_002/</link>
+      <title>湖南工业大学录取通知书</title>
+      <link>https://visdot.com/projects/hgdtzs/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/projects/p_002/</guid>
-      <description>XXX</description>
-    </item>
-    
-    <item>
-      <title>项目001</title>
-      <link>https://visdot.com/projects/p_001/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/projects/p_001/</guid>
-      <description>XXX</description>
+      <guid>https://visdot.com/projects/hgdtzs/</guid>
+      <description>概述 录取通知书整体依设计元素分为内外两个部分： 内侧主要实现录取通知书的应用属性，采取严较为规范风格，朴素端庄。包含校风校训页、录取通知书信息</description>
     </item>
     
   </channel>

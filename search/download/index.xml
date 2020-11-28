@@ -9,37 +9,37 @@
     <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/download/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 系统安装教程</title>
-      <link>https://visdot.com/warehouse/windows_install/</link>
+      <link>https://visdot.com/data/windows_install/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/windows_install/</guid>
+      <guid>https://visdot.com/data/windows_install/</guid>
       <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>黑苹果系统简易安装教程</title>
-      <link>https://visdot.com/warehouse/hackintosh_install/</link>
+      <link>https://visdot.com/data/hackintosh_install/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/hackintosh_install/</guid>
+      <guid>https://visdot.com/data/hackintosh_install/</guid>
       <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
     </item>
     
     <item>
       <title>常用黑苹果系统安装相关工具</title>
-      <link>https://visdot.com/warehouse/hackintosh_tools/</link>
+      <link>https://visdot.com/data/hackintosh_tools/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/hackintosh_tools/</guid>
+      <guid>https://visdot.com/data/hackintosh_tools/</guid>
       <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>https://visdot.com/warehouse/symbol/</link>
+      <link>https://visdot.com/data/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/symbol/</guid>
+      <guid>https://visdot.com/data/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。
 绘文字表情（emoji） 绘文字（日语：絵文字/えもじ emoji），在中国大陆，emoji通常叫做“小黄脸”，或者直称emoji。在NTTDoCoMo的i-mode系统电话系统中，绘文字的尺寸是12x12 像素，在传送时，一个图形有2个字节。Unicode编码为E63E到E757，而在Shift-JIS编码则是从F89F到F9FC。基本的绘文字共有176个符号，在C-HTML4.0的编程语言中，则另增添了76个情感符号。
 最早由栗田穰崇（Shigetaka Kurita）创作，并在日本网络及手机用户中流行。自苹果公司发布的iOS 5输入法中加入了emoji后，这种表情符号开始席卷全球，目前emoji已被大多数现代计算机系统所兼容的Unicode编码采纳，普遍应用于各种手机短信和社交网络中。本段摘自百度百科。

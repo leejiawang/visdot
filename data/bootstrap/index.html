@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>视点 › 笔记「Bootstrap」</title>
+    
+    <meta name="keywords" content="Html, CSS, Bootstrap, JavaScript, 盒子模型, 视由, 视界事由, eyecus, 博客, blog">
+    
+    <meta name="description" property="og:description" content="前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html、CSS 以及 JavaScript 过程中觉得实用的笔记。">
+    
+    
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript">  
+      define(['pace'], function(pace){
+        pace.start({
+        document: false
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="mobile-header">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li>
+      </ul>
+      <ul class="nav-search">
+        <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
+          <ul id="searchResults"></ul></li><li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+
+  <h3>导航 Navigation</h3>
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/">主页</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <h3>目录 Contents</h3>     
+  <li>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#加载框架">加载框架</a></li>
+    <li><a href="#容器">容器</a></li>
+    <li><a href="#响应式断点">响应式断点</a></li>
+    <li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
+</nav>
+  </li>
+
+  <h3>空间 Space</h3>
+  <ul class="keywords-terms">
+  
+  </ul>
+
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {border-bottom: 3px solid #212121;margin-bottom: 0;color: rgba(0,0,0,.7);}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">笔记「Bootstrap」</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/css">CSS</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/bootstrap">Bootstrap</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/javascript">JavaScript</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20190705, have 479 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。</p>
+<p>Bootstrap 是一套流行的前端框架，轻松构建对移动设备很友好的响应式网站。内置了大量常用界面设计组件，大大简化了建站的过程。</p>
+<blockquote>
+<p><strong>相关站点：</strong><a class="eyecus-more-btn" href="https://getbootstrap.com/">框架官网</a>
+<a class="eyecus-more-btn" href="http://bs4.ntp.org.cn/">框架中文</a>
+<a class="eyecus-more-btn" href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html">菜鸟教程</a>
+<a class="eyecus-more-btn" href="https://github.com/topics/bootstrap">框架仓库</a></p>
+</blockquote>
+<h2 id="加载框架">加载框架</h2>
+<p><strong>CSS</strong> 复制如下代码到<code>HTML</code>的<code>&lt;head&gt;</code>标签。</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34;</span> <span class="nt">integrity</span><span class="o">=</span><span class="s2">&#34;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&#34;</span> <span class="nt">crossorigin</span><span class="o">=</span><span class="s2">&#34;anonymous&#34;</span><span class="o">&gt;</span>
+</code></pre></div><p><strong>JS</strong> 复制如下代码到<code>HTML</code>的<code>&lt;/body&gt;</code>标签之前。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><p><strong>简单 Bootstrap 实例</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>XXXX<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>XXXX<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><h2 id="容器">容器</h2>
+<p>容器是<code>Bootstrap</code>中最基本的布局基础。会自动根据屏幕大小来选择合适的宽度。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+  XXXX
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">标签</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">container</td>
+<td style="text-align:left">容器</td>
+<td style="text-align:left">自动根据屏幕大小来选择合适的宽度</td>
+</tr>
+<tr>
+<td style="text-align:left">container-fluid</td>
+<td style="text-align:left">全宽容器</td>
+<td style="text-align:left">跨越 viewport 的整个宽度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="响应式断点">响应式断点</h2>
+<p>响应式断点指使用少量媒体查询为布局和界面创建合理的断点，以此动态调节显示界面尺寸。</p>
+<blockquote>
+<p>下述代码中具体尺寸更具需要进行更改。</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">576px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">991</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1199</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+</code></pre></div><h2 id="层叠覆盖关系">层叠覆盖关系</h2>
+<p><code>Z-index</code>值用于正确地分层，确然各个元素的层叠覆盖关系。
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">XXXX</span> <span class="p">{</span>
+  <span class="k">z-index</span><span class="p">:</span> <span class="n">X</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div></p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><code>维基百科 https://zh.wikipedia.org/</code></li>
+</ol>
+
+			</main>
+		</div>
+		<div class="sidebar">
+  <a href="/warehouse"><div class="sidebar-items bg-blue">
+    <img src="/img/warehouse-w.png">
+  </div></a>
+    <img class="sidebar-photo" src="/img/si_item_2.jpg" width="348px">
+
+	<div class="pre-next">
+		
+	<a class="pre-next-btn" href="https://visdot.com/data/css/"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>前一页</a>
+	
+	
+	<a class="pre-next-btn" href="https://visdot.com/data/hugo_install/">后一页<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></a>
+	
+</div>
+
+	<div class="sidebar-toc sidebar-items bg">
+		<div class="sidebar-a pb-20">
+		    <div class="sidebar-list-title">Contents</div>
+		    	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#加载框架">加载框架</a></li>
+    <li><a href="#容器">容器</a></li>
+    <li><a href="#响应式断点">响应式断点</a></li>
+    <li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
+</nav>
+		    </div>
+		<div class="site-button"><a href="javascript:scroll(0,0)">返回页首</a></div>
+	</div>
+		
+</div>
+
+	</div>
+	  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  </div>
+  
+  </body>
+	<script src="/js/fuse.min.js"></script>
+	<script src="/js/fastsearch.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script  data-pace-options='{ "ajax": false }'  src="https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js"></script>
+</html>
+
+</div>
