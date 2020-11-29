@@ -130,11 +130,16 @@ h3 {
 figcaption {
   font-size: .85em;
   color: #9c9c9c;
-  margin: 10px 0 30px 0;
+  margin: 5px 0 30px 0;
   text-indent: 0px;
   clear: both;
   display: block;
   text-align: center;
+}
+
+figcaption:before {
+  font-size: .85em;
+  content: "* "
 }
 
 
@@ -233,11 +238,17 @@ blockquote p {
 table {
   color: #596068;
   overflow: auto;
-  display: block;
   border-spacing: 0;
   border-collapse: collapse;
   margin: 20px auto;
   white-space: nowrap;
+  width: 100%;
+  display: table;
+  border-spacing: 0;
+}
+
+thead, tbody {
+  margin: 0 auto;
 }
 
 table thead th { border-bottom: 1px solid #ddd; }
@@ -703,6 +714,7 @@ th {
   .gallery-items {
     width: 23%;
     border-radius: 2px;
+    margin-top: 10px;
     margin-bottom: 20px;
     min-width: 220px;
   }
@@ -730,7 +742,7 @@ th {
   .gallery-desc {
     font-size: 12px;
     color: #757779;
-    padding: 10px 15px 5px 2px;
+    padding: 10px 10px 5px 2px;
     line-height: 1.5em;
   }
 
@@ -907,7 +919,7 @@ th {
     width: 100%;
     border-radius: 2px;
     background: #fff;
-    margin: 0;
+    margin: 0 5px 10px 5px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
   }
 
@@ -918,7 +930,7 @@ th {
 
   .projects p, .projects table {
     max-width: 630px;
-    margin: 1.2em auto;
+    margin: 1.2em auto .8em auto;
   }
 
   .projects h1 {
