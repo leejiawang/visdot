@@ -237,24 +237,20 @@ blockquote p {
 
 table {
   color: #596068;
+  width: 100%;
   overflow: auto;
-  border-spacing: 0;
+  display: table;
   border-collapse: collapse;
+  border-spacing: 0;
   margin: 20px auto;
   white-space: nowrap;
-  width: 100%;
-  display: table;
-  border-spacing: 0;
-}
-
-thead, tbody {
-  margin: 0 auto;
 }
 
 table thead th { border-bottom: 1px solid #ddd; }
 tfoot, tr:nth-child(2n) { background: #f6f8fa; }
 
 th, td {
+  line-height: 1.8em;
   font-size: .9em;
   padding: 5px 10px;
   border: 1px solid #e1e4e8;
@@ -731,6 +727,7 @@ th {
   }
 
   .gallery-title {
+    padding: 20px 0 8px 2px;
     font-size: 18px;
     line-height: 28px;
     max-height: 56px;
@@ -739,10 +736,20 @@ th {
     color: #202020;
   }
 
+  .gallery-type {
+    display: initial;
+    font-size: 14px;
+    color: #757779;
+    padding: 2px 6px;
+    line-height: 1.5em;
+    border-radius: 10px;
+    background-color:  rgba(0,0,0,.05);
+  }
+
   .gallery-desc {
     font-size: 12px;
     color: #757779;
-    padding: 10px 10px 5px 2px;
+    padding: 10px 10px 20px 2px;
     line-height: 1.5em;
   }
 
@@ -983,6 +990,18 @@ th {
 }
 
 @media (max-width: 768px) {
+
+ .gallery-title {
+    font-size: 1.2em;
+  }
+
+  .gallery-desc {
+    font-size: .95em;
+  }
+
+  table {
+    display: block;
+  }
   .pace .pace-progress {
     display: none;
   }
@@ -1020,7 +1039,7 @@ th {
     transform: translate(0, 0);
   }
   body {
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: #fff;
   }
 }
