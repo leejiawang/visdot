@@ -58,11 +58,14 @@
 
   <div class="mobile-nav-title">目录</div> 
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#原理概述">原理概述</a></li>
-    <li><a href="#实现方法">实现方法</a></li>
-    <li><a href="#运用实例">运用实例</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#原理概述">原理概述</a></li>
+<li><a href="#实现方法">实现方法</a></li>
+<li><a href="#运用实例">运用实例</a></li>
+</ul></li>
+</ul>
 </nav>
   </div>
 </div>
@@ -100,33 +103,54 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p><img src="https://cdn.eyecus.com/file/imgcache/navbar.png" alt="youtube_pace"></p>
+				
+
+<p><img src="https://cdn.eyecus.com/file/imgcache/navbar.png" alt="youtube_pace" /></p>
+
 <h2 id="原理概述">原理概述</h2>
+
 <p>本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。</p>
+
 <p>使用到了 <code>{{ .Title }}</code> 这个变量会随着页面的不同而对应着变化的特性，给需要激活效果的标签赋予 CSS 样式。下面以本站「检索」页面顶部分类导航栏为例进行分析。</p>
+
 <h2 id="实现方法">实现方法</h2>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ range .Site.Taxonomies.space }}
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<pre><code class="language-html">{{ range .Site.Taxonomies.space }}
+    &lt;a href=&quot;{{ .Page.Permalink }}&quot;&gt;{{ .Page.Title }} &lt;span&gt;{{ .Count }}&lt;/span&gt;&lt;/a&gt;
 {{ end }}
-</code></pre></div><p>上面是一个常规调取分类列表的写法，现在要实现选中其中一个分类，跳转进对应分类的文章列表，然后给该分类标签加上一个黑底的效果，最终效果如最开头图片中的「建站」标签所示。</p>
+</code></pre>
+
+<p>上面是一个常规调取分类列表的写法，现在要实现选中其中一个分类，跳转进对应分类的文章列表，然后给该分类标签加上一个黑底的效果，最终效果如最开头图片中的「建站」标签所示。</p>
+
 <p>要达到这个目的，首先给每个分类加入一个<code>id</code>标签，通过<code>{{ .Title }}</code>实现快速对应添加，写法如下。</p>
+
 <pre><code> id=&quot;{{ .Page.Title }}&quot;
-</code></pre><p>当网页结构较为复杂时，用，可在标签名前加上限定语，以避免标签名重复导致效果被错误引用。</p>
+</code></pre>
+
+<p>当网页结构较为复杂时，用，可在标签名前加上限定语，以避免标签名重复导致效果被错误引用。</p>
+
 <pre><code> id=&quot;Space{{ .Page.Title }}&quot;
-</code></pre><p>解决好标签后，在「HTML」中引入对应的<code>CSS</code>样式。</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css">  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span>
-    <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#424242</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div><h2 id="运用实例">运用实例</h2>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
-  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span><span class="k">background-color</span><span class="p">:</span><span class="mh">#424242</span><span class="p">;}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre>
+
+<p>解决好标签后，在「HTML」中引入对应的<code>CSS</code>样式。</p>
+
+<pre><code class="language-css">  #{{ .Title }} {
+    color: #fff;
+    background-color: #424242;
+  }
+</code></pre>
+
+<h2 id="运用实例">运用实例</h2>
+
+<pre><code class="language-html">&lt;style type=&quot;text/css&quot;&gt;
+  #{{ .Title }} {color:#fff;background-color:#424242;}
+&lt;/style&gt;
 
 {{ range .Site.Taxonomies.space }}
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;{{ .Page.Title }}&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    &lt;a id=&quot;{{ .Page.Title }}&quot; href=&quot;{{ .Page.Permalink }}&quot;&gt;{{ .Page.Title }} &lt;span&gt;{{ .Count }}&lt;/span&gt;&lt;/a&gt;
 {{ end }}
-</code></pre></div>
+</code></pre>
+
 			</main>
 		</div>
 		<div class="sidebar">
@@ -148,11 +172,14 @@
 		<div class="sidebar-a pb-20">
 		    <div class="sidebar-list-title">Contents</div>
 		    	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#原理概述">原理概述</a></li>
-    <li><a href="#实现方法">实现方法</a></li>
-    <li><a href="#运用实例">运用实例</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#原理概述">原理概述</a></li>
+<li><a href="#实现方法">实现方法</a></li>
+<li><a href="#运用实例">运用实例</a></li>
+</ul></li>
+</ul>
 </nav>
 		    </div>
 		<div class="site-button"><a href="javascript:scroll(0,0)">返回页首</a></div>

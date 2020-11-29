@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Q&amp;A on 视点</title>
@@ -6,7 +6,11 @@
     <description>Recent content in Q&amp;A on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/qa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://visdot.com/search/qa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>macOS 常见问题解决办法</title>
       <link>https://visdot.com/data/macos_tips/</link>
@@ -33,7 +37,7 @@
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/data/hugo_qa/</guid>
-      <description>增加 Code 高亮 打开根目录下的 config.yaml，添加以下条目即可使用 Hugo 预制高亮效果。 pygmentsUseClasses:false如果想使</description>
+      <description>增加 Code 高亮 打开根目录下的 config.yaml，添加以下条目即可使用 Hugo 预制高亮效果。 pygmentsUseClasses: false 如果想使用更多其他风格的效果可使用第三方的 highlight.js 插件，从</description>
     </item>
     
   </channel>

@@ -58,11 +58,14 @@
 
   <div class="mobile-nav-title">目录</div> 
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#增加-code-高亮">增加 Code 高亮</a></li>
-    <li><a href="#增加文章字数显示">增加文章字数显示</a></li>
-    <li><a href="#增加翻页按钮">增加翻页按钮</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#增加-code-高亮">增加 Code 高亮</a></li>
+<li><a href="#增加文章字数显示">增加文章字数显示</a></li>
+<li><a href="#增加翻页按钮">增加翻页按钮</a></li>
+</ul></li>
+</ul>
 </nav>
   </div>
 </div>
@@ -95,38 +98,61 @@
 
 
 				
-				<div class="post-date">Published on 20190905, have 662 Words.
+				<div class="post-date">Published on 20190905, have 644 Words.
 				</div>
 				
 			</div>
 			<main class="markdown academic w-630">
-				<h2 id="增加-code-高亮">增加 Code 高亮</h2>
+				
+
+<h2 id="增加-code-高亮">增加 Code 高亮</h2>
+
 <p>打开根目录下的 <code>config.yaml</code>，添加以下条目即可使用 Hugo 预制高亮效果。</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></code></pre></div><p>如果想使用更多其他风格的效果可使用第三方的 <code>highlight.js</code> 插件，从<a href="https://highlightjs.org/download/">官网</a>选择需要的语言后下载文件。解压压缩包，在页面中引入<code>highlight.pack.js</code>和自己选择风格对应的<code>css</code>文件。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- head --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/highlight.css&#34;</span><span class="p">/&gt;</span>
-<span class="c">&lt;!-- body --&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/highlight.pack.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div><blockquote>
+
+<pre><code class="language-yaml">pygmentsUseClasses: false
+</code></pre>
+
+<p>如果想使用更多其他风格的效果可使用第三方的 <code>highlight.js</code> 插件，从<a href="https://highlightjs.org/download/">官网</a>选择需要的语言后下载文件。解压压缩包，在页面中引入<code>highlight.pack.js</code>和自己选择风格对应的<code>css</code>文件。</p>
+
+<pre><code class="language-html">&lt;!-- head --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/highlight.css&quot;/&gt;
+&lt;!-- body --&gt;
+&lt;script src=&quot;/js/highlight.pack.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<blockquote>
 <p>文件引入路径根据项目不同进行相应改动。</p>
 </blockquote>
+
 <h2 id="增加文章字数显示">增加文章字数显示</h2>
+
 <p>本功能利用了 <code>.WordCount</code> 这个变量，在页面模板 <code>single.html</code> 标题附近的适当位置添加如下代码即可。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span> {{ .WordCount }} Words<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</code></pre></div><p>如果识别出的字数明显少于文章字数，可能是没有计算中文字符，可在每个页面头部的信息区添加如下参数。</p>
+
+<pre><code class="language-html">&lt;span&gt; {{ .WordCount }} Words&lt;/span&gt;
+</code></pre>
+
+<p>如果识别出的字数明显少于文章字数，可能是没有计算中文字符，可在每个页面头部的信息区添加如下参数。</p>
+
 <pre><code>isCJKLanguage: true
-</code></pre><h2 id="增加翻页按钮">增加翻页按钮</h2>
+</code></pre>
+
+<h2 id="增加翻页按钮">增加翻页按钮</h2>
+
 <p>本功能利用了 <code>.Next</code>、<code>.Prev</code> 这两个变量，在页面模板 <code>single.html</code> 的适当位置添加如下代码即可。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span><span class="nx">with</span> <span class="p">.</span><span class="nx">PrevInSection</span><span class="p">}}</span>	
-<span class="p">&lt;</span><span class="nx">ahref</span><span class="p">=</span><span class="s">&#34;{{.Permalink}}&#34;</span><span class="p">&gt;</span><span class="nx">前一页</span><span class="p">&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
-<span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
-<span class="p">{{</span><span class="nx">with</span> <span class="p">.</span><span class="nx">NextInSection</span><span class="p">}}</span>
-<span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{.Permalink}}&#34;</span><span class="p">&gt;</span><span class="nx">后一页</span><span class="p">&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
-<span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
-</code></pre></div><p>下面是我使用的翻页按钮配置，供大家参考。</p>
+
+<pre><code class="language-go">{{with .PrevInSection}}	
+&lt;ahref=&quot;{{.Permalink}}&quot;&gt;前一页&lt;/a&gt;
+{{end}}
+{{with .NextInSection}}
+&lt;a href=&quot;{{.Permalink}}&quot;&gt;后一页&lt;/a&gt;
+{{end}}
+</code></pre>
+
+<p>下面是我使用的翻页按钮配置，供大家参考。</p>
+
 <p><strong>HTML</strong></p>
+
 <pre><code>&lt;div class=&quot;pre-next&quot;&gt;
   {{with .PrevInSection}}	
   &lt;a class=&quot;pre-next-btn bg&quot; href=&quot;{{.Permalink}}&quot;&gt;&lt;svg t=&quot;1605930649708&quot; class=&quot;icon&quot; viewBox=&quot;0 0 1024 1024&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; p-id=&quot;2619&quot; width=&quot;22&quot; height=&quot;22&quot;&gt;&lt;path d=&quot;M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z&quot; fill=&quot;#515151&quot; p-id=&quot;2620&quot;&gt;&lt;/path&gt;&lt;/svg&gt;前一页&lt;/a&gt;
@@ -135,29 +161,33 @@
   &lt;a class=&quot;pre-next-btn bg&quot; href=&quot;{{.Permalink}}&quot;&gt;后一页&lt;svg t=&quot;1605930744277&quot; class=&quot;icon&quot; viewBox=&quot;0 0 1024 1024&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; p-id=&quot;2981&quot; width=&quot;22&quot; height=&quot;22&quot;&gt;&lt;path d=&quot;M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z&quot; fill=&quot;#515151&quot; p-id=&quot;2982&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
   {{end}}
 &lt;/div&gt;
-</code></pre><p><strong>CSS</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pre-next</span> <span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space</span><span class="o">-</span><span class="n">between</span><span class="p">;</span>
-  <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
+</code></pre>
 
-<span class="p">.</span><span class="nc">pre-next-btn</span> <span class="p">{</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">46</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#dadce0</span><span class="p">;</span>
-  <span class="kp">-moz-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">.3</span><span class="kt">s</span><span class="p">;</span>
-  <span class="kp">-webkit-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">.3</span><span class="kt">s</span><span class="p">;</span>
-  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">.3</span><span class="kt">s</span><span class="p">;</span>
-  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-<span class="p">}</span>
+<p><strong>CSS</strong></p>
 
-<span class="p">.</span><span class="nc">pre-next-btn</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">.1</span><span class="p">);</span> 
-<span class="p">}</span>
-</code></pre></div>
+<pre><code class="language-css">.pre-next {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pre-next-btn {
+  width: 46%;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #fff;
+}
+
+.pre-next-btn:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,.1); 
+}
+</code></pre>
+
 			</main>
 		</div>
 		<div class="sidebar">
@@ -179,11 +209,14 @@
 		<div class="sidebar-a pb-20">
 		    <div class="sidebar-list-title">Contents</div>
 		    	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#增加-code-高亮">增加 Code 高亮</a></li>
-    <li><a href="#增加文章字数显示">增加文章字数显示</a></li>
-    <li><a href="#增加翻页按钮">增加翻页按钮</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#增加-code-高亮">增加 Code 高亮</a></li>
+<li><a href="#增加文章字数显示">增加文章字数显示</a></li>
+<li><a href="#增加翻页按钮">增加翻页按钮</a></li>
+</ul></li>
+</ul>
 </nav>
 		    </div>
 		<div class="site-button"><a href="javascript:scroll(0,0)">返回页首</a></div>
