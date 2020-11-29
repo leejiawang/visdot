@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/data/hackintosh_tools/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/data/hugo_navbar/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -40,11 +45,6 @@
   <url>
     <loc>https://visdot.com/data/hackintosh_install/</loc>
     <lastmod>2019-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/data/hackintosh_tools/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -130,6 +130,16 @@
   <url>
     <loc>https://visdot.com/data/git/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/projects/starwood/</loc>
+    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/projects/3dsmax_jz/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -284,7 +294,7 @@
   
   <url>
     <loc>https://visdot.com/search/hackintosh/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
