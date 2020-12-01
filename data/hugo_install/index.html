@@ -28,11 +28,11 @@
 
   <body>
     <div class="header-line"></div>
-    <div class="mobile-header vd-glass">
+    <div class="mobile-header bg-w">
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
     </div>
-    <header class="header vd-glass">
+    <header class="header vd-glass-w">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
@@ -49,7 +49,7 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
 
-  <div class="mobile-nav-title">导航</div>
+  <div class="mobile-nav-title">导 航</div>
   <div class="mobile-nav">
   <a class="mobile-nav-button" href="/">主页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
@@ -57,38 +57,37 @@
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
 
-  <div class="mobile-nav-title">目录</div> 
+  <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#第1步-安装hugo框架">第1步 安装Hugo框架</a>
-<ul>
-<li><a href="#macos">macOS</a></li>
-<li><a href="#windows">Windows</a></li>
-<li><a href="#linux">Linux</a></li>
-<li><a href="#openbsd">OpenBSD</a></li>
-<li><a href="#源码安装">源码安装</a></li>
-</ul></li>
-<li><a href="#第2步-生成网站">第2步 生成网站</a></li>
-<li><a href="#第3步-网站配置-套用主题">第3步 网站配置(套用主题)</a></li>
-<li><a href="#第4步-添加页面">第4步 添加页面</a></li>
-<li><a href="#第5步-运行网站">第5步 运行网站</a></li>
-<li><a href="#第6步-生成静态网页">第6步 生成静态网页</a></li>
-<li><a href="#第7步-部署-github-pages">第7步 部署 Github Pages</a></li>
-<li><a href="#第8步-日常维护">第8步 日常维护</a>
-<ul>
-<li><a href="#替换-hugo-版本方法">替换 Hugo 版本方法</a></li>
-<li><a href="#hugo-版本降级方法">Hugo 版本降级方法</a></li>
-<li><a href="#卸载-hugo-框架">卸载 Hugo 框架</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#第1步-安装hugo框架">第1步 安装Hugo框架</a>
+      <ul>
+        <li><a href="#macos">macOS</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#linux">Linux</a></li>
+        <li><a href="#openbsd">OpenBSD</a></li>
+        <li><a href="#源码安装">源码安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#第2步-生成网站">第2步 生成网站</a></li>
+    <li><a href="#第3步-网站配置套用主题">第3步 网站配置(套用主题)</a></li>
+    <li><a href="#第4步-添加页面">第4步 添加页面</a></li>
+    <li><a href="#第5步-运行网站">第5步 运行网站</a></li>
+    <li><a href="#第6步-生成静态网页">第6步 生成静态网页</a></li>
+    <li><a href="#第7步-部署-github-pages">第7步 部署 Github Pages</a></li>
+    <li><a href="#第8步-日常维护">第8步 日常维护</a>
+      <ul>
+        <li><a href="#替换-hugo-版本方法">替换 Hugo 版本方法</a></li>
+        <li><a href="#hugo-版本降级方法">Hugo 版本降级方法</a></li>
+        <li><a href="#卸载-hugo-框架">卸载 Hugo 框架</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
 <style type="text/css">
-	#NavWarehouse {border-bottom: 3px solid #212121;margin-bottom: 0;color: rgba(0,0,0,.7);}
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
 </style>
 <div class="container w-1150">
 	<div class="flex">
@@ -123,47 +122,28 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<p><code>Hugo</code>是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署,本站即为 Hugo 博客框架搭建。</p>
-
+				<p><code>Hugo</code>是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署,本站即为 Hugo 博客框架搭建。</p>
 <div align="center"> 
 <img src="https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" width=300 />
 </div>
-
 <blockquote>
 <p><strong>相关站点</strong>：
-    <a href="https://gohugo.io" target="_blank">Hugo官网</a>
-    <a href="https://themes.gohugo.io" target="_blank">Hugo主题</a>
-    <a href="https://www.gohugo.org" target="_blank">Hugo中文</a>
-    <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo仓库</a></p>
+<a href="https://gohugo.io" target="_blank">Hugo官网</a>
+<a href="https://themes.gohugo.io" target="_blank">Hugo主题</a>
+<a href="https://www.gohugo.org" target="_blank">Hugo中文</a>
+<a href="https://github.com/gohugoio/hugo" target="_blank">Hugo仓库</a></p>
 </blockquote>
-
 <h2 id="第1步-安装hugo框架">第1步 安装Hugo框架</h2>
-
 <p>首先根据自己的系统参照下述方法进行安装。</p>
-
 <h3 id="macos">macOS</h3>
-
 <p>macOS操作系统下直接使用 <a href="https://brew.sh">Homebrew</a> 安装，在终端中输入如下代码：</p>
-
 <pre><code>brew install hugo
-</code></pre>
-
-<p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
-
+</code></pre><p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
 <pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
-</code></pre>
-
-<p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
-
+</code></pre><p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
 <pre><code>/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-</code></pre>
-
-<h3 id="windows">Windows</h3>
-
+</code></pre><h3 id="windows">Windows</h3>
 <p>在 <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a> 下载最新发布对应操作系统的<code>ZIP</code>，将所有内容提取到<code>C:\Hugo\bin</code>目录中，包含可执行文件<code>hugo.exe</code>、<code>LICENSE</code>和<code>README.md</code>。然后将Hugo添加到Windows的<code>PATH</code>设置中。</p>
-
 <ol>
 <li>右键单击「开始」按钮</li>
 <li>单击「系统」</li>
@@ -175,174 +155,87 @@
 <li>键入<code>C:\Hugo\bin</code>，完成输入后按「回车」</li>
 <li>在每个窗口中单击「确定」退出</li>
 </ol>
-
 <h3 id="linux">Linux</h3>
-
 <p>Linux操作系统下直接使用<a href="https://brew.sh"> Homebrew </a>安装，在终端中输入如下代码:</p>
-
 <pre><code>brew install hugo
-</code></pre>
-
-<p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
-
+</code></pre><p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
 <pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
-</code></pre>
-
-<p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
-
+</code></pre><p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
 <pre><code>/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-</code></pre>
-
-<h3 id="openbsd">OpenBSD</h3>
-
+</code></pre><h3 id="openbsd">OpenBSD</h3>
 <p>OpenBSD通过<code>pkg_add</code>添加Hugo的软件包：</p>
-
 <pre><code>doas pkg_add hugo
-</code></pre>
-
-<h3 id="源码安装">源码安装</h3>
-
+</code></pre><h3 id="源码安装">源码安装</h3>
 <p>执行源码安装前请确保安装有 <a href="https://git-scm.com/"> Git </a>、<a href="https://www.mercurial-scm.org/"> Mercurial </a>、<a href="http://golang.org/"> Go </a>。在 <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>下载对应操作系统的Hugo安装文件，执行安装。</p>
-
 <p>设置好<code>GOPATH</code>环境变量，获取源码(源码会下载到<code>GOPATH/src</code>目录)并编译。</p>
-
 <pre><code>export GOPATH=$HOME/go
 go get -v github.com/spf13/hugo
-</code></pre>
-
-<p>安装完Hugo后，在终端中输入如下代码验证安装。</p>
-
+</code></pre><p>安装完Hugo后，在终端中输入如下代码验证安装。</p>
 <pre><code>hugo version
-</code></pre>
-
-<h2 id="第2步-生成网站">第2步 生成网站</h2>
-
+</code></pre><h2 id="第2步-生成网站">第2步 生成网站</h2>
 <p>在终端中输入如下代码生成网页。代码中<code>test</code>是所创建的网站文件夹名称，由用户自定义，以下网站名均由<code>test</code>代指。</p>
-
 <pre><code>hugo new site test
-</code></pre>
-
-<h2 id="第3步-网站配置-套用主题">第3步 网站配置(套用主题)</h2>
-
+</code></pre><h2 id="第3步-网站配置套用主题">第3步 网站配置(套用主题)</h2>
 <p>进入网站根目录</p>
-
 <pre><code>cd test
-</code></pre>
-
-<p>安装<code>Git</code>（用于下载主题及安装）</p>
-
+</code></pre><p>安装<code>Git</code>（用于下载主题及安装）</p>
 <pre><code>git init
-</code></pre>
-
-<p>在主题商店中选择自己喜欢的主题，查看其<code>Github</code>仓库地址，使用如下代码克隆主题至本地。代码中网址为主题Github仓库地址，<code>XXXX</code>为主题文件夹名称。</p>
-
+</code></pre><p>在主题商店中选择自己喜欢的主题，查看其<code>Github</code>仓库地址，使用如下代码克隆主题至本地。代码中网址为主题Github仓库地址，<code>XXXX</code>为主题文件夹名称。</p>
 <p>Hugo 主题商店地址: <a href="https://themes.gohugo.io/" target="_blank">Hugo 官方主题商店</a>、<a href="https://www.gohugo.org/theme/" target="_blank">Hugo 中文主题商店</a>。</p>
-
 <pre><code>git clone https://github.com/XXXXX/XXXX themes/XXXX
-</code></pre>
-
-<p>编辑网站根目录中<code>config.toml</code>文件，添加代码<code>theme = &quot;XXXX&quot;</code>以确认所使用的主题。<code>config.toml</code>文件默认格式如下：</p>
-
+</code></pre><p>编辑网站根目录中<code>config.toml</code>文件，添加代码<code>theme = &quot;XXXX&quot;</code>以确认所使用的主题。<code>config.toml</code>文件默认格式如下：</p>
 <pre><code>baseURL = &quot;https://example.org/&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;test&quot;
 theme = &quot;XXXX&quot;
-</code></pre>
-
-<h2 id="第4步-添加页面">第4步 添加页面</h2>
-
+</code></pre><h2 id="第4步-添加页面">第4步 添加页面</h2>
 <p>添加新页面，页面内容采用 <a href="/web/markdown/">Markdown</a> 格式。</p>
-
 <pre><code>hugo new posts/my-first-post.md
-</code></pre>
-
-<p>页面默认格式如下，代码中<code>my-first-post</code>为Markdown页面文件名，<code>title: &quot;My First Post&quot;</code>所写内容才是网站显示的标题，页面格式根据主题不同略有不同，详见主题描述。</p>
-
+</code></pre><p>页面默认格式如下，代码中<code>my-first-post</code>为Markdown页面文件名，<code>title: &quot;My First Post&quot;</code>所写内容才是网站显示的标题，页面格式根据主题不同略有不同，详见主题描述。</p>
 <pre><code>---
 title: &quot;My First Post&quot;
 date: 2019-10-20T00:00:00+01:00
 draft: true
 ---
-</code></pre>
-
-<h2 id="第5步-运行网站">第5步 运行网站</h2>
-
+</code></pre><h2 id="第5步-运行网站">第5步 运行网站</h2>
 <p>完成上述操作后，可在终端中输入如下代码运行网站。浏览器访问 <a href="http://localhost:1313/">http://localhost:1313</a> 预览效果。你可在预览的同时对网站进行编辑，网页将会实时展示修改后的效果，如果出现刷新问题可通过<code>Ctrl+R</code>进行强制刷新。</p>
-
 <pre><code>hugo server -D
-</code></pre>
-
-<h2 id="第6步-生成静态网页">第6步 生成静态网页</h2>
-
+</code></pre><h2 id="第6步-生成静态网页">第6步 生成静态网页</h2>
 <p>在终端中输入如下代码生成静态网页。这个命令并不会生成草稿页面，需要生成的页面请去掉页面头部的<code>draft: true</code>。</p>
-
 <p>默认情况下生成的文件会输出到<code>test/public/</code>目录下，你可将改文件夹部署到服务器以实现远程访问，也可使用本文第7步所说的方法。</p>
-
 <pre><code>hugo
-</code></pre>
-
-<h2 id="第7步-部署-github-pages">第7步 部署 Github Pages</h2>
-
+</code></pre><h2 id="第7步-部署-github-pages">第7步 部署 Github Pages</h2>
 <p>执行此操作前请确保拥有Github账号，并创建一个以<code>XXX.github.io</code>命名的空仓库，其中<code>XXX</code>为你的Github用户名。在终端中输入如下代码生成最终页面。</p>
-
 <pre><code>hugo --theme=XXXX --baseUrl=&quot;http://XXX.github.io/&quot;
-</code></pre>
-
-<p>在终端中输入下列代码将最终页面部署到 Github Pages。</p>
-
+</code></pre><p>在终端中输入下列代码将最终页面部署到 Github Pages。</p>
 <pre><code>cd public
 git init
 git remote add origin https://github.com/XXX/XXX.github.io.git
 git add -A
 git commit -m &quot;first commit&quot;
 git push -u origin master
-</code></pre>
-
-<p>浏览器输入<code>http://XXX.github.io</code>实现远程访问。除本文使用的 Github Pages 外，你还可以使用 Coding 和 Gitee 等。</p>
-
+</code></pre><p>浏览器输入<code>http://XXX.github.io</code>实现远程访问。除本文使用的 Github Pages 外，你还可以使用 Coding 和 Gitee 等。</p>
 <h2 id="第8步-日常维护">第8步 日常维护</h2>
-
 <blockquote>
 <p>本文介绍部分操作仅限于 macOS 系统环境。</p>
 </blockquote>
-
 <h3 id="替换-hugo-版本方法">替换 Hugo 版本方法</h3>
-
 <p>打开页面 <a  href="https://github.com/gohugoio/hugo/releases" target="_blank"> <em>github.com/gohugoio/hugo/releases</em></a> ，下载 hugo 框架安装文件。比如说你需要安装 Hugo v.0.56.0  版本，那么翻到对应版本号下的 <code>Assets</code> 列表，下载其中对应操作系统的 <code>hugo_0.56.0_macOS-64bit.tar.gz</code>  安装包。</p>
-
 <p>默认下载到 Download 文件夹，解压。会得到三个文件 <code>hugo</code> 、<code>LICENSE.md</code>、 <code>README.md</code>。</p>
-
 <p>使用访达 <code>Go</code> 功能输入并进入如下路径：</p>
-
 <pre><code>/usr/local/bin/hugo
-</code></pre>
-
-<p>如果设备未安装过 hugo 框架，则进入 <code>/usr/local/</code>路径，并在 local 文件夹中新建 bin 文件夹，在 bin 文件夹中新建 hugo 文件夹。</p>
-
+</code></pre><p>如果设备未安装过 hugo 框架，则进入 <code>/usr/local/</code>路径，并在 local 文件夹中新建 bin 文件夹，在 bin 文件夹中新建 hugo 文件夹。</p>
 <p>将解压获得的 hugo 文件移入新建 hugo 文件夹中，如果安装过则替换原有文件即可覆盖安装。</p>
-
 <h3 id="hugo-版本降级方法">Hugo 版本降级方法</h3>
-
 <p>从  <a href="https://github.com/Homebrew/homebrew-core/tree/master/Formula">Homebrew 官方仓库</a> 找到所需要 hugo 版本对应的链接。</p>
-
-<pre><code class="language-sh">https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
-</code></pre>
-
-<p>假如你要降级到 <code>hugo v.057.0</code>，通过查找得到相应地址，然后打开终端，输入如下代码：</p>
-
-<pre><code class="language-sh">brew unlink hugo
-</code></pre>
-
-<pre><code class="language-sh">brew install https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
-</code></pre>
-
-<h3 id="卸载-hugo-框架">卸载 Hugo 框架</h3>
-
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
+</code></pre></div><p>假如你要降级到 <code>hugo v.057.0</code>，通过查找得到相应地址，然后打开终端，输入如下代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">brew unlink hugo
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">brew install https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
+</code></pre></div><h3 id="卸载-hugo-框架">卸载 Hugo 框架</h3>
 <p>打开终端并输入如下命令即可卸载 hugo 框架。</p>
-
-<pre><code class="language-sh">brew uninstall hugo --force
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">brew uninstall hugo --force
+</code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
 		
@@ -360,33 +253,32 @@ git push -u origin master
 </div>
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
   <div class="vd-l-a">
-    <div class="vd-l-title">Contents</div>
+    <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#第1步-安装hugo框架">第1步 安装Hugo框架</a>
-<ul>
-<li><a href="#macos">macOS</a></li>
-<li><a href="#windows">Windows</a></li>
-<li><a href="#linux">Linux</a></li>
-<li><a href="#openbsd">OpenBSD</a></li>
-<li><a href="#源码安装">源码安装</a></li>
-</ul></li>
-<li><a href="#第2步-生成网站">第2步 生成网站</a></li>
-<li><a href="#第3步-网站配置-套用主题">第3步 网站配置(套用主题)</a></li>
-<li><a href="#第4步-添加页面">第4步 添加页面</a></li>
-<li><a href="#第5步-运行网站">第5步 运行网站</a></li>
-<li><a href="#第6步-生成静态网页">第6步 生成静态网页</a></li>
-<li><a href="#第7步-部署-github-pages">第7步 部署 Github Pages</a></li>
-<li><a href="#第8步-日常维护">第8步 日常维护</a>
-<ul>
-<li><a href="#替换-hugo-版本方法">替换 Hugo 版本方法</a></li>
-<li><a href="#hugo-版本降级方法">Hugo 版本降级方法</a></li>
-<li><a href="#卸载-hugo-框架">卸载 Hugo 框架</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#第1步-安装hugo框架">第1步 安装Hugo框架</a>
+      <ul>
+        <li><a href="#macos">macOS</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#linux">Linux</a></li>
+        <li><a href="#openbsd">OpenBSD</a></li>
+        <li><a href="#源码安装">源码安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#第2步-生成网站">第2步 生成网站</a></li>
+    <li><a href="#第3步-网站配置套用主题">第3步 网站配置(套用主题)</a></li>
+    <li><a href="#第4步-添加页面">第4步 添加页面</a></li>
+    <li><a href="#第5步-运行网站">第5步 运行网站</a></li>
+    <li><a href="#第6步-生成静态网页">第6步 生成静态网页</a></li>
+    <li><a href="#第7步-部署-github-pages">第7步 部署 Github Pages</a></li>
+    <li><a href="#第8步-日常维护">第8步 日常维护</a>
+      <ul>
+        <li><a href="#替换-hugo-版本方法">替换 Hugo 版本方法</a></li>
+        <li><a href="#hugo-版本降级方法">Hugo 版本降级方法</a></li>
+        <li><a href="#卸载-hugo-框架">卸载 Hugo 框架</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -396,7 +288,7 @@ git push -u origin master
 
 	</div>
 </div>
-  <div class="footer bg-b">
+  <div class="footer">
   	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
   </div>
   

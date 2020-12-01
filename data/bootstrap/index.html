@@ -28,11 +28,11 @@
 
   <body>
     <div class="header-line"></div>
-    <div class="mobile-header vd-glass">
+    <div class="mobile-header bg-w">
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
     </div>
-    <header class="header vd-glass">
+    <header class="header vd-glass-w">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
@@ -49,7 +49,7 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
 
-  <div class="mobile-nav-title">导航</div>
+  <div class="mobile-nav-title">导 航</div>
   <div class="mobile-nav">
   <a class="mobile-nav-button" href="/">主页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
@@ -57,23 +57,20 @@
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
 
-  <div class="mobile-nav-title">目录</div> 
+  <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#加载框架">加载框架</a></li>
-<li><a href="#容器">容器</a></li>
-<li><a href="#响应式断点">响应式断点</a></li>
-<li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
-<li><a href="#参考资料">参考资料</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#加载框架">加载框架</a></li>
+    <li><a href="#容器">容器</a></li>
+    <li><a href="#响应式断点">响应式断点</a></li>
+    <li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
 </nav>
   </div>
 </div>
 <style type="text/css">
-	#NavWarehouse {border-bottom: 3px solid #212121;margin-bottom: 0;color: rgba(0,0,0,.7);}
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
 </style>
 <div class="container w-1150">
 	<div class="flex">
@@ -106,107 +103,77 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。</p>
-
+				<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。</p>
 <p>Bootstrap 是一套流行的前端框架，轻松构建对移动设备很友好的响应式网站。内置了大量常用界面设计组件，大大简化了建站的过程。</p>
-
 <blockquote>
 <p><strong>相关站点：</strong><a class="eyecus-more-btn" href="https://getbootstrap.com/">框架官网</a>
-  <a class="eyecus-more-btn" href="http://bs4.ntp.org.cn/">框架中文</a>
-  <a class="eyecus-more-btn" href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html">菜鸟教程</a>
-  <a class="eyecus-more-btn" href="https://github.com/topics/bootstrap">框架仓库</a></p>
+<a class="eyecus-more-btn" href="http://bs4.ntp.org.cn/">框架中文</a>
+<a class="eyecus-more-btn" href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html">菜鸟教程</a>
+<a class="eyecus-more-btn" href="https://github.com/topics/bootstrap">框架仓库</a></p>
 </blockquote>
-
 <h2 id="加载框架">加载框架</h2>
-
 <p><strong>CSS</strong> 复制如下代码到<code>HTML</code>的<code>&lt;head&gt;</code>标签。</p>
-
-<pre><code class="language-css">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&quot; crossorigin=&quot;anonymous&quot;&gt;
-</code></pre>
-
-<p><strong>JS</strong> 复制如下代码到<code>HTML</code>的<code>&lt;/body&gt;</code>标签之前。</p>
-
-<pre><code class="language-html">&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&quot; integrity=&quot;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<p><strong>简单 Bootstrap 实例</strong></p>
-
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&quot; crossorigin=&quot;anonymous&quot;&gt;
-  &lt;title&gt;XXXX&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;XXXX&lt;/h1&gt;
-  &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot; integrity=&quot;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<h2 id="容器">容器</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34;</span> <span class="nt">integrity</span><span class="o">=</span><span class="s2">&#34;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&#34;</span> <span class="nt">crossorigin</span><span class="o">=</span><span class="s2">&#34;anonymous&#34;</span><span class="o">&gt;</span>
+</code></pre></div><p><strong>JS</strong> 复制如下代码到<code>HTML</code>的<code>&lt;/body&gt;</code>标签之前。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><p><strong>简单 Bootstrap 实例</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>XXXX<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>XXXX<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><h2 id="容器">容器</h2>
 <p>容器是<code>Bootstrap</code>中最基本的布局基础。会自动根据屏幕大小来选择合适的宽度。</p>
-
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
   XXXX
-&lt;/div&gt;
-</code></pre>
-
-<table>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><table>
 <thead>
 <tr>
-<th align="left">标签</th>
-<th align="left">名称</th>
-<th align="left">描述</th>
+<th style="text-align:left">标签</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="left">container</td>
-<td align="left">容器</td>
-<td align="left">自动根据屏幕大小来选择合适的宽度</td>
+<td style="text-align:left">container</td>
+<td style="text-align:left">容器</td>
+<td style="text-align:left">自动根据屏幕大小来选择合适的宽度</td>
 </tr>
-
 <tr>
-<td align="left">container-fluid</td>
-<td align="left">全宽容器</td>
-<td align="left">跨越 viewport 的整个宽度</td>
+<td style="text-align:left">container-fluid</td>
+<td style="text-align:left">全宽容器</td>
+<td style="text-align:left">跨越 viewport 的整个宽度</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="响应式断点">响应式断点</h2>
-
 <p>响应式断点指使用少量媒体查询为布局和界面创建合理的断点，以此动态调节显示界面尺寸。</p>
-
 <blockquote>
 <p>下述代码中具体尺寸更具需要进行更改。</p>
 </blockquote>
-
-<pre><code class="language-css">@media (min-width: 576px) and (max-width: 767.98px) {  }
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-</code></pre>
-
-<h2 id="层叠覆盖关系">层叠覆盖关系</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">576px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">991</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1199</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>  <span class="p">}</span>
+</code></pre></div><h2 id="层叠覆盖关系">层叠覆盖关系</h2>
 <p><code>Z-index</code>值用于正确地分层，确然各个元素的层叠覆盖关系。
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">XXXX</span> <span class="p">{</span>
   <span class="k">z-index</span><span class="p">:</span> <span class="n">X</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div></p>
-
 <h2 id="参考资料">参考资料</h2>
-
 <ol>
 <li><code>维基百科 https://zh.wikipedia.org/</code></li>
 </ol>
@@ -228,18 +195,15 @@
 </div>
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
   <div class="vd-l-a">
-    <div class="vd-l-title">Contents</div>
+    <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#加载框架">加载框架</a></li>
-<li><a href="#容器">容器</a></li>
-<li><a href="#响应式断点">响应式断点</a></li>
-<li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
-<li><a href="#参考资料">参考资料</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#加载框架">加载框架</a></li>
+    <li><a href="#容器">容器</a></li>
+    <li><a href="#响应式断点">响应式断点</a></li>
+    <li><a href="#层叠覆盖关系">层叠覆盖关系</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -249,7 +213,7 @@
 
 	</div>
 </div>
-  <div class="footer bg-b">
+  <div class="footer">
   	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
   </div>
   
