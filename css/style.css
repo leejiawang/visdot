@@ -241,7 +241,8 @@ th {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);}
 
-.vd-glass-w {backdrop-filter: saturate(180%) blur(20px);background-color: rgba(255,255,255,0.72);}
+.vd-glass-w {backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);background-color: rgba(255,255,255,0.72);}
 
 .vd-b {border-radius: 4px; border: 1px solid #E6E6E6;}
 
