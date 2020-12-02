@@ -53,11 +53,14 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#容量单位">容量单位</a></li>
-    <li><a href="#码率单位">码率单位</a></li>
-    <li><a href="#单位转换工具">单位转换工具</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#容量单位">容量单位</a></li>
+<li><a href="#码率单位">码率单位</a></li>
+<li><a href="#单位转换工具">单位转换工具</a></li>
+</ul></li>
+</ul>
 </nav>
   </div>
 </div>
@@ -91,290 +94,340 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。</p>
+				
+
+<p>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。</p>
+
 <h2 id="容量单位">容量单位</h2>
+
 <p>要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表<strong>字节</strong>(byte)，小写 b 代表<strong>比特</strong>(bit)，1 字节等于 8 比特，即 <code>1B=8b</code>。</p>
+
 <p>其次还需搞懂 k 与 Ki 的区别，小写 k 表示千（1000）、Ki 则表示二进制当中的千（1024）。</p>
+
 <blockquote>
 <p><strong>提示</strong></br>实际使用过程中，一些场景明明是二进制转换却没用 Ki 表示，使人在阅读时产生混淆，故具体转换关系为 1000 还是 1024 需要视实际情况而定。</p>
 </blockquote>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">单位</th>
-<th style="text-align:left">中文名</th>
-<th style="text-align:left">换算关系</th>
+<th align="left">单位</th>
+<th align="left">中文名</th>
+<th align="left">换算关系</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>b</code></td>
-<td style="text-align:left">比特</td>
-<td style="text-align:left">0.125B = 1b</td>
+<td align="left"><code>b</code></td>
+<td align="left">比特</td>
+<td align="left">0.125B = 1b</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Kb</code></td>
-<td style="text-align:left">千比特</td>
-<td style="text-align:left">1000b = 1Kb</td>
+<td align="left"><code>Kb</code></td>
+<td align="left">千比特</td>
+<td align="left">1000b = 1Kb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Mb</code></td>
-<td style="text-align:left">兆比特</td>
-<td style="text-align:left">1000Kb = 1Mb</td>
+<td align="left"><code>Mb</code></td>
+<td align="left">兆比特</td>
+<td align="left">1000Kb = 1Mb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Gb</code></td>
-<td style="text-align:left">吉比特</td>
-<td style="text-align:left">1000Mb = 1Gb</td>
+<td align="left"><code>Gb</code></td>
+<td align="left">吉比特</td>
+<td align="left">1000Mb = 1Gb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Tb</code></td>
-<td style="text-align:left">太比特</td>
-<td style="text-align:left">1000Gb = 1Tb</td>
+<td align="left"><code>Tb</code></td>
+<td align="left">太比特</td>
+<td align="left">1000Gb = 1Tb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>B</code></td>
-<td style="text-align:left">字节</td>
-<td style="text-align:left">8b = 1B</td>
+<td align="left"><code>B</code></td>
+<td align="left">字节</td>
+<td align="left">8b = 1B</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>KB</code></td>
-<td style="text-align:left">千字节</td>
-<td style="text-align:left">1000B = 1KB</td>
+<td align="left"><code>KB</code></td>
+<td align="left">千字节</td>
+<td align="left">1000B = 1KB</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>MB</code></td>
-<td style="text-align:left">兆字节</td>
-<td style="text-align:left">1000KB = 1Mb</td>
+<td align="left"><code>MB</code></td>
+<td align="left">兆字节</td>
+<td align="left">1000KB = 1Mb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>GB</code></td>
-<td style="text-align:left">吉字节</td>
-<td style="text-align:left">1000Mb = 1Gb</td>
+<td align="left"><code>GB</code></td>
+<td align="left">吉字节</td>
+<td align="left">1000Mb = 1Gb</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>TB</code></td>
-<td style="text-align:left">太字节</td>
-<td style="text-align:left">1000Gb = 1TB</td>
+<td align="left"><code>TB</code></td>
+<td align="left">太字节</td>
+<td align="left">1000Gb = 1TB</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Kib</code></td>
-<td style="text-align:left">二进制千比特</td>
-<td style="text-align:left">1024 b = 1Kib</td>
+<td align="left"><code>Kib</code></td>
+<td align="left">二进制千比特</td>
+<td align="left">1024 b = 1Kib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Mib</code></td>
-<td style="text-align:left">二进制兆比特</td>
-<td style="text-align:left">1024 Kib = 1Mib</td>
+<td align="left"><code>Mib</code></td>
+<td align="left">二进制兆比特</td>
+<td align="left">1024 Kib = 1Mib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Gib</code></td>
-<td style="text-align:left">二进制吉比特</td>
-<td style="text-align:left">1024 Mib = 1Gib</td>
+<td align="left"><code>Gib</code></td>
+<td align="left">二进制吉比特</td>
+<td align="left">1024 Mib = 1Gib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Tib</code></td>
-<td style="text-align:left">二进制太比特</td>
-<td style="text-align:left">1024 Gib = 1Tib</td>
+<td align="left"><code>Tib</code></td>
+<td align="left">二进制太比特</td>
+<td align="left">1024 Gib = 1Tib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>KiB</code></td>
-<td style="text-align:left">二进制千字节</td>
-<td style="text-align:left">1024 B = 1KiB</td>
+<td align="left"><code>KiB</code></td>
+<td align="left">二进制千字节</td>
+<td align="left">1024 B = 1KiB</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>MiB</code></td>
-<td style="text-align:left">二进制兆字节</td>
-<td style="text-align:left">1024 KiB = 1Mib</td>
+<td align="left"><code>MiB</code></td>
+<td align="left">二进制兆字节</td>
+<td align="left">1024 KiB = 1Mib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>GiB</code></td>
-<td style="text-align:left">二进制吉字节</td>
-<td style="text-align:left">1024 Mib = 1Gib</td>
+<td align="left"><code>GiB</code></td>
+<td align="left">二进制吉字节</td>
+<td align="left">1024 Mib = 1Gib</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>TiB</code></td>
-<td style="text-align:left">二进制太字节</td>
-<td style="text-align:left">1024 Gib = 1TiB</td>
+<td align="left"><code>TiB</code></td>
+<td align="left">二进制太字节</td>
+<td align="left">1024 Gib = 1TiB</td>
 </tr>
 </tbody>
 </table>
+
 <h2 id="码率单位">码率单位</h2>
+
 <p><strong>码率</strong>（数据传输速率）指在一个数据传送系统中，单位时间内通过设备比特、字符、块等的平均量。通常使用 B/s 或 b/s 两种复合式单位。 摘自<a href="https://zh.wikipedia.org/wiki/%E7%A0%81%E7%8E%87%E5%8D%95%E4%BD%8D">维基百科</a>。</p>
+
 <p>码率单位最常出现在传输速度上，比如网速、硬盘拷贝速度等。</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">单位</th>
-<th style="text-align:left">中文名</th>
-<th style="text-align:left">换算关系</th>
+<th align="left">单位</th>
+<th align="left">中文名</th>
+<th align="left">换算关系</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>b/s</code></td>
-<td style="text-align:left">比特每秒</td>
-<td style="text-align:left">0.125B/s = 1b/s</td>
+<td align="left"><code>b/s</code></td>
+<td align="left">比特每秒</td>
+<td align="left">0.125B/s = 1b/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Kb/s</code> <code>Kbps</code></td>
-<td style="text-align:left">千比特每秒</td>
-<td style="text-align:left">1000b/s = 1Kb/s</td>
+<td align="left"><code>Kb/s</code> <code>Kbps</code></td>
+<td align="left">千比特每秒</td>
+<td align="left">1000b/s = 1Kb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Mb/s</code> <code>Mbps</code></td>
-<td style="text-align:left">兆比特每秒</td>
-<td style="text-align:left">1000Kb/s = 1Mb/s</td>
+<td align="left"><code>Mb/s</code> <code>Mbps</code></td>
+<td align="left">兆比特每秒</td>
+<td align="left">1000Kb/s = 1Mb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Gb/s</code> <code>Gbps</code></td>
-<td style="text-align:left">吉比特每秒</td>
-<td style="text-align:left">1000Mb/s = 1Gb/s</td>
+<td align="left"><code>Gb/s</code> <code>Gbps</code></td>
+<td align="left">吉比特每秒</td>
+<td align="left">1000Mb/s = 1Gb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Tb/s</code> <code>Tbps</code></td>
-<td style="text-align:left">太比特每秒</td>
-<td style="text-align:left">1000Gb/s = 1Tb/s</td>
+<td align="left"><code>Tb/s</code> <code>Tbps</code></td>
+<td align="left">太比特每秒</td>
+<td align="left">1000Gb/s = 1Tb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>B/s</code></td>
-<td style="text-align:left">字节每秒</td>
-<td style="text-align:left">8b/s = 1B/s</td>
+<td align="left"><code>B/s</code></td>
+<td align="left">字节每秒</td>
+<td align="left">8b/s = 1B/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>KB/s</code></td>
-<td style="text-align:left">千字节每秒</td>
-<td style="text-align:left">1000B/s = 1KB/s</td>
+<td align="left"><code>KB/s</code></td>
+<td align="left">千字节每秒</td>
+<td align="left">1000B/s = 1KB/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>MB/s</code></td>
-<td style="text-align:left">兆字节每秒</td>
-<td style="text-align:left">1000KB/s = 1Mb/s</td>
+<td align="left"><code>MB/s</code></td>
+<td align="left">兆字节每秒</td>
+<td align="left">1000KB/s = 1Mb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>GB/s</code></td>
-<td style="text-align:left">吉字节每秒</td>
-<td style="text-align:left">1000Mb/s = 1Gb/s</td>
+<td align="left"><code>GB/s</code></td>
+<td align="left">吉字节每秒</td>
+<td align="left">1000Mb/s = 1Gb/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>TB/s</code></td>
-<td style="text-align:left">太字节每秒</td>
-<td style="text-align:left">1000Gb/s = 1TB/s</td>
+<td align="left"><code>TB/s</code></td>
+<td align="left">太字节每秒</td>
+<td align="left">1000Gb/s = 1TB/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Kib/s</code> <code>Kibps</code></td>
-<td style="text-align:left">二进制千比特每秒</td>
-<td style="text-align:left">1024 b/s = 1 Kib/s</td>
+<td align="left"><code>Kib/s</code> <code>Kibps</code></td>
+<td align="left">二进制千比特每秒</td>
+<td align="left">1024 b/s = 1 Kib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Mib/s</code> <code>Mibps</code></td>
-<td style="text-align:left">二进制兆比特每秒</td>
-<td style="text-align:left">1024 Kib/s = 1 Mib/s</td>
+<td align="left"><code>Mib/s</code> <code>Mibps</code></td>
+<td align="left">二进制兆比特每秒</td>
+<td align="left">1024 Kib/s = 1 Mib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Gib/s</code> <code>Gibps</code></td>
-<td style="text-align:left">二进制吉比特每秒</td>
-<td style="text-align:left">1024 Mib/s = 1 Gib/s</td>
+<td align="left"><code>Gib/s</code> <code>Gibps</code></td>
+<td align="left">二进制吉比特每秒</td>
+<td align="left">1024 Mib/s = 1 Gib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>Tib/s</code> <code>Tibps</code></td>
-<td style="text-align:left">二进制太比特每秒</td>
-<td style="text-align:left">1024 Gib/s = 1 Tib/s</td>
+<td align="left"><code>Tib/s</code> <code>Tibps</code></td>
+<td align="left">二进制太比特每秒</td>
+<td align="left">1024 Gib/s = 1 Tib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>KiB/s</code></td>
-<td style="text-align:left">二进制千字节每秒</td>
-<td style="text-align:left">1024 B/s = 1 KiB/s</td>
+<td align="left"><code>KiB/s</code></td>
+<td align="left">二进制千字节每秒</td>
+<td align="left">1024 B/s = 1 KiB/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>MiB/s</code></td>
-<td style="text-align:left">二进制兆字节每秒</td>
-<td style="text-align:left">1024 KiB/s = 1 Mib/s</td>
+<td align="left"><code>MiB/s</code></td>
+<td align="left">二进制兆字节每秒</td>
+<td align="left">1024 KiB/s = 1 Mib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>GiB/s</code></td>
-<td style="text-align:left">二进制吉字节每秒</td>
-<td style="text-align:left">1024 Mib/s = 1 Gib/s</td>
+<td align="left"><code>GiB/s</code></td>
+<td align="left">二进制吉字节每秒</td>
+<td align="left">1024 Mib/s = 1 Gib/s</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>TiB/s</code></td>
-<td style="text-align:left">二进制太字节每秒</td>
-<td style="text-align:left">1024 Gib/s = 1 TiB/s</td>
+<td align="left"><code>TiB/s</code></td>
+<td align="left">二进制太字节每秒</td>
+<td align="left">1024 Gib/s = 1 TiB/s</td>
 </tr>
 </tbody>
 </table>
+
 <h2 id="单位转换工具">单位转换工具</h2>
-</br>
+
+<p></br>
 <script language="JavaScript">
 <!--
 function Compute()
 {
 var y = "Z";
 if (document.frmBW.frmTxtbit.value != 0){
-	y = "bit";
+    y = "bit";
 } 
 if (document.frmBW.frmTxtkilobit.value != 0){
-	y = "kilobit";
+    y = "kilobit";
 } 
 if (document.frmBW.frmTxtmegabit.value != 0){
-	y = "megabit";
+    y = "megabit";
 } 
 if (document.frmBW.frmTxtbyte.value != 0){
-	y = "Byte";
+    y = "Byte";
 }
 if (document.frmBW.frmTxtKilobyte.value != 0){
-	y = "KiloByte";
+    y = "KiloByte";
 }
 if (document.frmBW.frmTxtMegabyte.value != 0){
-	y = "MegaByte";
+    y = "MegaByte";
 }
 switch (y) {
-		case "bit" :
-			document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;			
-			document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
-			document.frmBW.frmTxtbyte.value = (document.frmBW.frmTxtkilobit.value / 8) * 1024;
-			document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
-			document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
-			break;
-		case "kilobit" :
-			document.frmBW.frmTxtbit.value = document.frmBW.frmTxtkilobit.value * 1024;
-			document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
-			document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtbit.value / 8;
-			document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
-			document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
-			break;
-		case "megabit" :
-			document.frmBW.frmTxtbit.value = document.frmBW.frmTxtmegabit.value * 1048576;
-			document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
-			document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtbit.value / 8;
-			document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
-  			document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value  / 1024;
-			break;
-		case "Byte" :
-			document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
-			document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
-			document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtbit.value / 1048576;
-			document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtbyte.value / 1024;
-			document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
-			break;
-		case "KiloByte" :
-			document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtKilobyte.value * 1024;
-			document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
-			document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
-			document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtbit.value / 1048576;
-			document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
-			break;
-		case "MegaByte" :
-			document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtMegabyte.value * 1048576;
-			document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
-			document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
-			document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
-			document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtMegabyte.value * 1024;
-			break;
-	}
+        case "bit" :
+            document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;         
+            document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
+            document.frmBW.frmTxtbyte.value = (document.frmBW.frmTxtkilobit.value / 8) * 1024;
+            document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
+            document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
+            break;
+        case "kilobit" :
+            document.frmBW.frmTxtbit.value = document.frmBW.frmTxtkilobit.value * 1024;
+            document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
+            document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtbit.value / 8;
+            document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
+            document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
+            break;
+        case "megabit" :
+            document.frmBW.frmTxtbit.value = document.frmBW.frmTxtmegabit.value * 1048576;
+            document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
+            document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtbit.value / 8;
+            document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtkilobit.value / 8;
+            document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value  / 1024;
+            break;
+        case "Byte" :
+            document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
+            document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
+            document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtbit.value / 1048576;
+            document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtbyte.value / 1024;
+            document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
+            break;
+        case "KiloByte" :
+            document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtKilobyte.value * 1024;
+            document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
+            document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
+            document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtbit.value / 1048576;
+            document.frmBW.frmTxtMegabyte.value = document.frmBW.frmTxtKilobyte.value / 1024;
+            break;
+        case "MegaByte" :
+            document.frmBW.frmTxtbyte.value = document.frmBW.frmTxtMegabyte.value * 1048576;
+            document.frmBW.frmTxtbit.value = document.frmBW.frmTxtbyte.value * 8;
+            document.frmBW.frmTxtkilobit.value = document.frmBW.frmTxtbit.value / 1024;
+            document.frmBW.frmTxtmegabit.value = document.frmBW.frmTxtkilobit.value / 1024;
+            document.frmBW.frmTxtKilobyte.value = document.frmBW.frmTxtMegabyte.value * 1024;
+            break;
+    }
 }
 // -->
-</script>
+</script></p>
+
 <form name="frmBW">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bit (b):&nbsp;&nbsp;<input class="input" value="0" name="frmTxtbit">
 </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Byte(B):&nbsp;&nbsp;<input class="input" value="0" name="frmTxtbyte">
@@ -385,7 +438,9 @@ switch (y) {
 </br><hr><input class="button" onclick="Compute()" type="button" value="计算" style="margin-left:100px">
 <input class="button" type="reset" value="刷新">
 </form>
-</br>
+
+<p></br></p>
+
 <form name="form_speed">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 bps:&nbsp;<input class="input" value="0" name="frmTxtbit">
@@ -402,6 +457,7 @@ MB/s:&nbsp;<input class="input" value="0" name="frmTxtMegabyte">
 <hr><input class="button" onclick="Compute_speed()" type="button" value="计算" style="margin-left:100px"> 
 <input class="button" type="reset" value="刷新"> 
 </form>
+
 <script language="JavaScript">
 var sizenum = 12;
 kps = new Array(sizenum);
@@ -457,73 +513,74 @@ function go(x) {
         location = x;
 }
 </script>
+
 <script language="JavaScript">
 <!--
 function Compute_speed()
 {
 var y = "Z";
 if (document.form_speed.frmTxtbit.value != 0){
-	y = "bit";
+    y = "bit";
 } 
 if (document.form_speed.frmTxtkilobit.value != 0){
-	y = "kilobit";
+    y = "kilobit";
 } 
 if (document.form_speed.frmTxtmegabit.value != 0){
-	y = "megabit";
+    y = "megabit";
 } 
 if (document.form_speed.frmTxtbyte.value != 0){
-	y = "Byte";
+    y = "Byte";
 }
 if (document.form_speed.frmTxtKilobyte.value != 0){
-	y = "KiloByte";
+    y = "KiloByte";
 }
 if (document.form_speed.frmTxtMegabyte.value != 0){
-	y = "MegaByte";
+    y = "MegaByte";
 }
-	switch (y) {
-		case "bit" :
-			document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;			
-			document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
-			document.form_speed.frmTxtbyte.value = (document.form_speed.frmTxtkilobit.value / 8) * 1024;
-			document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
-			document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
-			break;
-		case "kilobit" :
-			document.form_speed.frmTxtbit.value = document.form_speed.frmTxtkilobit.value * 1024;
-			document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
-			document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtbit.value / 8;
-			document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
-			document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
-			break;
-		case "megabit" :
-			document.form_speed.frmTxtbit.value = document.form_speed.frmTxtmegabit.value * 1048576;
-			document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
-			document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtbit.value / 8;
-			document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
-  			document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value  / 1024;
-			break;
-		case "Byte" :
-			document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
-			document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
-			document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtbit.value / 1048576;
-			document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtbyte.value / 1024;
-			document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
-			break;
-		case "KiloByte" :
-			document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtKilobyte.value * 1024;
-			document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
-			document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
-			document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtbit.value / 1048576;
-			document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
-			break;
-		case "MegaByte" :
-			document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtMegabyte.value * 1048576;
-			document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
-			document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
-			document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
-			document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtMegabyte.value * 1024;
-			break;
-	}
+    switch (y) {
+        case "bit" :
+            document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;           
+            document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
+            document.form_speed.frmTxtbyte.value = (document.form_speed.frmTxtkilobit.value / 8) * 1024;
+            document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
+            document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
+            break;
+        case "kilobit" :
+            document.form_speed.frmTxtbit.value = document.form_speed.frmTxtkilobit.value * 1024;
+            document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
+            document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtbit.value / 8;
+            document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
+            document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
+            break;
+        case "megabit" :
+            document.form_speed.frmTxtbit.value = document.form_speed.frmTxtmegabit.value * 1048576;
+            document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
+            document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtbit.value / 8;
+            document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtkilobit.value / 8;
+            document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value  / 1024;
+            break;
+        case "Byte" :
+            document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
+            document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
+            document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtbit.value / 1048576;
+            document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtbyte.value / 1024;
+            document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
+            break;
+        case "KiloByte" :
+            document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtKilobyte.value * 1024;
+            document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
+            document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
+            document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtbit.value / 1048576;
+            document.form_speed.frmTxtMegabyte.value = document.form_speed.frmTxtKilobyte.value / 1024;
+            break;
+        case "MegaByte" :
+            document.form_speed.frmTxtbyte.value = document.form_speed.frmTxtMegabyte.value * 1048576;
+            document.form_speed.frmTxtbit.value = document.form_speed.frmTxtbyte.value * 8;
+            document.form_speed.frmTxtkilobit.value = document.form_speed.frmTxtbit.value / 1024;
+            document.form_speed.frmTxtmegabit.value = document.form_speed.frmTxtkilobit.value / 1024;
+            document.form_speed.frmTxtKilobyte.value = document.form_speed.frmTxtMegabyte.value * 1024;
+            break;
+    }
 }
 </script>
 
@@ -546,11 +603,14 @@ if (document.form_speed.frmTxtMegabyte.value != 0){
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-  <ul>
-    <li><a href="#容量单位">容量单位</a></li>
-    <li><a href="#码率单位">码率单位</a></li>
-    <li><a href="#单位转换工具">单位转换工具</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#容量单位">容量单位</a></li>
+<li><a href="#码率单位">码率单位</a></li>
+<li><a href="#单位转换工具">单位转换工具</a></li>
+</ul></li>
+</ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>

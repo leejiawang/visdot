@@ -53,12 +53,15 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#下载安装-highlightjs">下载安装 <code>highlight.js</code></a></li>
-    <li><a href="#在线-cdn-资源安装">在线 cdn 资源安装</a></li>
-    <li><a href="#使用方法">使用方法</a></li>
-    <li><a href="#hugo-自带代码高亮">Hugo 自带代码高亮</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#下载安装-highlight-js">下载安装 <code>highlight.js</code></a></li>
+<li><a href="#在线-cdn-资源安装">在线 cdn 资源安装</a></li>
+<li><a href="#使用方法">使用方法</a></li>
+<li><a href="#hugo-自带代码高亮">Hugo 自带代码高亮</a></li>
+</ul></li>
+</ul>
 </nav>
   </div>
 </div>
@@ -97,48 +100,75 @@
 
 
 				
-				<div class="post-date">Published on 20190905, have 437 Words.
+				<div class="post-date">Published on 20190905, have 414 Words.
 				</div>
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。</p>
-<h2 id="下载安装-highlightjs">下载安装 <code>highlight.js</code></h2>
-<p>从<a href="https://highlightjs.org/download/">官网</a>选择需要的语言后下载文件。解压压缩包，在页面中引入自己选择风格对应的「CSS 文件」和<code>highlight.pack.js</code>。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- head --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/highlight.css&#34;</span><span class="p">/&gt;</span>
+				
 
-<span class="c">&lt;!-- body --&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/highlight.pack.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div><blockquote>
+<p>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。</p>
+
+<h2 id="下载安装-highlight-js">下载安装 <code>highlight.js</code></h2>
+
+<p>从<a href="https://highlightjs.org/download/">官网</a>选择需要的语言后下载文件。解压压缩包，在页面中引入自己选择风格对应的「CSS 文件」和<code>highlight.pack.js</code>。</p>
+
+<pre><code class="language-html">&lt;!-- head --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/highlight.css&quot;/&gt;
+
+&lt;!-- body --&gt;
+&lt;script src=&quot;/js/highlight.pack.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<blockquote>
 <p>文件引入路径根据项目不同进行相应改动。</p>
 </blockquote>
+
 <h2 id="在线-cdn-资源安装">在线 cdn 资源安装</h2>
+
 <p>除了下载引用外，还可直接调取官方提供的在线 CDN 资源。</p>
+
 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css&quot;&gt;
 &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js&quot;&gt;&lt;/script&gt;
-</code></pre><figcaption> CDN 托管的 highlight.min.js 只包含常见语言，需要定制或完整语言版本可使用下载安装。</figcaption>
+</code></pre>
+
+<figcaption> CDN 托管的 highlight.min.js 只包含常见语言，需要定制或完整语言版本可使用下载安装。</figcaption>
+
 <h2 id="使用方法">使用方法</h2>
+
 <p>在完成上述安装操作后，在需要高亮的代码上添加「语言类型标签」，支持的语言<a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">查询</a>。</p>
+
 <pre><code>&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
-</code></pre><p>需要禁用高亮可使用 <code>plaintext</code> 或 <code>nohighlight</code> 标签。</p>
+</code></pre>
+
+<p>需要禁用高亮可使用 <code>plaintext</code> 或 <code>nohighlight</code> 标签。</p>
+
 <pre><code>&lt;pre&gt;&lt;code class=&quot;plaintext&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&quot;nohighlight&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
-</code></pre><h2 id="hugo-自带代码高亮">Hugo 自带代码高亮</h2>
-<p>打开根目录下的 <code>config.yaml</code>，添加以下条目即可使用 Hugo 预制高亮效果。</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></code></pre></div><p>如果想使用更多其他风格的效果可使用上述方案安装第三方的 <code>highlight.js</code> 插件，安装后会自动识别代码语言类型并输出对应的配色方案，你也可以在「Code」符号后指定语言。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"> <span class="sb">```</span>html
- &lt;div&gt;XXXXX&lt;/div&gt;
- ...
+</code></pre>
 
- <span class="sb">```</span>css
- a <span class="o">{</span>
-  text-decoration: none<span class="p">;</span>
- <span class="o">}</span>
+<h2 id="hugo-自带代码高亮">Hugo 自带代码高亮</h2>
+
+<p>打开根目录下的 <code>config.yaml</code>，添加以下条目即可使用 Hugo 预制高亮效果。</p>
+
+<pre><code class="language-yaml">pygmentsUseClasses: false
+</code></pre>
+
+<p>如果想使用更多其他风格的效果可使用上述方案安装第三方的 <code>highlight.js</code> 插件，安装后会自动识别代码语言类型并输出对应的配色方案，你也可以在「Code」符号后指定语言。</p>
+
+<pre><code class="language-sh"></code></pre>
+
+<p>html
+ <div>XXXXX</div>
+ &hellip;</p>
+
+<pre><code class="language-css"> a {
+  text-decoration: none;
+ }
  ...
-</code></pre></div>
+</code></pre>
+
 			</main>
 			<div class="pre-next vd-b-top">
 		
@@ -158,12 +188,15 @@
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-  <ul>
-    <li><a href="#下载安装-highlightjs">下载安装 <code>highlight.js</code></a></li>
-    <li><a href="#在线-cdn-资源安装">在线 cdn 资源安装</a></li>
-    <li><a href="#使用方法">使用方法</a></li>
-    <li><a href="#hugo-自带代码高亮">Hugo 自带代码高亮</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#下载安装-highlight-js">下载安装 <code>highlight.js</code></a></li>
+<li><a href="#在线-cdn-资源安装">在线 cdn 资源安装</a></li>
+<li><a href="#使用方法">使用方法</a></li>
+<li><a href="#hugo-自带代码高亮">Hugo 自带代码高亮</a></li>
+</ul></li>
+</ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search on 视点</title>
@@ -6,7 +6,11 @@
     <description>Recent content in Search on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Blog</title>
       <link>https://visdot.com/search/blog/</link>
@@ -26,7 +30,7 @@
     </item>
     
     <item>
-      <title>Hexo</title>
+      <title>hexo</title>
       <link>https://visdot.com/search/hexo/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
@@ -58,6 +62,15 @@
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A</title>
+      <link>https://visdot.com/search/qa/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/qa/</guid>
       <description></description>
     </item>
     
@@ -94,15 +107,6 @@
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Q&amp;A</title>
-      <link>https://visdot.com/search/qa/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/qa/</guid>
       <description></description>
     </item>
     
