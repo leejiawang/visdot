@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>视点 › Hugo 内容页添加发布时间、字数、关键词</title>
+    
+    <meta name="keywords" content="字数, Hugo, 发布时间, 关键词, 视由, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="一般在文章页的头部信息区显示本文标题、发布时间、关键词或是全文字数等信息，能让读者快速的了解文章内容，提高获取信息的效率。Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。">
+    
+    
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-04.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li>
+      </ul>
+      <ul class="nav-search">
+        <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
+          <ul id="searchResults"></ul></li><li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+
+  <div class="mobile-nav-title">导 航</div>
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/">主页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#文章标题">文章标题</a></li>
+    <li><a href="#发布日期">发布日期</a></li>
+    <li><a href="#分类关键词">分类、关键词</a></li>
+    <li><a href="#文章字数">文章字数</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">Hugo 内容页添加发布时间、字数、关键词</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20190907, have 547 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>一般在文章页的头部信息区显示本文标题、发布时间、关键词或是全文字数等信息，能让读者快速的了解文章内容，提高获取信息的效率。</p>
+<h2 id="文章标题">文章标题</h2>
+<p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .Title | markdownify }}
+</code></pre></div><h2 id="发布日期">发布日期</h2>
+<p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .Date.Format &#34;20060102&#34; }}
+</code></pre></div><p>其中 <code>&quot;20060102&quot;</code> 定义了时间呈现的格式，可根据需要自定义。用你需要的方式写「2006年1月2号」填入即可。比如：「2006年1月2日」,「2006-01-02&quot;」,「2006/01/02」,「2006.01.02」,「2006.01」等。</p>
+<p>实际使用中可添加一个判定，当文章记录了时间才显示时间，写法如下。</p>
+<pre><code>{{ if (gt .Params.date 0)}}
+
+  {{ .Date.Format &quot;20060102&quot; }}
+
+{{ end }}
+</code></pre><h2 id="分类关键词">分类、关键词</h2>
+<p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。其中<code>category</code>为需要展示的内容，可以是「Hugo」自带的分类「category」和标签「tags」，也可以是自定义的分类。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ with .Params.category }}
+
+  {{ range . }}
+
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ &#34;</span><span class="na">search</span><span class="err">&#34;</span> <span class="err">|</span> <span class="na">absURL</span> <span class="err">}}/{{</span> <span class="err">.</span> <span class="err">|</span> <span class="na">urlize</span> <span class="err">}}&#34;</span><span class="p">&gt;</span>{{ . }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+  {{ end }}
+
+{{ end }}
+</code></pre></div><p>默认分类「category」和标签「tags」的使用及添加自定义分类可阅读<a href="/data/hugo_category">此文</a>。</p>
+<h2 id="文章字数">文章字数</h2>
+<p>本功能利用了 <code>.WordCount</code> 这个变量，在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。其中 <code>Words.</code> 根据排版和外观需要执行调整。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .WordCount }} Words.
+</code></pre></div><p>如果识别出的字数明显少于文章字数，可能是没有计算中文字符，可在每个页面头部的信息区添加如下参数。</p>
+<pre><code>isCJKLanguage: true
+</code></pre>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/data/hugo_highlight/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>通过「highlight.js」给网站添加代码高亮</div></a>
+	
+	
+	<a href="https://visdot.com/data/hugo_template/"><div class="next-btn">Hugo 模板的原理及使用<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-element vd-b bg-blue">
+  <a href="/warehouse">
+<img src="/img/warehouse-w.png"></a>
+</div>
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#文章标题">文章标题</a></li>
+    <li><a href="#发布日期">发布日期</a></li>
+    <li><a href="#分类关键词">分类、关键词</a></li>
+    <li><a href="#文章字数">文章字数</a></li>
+  </ul>
+</nav>
+    </div>
+    <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  </div>
+  
+  </body>
+	<script src="/js/fuse.min.js"></script>
+	<script src="/js/fastsearch.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</html>

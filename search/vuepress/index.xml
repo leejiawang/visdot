@@ -25,5 +25,14 @@
       <description>Vuepress 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。 相关站点 Vuepress 官网 Vuepress 仓库 Vuepress 模板 第1步 安装 Vuepress 框架</description>
     </item>
     
+    <item>
+      <title>通过「highlight.js」给网站添加代码高亮</title>
+      <link>https://visdot.com/data/hugo_highlight/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
+    </item>
+    
   </channel>
 </rss>

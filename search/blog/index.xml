@@ -17,6 +17,33 @@
     </item>
     
     <item>
+      <title>Hugo 中添加导航栏激活效果</title>
+      <link>https://visdot.com/data/hugo_navbar/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_navbar/</guid>
+      <description>原理概述 本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。 使用到了 {{ .Title }} 这个变量会随着页面的不同而对应着</description>
+    </item>
+    
+    <item>
+      <title>Hugo 添加自定义分类</title>
+      <link>https://visdot.com/data/hugo_category/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_category/</guid>
+      <description>对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片</description>
+    </item>
+    
+    <item>
+      <title>Hugo 文章页添加翻页按钮</title>
+      <link>https://visdot.com/data/hugo_prev_next_btn/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_prev_next_btn/</guid>
+      <description>在文章页底部为 Hugo 增加翻页按钮，并显示上一篇和下一篇的标题。这样做能增大读者在阅读完文章后继续在本站停留的几率。 使用方法 本功能利用了 .Next</description>
+    </item>
+    
+    <item>
       <title>Vuepress 建站教程</title>
       <link>https://visdot.com/data/vuepress/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
@@ -35,16 +62,7 @@
     </item>
     
     <item>
-      <title>在 Hugo 中添加导航栏激活效果</title>
-      <link>https://visdot.com/data/hugo_navbar/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/data/hugo_navbar/</guid>
-      <description>原理概述 本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。 使用到了 {{ .Title }} 这个变量会随着页面的不同而对应着</description>
-    </item>
-    
-    <item>
-      <title>按需求添加 Hugo 文章列表</title>
+      <title>Hugo 按需求添加文章列表</title>
       <link>https://visdot.com/data/hugo_lists/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -62,12 +80,21 @@
     </item>
     
     <item>
-      <title>Hugo 常见问答 Q&amp;A</title>
-      <link>https://visdot.com/data/hugo_qa/</link>
+      <title>Hugo 内容页添加发布时间、字数、关键词</title>
+      <link>https://visdot.com/data/hugo_post_meta/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_post_meta/</guid>
+      <description>一般在文章页的头部信息区显示本文标题、发布时间、关键词或是全文字数等信息，能让读者快速的了解文章内容，提高获取信息的效率。 文章标题 在页面模板</description>
+    </item>
+    
+    <item>
+      <title>通过「highlight.js」给网站添加代码高亮</title>
+      <link>https://visdot.com/data/hugo_highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_qa/</guid>
-      <description>增加 Code 高亮 打开根目录下的 config.yaml，添加以下条目即可使用 Hugo 预制高亮效果。 pygmentsUseClasses:false如果想使</description>
+      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     
     <item>

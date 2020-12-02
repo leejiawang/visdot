@@ -23,6 +23,21 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/data/hugo_navbar/</loc>
+    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/data/hugo_category/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/data/hugo_prev_next_btn/</loc>
+    <lastmod>2019-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/data/vuepress/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
@@ -35,11 +50,6 @@
   <url>
     <loc>https://visdot.com/data/hackintosh_tools/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/data/hugo_navbar/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,7 +68,12 @@
   </url>
   
   <url>
-    <loc>https://visdot.com/data/hugo_qa/</loc>
+    <loc>https://visdot.com/data/hugo_post_meta/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/data/hugo_highlight/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -278,6 +293,21 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/topic/hugo/</loc>
+    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/topic/</loc>
+    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/grammar/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/search/google/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
@@ -295,21 +325,6 @@
   <url>
     <loc>https://visdot.com/search/hackintosh/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/topic/hugo/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/topic/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/search/grammar/</loc>
-    <lastmod>2019-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>

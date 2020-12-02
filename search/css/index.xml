@@ -17,12 +17,21 @@
     </item>
     
     <item>
-      <title>在 Hugo 中添加导航栏激活效果</title>
+      <title>Hugo 中添加导航栏激活效果</title>
       <link>https://visdot.com/data/hugo_navbar/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/data/hugo_navbar/</guid>
       <description>原理概述 本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。 使用到了 {{ .Title }} 这个变量会随着页面的不同而对应着</description>
+    </item>
+    
+    <item>
+      <title>通过「highlight.js」给网站添加代码高亮</title>
+      <link>https://visdot.com/data/hugo_highlight/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     
     <item>
