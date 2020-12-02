@@ -59,14 +59,11 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#全站文章列表">全站文章列表</a></li>
-<li><a href="#具体某个分类的文章列表">具体某个分类的文章列表</a></li>
-<li><a href="#文章列表的排列顺序">文章列表的排列顺序</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#全站文章列表">全站文章列表</a></li>
+    <li><a href="#具体某个分类的文章列表">具体某个分类的文章列表</a></li>
+    <li><a href="#文章列表的排列顺序">文章列表的排列顺序</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -104,66 +101,49 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<h2 id="全站文章列表">全站文章列表</h2>
-
+				<h2 id="全站文章列表">全站文章列表</h2>
 <p>在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 <code>single.html</code> 中的适当位置添加如下代码。</p>
-
-<pre><code class="language-html">&lt;ul&gt;
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ $pages := .Pages }}
   {{ $pages = .Site.RegularPages }}
-  {{ range (where $pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
-  &lt;li&gt;
-    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title | markdownify }}&lt;/a&gt;
-  &lt;/li&gt;
+  {{ range (where $pages &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   {{ end }}
-&lt;/ul&gt;
-</code></pre>
-
-<h2 id="具体某个分类的文章列表">具体某个分类的文章列表</h2>
-
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div><h2 id="具体某个分类的文章列表">具体某个分类的文章列表</h2>
 <p>要在内容页添加具体某个分类的文章列表，可在变量<code>.Site.RegularPages</code>后添加限定条件<code>&quot;Section&quot; &quot;XXX&quot;</code>，参考如下。</p>
-
-<pre><code class="language-html">&lt;ul&gt;
-  {{ range where .Site.RegularPages &quot;Section&quot; &quot;XXX&quot; }}
-  &lt;li&gt;
-  &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title | markdownify }}&lt;/a&gt;    
-  &lt;/li&gt;
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  {{ range where .Site.RegularPages &#34;Section&#34; &#34;XXX&#34; }}
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>    
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   {{ end }}
-&lt;/ul&gt;
-</code></pre>
-
-<p>其中<code>Section</code>是自定义的分类变量，<code>XXX</code>为具体所需指定的分类名称。</p>
-
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div><p>其中<code>Section</code>是自定义的分类变量，<code>XXX</code>为具体所需指定的分类名称。</p>
 <h2 id="文章列表的排列顺序">文章列表的排列顺序</h2>
-
 <p>文章列表的排序默认遵循的优先级为: Weight &gt; Date &gt; LinkTitle &gt; FilePath 。</p>
-
 <p>可通过在 <code>range .Pages.</code>后按需求添加下列的属性来改变列表的排序方式。</p>
-
 <table>
 <thead>
 <tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="left"><code>.ByWeight</code></td>
-<td align="left">根据文章头部设置的<code>weight: 1</code>优先级排序, 「weight」值越小排序越靠前。</td>
+<td style="text-align:left"><code>.ByWeight</code></td>
+<td style="text-align:left">根据文章头部设置的<code>weight: 1</code>优先级排序, 「weight」值越小排序越靠前。</td>
 </tr>
-
 <tr>
-<td align="left"><code>.ByDate</code></td>
-<td align="left">根据文章头部设置的<code>date: 2019-09-03</code>创建日期排序, 时间越靠后排序越靠前。</td>
+<td style="text-align:left"><code>.ByDate</code></td>
+<td style="text-align:left">根据文章头部设置的<code>date: 2019-09-03</code>创建日期排序, 时间越靠后排序越靠前。</td>
 </tr>
-
 <tr>
-<td align="left"><code>.Reverse</code></td>
-<td align="left">可叠加前两个属性使用，也可单独使用，使其倒序排列。</td>
+<td style="text-align:left"><code>.Reverse</code></td>
+<td style="text-align:left">可叠加前两个属性使用，也可单独使用，使其倒序排列。</td>
 </tr>
 </tbody>
 </table>
@@ -187,14 +167,11 @@
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#全站文章列表">全站文章列表</a></li>
-<li><a href="#具体某个分类的文章列表">具体某个分类的文章列表</a></li>
-<li><a href="#文章列表的排列顺序">文章列表的排列顺序</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#全站文章列表">全站文章列表</a></li>
+    <li><a href="#具体某个分类的文章列表">具体某个分类的文章列表</a></li>
+    <li><a href="#文章列表的排列顺序">文章列表的排列顺序</a></li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -214,6 +191,4 @@
 	<script src="/js/common.js"></script>
 	<script src="/js/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-	<script  data-pace-options='{ "ajax": false }'  src="https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js"></script>
 </html>
-
