@@ -53,20 +53,18 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#第1步-备份已有系统序列号">第1步 备份已有系统序列号</a>
-<ul>
-<li><a href="#微软账户关联">微软账户关联</a></li>
-<li><a href="#使用第三方工具备份">使用第三方工具备份</a></li>
-</ul></li>
-<li><a href="#第2步-获取系统安装镜像">第2步 获取系统安装镜像</a></li>
-<li><a href="#第3步-制作-winpe-系统启动盘">第3步 制作 WinPE 系统启动盘</a></li>
-<li><a href="#第4步-进入-winpe-系统">第4步 进入 WinPE 系统</a></li>
-<li><a href="#第5步-安装系统">第5步 安装系统</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#第1步-备份已有系统序列号">第1步 备份已有系统序列号</a>
+      <ul>
+        <li><a href="#微软账户关联">微软账户关联</a></li>
+        <li><a href="#使用第三方工具备份">使用第三方工具备份</a></li>
+      </ul>
+    </li>
+    <li><a href="#第2步-获取系统安装镜像">第2步 获取系统安装镜像</a></li>
+    <li><a href="#第3步-制作-winpe-系统启动盘">第3步 制作 WinPE 系统启动盘</a></li>
+    <li><a href="#第4步-进入-winpe-系统">第4步 进入 WinPE 系统</a></li>
+    <li><a href="#第5步-安装系统">第5步 安装系统</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -101,106 +99,75 @@
 			</div>
 			<main class="markdown academic w-630">
 				<p>在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。</p>
-
 <div align="center"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Windows_10_Logo.svg/2880px-Windows_10_Logo.svg.png" width=65% style="padding: 10px" />
 </div>
-
 <h2 id="第1步-备份已有系统序列号">第1步 备份已有系统序列号</h2>
-
 <p>大部分品牌台式机以及笔记本都是出厂预装了正版系统的，个人消费产品一般预装的是 <code>Windows10 家庭版</code>，这样如果你想继续使用该序列号的话重装的系统也应为 Windows10 家庭版，只有版本对应序列号才能正常激活系统。</p>
-
 <p>如果你的设备已经装有激活的正版系统，可按照如下方式备份激活信息。</p>
-
 <h3 id="微软账户关联">微软账户关联</h3>
-
 <p>最简单直接的备份方式就是注册并在设备上登陆「Microsoft 账户」，这样你的数字许可证就会与自己的账户关联起来。这样当你在该设备上重装系统后，登陆自己的微软账户，系统就会使用与微软账户关联的数字许可证自动激活。</p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/jihuo-1.png" alt="jihuo" /></p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/jihuo-2.png" alt="jihuo" /></p>
-
+<p><img src="https://cdn.eyecus.com/file/imgcache/jihuo-1.png" alt="jihuo"></p>
+<p><img src="https://cdn.eyecus.com/file/imgcache/jihuo-2.png" alt="jihuo"></p>
 <h3 id="使用第三方工具备份">使用第三方工具备份</h3>
-
 <p>可使用 <code>AIDA64</code> 查看并保存序列号，右侧菜单栏点击操作系统，中间内容区「产品密钥」后即是系统序列号。将其记录下来，待系统安装时输入以激活系统。</p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/aida64.png" alt="aida64" /></p>
-
+<p><img src="https://cdn.eyecus.com/file/imgcache/aida64.png" alt="aida64"></p>
 <h2 id="第2步-获取系统安装镜像">第2步 获取系统安装镜像</h2>
-
 <blockquote>
 <p>系统安装存在风险，请事先备份好设备上的文件数据。对于动手能力不太好的小白，在设备没出现问题时，如非必要，谨慎选择重装系统。</p>
 </blockquote>
-
 <p>大部分品牌台式机以及笔记本重装系统可从对应品牌官网的产品支持页面获取安装镜像。自配的组装机推荐安装原版系统，新买来的品牌电脑也推荐重装一次原版系统，这样使用过程中问题更少也更清洁。</p>
-
 <p>系统获取相关站点:
 <a class="eyecus-more-btn" target="_blank" href="https://www.microsoftstore.com.cn/windows/windows-10-home/p/kw9-00265">Windows10 家庭版官方购买地址</a>
 <a class="eyecus-more-btn" target="_blank" href="https://msdn.itellyou.cn">第三方镜像下载地址（仅安装）</a>
 <a class="eyecus-more-btn" target="_blank" href="/resources/software/#i-class-fa-fa-download-i-windows10-安装镜像">Windows10 镜像本地下载（仅安装）</a>。通过第三方网站获取 Windows10 可参考下图。</p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/msdn-2.png" alt="msdn" /></p>
-
+<p><img src="https://cdn.eyecus.com/file/imgcache/msdn-2.png" alt="msdn"></p>
 <figcaption>第三方获取镜像网站 <a href='https://msdn.itellyou.cn/'>msdn.itellyou.cn</a></figcaption>
-
 <h2 id="第3步-制作-winpe-系统启动盘">第3步 制作 WinPE 系统启动盘</h2>
-
 <p>全网有很多 WinPE 系统制作工具，但有些工具存在强制锁主页以及预装软件的情况。</p>
-
 <p>个人推荐使用 <strong>微PE工具箱</strong>，功能全且纯净。下载并安装工具，准备一个储存盘（一般使用U盘），备份U盘内文件数据并格式化。根据工具引导制作 WinPE 系统启动盘。</p>
-
 <table>
 <thead>
 <tr>
-<th align="center">软件版本</th>
-<th align="center">下载链接</th>
-<th align="center">产品页面</th>
+<th style="text-align:center">软件版本</th>
+<th style="text-align:center">下载链接</th>
+<th style="text-align:center">产品页面</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="center">V2.0</td>
-<td align="center"><a href="https://pan.baidu.com/s/1gePQWnh">Win32</a> <a href="https://pan.baidu.com/s/1mi8vV6o">Win64</a></td>
-<td align="center"><a href="http://www.wepe.com.cn/">官网</a> <a href="http://www.wepe.com.cn/download.html">下载</a></td>
+<td style="text-align:center">V2.0</td>
+<td style="text-align:center"><a href="https://pan.baidu.com/s/1gePQWnh">Win32</a> <a href="https://pan.baidu.com/s/1mi8vV6o">Win64</a></td>
+<td style="text-align:center"><a href="http://www.wepe.com.cn/">官网</a> <a href="http://www.wepe.com.cn/download.html">下载</a></td>
 </tr>
 </tbody>
 </table>
-
 <figcaption>上表链接均来自微PE工具箱产品官网 <a href='http://www.wepe.com.cn/'>www.wepe.com.cn</a></figcaption>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/wpe-1.png" alt="wepe" /></p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/wpe-2.png" alt="wepe" /></p>
-
+<p><img src="https://cdn.eyecus.com/file/imgcache/wpe-1.png" alt="wepe"></p>
+<p><img src="https://cdn.eyecus.com/file/imgcache/wpe-2.png" alt="wepe"></p>
 <h2 id="第4步-进入-winpe-系统">第4步 进入 WinPE 系统</h2>
-
 <p>将之前下载的原版安装镜像拷贝进制作好的 WinPE 系统启动盘，并插入待安装的设备，重启进入<code>BIOS</code>,选择「系统安装U盘」为启动「首选项」，按<code>F10</code>保存设置并重启设备。</p>
-
-<p>进入BIOS台式机可使用按键 <code>Del</code>，笔记本一般使用 <code>F2</code> <code>F12</code> <code>F11</code> <code>Esc</code>。进入 WinPE 系统后，使用内置的 Windows 系统安装器安装原版系统镜像。</p>
-
+<p>进入BIOS台式机可使用按键 <code>Del</code>，笔记本一般使用 <code> F2</code> <code>F12</code> <code>F11</code> <code>Esc</code>。进入 WinPE 系统后，使用内置的 Windows 系统安装器安装原版系统镜像。</p>
 <h2 id="第5步-安装系统">第5步 安装系统</h2>
-
 <p>进入 WinPE 后，使用桌面上的 <code>DiskGenius</code> 工具对硬盘进行格式化，如需硬盘分区也在此时进行分区操作。硬盘推荐使用 <code>GUID</code> 分区图，并选择生成 <code>EFI</code> 分区。</p>
-
 <p>然后使用桌面上的 <code>WinNTSetup</code> 工具进行系统安装的准备工作。</p>
-
-<p><img src="https://cdn.eyecus.com/file/imgcache/windowspe.jpg" alt="winNTSetup" /></p>
-
+<p><img src="https://cdn.eyecus.com/file/imgcache/windowspe.jpg" alt="winNTSetup"></p>
 <p>根据提示依次选择：</p>
-
 <ol>
-<li><p><strong>安装文件</strong>：之前下载的系统安装镜像，以 <code>iso</code> 为后缀名。</p></li>
-
-<li><p><strong>引导驱动器</strong>：刚刚生成的 EFI 分区，约为 <code>100~400 MB</code> 大小。</p></li>
-
-<li><p><strong>安装驱动器</strong>：系统将要安装的分区，将来的系统 C 盘。</p></li>
-
-<li><p><strong>系统版本</strong>：一般根据个人需求选择「家庭版」或者「专业版」。</p></li>
+<li>
+<p><strong>安装文件</strong>：之前下载的系统安装镜像，以 <code>iso</code> 为后缀名。</p>
+</li>
+<li>
+<p><strong>引导驱动器</strong>：刚刚生成的 EFI 分区，约为 <code>100~400 MB</code> 大小。</p>
+</li>
+<li>
+<p><strong>安装驱动器</strong>：系统将要安装的分区，将来的系统 C 盘。</p>
+</li>
+<li>
+<p><strong>系统版本</strong>：一般根据个人需求选择「家庭版」或者「专业版」。</p>
+</li>
 </ol>
-
 <p>选择好后点击安装，待进度条完整后系统会自动重启并进行系统安装，安装过程中设备将重启多次。</p>
-
 <p>最后根据提示完成简单地引导步骤即可进入系统。</p>
 			</main>
 			<div class="pre-next vd-b-top">
@@ -221,20 +188,18 @@
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#第1步-备份已有系统序列号">第1步 备份已有系统序列号</a>
-<ul>
-<li><a href="#微软账户关联">微软账户关联</a></li>
-<li><a href="#使用第三方工具备份">使用第三方工具备份</a></li>
-</ul></li>
-<li><a href="#第2步-获取系统安装镜像">第2步 获取系统安装镜像</a></li>
-<li><a href="#第3步-制作-winpe-系统启动盘">第3步 制作 WinPE 系统启动盘</a></li>
-<li><a href="#第4步-进入-winpe-系统">第4步 进入 WinPE 系统</a></li>
-<li><a href="#第5步-安装系统">第5步 安装系统</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#第1步-备份已有系统序列号">第1步 备份已有系统序列号</a>
+      <ul>
+        <li><a href="#微软账户关联">微软账户关联</a></li>
+        <li><a href="#使用第三方工具备份">使用第三方工具备份</a></li>
+      </ul>
+    </li>
+    <li><a href="#第2步-获取系统安装镜像">第2步 获取系统安装镜像</a></li>
+    <li><a href="#第3步-制作-winpe-系统启动盘">第3步 制作 WinPE 系统启动盘</a></li>
+    <li><a href="#第4步-进入-winpe-系统">第4步 进入 WinPE 系统</a></li>
+    <li><a href="#第5步-安装系统">第5步 安装系统</a></li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -245,7 +210,7 @@
 	</div>
 </div>
   <div class="footer">
-  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a  class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg> 
   </div>
   
   </body>

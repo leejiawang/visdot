@@ -53,16 +53,13 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#网站信息">网站信息</a></li>
-<li><a href="#文本格式标签">文本格式标签</a></li>
-<li><a href="#常见属性">常见属性</a></li>
-<li><a href="#常用功能">常用功能</a></li>
-<li><a href="#参考资料">参考资料</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#网站信息">网站信息</a></li>
+    <li><a href="#文本格式标签">文本格式标签</a></li>
+    <li><a href="#常见属性">常见属性</a></li>
+    <li><a href="#常用功能">常用功能</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -91,187 +88,142 @@
 
 
 				
-				<div class="post-date">Published on 20190705, have 686 Words.
+				<div class="post-date">Published on 20190705, have 682 Words.
 				</div>
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。</p>
-
+				<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。</p>
 <p>HTML 称为超文本标记语言，是一种标识性的语言。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的资源连接为一个逻辑整体，下图为HTML基本框架示意图。</p>
-
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;eyecus&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;hello world！&lt;/h1&gt;
-    &lt;p&gt;hello &lt;a&gt;eyecus&lt;/a&gt;！&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;1.XXXX&lt;/li&gt;
-      &lt;li&gt;2.XXXX&lt;/li&gt;
-      &lt;li&gt;3.XXXX&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>eyecus<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>hello world！<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>hello <span class="p">&lt;</span><span class="nt">a</span><span class="p">&gt;</span>eyecus<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>！<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>1.XXXX<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>2.XXXX<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>3.XXXX<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><blockquote>
 <p><strong>注意</strong></br>对于中文网页需要使用 <code>&lt;meta charset=&quot;utf-8&quot;&gt;</code> 声明编码，否则会出现乱码。</p>
 </blockquote>
-
 <p><code>&lt;!DOCTYPE html&gt;</code> ：声明为html5文档</br>
 <code>&lt;html&gt;</code>：html页面的根元素</br>
-<code>&lt;head&gt;</code>：包含了文档的元(meta)数据</br>
-<code>&lt;title&gt;</code>：包含了页面标题</br>
-<code>&lt;body&gt;</code>：包含了可见的页面内容</br>
-<code>&lt;h1&gt;</code>：一级标题标签</br>
-<code>&lt;p&gt;</code>：段落标签</br></p>
-
+<code> &lt;head&gt;</code>：包含了文档的元(meta)数据</br>
+<code> &lt;title&gt;</code>：包含了页面标题</br>
+<code> &lt;body&gt;</code>：包含了可见的页面内容</br>
+<code> &lt;h1&gt;</code>：一级标题标签</br>
+<code> &lt;p&gt;</code>：段落标签</br></p>
 <h2 id="网站信息">网站信息</h2>
-
-<pre><code class="language-html">&lt;meta name=&quot;author&quot; content=&quot;世佳&quot;&gt;
-&lt;meta name=&quot;copyright&quot; content=&quot;&amp;copy; 2019 eyecus.&quot;&gt;
-&lt;meta name=&quot;keywords&quot; content=&quot;世佳,视由,eyecus&quot;&gt;
-&lt;meta name=&quot;date&quot; content=&quot;2019-09-01T00:00:00+00:00&quot;&gt;
-</code></pre>
-
-<h2 id="文本格式标签">文本格式标签</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;author&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;世佳&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;copyright&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;&amp;copy; 2019 eyecus.&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;keywords&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;世佳,视由,eyecus&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;2019-09-01T00:00:00+00:00&#34;</span><span class="p">&gt;</span>
+</code></pre></div><h2 id="文本格式标签">文本格式标签</h2>
 <table>
 <thead>
 <tr>
-<th align="left">标签</th>
-<th align="left">描述</th>
-<th align="left">预览</th>
+<th style="text-align:left">标签</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">预览</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="left"><code>&lt;b&gt;</code></td>
-<td align="left">粗体文本</td>
-<td align="left"><p>原文 <b>文本 Text</b></p></td>
+<td style="text-align:left"><code>&lt;b&gt;</code></td>
+<td style="text-align:left">粗体文本</td>
+<td style="text-align:left"><p>原文 <b>文本 Text</b></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;em&gt;</code></td>
-<td align="left">着重文字</td>
-<td align="left"><p>原文 <em>文本 Text</em></p></td>
+<td style="text-align:left"><code>&lt;em&gt;</code></td>
+<td style="text-align:left">着重文字</td>
+<td style="text-align:left"><p>原文 <em>文本 Text</em></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;i&gt;</code></td>
-<td align="left">斜体字</td>
-<td align="left"><p>原文 <i>文本 Text</i></p></td>
+<td style="text-align:left"><code>&lt;i&gt;</code></td>
+<td style="text-align:left">斜体字</td>
+<td style="text-align:left"><p>原文 <i>文本 Text</i></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;small&gt;</code></td>
-<td align="left">小号字</td>
-<td align="left"><p>原文 <small>文本 Text</small></p></td>
+<td style="text-align:left"><code>&lt;small&gt;</code></td>
+<td style="text-align:left">小号字</td>
+<td style="text-align:left"><p>原文 <small>文本 Text</small></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;strong&gt;</code></td>
-<td align="left">加粗</td>
-<td align="left"><p>原文 <strong>文本 Text</strong></p></td>
+<td style="text-align:left"><code>&lt;strong&gt;</code></td>
+<td style="text-align:left">加粗</td>
+<td style="text-align:left"><p>原文 <strong>文本 Text</strong></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;sub&gt;</code></td>
-<td align="left">下标字</td>
-<td align="left"><p>原文 <sub>文本 Text</sub></p></td>
+<td style="text-align:left"><code>&lt;sub&gt;</code></td>
+<td style="text-align:left">下标字</td>
+<td style="text-align:left"><p>原文 <sub>文本 Text</sub></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;sup&gt;</code></td>
-<td align="left">上标字</td>
-<td align="left"><p>原文 <sup>文本 Text</sup></p></td>
+<td style="text-align:left"><code>&lt;sup&gt;</code></td>
+<td style="text-align:left">上标字</td>
+<td style="text-align:left"><p>原文 <sup>文本 Text</sup></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;ins&gt;</code></td>
-<td align="left">下划线</td>
-<td align="left"><p>原文 <ins>文本 Text</ins></p></td>
+<td style="text-align:left"><code>&lt;ins&gt;</code></td>
+<td style="text-align:left">下划线</td>
+<td style="text-align:left"><p>原文 <ins>文本 Text</ins></p></td>
 </tr>
-
 <tr>
-<td align="left"><code>&lt;del&gt;</code></td>
-<td align="left">删除字</td>
-<td align="left"><p>原文 <del>文本 Text</del></p></td>
+<td style="text-align:left"><code>&lt;del&gt;</code></td>
+<td style="text-align:left">删除字</td>
+<td style="text-align:left"><p>原文 <del>文本 Text</del></p></td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="常见属性">常见属性</h2>
-
 <table>
 <thead>
 <tr>
-<th align="left">标签</th>
-<th align="left">描述</th>
+<th style="text-align:left">标签</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td align="left">class</td>
-<td align="left">为html元素定义一个或多个类名</td>
+<td style="text-align:left">class</td>
+<td style="text-align:left">为html元素定义一个或多个类名</td>
 </tr>
-
 <tr>
-<td align="left">id</td>
-<td align="left">定义元素的唯一id</td>
+<td style="text-align:left">id</td>
+<td style="text-align:left">定义元素的唯一id</td>
 </tr>
-
 <tr>
-<td align="left">style</td>
-<td align="left">规定元素的行内样式</td>
+<td style="text-align:left">style</td>
+<td style="text-align:left">规定元素的行内样式</td>
 </tr>
-
 <tr>
-<td align="left">title</td>
-<td align="left">描述了元素的额外信息</td>
+<td style="text-align:left">title</td>
+<td style="text-align:left">描述了元素的额外信息</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="常用功能">常用功能</h2>
-
 <p>给元素增加链接</p>
-
 <pre><code>&lt;a href=&quot;default.html&quot;&gt; XXXX &lt;/a&gt;
-</code></pre>
-
-<p>换行</p>
-
+</code></pre><p>换行</p>
 <pre><code>&lt;p&gt; XXXX&lt;/br&gt;XXXX &lt;/p&gt;
-</code></pre>
-
-<p>添加水平线</p>
-
+</code></pre><p>添加水平线</p>
 <pre><code>&lt;p&gt;XXXX&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;XXXX&lt;/p&gt;
-</code></pre>
-
-<p>添加注释</p>
-
+</code></pre><p>添加注释</p>
 <pre><code>&lt;!-- XXXX --&gt;
-</code></pre>
-
-<p>添加图片，并定义尺寸</p>
-
+</code></pre><p>添加图片，并定义尺寸</p>
 <pre><code>&lt;img src=&quot;/images/logo.png&quot; width=&quot;250&quot; height=&quot;200&quot; /&gt;
-</code></pre>
-
-<h2 id="参考资料">参考资料</h2>
-
+</code></pre><h2 id="参考资料">参考资料</h2>
 <ol>
 <li><code>JavaScript从零基础入门到精通 http://yun.itheima.com/course/551.html</code></li>
 <li><code>维基百科 https://zh.wikipedia.org/</code></li>
@@ -296,16 +248,13 @@
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#网站信息">网站信息</a></li>
-<li><a href="#文本格式标签">文本格式标签</a></li>
-<li><a href="#常见属性">常见属性</a></li>
-<li><a href="#常用功能">常用功能</a></li>
-<li><a href="#参考资料">参考资料</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#网站信息">网站信息</a></li>
+    <li><a href="#文本格式标签">文本格式标签</a></li>
+    <li><a href="#常见属性">常见属性</a></li>
+    <li><a href="#常用功能">常用功能</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -316,7 +265,7 @@
 	</div>
 </div>
   <div class="footer">
-  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a  class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg> 
   </div>
   
   </body>

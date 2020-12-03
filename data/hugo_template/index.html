@@ -53,21 +53,19 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#原理概述">原理概述</a></li>
-<li><a href="#基本构成">基本构成</a></li>
-<li><a href="#整体策略">整体策略</a></li>
-<li><a href="#自定义页面模板">自定义页面模板</a></li>
-<li><a href="#基本语法介绍">基本语法介绍</a>
-<ul>
-<li><a href="#循环">循环</a></li>
-<li><a href="#条件判断">条件判断</a></li>
-<li><a href="#注释写法">注释写法</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#基本构成">基本构成</a></li>
+    <li><a href="#整体策略">整体策略</a></li>
+    <li><a href="#自定义页面模板">自定义页面模板</a></li>
+    <li><a href="#基本语法介绍">基本语法介绍</a>
+      <ul>
+        <li><a href="#循环">循环</a></li>
+        <li><a href="#条件判断">条件判断</a></li>
+        <li><a href="#注释写法">注释写法</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -107,18 +105,11 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<h2 id="原理概述">原理概述</h2>
-
+				<h2 id="原理概述">原理概述</h2>
 <p>Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块，每个模块都相当于一道「菜」，每个页面则通过不同的「菜单」来实现个性化的布局。</p>
-
 <p>这当中的「菜」就是 Hugo <code>layouts/partials/</code>路径下的各个组件。而「菜单」则是<code>layouts/_default/</code>路径下的模板文件。</p>
-
 <h2 id="基本构成">基本构成</h2>
-
 <p>下面是 Hugo 常见的模板及组件搭配，它包含了一个<code>404.html</code>404页面模板、一个<code>index.html</code>首页模板、一个<code>_default</code>文件夹内的三个默认页面模板及<code>partials</code>文件夹内的<code>footer.html</code>、<code>header.html</code>、<code>head.html</code>三个最基本的页面组件。</p>
-
 <pre><code>themes
 └── XXX
     └── layouts
@@ -132,111 +123,83 @@
             ├── head.html
             ├── header.html
             └── footer.html 
-</code></pre>
-
-<h2 id="整体策略">整体策略</h2>
-
+</code></pre><h2 id="整体策略">整体策略</h2>
 <p>当我们在建立多页面的网站时，首先要对整个网站的构成和布局有个大体概念，首先对各页面分类，找出布局相同的页面，给他们指定相同的页面模板。</p>
-
 <blockquote>
 <p>在具体操作环节，初学者可先不做组件独立，直接在页面模板中编辑出页面所要展示的全部内容，待该页面调整完毕，做其他页面模板时，如果用到了之前页面的某个元素，则将之前页面模板的该元素独立出来做成组件，然后引用进这两个页面模板。</p>
 </blockquote>
-
 <p>然后再找出那些在不同页面中重复出现的相同元素，进一步分类，把他们单独摘出来做成独立的组件，这样不同的页面就能通过页面模板提取组件。</p>
-
 <h2 id="自定义页面模板">自定义页面模板</h2>
-
 <p>在将页面分好类后，就要给他们定制专属页面模板了。</p>
-
 <p>在模板文件中使用下述代码导入组件，其中组件名为<code>header</code>，以<code>.html</code>为后缀名。</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//baseof.html
+</span><span class="c1"></span>
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
-<pre><code class="language-go">{{ partial &quot;header.html&quot; . }}
-</code></pre>
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
 
-<p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//list.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
-<pre><code class="language-go">//baseof.html
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
 
-{{ partial &quot;header.html&quot; . }}
+<span class="p">&lt;</span><span class="nx">ul</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="o">:=</span> <span class="p">.</span><span class="nx">Pages</span> <span class="p">}}</span>
+  <span class="p">{{</span> <span class="k">if</span> <span class="p">.</span><span class="nx">IsHome</span> <span class="p">}}{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="p">=</span> <span class="p">.</span><span class="nx">Site</span><span class="p">.</span><span class="nx">RegularPages</span> <span class="p">}}{{</span> <span class="nx">end</span> <span class="p">}}</span>
+  <span class="p">{{</span> <span class="k">range</span> <span class="p">(</span><span class="nx">where</span> <span class="err">$</span><span class="nx">pages</span> <span class="s">&#34;Section&#34;</span> <span class="s">&#34;!=&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">}}</span>
+  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">span</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;date&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Date</span><span class="p">.</span><span class="nx">Format</span> <span class="s">&#34;2006/01/02&#34;</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
 
-{{ .Content }}
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//single.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
-{{ partial &quot;footer.html&quot; . }}
-</code></pre>
+<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
 
-<pre><code class="language-go">//list.html
-{{ partial &quot;header.html&quot; . }}
+<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
 
-{{ .Content }}
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//terms.html
+</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
-&lt;ul&gt;
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
-  &lt;li&gt;
-    &lt;span class=&quot;date&quot;&gt;{{ .Date.Format &quot;2006/01/02&quot; }}&lt;/span&gt;
-    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title | markdownify }}&lt;/a&gt;
-  &lt;/li&gt;
-  {{ end }}
-&lt;/ul&gt;
+<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
 
-{{ partial &quot;footer.html&quot; . }}
-</code></pre>
+<span class="p">&lt;</span><span class="nx">ul</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;terms&#34;</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="k">range</span> <span class="p">.</span><span class="nx">Data</span><span class="p">.</span><span class="nx">Terms</span> <span class="p">}}</span>
+  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .Page.RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Page</span><span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span> <span class="p">({{</span> <span class="p">.</span><span class="nx">Count</span> <span class="p">}})</span>
+  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
 
-<pre><code class="language-go">//single.html
-{{ partial &quot;header.html&quot; . }}
-
-&lt;h1&gt;{{ .Title | markdownify }}&lt;/h1&gt;
-
-{{ .Content }}
-
-{{ partial &quot;footer.html&quot; . }}
-</code></pre>
-
-<pre><code class="language-go">//terms.html
-{{ partial &quot;header.html&quot; . }}
-
-&lt;h1&gt;{{ .Title }}&lt;/h1&gt;
-
-&lt;ul class=&quot;terms&quot;&gt;
-  {{ range .Data.Terms }}
-  &lt;li&gt;
-    &lt;a href=&quot;{{ .Page.RelPermalink }}&quot;&gt;{{ .Page.Title }}&lt;/a&gt; ({{ .Count }})
-  &lt;/li&gt;
-  {{ end }}
-&lt;/ul&gt;
-
-{{ partial &quot;footer.html&quot; . }}
-</code></pre>
-
-<h2 id="基本语法介绍">基本语法介绍</h2>
-
+<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</code></pre></div><h2 id="基本语法介绍">基本语法介绍</h2>
 <h3 id="循环">循环</h3>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
 
-<pre><code class="language-go">{{ range 变量}} 内容 {{ end }}
+<span class="c1">//遍历「变量」，输出「内容」。
+</span></code></pre></div><h3 id="条件判断">条件判断</h3>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
 
-//遍历「变量」，输出「内容」。
-</code></pre>
+<span class="c1">//如果「条件」成立则输出「结果」，否则不输出。
+</span><span class="c1"></span>
 
-<h3 id="条件判断">条件判断</h3>
+<span class="p">{{</span> <span class="k">if</span> <span class="nx">not</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
 
-<pre><code class="language-go">{{ if 条件 }} 结果 {{ end }}
+<span class="c1">//如果「条件」不成立则输出「结果」，否则不输出。
+</span><span class="c1"></span>
 
-//如果「条件」成立则输出「结果」，否则不输出。
+<span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果1</span> <span class="p">{{</span><span class="k">else</span><span class="p">}}</span> <span class="nx">结果2</span> <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
 
-
-{{ if not 条件 }} 结果 {{ end }}
-
-//如果「条件」不成立则输出「结果」，否则不输出。
-
-
-{{ if 条件 }} 结果1 {{else}} 结果2 {{end}}
-
-//如果「条件」成立则输出「结果1」，否则输出「结果2」。
-</code></pre>
-
-<p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
-
+<span class="c1">//如果「条件」成立则输出「结果1」，否则输出「结果2」。
+</span></code></pre></div><p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
 <pre><code>{{ partial &quot;header.html&quot; . }}
 
 {{if not .IsHome }}
@@ -257,13 +220,9 @@
 &lt;/ul&gt;
 
 {{ partial &quot;footer.html&quot; . }}
-</code></pre>
-
-<h3 id="注释写法">注释写法</h3>
-
+</code></pre><h3 id="注释写法">注释写法</h3>
 <pre><code>{{/* 注释 */}}
 </code></pre>
-
 			</main>
 			<div class="pre-next vd-b-top">
 		
@@ -283,21 +242,19 @@
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#原理概述">原理概述</a></li>
-<li><a href="#基本构成">基本构成</a></li>
-<li><a href="#整体策略">整体策略</a></li>
-<li><a href="#自定义页面模板">自定义页面模板</a></li>
-<li><a href="#基本语法介绍">基本语法介绍</a>
-<ul>
-<li><a href="#循环">循环</a></li>
-<li><a href="#条件判断">条件判断</a></li>
-<li><a href="#注释写法">注释写法</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#基本构成">基本构成</a></li>
+    <li><a href="#整体策略">整体策略</a></li>
+    <li><a href="#自定义页面模板">自定义页面模板</a></li>
+    <li><a href="#基本语法介绍">基本语法介绍</a>
+      <ul>
+        <li><a href="#循环">循环</a></li>
+        <li><a href="#条件判断">条件判断</a></li>
+        <li><a href="#注释写法">注释写法</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -308,7 +265,7 @@
 	</div>
 </div>
   <div class="footer">
-  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a  class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg> 
   </div>
   
   </body>

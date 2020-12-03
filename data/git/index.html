@@ -53,15 +53,12 @@
 
   <div class="mobile-nav-title">大 纲</div> 
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#i-class-fa-fa-chevron-right-i-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#i-classfa-fa-chevron-righti-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -95,54 +92,38 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				
-
-<p>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能。</p>
-
-<p><img src="https://git-scm.com/images/branching-illustration@2x.png" width="400px"></p>
-
+				<p>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能。</p>
+<img src="https://git-scm.com/images/branching-illustration@2x.png" width="400px">
 <blockquote>
 <p><strong>相关站点</strong>
-    <a class="eyecus-more-btn" href="https://git-scm.com/">Git 官网</a>
-    <a class="eyecus-more-btn" href="https://www.runoob.com/git/git-tutorial.html">Git 教程</a>
-    <a class="eyecus-more-btn" href="https://github.com/git">Git 仓库</a></p>
+<a class="eyecus-more-btn" href="https://git-scm.com/">Git 官网</a>
+<a class="eyecus-more-btn" href="https://www.runoob.com/git/git-tutorial.html">Git 教程</a>
+<a class="eyecus-more-btn" href="https://github.com/git">Git 仓库</a></p>
 </blockquote>
-
-<h2 id="i-class-fa-fa-chevron-right-i-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</h2>
-
+<h2 id="i-classfa-fa-chevron-righti-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</h2>
 <pre><code>git config --global user.name &quot;XXX&quot;
 git config --global user.email &quot;XXX@gmail.com&quot;
-</code></pre>
-
-<h2 id="i-class-fa-fa-chevron-right-i-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</h2>
-
+</code></pre><h2 id="i-classfa-fa-chevron-righti-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</h2>
 <pre><code>git clone git@gitlab.com:XXX/XXXX.git
 cd XXX
 touch README.md
 git add README.md
 git commit -m &quot;add README&quot;
 git push -u origin master
-</code></pre>
-
-<h2 id="i-class-fa-fa-chevron-right-i-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</h2>
-
+</code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</h2>
 <pre><code>cd XXXX
 git init
 git remote add origin git@github.com:XXX/XXXX.git
 git add .
 git commit -m &quot;XXXX&quot;
 git push -u origin master
-</code></pre>
-
-<h2 id="i-class-fa-fa-chevron-right-i-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</h2>
-
+</code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</h2>
 <pre><code>cd XXXX
 git remote rename origin old-origin
 git remote add origin git@github.com:XXX/XXXX.git
 git push -u origin --all
 git push -u origin --tags
 </code></pre>
-
 			</main>
 			<div class="pre-next vd-b-top">
 		
@@ -162,15 +143,12 @@ git push -u origin --tags
   <div class="vd-l-a">
     <div class="vd-l-title">大纲</div>
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#i-class-fa-fa-chevron-right-i-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</a></li>
-<li><a href="#i-class-fa-fa-chevron-right-i-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#i-classfa-fa-chevron-righti-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</a></li>
+    <li><a href="#i-classfa-fa-chevron-righti-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</a></li>
+  </ul>
 </nav>
     </div>
     <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
@@ -181,7 +159,7 @@ git push -u origin --tags
 	</div>
 </div>
   <div class="footer">
-  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="/about">关于视点</a> <a class="md-none" href="/about">版权声明</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a  class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg> 
   </div>
   
   </body>
