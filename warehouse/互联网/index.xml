@@ -6,7 +6,25 @@
     <description>Recent content in 互联网 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 集中管理图片地址</title>
+      <link>https://visdot.com/data/hugo_url/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_url/</guid>
+      <description>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 Jsdelivr 对网站图片进行加速，集中管</description>
+    </item>
+    
+    <item>
+      <title>使用 jsdelivr 免费加速你的网站</title>
+      <link>https://visdot.com/data/jsdelivr/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/jsdelivr/</guid>
+      <description>使用「github pages」建立的博客虽然免费，但在国内加载速度实在太慢，使用国内服务器又被「备案」困扰，现在可以使用「jsdelivr」</description>
+    </item>
+    
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
       <link>https://visdot.com/data/loading_bar/</link>

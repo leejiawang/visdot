@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/topic/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/topic/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 集中管理图片地址</title>
+      <link>https://visdot.com/data/hugo_url/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/hugo_url/</guid>
+      <description>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 Jsdelivr 对网站图片进行加速，集中管</description>
+    </item>
+    
     <item>
       <title>Hugo 中添加导航栏激活效果</title>
       <link>https://visdot.com/data/hugo_navbar/</link>
