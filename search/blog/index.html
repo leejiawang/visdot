@@ -30,21 +30,20 @@
       <ul class="menu">
         <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
-      <ul class="nav-search">
-        <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
-          <ul id="searchResults"></ul></li><li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+
+      <ul class="nav">
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
       </ul>
+      
       </nav>
     </div>
     </header>
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
-
-  <div class="mobile-nav-title">导 航</div>
   <div class="mobile-nav">
-  <a class="mobile-nav-button" href="/">主页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
   <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
 
@@ -77,9 +76,7 @@
 	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
 </style>
 
-<div class="vd-element" align="center">
-  <a href="/warehouse" style="font-size: 50px;font-weight: 500;color: #18A0FB;">Warehouse</a>
-</div>
+<img class="vd-photo vd-mobile" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png" style="width: 100%;max-width: 400px;">
 
 <div class="space-nav">
  <a id="Warehouse" class="space-btn" href="/warehouse">全部</a>
@@ -171,7 +168,34 @@
 			</ul>
 		</div>
 		<div class="sidebar">
-    <img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/si_item_2.jpg">
+	<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+    <div class="vd-photo" align="center">
+  <a href="/warehouse"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+    <style type="text/css">
+ 
+#fastSearch{display: inline-block; position: relative;}
+#searchInput {margin: 0 5px;width: 250px;font-size: .9em;box-sizing: border-box;padding: 8px 15px 8px 30px;color: #273849;outline: none; border-radius: 4px;border: 1px solid rgba(0,0,0,.1);transition: border-color 0.2s ease;background: rgba(0,0,0,.01) url(../img/search.png) 8px 6px no-repeat;background-size: 20px;}
+.vd-search {display: flex;align-items: center;}
+.vd-search ul { margin: 0 5px;width: 250px;z-index: 40;box-sizing: border-box;max-height: calc(100vh - 61px);overflow-y: auto;position: absolute;background-color: #fff;text-align: left;border-radius: 2px;margin-top: .3em;outline: 1px solid #E6E6E6;outline-offset: -1px;box-shadow: 0 0px 10px rgba(0,0,0,0.05);}
+#searchResults li {position: relative;display: block;border-radius: 2px;margin:.4em .37em;border-left: 5px solid #eee;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#searchResults a {font-size: 15px;display: inline-block;padding: .4em;line-height: 1.5em;border-radius: 2px;width: 250px;}
+#searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {color: #000;outline: 0;background: #f2f2f2;}
+</style>
+
+<div class="vd-search vd-element">
+	<li id="fastSearch" >
+	  <input id="searchInput" placeholder="搜索…" tabindex="0" >
+	  <ul id="searchResults"></ul>
+	</li>
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
+<script src="/js/fastsearch.js"></script>
+
     <div class="sidebar-items vd-element vd-b-bottom bg-w">
 	<div class="vd-l-title">消息</div>
 	<ul class="sidebar-list">		  
@@ -238,8 +262,6 @@
   </div>
   
   </body>
-	<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
-	<script src="/js/fastsearch.js"></script>
 	<script src="/js/common.js"></script>
 	<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
