@@ -11,14 +11,11 @@
     
     
     <link rel="icon" href="/img/favicon.png" type="image/x-icon">
-    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/highlight.css"/>
-    <link rel="stylesheet" href="/css/webgo.css"/>
   </head>
 
   <body>
-    <div class="header-line"></div>
     <div class="mobile-header bg-w">
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
@@ -68,6 +65,9 @@
 
   </div>
 </div>
+<style type="text/css">
+  #NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
 <div class="container w-1150">
 	<div class="flex">
 		<div class="main">
@@ -133,20 +133,14 @@
 			</ul>
 		</div>
 		<div class="sidebar">
-	<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
-</div>
-    <div class="vd-photo" align="center">
-  <a href="/warehouse"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
-</div>
-
+	<div class="sidebar-toc">
     <style type="text/css">
  
 #fastSearch{display: inline-block; position: relative;}
-#searchInput {margin: 0 5px;width: 250px;font-size: .9em;box-sizing: border-box;padding: 8px 15px 8px 30px;color: #273849;outline: none; border-radius: 4px;border: 1px solid rgba(0,0,0,.1);transition: border-color 0.2s ease;background: rgba(0,0,0,.01) url(../img/search.png) 8px 6px no-repeat;background-size: 20px;}
+#searchInput {margin: 0 5px;width: 250px;font-size: .9em;box-sizing: border-box;padding: 8px 15px 8px 30px;color: #273849;outline: none; border-radius: 30px;border: 1px solid rgba(0,0,0,.1);transition: border-color 0.2s ease;background: rgba(0,0,0,.01) url(../img/search.png) 8px 6px no-repeat;background-size: 20px;}
 .vd-search {display: flex;align-items: center;}
-.vd-search ul { margin: 0 5px;width: 250px;z-index: 40;box-sizing: border-box;max-height: calc(100vh - 61px);overflow-y: auto;position: absolute;background-color: #fff;text-align: left;border-radius: 2px;margin-top: .3em;outline: 1px solid #E6E6E6;outline-offset: -1px;box-shadow: 0 0px 10px rgba(0,0,0,0.05);}
-#searchResults li {position: relative;display: block;border-radius: 2px;margin:.4em .37em;border-left: 5px solid #eee;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.vd-search ul { margin: 0 5px;width: 250px;z-index: 10;box-sizing: border-box;max-height: calc(100vh - 61px);overflow-y: auto;position: absolute;background-color: #fff;text-align: left;outline: 1px solid #E6E6E6;outline-offset: -1px;box-shadow: 0 5px 10px rgba(0,0,0,0.1);}
+#searchResults li {position: relative;display: block;border-radius: 2px;margin:.4em .37em;border-bottom: 1px dotted #eee;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #searchResults a {font-size: 15px;display: inline-block;padding: .4em;line-height: 1.5em;border-radius: 2px;width: 250px;}
 #searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {color: #000;outline: 0;background: #f2f2f2;}
 </style>
@@ -161,13 +155,10 @@
 <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
 <script src="/js/fastsearch.js"></script>
 
-    <div class="sidebar-items vd-element vd-b-bottom bg-w">
-	<div class="vd-l-title">消息</div>
-	<ul class="sidebar-list">		  
-	本站目前处于开发测试阶段，此版本内容禁止转载，后期上线时间待定，敬请期待。有事通过此邮箱可联系管理员。 <a href="">leejiawang@live.com</a>
-	</ul>
-	<a class="vd-a" href="">了解详情</a>
+    <div class="vd-photo" align="center">
+  <a href="/warehouse"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
 </div>
+
     <div class="sidebar-items vd-element vd-b-bottom bg-w">
 	<div class="vd-l-title">检索</div>
    	<div class="keywords-terms">
@@ -220,6 +211,7 @@
     <a class="vd-a" href="/search">显示全部</a>
 </div>
 </div>
+</div>
 	</div>
 </div>
   <div class="footer">
@@ -227,7 +219,7 @@
   </div>
   
   </body>
-	<script src="/js/common.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
 	<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </html>
