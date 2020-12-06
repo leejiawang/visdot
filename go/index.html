@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>视点 › go</title>
+    
+    <meta name="description" property="og:description" content="">
+    
+    
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/webgo.css"/>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+      <ul class="nav-search">
+        <li id="fastSearch" ><input id="searchInput" placeholder="搜索…" tabindex="0" >
+          <ul id="searchResults"></ul></li><li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+
+  <div class="mobile-nav-title">导 航</div>
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/">主页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">仓 库</div>
+  <ul class="keywords-terms">
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/">互联网 <span class="list-count">24</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/">建站 <span class="list-count">18</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/">文档 <span class="list-count">9</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E7%A7%91%E6%99%AE/">科普 <span class="list-count">2</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E7%B3%BB%E7%BB%9F/">系统 <span class="list-count">6</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E8%AE%BE%E8%AE%A1/">设计 <span class="list-count">2</span></a>
+  
+      <a class="keywords-btn" href="https://visdot.com/warehouse/%E9%A1%B9%E7%9B%AE/">项目 <span class="list-count">4</span></a>
+  
+  </ul>
+
+  </div>
+</div>
+<style type="text/css">
+	#NavWebGO {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<img class="projects-img" src="/img/webgo.png">
+<div class="container w-1150">
+	<div class="markdown"></div>
+	
+
+<div class="px-20" align="center">
+	
+	<div class="vd-l-title pt-25">云服务</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.aliyun.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/aliyun.png">
+			<div class="wg-btn-t">阿里云</div>
+		</a>
+		<a class="wg-btn" href="https://cloud.tencent.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tencent_cloud.png">
+			<div class="wg-btn-t">腾讯云</div>
+		</a>
+		<a class="wg-btn" href="https://cloud.baidu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/baiduyun.png">
+			<div class="wg-btn-t">百度云</div>
+		</a>
+		<a class="wg-btn" href="https://www.jdcloud.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/jingdongyun.png">
+			<div class="wg-btn-t">京东云</div>
+		</a>
+		<a class="wg-btn" href="https://www.mtyun.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/meituanyun.png">
+			<div class="wg-btn-t">美团云</div>
+		</a>
+		<a class="wg-btn" href="https://www.didiyun.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/didiyun.png">
+			<div class="wg-btn-t">滴滴云</div>
+		</a>
+		<a class="wg-btn" href="https://www.huaweicloud.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/huaweiyun.png">
+			<div class="wg-btn-t">华为云</div>
+		</a>
+		<a class="wg-btn" href="https://portal.qiniu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/qiniuyun.png">
+			<div class="wg-btn-t">七牛云</div>
+		</a>
+		<a class="wg-btn" href="https://www.ctyun.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tianyiyun.png">
+			<div class="wg-btn-t">天翼云</div>
+		</a>
+		<a class="wg-btn" href="https://cloud.google.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/google_cloud.png">
+			<div class="wg-btn-t">Google Cloud</div>
+		</a>
+		<a class="wg-btn" href="https://aws.amazon.com/cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/aws.png">
+			<div class="wg-btn-t">AWS</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">站长工具</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://ziyuan.baidu.com/site/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/baidu.png">
+			<div class="wg-btn-t">百度站长</div>
+		</a>
+		<a class="wg-btn" href="https://zhanzhang.toutiao.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/toutiao.png">
+			<div class="wg-btn-t">头条站长</div>
+		</a>
+		<a class="wg-btn" href="https://zhanzhang.toutiao.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/360.png">
+			<div class="wg-btn-t">360 站长</div>
+		</a>
+		<a class="wg-btn" href="http://zhanzhang.sogou.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/sougou.png">
+			<div class="wg-btn-t">搜狗站长</div>
+		</a>
+		<a class="wg-btn" href="http://tool.chinaz.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/chinaz.png">
+			<div class="wg-btn-t">ChianZ 站长工具</div>
+		</a>
+		<a class="wg-btn" href="https://search.google.com/search-console/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/google.png">
+			<div class="wg-btn-t">Google Search Console</div>
+		</a>
+		<a class="wg-btn" href="https://analytics.google.com/analytics/web" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/analytics.png">
+			<div class="wg-btn-t">Google Analytics</div>
+		</a>
+		<a class="wg-btn" href="https://www.google.com/adsense" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/ad_sense.png">
+			<div class="wg-btn-t">Google AdSense</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">网络云盘</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://pan.baidu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/baiduwangpan.png">
+			<div class="wg-btn-t">百度网盘</div>
+		</a>
+		<a class="wg-btn" href="https://www.jianguoyun.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/jianguoyun.png">
+			<div class="wg-btn-t">坚果云</div>
+		</a>
+		<a class="wg-btn" href="https://www.weiyun.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/weiyun.webp">
+			<div class="wg-btn-t">微云</div>
+		</a>
+		<a class="wg-btn" href="https://skydrive.live.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/onedrive.png">
+			<div class="wg-btn-t">OneDrive</div>
+		</a>
+		<a class="wg-btn" href="https://cloud.189.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tianyiyunpan.png">
+			<div class="wg-btn-t">天翼云</div>
+		</a>
+		<a class="wg-btn" href="https://115.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/115.jpg">
+			<div class="wg-btn-t">115网盘</div>
+		</a>
+		<a class="wg-btn" href="https://pan.bitqiu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/bityun.png">
+			<div class="wg-btn-t">比特球网盘</div>
+		</a>
+		<a class="wg-btn" href="https://www.ctfile.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/chengtong.png">
+			<div class="wg-btn-t">城通网盘</div>
+		</a>
+		<a class="wg-btn" href="https://drive.google.com/drive/my-drive" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/google_drive.png">
+			<div class="wg-btn-t">Google Drive</div>
+		</a>
+		<a class="wg-btn" href="https://www.icloud.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/icloud.png">
+			<div class="wg-btn-t">iCloud Drive</div>
+		</a>
+		<a class="wg-btn" href="https://www.box.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/box.png">
+			<div class="wg-btn-t">Box</div>
+		</a>
+		<a class="wg-btn" href="https://www.dropbox.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/dropbox.png">
+			<div class="wg-btn-t">DropBox</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">网络视频</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.iqiyi.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/aiqiyi.png">
+			<div class="wg-btn-t">爱奇艺</div>
+		</a>
+		<a class="wg-btn" href="https://www.youku.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/youku.png">
+			<div class="wg-btn-t">优酷</div>
+		</a>
+		<a class="wg-btn" href="https://v.qq.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tenxunshipin.png">
+			<div class="wg-btn-t">腾讯视频</div>
+		</a>
+		<a class="wg-btn" href="https://www.bilibili.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/bilibili.png">
+			<div class="wg-btn-t">bilibili</div>
+		</a>
+		<a class="wg-btn" href="http://www.le.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/letv.png">
+			<div class="wg-btn-t">乐视视频</div>
+		</a>
+		<a class="wg-btn" href="https://www.mgtv.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/mangguotv.png">
+			<div class="wg-btn-t">芒果TV</div>
+		</a>
+		<a class="wg-btn" href="https://www.youtube.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/youtube.png">
+			<div class="wg-btn-t">YouTube</div>
+		</a>
+		<a class="wg-btn" href="https://www.pptv.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/pptv.png">
+			<div class="wg-btn-t">PP视频</div>
+		</a>
+		<a class="wg-btn" href="https://www.acfun.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/acfun.png">
+			<div class="wg-btn-t">AcFun</div>
+		</a>
+		<a class="wg-btn" href="https://tv.sohu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/souhutv.png">
+			<div class="wg-btn-t">搜狐视频</div>
+		</a>
+		<a class="wg-btn" href="https://www.ixigua.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/xigua.png">
+			<div class="wg-btn-t">西瓜视频</div>
+		</a>
+		<a class="wg-btn" href="https://hboasia.com/HBO/en-hk/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/hbo.png">
+			<div class="wg-btn-t">HBO</div>
+		</a>
+		<a class="wg-btn" href="https://www.netflix.com/hk/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/netflix.png">
+			<div class="wg-btn-t">Netflix</div>
+		</a>
+		<a class="wg-btn" href="https://www.imdb.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/imdb.png">
+			<div class="wg-btn-t">IMDB</div>
+		</a>
+		<a class="wg-btn" href="https://movie.douban.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/douban.png">
+			<div class="wg-btn-t">豆瓣电影</div>
+		</a>
+		<a class="wg-btn" href="https://www.rottentomatoes.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/rottentomatoes.png">
+			<div class="wg-btn-t">烂番茄</div>
+		</a>
+		<a class="wg-btn" href="https://maoyan.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/maoyan.png">
+			<div class="wg-btn-t">猫眼电影</div>
+		</a></a>
+	</div>
+
+	<div class="vd-l-title pt-25">地图服务</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.google.com/maps" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/google.png">
+			<div class="wg-btn-t">Google地图</div>
+		</a>
+		<a class="wg-btn" href="https://map.baidu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/baidu.png">
+			<div class="wg-btn-t">百度地图</div>
+		</a>
+		<a class="wg-btn" href="https://www.amap.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/gaode.png">
+			<div class="wg-btn-t">高德地图</div>
+		</a>
+		<a class="wg-btn" href="https://map.qq.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tencent_map.png">
+			<div class="wg-btn-t">腾讯地图</div>
+		</a>
+		<a class="wg-btn" href="https://cn.bing.com/maps" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/bing.png">
+			<div class="wg-btn-t">Bing地图</div>
+		</a>
+		<a class="wg-btn" href="http://www.dzmap.cn/TDTHN/portal/map/index.html" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tianditu.png">
+			<div class="wg-btn-t">天地图</div>
+		</a>
+		<a class="wg-btn" href="http://map.earthol.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/ditudaquan.png">
+			<div class="wg-btn-t">地图大全</div>
+		</a>
+		<a class="wg-btn" href="http://www.onegreen.net/index.html" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/dituwo.png">
+			<div class="wg-btn-t">地图窝</div>
+		</a>
+		<a class="wg-btn" href="http://pixelmap.amcharts.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/pixel_map.png">
+			<div class="wg-btn-t">PixelMap</div>
+		</a>
+		<a class="wg-btn" href="https://legacy.lib.utexas.edu/maps/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/texas_map.png">
+			<div class="wg-btn-t">TexasMap</div>
+		</a>
+		<a class="wg-btn" href="http://railmap.renchang.me/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/china_railways.png">
+			<div class="wg-btn-t">RailMap</div>
+		</a>
+		<a class="wg-btn" href="https://www.openstreetmap.org/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/open_street_map.png">
+			<div class="wg-btn-t">OpenStreetMap</div>
+		</a>
+		<a class="wg-btn" href="https://www.openrailwaymap.org/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/open_railway_map.png">
+			<div class="wg-btn-t">OpenRailwayMap</div>
+		</a>
+	</div>
+		
+	<div class="vd-l-title pt-25">工程创意</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.adobe.com/cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/adobe.png">
+			<div class="wg-btn-t">Adobe</div>
+		</a>
+		<a class="wg-btn" href="https://www.autodesk.com.cn" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/autodesk.png">
+			<div class="wg-btn-t">Autodesk</div>
+		</a>
+		<a class="wg-btn" href="https://www.corel.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/corel.png">
+			<div class="wg-btn-t">Corel</div>
+		</a>
+		<a class="wg-btn" href="https://www.sketchup.com/zh-CN" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/sketchup.png">
+			<div class="wg-btn-t">SketchUp</div>
+		</a>
+		<a class="wg-btn" href="https://www.rhino3d.com/cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/rhino.png">
+			<div class="wg-btn-t">Rhino</div>
+		</a>
+		<a class="wg-btn" href="http://www.maxon.net/en/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/maxon.jpg">
+			<div class="wg-btn-t">Maxon</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">效率办公</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.microsoftstore.com.cn/c/office" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/microsoft_office.png">
+			<div class="wg-btn-t">微软Office</div>
+		</a>
+		<a class="wg-btn" href="https://www.wps.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/wps.png">
+			<div class="wg-btn-t">WPS</div>
+		</a>
+		<a class="wg-btn" href="https://www.xmind.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/xmind.png">
+			<div class="wg-btn-t">XMind</div>
+		</a>
+		<a class="wg-btn" href="https://products.office.com/en-us/onenote/digital-note-taking-app" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/onenote.png">
+			<div class="wg-btn-t">OneNote</div>
+		</a>
+		<a class="wg-btn" href="https://note.youdao.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/youdaoyun.svg">
+			<div class="wg-btn-t">有道云笔记</div>
+		</a>
+		<a class="wg-btn" href="https://www.yinxiang.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/yinxiang.png">
+			<div class="wg-btn-t">印象笔记</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">工具型</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="http://pandownload.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/pandownload.png">
+			<div class="wg-btn-t">PanDownload</div>
+		</a>
+		<a class="wg-btn" href="https://dl.xunlei.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/xunlei.png">
+			<div class="wg-btn-t">迅雷</div>
+		</a>
+		<a class="wg-btn" href="http://www.internetdownloadmanager.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/idm.png">
+			<div class="wg-btn-t">Internet Download Manager</div>
+		</a>
+		<a class="wg-btn" href="www.winrar.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/winrar.png">
+			<div class="wg-btn-t">WinRAR</div>
+		</a>
+		<a class="wg-btn" href="https://www.vmware.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/vmware.png">
+			<div class="wg-btn-t">Vmware</div>
+		</a>
+		<a class="wg-btn" href="https://www.teamviewer.cn" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/teamviewer.png">
+			<div class="wg-btn-t">TeamViewer</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">黑果综合</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.tonymacx86.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/tonymacx86.png">
+			<div class="wg-btn-t">Tonymacx86</div>
+		</a>
+		<a class="wg-btn" href="https://imacos.top/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/hpgw.png">
+			<div class="wg-btn-t">黑苹果屋</div>
+		</a>
+		<a class="wg-btn" href="https://blog.daliansky.net/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/daliansky.png">
+			<div class="wg-btn-t">黑果小兵的部落阁</div>
+		</a>
+		<a class="wg-btn" href="https://imac.hk/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/hpgly.png">
+			<div class="wg-btn-t">黑苹果乐园</div>
+		</a>
+		<a class="wg-btn" href="https://www.insanelymac.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/insanely_mac.png">
+			<div class="wg-btn-t">InsanelyMac</div>
+		</a>
+		<a class="wg-btn" href="https://mackie100projects.altervista.org/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/mackie100projects.png">
+			<div class="wg-btn-t">Mackie 100 Projects</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">软件综合</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.iplaysoft.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/iplaysoft.png">
+			<div class="wg-btn-t">异次元</div>
+		</a>
+		<a class="wg-btn" href="https://www.inpandora.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/inpandora.png">
+			<div class="wg-btn-t">潘多拉盒子</div>
+		</a>
+		<a class="wg-btn" href="http://msdn.itellyou.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/msdn.png">
+			<div class="wg-btn-t">MSDN,ITellYou</div>
+		</a>
+		<a class="wg-btn" href="http://www.dayanzai.me/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/dayanzai.png">
+			<div class="wg-btn-t">大眼仔</div>
+		</a>
+		<a class="wg-btn" href="https://www.maczapp.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/maczapp.png">
+			<div class="wg-btn-t">苹果软件园</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">游戏综合</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://store.steampowered.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/steam.png">
+			<div class="wg-btn-t">Steam</div>
+		</a>
+		<a class="wg-btn" href="https://www.epicgames.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/epic_games.png">
+			<div class="wg-btn-t">EPIC Games</div>
+		</a>
+		<a class="wg-btn" href="https://www.3dmgame.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/3dm.png">
+			<div class="wg-btn-t">3DM</div>
+		</a>
+		<a class="wg-btn" href="https://www.gamersky.com" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/gamersky.jpg">
+			<div class="wg-btn-t">游民星空</div>
+		</a>
+		<a class="wg-btn" href="https://www.ali213.net/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/youxia.png">
+			<div class="wg-btn-t">游侠网</div>
+		</a>
+		<a class="wg-btn" href="http://www.yxdown.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/youxun.png">
+			<div class="wg-btn-t">游迅网</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">免费图片</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://unsplash.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/unsplash.png">
+			<div class="wg-btn-t">Unsplash</div>
+		</a>
+		<a class="wg-btn" href="https://www.pexels.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/pexels.png">
+			<div class="wg-btn-t">Pexels</div>
+		</a>
+		<a class="wg-btn" href="https://pixabay.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/pixabay.png">
+			<div class="wg-btn-t">pixabay</div>
+		</a>
+		<a class="wg-btn" href="https://www.stockvault.net/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/stockvault.png">
+			<div class="wg-btn-t">Stockvault</div>
+		</a>
+		<a class="wg-btn" href="https://www.canva.com/photos/free/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/canva.png">
+			<div class="wg-btn-t">Canva</div>
+		</a>
+		<a class="wg-btn" href="https://gratisography.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/gratisography.png">
+			<div class="wg-btn-t">Gratisography</div>
+		</a>
+		<a class="wg-btn" href="https://morguefile.com/photos/morguefile/1/pop" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/morguefile.png">
+			<div class="wg-btn-t">Morguefile</div>
+		</a>
+		<a class="wg-btn" href="https://picjumbo.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/picjumbo.png">
+			<div class="wg-btn-t">picjumbo</div>
+		</a>
+		<a class="wg-btn" href="https://www.rawpixel.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/rawpixel.png">
+			<div class="wg-btn-t">rawpixel</div>
+		</a>
+		<a class="wg-btn" href="https://www.reshot.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/reshot.png">
+			<div class="wg-btn-t">reshot</div>
+		</a>
+	</div>
+
+	<div class="vd-l-title pt-25">搜索引擎</div>
+	<div class="wg-l">
+		<a class="wg-btn" href="https://www.google.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/google.png">
+			<div class="wg-btn-t">Google</div>
+		</a>
+		<a class="wg-btn" href="https://www.baidu.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/baidu.png">
+			<div class="wg-btn-t">百度</div>
+		</a>
+		<a class="wg-btn" href="https://cn.bing.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/bing.png">
+			<div class="wg-btn-t">Bing</div>
+		</a>
+		<a class="wg-btn" href="https://so.m.sm.cn/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/shenma.png">
+			<div class="wg-btn-t">神马搜索</div>
+		</a>
+		<a class="wg-btn" href="https://www.sogou.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/sougou.png">
+			<div class="wg-btn-t">搜狗</div>
+		</a>
+		<a class="wg-btn" href="https://www.so.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/360_search.png">
+			<div class="wg-btn-t">360搜索</div>
+		</a>
+		<a class="wg-btn" href="https://hk.yahoo.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/yahoo.png">
+			<div class="wg-btn-t">Yahoo!</div>
+		</a>
+		<a class="wg-btn" href="https://yandex.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/yandex.png">
+			<div class="wg-btn-t">Yandex</div>
+		</a>
+		<a class="wg-btn" href="https://duckduckgo.com/" target="_blank">
+			<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/webgo/duckduckgo.png">
+			<div class="wg-btn-t">DuckDuckGo</div>
+		</a>
+	</div>
+
+<figcaption> 以上提供的页面均为官方性质，排名系个人偏好不分先后。</figcaption>
+</div>
+
+
+
+
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a  class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg> 
+  </div>
+  
+  </body>
+	<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
+	<script src="/js/fastsearch.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</html>

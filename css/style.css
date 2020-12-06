@@ -853,7 +853,7 @@ th {
   background-color: #F5F5F5;
 } 
 
-.keywords-btn:hover {
+.keywords-btn {
   background: rgba(0,0,0,.1);
 }
 
@@ -899,6 +899,45 @@ th {
   padding-left: 10px;
   text-align: right;
 }
+
+/* WebGO */
+.wg-l {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wg-btn{
+  padding: 0 5px 10px 5px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.wg-btn:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.wg-btn img {
+  max-width: 140;
+  padding: 10px;
+  max-height: 25px;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  object-fit: cover;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.wg-btn-t {
+  color: #B2B2B2;
+  line-height: 1em;
+  font-size: 13px;
+}
+
+
 
 /* Projects */
 .projects {
