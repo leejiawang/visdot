@@ -300,7 +300,7 @@ th {
 }
 
 
-.footer a, .sidebar-list a, .markdown a, .sidebar-a a {
+.sidebar-list a, .markdown a, .sidebar-a a {
   color: #5c5c5c;
   padding: 0 .3em;
   border-bottom: 2px solid rgba(0,0,0,0.1);
