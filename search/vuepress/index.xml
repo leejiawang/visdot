@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vuepress on 视点</title>
-    <link>https://visdot.com/search/vuepress/</link>
+    <link>https://leejiawang.github.io/visdot/search/vuepress/</link>
     <description>Recent content in Vuepress on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/vuepress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/search/vuepress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 jsdelivr 免费加速你的网站</title>
-      <link>https://visdot.com/data/jsdelivr/</link>
+      <link>https://leejiawang.github.io/visdot/data/jsdelivr/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/jsdelivr/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/jsdelivr/</guid>
       <description>使用「github pages」建立的博客虽然免费，但在国内加载速度实在太慢，使用国内服务器又被「备案」困扰，现在可以使用「jsdelivr」</description>
     </item>
     
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
-      <link>https://visdot.com/data/loading_bar/</link>
+      <link>https://leejiawang.github.io/visdot/data/loading_bar/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/loading_bar/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/loading_bar/</guid>
       <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
     </item>
     
     <item>
       <title>Vuepress 建站教程</title>
-      <link>https://visdot.com/data/vuepress/</link>
+      <link>https://leejiawang.github.io/visdot/data/vuepress/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/vuepress/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/vuepress/</guid>
       <description>Vuepress 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。 相关站点 Vuepress 官网 Vuepress 仓库 Vuepress 模板 第1步 安装 Vuepress 框架</description>
     </item>
     
     <item>
       <title>通过「highlight.js」给网站添加代码高亮</title>
-      <link>https://visdot.com/data/hugo_highlight/</link>
+      <link>https://leejiawang.github.io/visdot/data/hugo_highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/hugo_highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     

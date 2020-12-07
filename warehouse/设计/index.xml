@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>设计 on 视点</title>
-    <link>https://visdot.com/warehouse/%E8%AE%BE%E8%AE%A1/</link>
+    <link>https://leejiawang.github.io/visdot/warehouse/%E8%AE%BE%E8%AE%A1/</link>
     <description>Recent content in 设计 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/warehouse/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浅谈网页设计与开发</title>
-      <link>https://visdot.com/data/web_design/</link>
+      <link>https://leejiawang.github.io/visdot/data/web_design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/web_design/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/web_design/</guid>
       <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>https://visdot.com/data/symbol/</link>
+      <link>https://leejiawang.github.io/visdot/data/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/symbol/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     

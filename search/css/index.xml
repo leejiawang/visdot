@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on 视点</title>
-    <link>https://visdot.com/search/css/</link>
+    <link>https://leejiawang.github.io/visdot/search/css/</link>
     <description>Recent content in CSS on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/search/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
-      <link>https://visdot.com/data/loading_bar/</link>
+      <link>https://leejiawang.github.io/visdot/data/loading_bar/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/loading_bar/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/loading_bar/</guid>
       <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
     </item>
     
     <item>
       <title>Hugo 中添加导航栏激活效果</title>
-      <link>https://visdot.com/data/hugo_navbar/</link>
+      <link>https://leejiawang.github.io/visdot/data/hugo_navbar/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_navbar/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/hugo_navbar/</guid>
       <description>原理概述 本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。 使用到了 {{ .Title }} 这个变量会随着页面的不同而对应着</description>
     </item>
     
     <item>
       <title>通过「highlight.js」给网站添加代码高亮</title>
-      <link>https://visdot.com/data/hugo_highlight/</link>
+      <link>https://leejiawang.github.io/visdot/data/hugo_highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/hugo_highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     
     <item>
       <title>笔记「Bootstrap」</title>
-      <link>https://visdot.com/data/bootstrap/</link>
+      <link>https://leejiawang.github.io/visdot/data/bootstrap/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/bootstrap/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/bootstrap/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。 Bootstrap 是一套流行的前端</description>
     </item>
     
     <item>
       <title>笔记「CSS」</title>
-      <link>https://visdot.com/data/css/</link>
+      <link>https://leejiawang.github.io/visdot/data/css/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/css/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/css/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。 层叠样式表 Cascading Style Sheets 是</description>
     </item>
     
     <item>
       <title>笔记「Html」</title>
-      <link>https://visdot.com/data/html/</link>
+      <link>https://leejiawang.github.io/visdot/data/html/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/html/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/html/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。 HTML 称为超文本标记语</description>
     </item>
     
     <item>
       <title>笔记「JavaScript」</title>
-      <link>https://visdot.com/data/javascript/</link>
+      <link>https://leejiawang.github.io/visdot/data/javascript/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/javascript/</guid>
+      <guid>https://leejiawang.github.io/visdot/data/javascript/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。 JavaScript 作为 Web 浏览器的唯</description>
     </item>
     
