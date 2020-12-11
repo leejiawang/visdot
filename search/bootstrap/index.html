@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <div class="header-line"></div>
     <div class="mobile-header bg-w">
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
@@ -29,7 +30,78 @@
         <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">
+      <ul class="nav">      
+        <style type="text/css">
+ 
+#fastSearch{
+  display: inline-block;
+  position: relative;
+  margin: 0 12px;
+}
+
+#searchInput {
+  font-size: 16px;
+  width: 230px;
+  box-sizing: border-box;
+  padding: 8px 15px 8px 35px;
+  color: #273849;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.1); 
+  transition: border-color 0.2s ease;
+  background: rgba(0,0,0,.01) url(/img/search.png) 8px 7px no-repeat;
+  background-size: 20px;
+}
+
+#searchResults {
+  z-index: 40;
+  box-sizing: border-box;
+  max-height: calc(100vh - 61px);
+  overflow-y: auto;
+  position: absolute;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 2px;
+  margin-top: 7px;
+  width: 270px;
+  outline: 1px solid #D6D6D6;
+  outline-offset: -1px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+#searchResults li {
+  margin: 5px;
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#searchResults a {
+  font-size: 15px;
+  display: inline-block;
+  padding: .4em;
+  line-height: 1.5em;
+  border-radius: 2px;
+  padding-left: 10px;
+  width: 250px;
+}
+#searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {
+  color: #000;
+  outline: 0;
+  background: #f2f2f2;
+}
+</style>
+
+<li id="fastSearch" >
+  <input id="searchInput" placeholder="搜索…" tabindex="0" >
+  <ul id="searchResults"></ul>
+</li>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
+<script src="/js/fastsearch.js"></script>
+
        <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
       </ul>
       
@@ -111,27 +183,6 @@
 		</div>
 		<div class="sidebar">
 	<div class="sidebar-toc">
-    <style type="text/css">
- 
-#fastSearch{display: inline-block; position: relative;}
-#searchInput {margin: 0 5px;width: 250px;font-size: .9em;box-sizing: border-box;padding: 8px 15px 8px 30px;color: #273849;outline: none; border-radius: 30px;border: 1px solid rgba(0,0,0,.1);transition: border-color 0.2s ease;background: rgba(0,0,0,.01) url(../img/search.png) 8px 6px no-repeat;background-size: 20px;}
-.vd-search {display: flex;align-items: center;}
-.vd-search ul { margin: 0 5px;width: 250px;z-index: 10;box-sizing: border-box;max-height: calc(100vh - 61px);overflow-y: auto;position: absolute;background-color: #fff;text-align: left;outline: 1px solid #E6E6E6;outline-offset: -1px;box-shadow: 0 5px 10px rgba(0,0,0,0.1);}
-#searchResults li {position: relative;display: block;border-radius: 2px;margin:.4em .37em;border-bottom: 1px dotted #eee;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-#searchResults a {font-size: 15px;display: inline-block;padding: .4em;line-height: 1.5em;border-radius: 2px;width: 250px;}
-#searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {color: #000;outline: 0;background: #f2f2f2;}
-</style>
-
-<div class="vd-search vd-element">
-	<li id="fastSearch" >
-	  <input id="searchInput" placeholder="搜索…" tabindex="0" >
-	  <ul id="searchResults"></ul>
-	</li>
-</div>
-
-<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
-<script src="/js/fastsearch.js"></script>
-
     <div class="vd-photo" align="center">
   <a href="/warehouse"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
 </div>
@@ -192,12 +243,16 @@
 	</div>
 </div>
   <div class="footer">
-  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> <a class="md-none" href="http://beian.miit.gov.cn/" target="_blank">
+湘ICP备2020023240号-1</a> <a class="md-none" target="_blank" href="http://www.beian.gov.cn/">湘公网安备 43020302000239号</a> <a class="md-none" href="/about">关于视点</a> <a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
     <div class="ypy" style="padding: 10px 0;" align="center"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">由 <img src="https://img.wenhairu.com/images/2020/12/06/Wis0q.png" height="18px" style="margin-top: -3px;"> 提供 CDN 加速</a></div>
   </div>
  
   
   </body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.basic.common.js"></script>
+	<script src="/js/fastsearch.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
 	<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
