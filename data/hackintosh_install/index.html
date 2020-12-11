@@ -15,8 +15,8 @@
     
     <link rel="icon" href="/img/favicon.png" type="image/x-icon">
     <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leejiawang/visdot@master/css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leejiawang/visdot@master/css/highlight.css"/>
     
   </head>
 
@@ -35,72 +35,10 @@
       </ul>
 
       <ul class="nav">      
-        <style type="text/css">
- 
-#fastSearch{
-  display: inline-block;
-  position: relative;
-  padding: 7px 12px;
-}
-
-#searchInput {
-  font-size: 16px;
-  width: 230px;
-  box-sizing: border-box;
-  padding: 8px 15px 8px 35px;
-  color: #273849;
-  outline: none;
-  border-radius: 8px;
-  border: 1px solid rgba(0,0,0,.1); 
-  transition: border-color 0.2s ease;
-  background: rgba(0,0,0,.01) url(/img/search.png) 8px 7px no-repeat;
-  background-size: 20px;
-}
-
-#searchResults {
-  z-index: 40;
-  box-sizing: border-box;
-  overflow-y: auto;
-  position: absolute;
-  background-color: #fff;
-  text-align: left;
-  border-radius: 2px;
-  width: 270px;
-  margin-top: 2px;
-  outline: 1px solid #D6D6D6;
-  outline-offset: -1px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-#searchResults li {
-  margin: 5px;
-  position: relative;
-  display: block;
-  border-radius: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#searchResults a {
-  font-size: 15px;
-  display: inline-block;
-  padding: .4em;
-  line-height: 1.5em;
-  border-radius: 2px;
-  padding-left: 10px;
-  width: 250px;
-}
-#searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {
-  color: #000;
-  outline: 0;
-  background: #f2f2f2;
-}
-</style>
-
-<li id="fastSearch" >
-  <input id="searchInput" placeholder="搜索…" tabindex="0" >
-  <ul id="searchResults"></ul>
-</li>
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
        <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
       </ul>
       
@@ -173,7 +111,7 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/hackintosh-cdn.jpg" alt="hackintosh"  /></p>
+				<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/hackintosh-cdn.jpg" alt="hackintosh"  /></p>
 <p>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。</p>
 <blockquote>
 <p><strong>注意</strong></br>本教程需要 macOS 系统环境，如果没有 macOS 设备可使用PC安装macOS虚拟机操作。另外由于电脑配置不同，安装过程可能出现各种问题，后续驱动需进行针对性安装。本教程仅供参考。</p>
@@ -181,21 +119,21 @@
 <h2 id="第1步-制作系统安装盘">第1步 制作系统安装盘</h2>
 <p>通过 AppStore 下载<code> macOS镜像文件</code>，或从其他途径下载 <code>Mojave.app</code> 并拖入应用程序文件夹。
 使用<code>磁盘管理工具</code>格式化U盘为GUID分区格式<code> Mac OS Extended（日志式）</code>，单击抹掉U盘。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/macinstall.png" alt="磁盘管理"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/macinstall.png" alt="磁盘管理"  /></p>
 <h3 id="使用-unibeast-制作">使用 UniBeast 制作</h3>
 <p>直接使用 <a href="http://unibeast.com/"><strong>UniBeast</strong></a> 开始制作，引导过程根据设备情况选择，默认选择如下图所示:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/unibeast.png" alt="UniBeast"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/unibeast.png" alt="UniBeast"  /></p>
 <h3 id="使用-macos-终端制作">使用 macOS 终端制作</h3>
 <p>使用终端制作安装U盘，以安装 macOS Mojave 系统为例，输入如下代码并等待制作完成，据自己实际情况修改代码内容，此代码适用于系统版本为 Mojave ，U盘名称为 Mojave。</p>
 <pre><code>sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/Mojave --applicationpath /Applications/Install\ macOS\ Mojave.app --nointeraction
-</code></pre><p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/su.png" alt="终端"  /></p>
+</code></pre><p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/su.png" alt="终端"  /></p>
 <h2 id="第2步-安装原始系统引导">第2步 安装原始系统引导</h2>
 <blockquote>
 <p><strong>提示</strong></br>通过 <code>UniBeast</code> 制作的系统安装U盘会自带基础引导程序，可跳过此步骤。
 使用macOS操作环境下载并安装 <a href="https://github.com/CloverHackyColor/CloverBootloader/releases"><strong>Clover EFI bootloader</strong></a> 程序，注意安装时选择正确的安装位置。</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover1.png" alt="Clover"  /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover2.png" alt="Clover"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover1.png" alt="Clover"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover2.png" alt="Clover"  /></p>
 <h2 id="第3步-安装系统">第3步 安装系统</h2>
 <p>将制作好的系统安装U盘插入待安装的设备，重启进入<code>BIOS</code>并调整下表中的选项（如果有）。然后选择<code>系统安装U盘</code>为启动<strong>首选项</strong>，按<code>F10</code>保存设置并重启设备。</p>
 <blockquote>
@@ -232,7 +170,7 @@
 </tbody>
 </table>
 <p>重启进入<code>clover</code>界面后选择U盘启动。系统安装完后进行简单地配置就能进入桌面了，建议首次安装配置过程中设备不要联网。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover-efi.png" alt="Clover"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover-efi.png" alt="Clover"  /></p>
 <h2 id="第4步-详细配置系统引导">第4步 详细配置系统引导</h2>
 <p>可使用 <a href="https://mackie100projects.altervista.org/download-clover-configurator/"><strong>Clover Configurator</strong></a>  根据设备情况配置自己的 Clover 配置文件。</p>
 <h2 id="第5步-系统优化-安装驱动">第5步 系统优化 (安装驱动)</h2>
@@ -381,21 +319,21 @@
 </div>
 <h2 id="第7步-性能测试">第7步 性能测试</h2>
 <p>可使用 <a href="https://www.videoproc.com/"><strong>VideoProc</strong></a> 检测显卡驱动是否正确安装，打开程序后点击右下角<code>设置</code>，在通用选项卡中点击硬件加速引擎后的 <code>选项</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/videoproc.png" alt="VideoProc"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/videoproc.png" alt="VideoProc"  /></p>
 <h2 id="第8步-系统维护">第8步 系统维护</h2>
 <p>在安装并优化好黑苹果系统之后，如果不喜欢折腾，可以关闭系统更新选项，这样会省去很多烦劳，因为更新系统存在系统损坏造成文件丢失的风险。</p>
 <p>但如果你喜欢常识新系统或者所要使用的软件仅支持新系统，那么你可以时间机器备份好数据，事先更新好 clover EFI 系统引导以及相关驱动，再尝试更新系统，这样能大大降低失败的几率。</p>
 <h3 id="更新-clover-efi-系统引导">更新 clover EFI 系统引导</h3>
 <p>下载并安装 <a href="/hackintosh/install/#i-class-fa-fa-download-i-clover-configurator">Clover Configurator</a>。点击左侧安装更新选项，勾选保存到桌面，点击下载。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover-update.png" alt="clover EFI"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover-update.png" alt="clover EFI"  /></p>
 <p>待下载完成后点击安装包进行安装，<strong>注意要使用自定义安装</strong>，参考下图勾选相应的选项。</p>
 <div align="center"> 
 <img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover-update-install.png" width="300px"></div>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover1.png" alt="clover EFI"  /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/clover-update-ui.png" alt="clover EFI"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover1.png" alt="clover EFI"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/clover-update-ui.png" alt="clover EFI"  /></p>
 <h3 id="更新-kexts-驱动">更新 Kexts 驱动</h3>
 <p>下载并安装 <a href="/hackintosh/install/#i-class-fa-fa-download-i-clover-configurator">Clover Configurator</a>。打开该工具，点击左侧 Kexts 安装选项，然后点击右上角刷新按钮，待其检测完毕，可更新的选项背景会变为绿色。勾选绿色选项并点击下载即可。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/cloverkext.png" alt="Kexts"  /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/cloverkext.png" alt="Kexts"  /></p>
 
 			</main>
 			<div class="pre-next vd-b-top">
@@ -456,7 +394,7 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
-  <script src="/js/fastsearch.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot@master/js/fastsearch.js"></script>
   
   </body>
 </html>
