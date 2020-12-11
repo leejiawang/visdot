@@ -929,7 +929,7 @@ th {
 /* Fooder */
 .footer {
   font-size: .8em;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
   color: #9f9f9f;
 }
@@ -954,6 +954,9 @@ th {
   }
   table {
     display: block;
+  }
+  .pace .pace-progress, .header-line {
+    display: none;
   }
   .gallery-items {
     width: 48%;
