@@ -105,7 +105,8 @@ function loadSearch() {
       keys: [
         'permalink',
         'title',
-        'tags',
+        'space',
+        'search',
         'contents'
         ]
     };
