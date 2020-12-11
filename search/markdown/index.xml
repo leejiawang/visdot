@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on 视点</title>
-    <link>https://leejiawang.github.io/visdot/search/markdown/</link>
+    <link>/search/markdown/</link>
     <description>Recent content in Markdown on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/search/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vuepress 建站教程</title>
-      <link>https://leejiawang.github.io/visdot/data/vuepress/</link>
+      <link>/data/vuepress/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/vuepress/</guid>
+      <guid>/data/vuepress/</guid>
       <description>Vuepress 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。 相关站点 Vuepress 官网 Vuepress 仓库 Vuepress 模板 第1步 安装 Vuepress 框架</description>
     </item>
     
     <item>
       <title>HEXO 建站教程</title>
-      <link>https://leejiawang.github.io/visdot/data/hexo/</link>
+      <link>/data/hexo/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/hexo/</guid>
+      <guid>/data/hexo/</guid>
       <description>Hexo 是一款快速、简洁且高效的博客框架，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。 相关站点： Hexo官网 Hexo</description>
     </item>
     
     <item>
       <title>从零开始 Hugo 建站教程</title>
-      <link>https://leejiawang.github.io/visdot/data/hugo_install/</link>
+      <link>/data/hugo_install/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/hugo_install/</guid>
+      <guid>/data/hugo_install/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署,本站即为 Hugo 博客框架搭建。 相关站点： Hugo官网 Hugo主题 Hu</description>
     </item>
     
     <item>
       <title>Markdown 基础语法</title>
-      <link>https://leejiawang.github.io/visdot/data/markdown/</link>
+      <link>/data/markdown/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/markdown/</guid>
+      <guid>/data/markdown/</guid>
       <description>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。 Markdown 的创始人为约翰·格鲁伯 John Grube</description>
     </item>
     

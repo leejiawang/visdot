@@ -2,206 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search on 视点</title>
-    <link>https://leejiawang.github.io/visdot/search/</link>
+    <link>/search/</link>
     <description>Recent content in Search on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/search/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://leejiawang.github.io/visdot/search/blog/</link>
+      <link>/search/blog/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/blog/</guid>
+      <guid>/search/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hexo</title>
-      <link>https://leejiawang.github.io/visdot/search/hexo/</link>
+      <link>/search/hexo/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/hexo/</guid>
+      <guid>/search/hexo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html</title>
-      <link>https://leejiawang.github.io/visdot/search/html/</link>
+      <link>/search/html/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/html/</guid>
+      <guid>/search/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://leejiawang.github.io/visdot/search/hugo/</link>
+      <link>/search/hugo/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/hugo/</guid>
+      <guid>/search/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>https://leejiawang.github.io/visdot/search/javascript/</link>
+      <link>/search/javascript/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/javascript/</guid>
+      <guid>/search/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q&amp;A</title>
-      <link>https://leejiawang.github.io/visdot/search/qa/</link>
+      <link>/search/qa/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/qa/</guid>
+      <guid>/search/qa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vuepress</title>
-      <link>https://leejiawang.github.io/visdot/search/vuepress/</link>
+      <link>/search/vuepress/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/vuepress/</guid>
+      <guid>/search/vuepress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>https://leejiawang.github.io/visdot/search/web/</link>
+      <link>/search/web/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/web/</guid>
+      <guid>/search/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CSS</title>
-      <link>https://leejiawang.github.io/visdot/search/css/</link>
+      <link>/search/css/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/css/</guid>
+      <guid>/search/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>macOS</title>
-      <link>https://leejiawang.github.io/visdot/search/macos/</link>
+      <link>/search/macos/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/macos/</guid>
+      <guid>/search/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>https://leejiawang.github.io/visdot/search/windows/</link>
+      <link>/search/windows/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/windows/</guid>
+      <guid>/search/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips</title>
-      <link>https://leejiawang.github.io/visdot/search/tips/</link>
+      <link>/search/tips/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/tips/</guid>
+      <guid>/search/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Download</title>
-      <link>https://leejiawang.github.io/visdot/search/download/</link>
+      <link>/search/download/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/download/</guid>
+      <guid>/search/download/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Color</title>
-      <link>https://leejiawang.github.io/visdot/search/color/</link>
+      <link>/search/color/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/color/</guid>
+      <guid>/search/color/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design</title>
-      <link>https://leejiawang.github.io/visdot/search/design/</link>
+      <link>/search/design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/design/</guid>
+      <guid>/search/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fonts</title>
-      <link>https://leejiawang.github.io/visdot/search/fonts/</link>
+      <link>/search/fonts/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/fonts/</guid>
+      <guid>/search/fonts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grammar</title>
-      <link>https://leejiawang.github.io/visdot/search/grammar/</link>
+      <link>/search/grammar/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/grammar/</guid>
+      <guid>/search/grammar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google</title>
-      <link>https://leejiawang.github.io/visdot/search/google/</link>
+      <link>/search/google/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/google/</guid>
+      <guid>/search/google/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://leejiawang.github.io/visdot/search/git/</link>
+      <link>/search/git/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/git/</guid>
+      <guid>/search/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>https://leejiawang.github.io/visdot/search/markdown/</link>
+      <link>/search/markdown/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/markdown/</guid>
+      <guid>/search/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackintosh</title>
-      <link>https://leejiawang.github.io/visdot/search/hackintosh/</link>
+      <link>/search/hackintosh/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/hackintosh/</guid>
+      <guid>/search/hackintosh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bootstrap</title>
-      <link>https://leejiawang.github.io/visdot/search/bootstrap/</link>
+      <link>/search/bootstrap/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/search/bootstrap/</guid>
+      <guid>/search/bootstrap/</guid>
       <description></description>
     </item>
     

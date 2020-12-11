@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tips on 视点</title>
-    <link>https://leejiawang.github.io/visdot/search/tips/</link>
+    <link>/search/tips/</link>
     <description>Recent content in Tips on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leejiawang.github.io/visdot/search/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/search/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS 常见问题解决办法</title>
-      <link>https://leejiawang.github.io/visdot/data/macos_tips/</link>
+      <link>/data/macos_tips/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/macos_tips/</guid>
+      <guid>/data/macos_tips/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;对于刚接触 macOS 的用户来说，突如其来的各种弹窗警告会让他们措手不及，下面我就来介绍一下一些弹窗的解决措施。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,37 +20,37 @@
     
     <item>
       <title>Windows 系统使用技巧</title>
-      <link>https://leejiawang.github.io/visdot/data/windows_tips/</link>
+      <link>/data/windows_tips/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/windows_tips/</guid>
+      <guid>/data/windows_tips/</guid>
       <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
     </item>
     
     <item>
       <title>常用黑苹果系统安装相关工具</title>
-      <link>https://leejiawang.github.io/visdot/data/hackintosh_tools/</link>
+      <link>/data/hackintosh_tools/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/hackintosh_tools/</guid>
+      <guid>/data/hackintosh_tools/</guid>
       <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
     </item>
     
     <item>
       <title>浅谈网页设计与开发</title>
-      <link>https://leejiawang.github.io/visdot/data/web_design/</link>
+      <link>/data/web_design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/web_design/</guid>
+      <guid>/data/web_design/</guid>
       <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
     </item>
     
     <item>
       <title>色彩基础概念</title>
-      <link>https://leejiawang.github.io/visdot/data/colors/</link>
+      <link>/data/colors/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leejiawang.github.io/visdot/data/colors/</guid>
+      <guid>/data/colors/</guid>
       <description>色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，</description>
     </item>
     
