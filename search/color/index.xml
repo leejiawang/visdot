@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Color on 视点</title>
-    <link>/search/color/</link>
+    <link>https://visdot.com/search/color/</link>
     <description>Recent content in Color on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/color/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/color/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浅谈网页设计与开发</title>
-      <link>/data/web_design/</link>
+      <link>https://visdot.com/data/web_design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/web_design/</guid>
+      <guid>https://visdot.com/data/web_design/</guid>
       <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
     </item>
     
     <item>
       <title>色彩基础概念</title>
-      <link>/data/colors/</link>
+      <link>https://visdot.com/data/colors/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/colors/</guid>
+      <guid>https://visdot.com/data/colors/</guid>
       <description>色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，</description>
     </item>
     

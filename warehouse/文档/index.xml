@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>文档 on 视点</title>
-    <link>/warehouse/%E6%96%87%E6%A1%A3/</link>
+    <link>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</link>
     <description>Recent content in 文档 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/warehouse/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>笔记「Bootstrap」</title>
-      <link>/data/bootstrap/</link>
+      <link>https://visdot.com/data/bootstrap/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/bootstrap/</guid>
+      <guid>https://visdot.com/data/bootstrap/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。 Bootstrap 是一套流行的前端</description>
     </item>
     
     <item>
       <title>笔记「CSS」</title>
-      <link>/data/css/</link>
+      <link>https://visdot.com/data/css/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/css/</guid>
+      <guid>https://visdot.com/data/css/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。 层叠样式表 Cascading Style Sheets 是</description>
     </item>
     
     <item>
       <title>笔记「Html」</title>
-      <link>/data/html/</link>
+      <link>https://visdot.com/data/html/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/html/</guid>
+      <guid>https://visdot.com/data/html/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。 HTML 称为超文本标记语</description>
     </item>
     
     <item>
       <title>笔记「JavaScript」</title>
-      <link>/data/javascript/</link>
+      <link>https://visdot.com/data/javascript/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/javascript/</guid>
+      <guid>https://visdot.com/data/javascript/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。 JavaScript 作为 Web 浏览器的唯</description>
     </item>
     
     <item>
       <title>充斥互联网的各种单位</title>
-      <link>/data/speed_unit/</link>
+      <link>https://visdot.com/data/speed_unit/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/data/speed_unit/</guid>
+      <guid>https://visdot.com/data/speed_unit/</guid>
       <description>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。 容量单位 要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表字</description>
     </item>
     
     <item>
       <title>常用 DNS 速查表</title>
-      <link>/data/dns/</link>
+      <link>https://visdot.com/data/dns/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/dns/</guid>
+      <guid>https://visdot.com/data/dns/</guid>
       <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
     </item>
     
     <item>
       <title>Markdown 基础语法</title>
-      <link>/data/markdown/</link>
+      <link>https://visdot.com/data/markdown/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/markdown/</guid>
+      <guid>https://visdot.com/data/markdown/</guid>
       <description>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。 Markdown 的创始人为约翰·格鲁伯 John Grube</description>
     </item>
     
     <item>
       <title>Git 基础语法</title>
-      <link>/data/git/</link>
+      <link>https://visdot.com/data/git/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/git/</guid>
+      <guid>https://visdot.com/data/git/</guid>
       <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>/data/symbol/</link>
+      <link>https://visdot.com/data/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/symbol/</guid>
+      <guid>https://visdot.com/data/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     

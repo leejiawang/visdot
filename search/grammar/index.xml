@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grammar on 视点</title>
-    <link>/search/grammar/</link>
+    <link>https://visdot.com/search/grammar/</link>
     <description>Recent content in Grammar on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/grammar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/grammar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 添加自定义分类</title>
-      <link>/data/hugo_category/</link>
+      <link>https://visdot.com/data/hugo_category/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/hugo_category/</guid>
+      <guid>https://visdot.com/data/hugo_category/</guid>
       <description>对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片</description>
     </item>
     
     <item>
       <title>Hugo 按需求添加文章列表</title>
-      <link>/data/hugo_lists/</link>
+      <link>https://visdot.com/data/hugo_lists/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/hugo_lists/</guid>
+      <guid>https://visdot.com/data/hugo_lists/</guid>
       <description>全站文章列表 在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 single.html 中的适当位置添加如下代码。 &amp;lt;ul&amp;gt; {{ $pages := .Pages }} {{ $pages = .Site.RegularPages }} {{ range (where $pages &amp;#34;Section&amp;#34; &amp;#34;!=&amp;#34; &amp;#34;&amp;#34;) }} &amp;lt;li&amp;gt; &amp;lt;a</description>
     </item>
     
     <item>
       <title>Hugo 模板的原理及使用</title>
-      <link>/data/hugo_template/</link>
+      <link>https://visdot.com/data/hugo_template/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/hugo_template/</guid>
+      <guid>https://visdot.com/data/hugo_template/</guid>
       <description>原理概述 Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块</description>
     </item>
     
     <item>
       <title>Markdown 基础语法</title>
-      <link>/data/markdown/</link>
+      <link>https://visdot.com/data/markdown/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/markdown/</guid>
+      <guid>https://visdot.com/data/markdown/</guid>
       <description>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。 Markdown 的创始人为约翰·格鲁伯 John Grube</description>
     </item>
     
     <item>
       <title>Git 基础语法</title>
-      <link>/data/git/</link>
+      <link>https://visdot.com/data/git/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/git/</guid>
+      <guid>https://visdot.com/data/git/</guid>
       <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     

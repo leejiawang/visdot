@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topic on 视点</title>
-    <link>/topic/</link>
+    <link>https://visdot.com/topic/</link>
     <description>Recent content in Topic on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/topic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/topic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>/topic/hugo/</link>
+      <link>https://visdot.com/topic/hugo/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/topic/hugo/</guid>
+      <guid>https://visdot.com/topic/hugo/</guid>
       <description></description>
     </item>
     

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Download on 视点</title>
-    <link>/search/download/</link>
+    <link>https://visdot.com/search/download/</link>
     <description>Recent content in Download on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/search/download/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/download/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 系统安装教程</title>
-      <link>/data/windows_install/</link>
+      <link>https://visdot.com/data/windows_install/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/windows_install/</guid>
+      <guid>https://visdot.com/data/windows_install/</guid>
       <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>常用黑苹果系统安装相关工具</title>
-      <link>/data/hackintosh_tools/</link>
+      <link>https://visdot.com/data/hackintosh_tools/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/hackintosh_tools/</guid>
+      <guid>https://visdot.com/data/hackintosh_tools/</guid>
       <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
     </item>
     
     <item>
       <title>黑苹果系统简易安装教程</title>
-      <link>/data/hackintosh_install/</link>
+      <link>https://visdot.com/data/hackintosh_install/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/hackintosh_install/</guid>
+      <guid>https://visdot.com/data/hackintosh_install/</guid>
       <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>/data/symbol/</link>
+      <link>https://visdot.com/data/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/data/symbol/</guid>
+      <guid>https://visdot.com/data/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     
