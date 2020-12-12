@@ -141,7 +141,7 @@ function executeSearch(term) {
             continue;
         }
     //   console.log('item: %d, title: %s', item, results[item].item.title)
-      searchitems = searchitems + '<li><a href="' + results[item].item.permalink + '" tabindex="0">' + '<span class="title">' + results[item].item.title + '</span></a></li>';
+      searchitems = searchitems + '<li><a href="' + results[item].item.permalink + '" tabindex="0">' + results[item].item.title + '</a></li>';
       permalinks.push(results[item].item.permalink);
     }
     resultsAvailable = true;

@@ -1,7 +1,7 @@
 /* Loading bar */
 .pace {-webkit-pointer-events: none;pointer-events: none;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
 .pace-inactive {display: none;}
-.pace .pace-progress { background: #79B8FF;position: fixed;z-index: 2000;top: 0;right: 100%;width: 100%;height: 3px;}
+.pace .pace-progress { background: #79B8FF;position: fixed;z-index: 2000;top: 0;right: 100%;width: 100%;height: 2px;}
 
 
 /* Scroll bar */
@@ -382,7 +382,7 @@ th {
 .header-line {
   position: fixed;
   width: 100%;top: 0;
-  height: 3px;
+  height: 2px;
   background-color: #444444;
   top: 0px;
   z-index: 50;
@@ -390,7 +390,7 @@ th {
 
 .header{
   z-index: 20;
-  margin-top: 3px;
+  margin-top: 2px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -487,7 +487,7 @@ th {
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,.1); 
   transition: border-color 0.2s ease;
-  background: rgba(0,0,0,.01) url(/img/search.png) 8px 7px no-repeat;
+  background: rgba(0,0,0,.01) url(../img/search.png) 8px 7px no-repeat;
   background-size: 20px;
 }
 
@@ -508,26 +508,24 @@ th {
 
 #searchResults li {
   margin: 5px;
-  position: relative;
-  display: block;
-  border-radius: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 37px;
 }
 
 #searchResults a {
   font-size: 15px;
   display: inline-block;
-  padding: .4em;
-  line-height: 1.5em;
+  line-height: 15px;
   border-radius: 2px;
-  padding-left: 10px;
-  width: 250px;
+  padding: 10px 10px 12px 10px;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #searchResults li:hover, #searchResults a:hover, #searchResults li:focus, #searchResults a:focus {
   color: #000;
+  outline: 0;
   background: #f2f2f2;
 }
 
@@ -609,7 +607,6 @@ th {
 }
 
 /* Sidebar style */
-
 .sidebar-toc {
   position: -webkit-sticky;
   position: sticky;
