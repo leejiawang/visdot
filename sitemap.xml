@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://visdot.com/data/shell/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/data/hugo_url/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -173,22 +178,52 @@
   </url>
   
   <url>
+    <loc>https://visdot.com/data/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/shell/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/search/web/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visdot.com/search/blog/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://visdot.com/data/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://visdot.com/search/hexo/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,32 +253,12 @@
   </url>
   
   <url>
-    <loc>https://visdot.com/search/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://visdot.com/topic/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://visdot.com/search/vuepress/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/warehouse/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/search/web/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -264,11 +279,6 @@
   
   <url>
     <loc>https://visdot.com/search/windows/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   

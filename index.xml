@@ -6,7 +6,16 @@
     <description>Recent content in Home on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>笔记「Shell」</title>
+      <link>https://visdot.com/data/shell/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/shell/</guid>
+      <description>基本语法 #!/bin/bash echo &amp;#34;Hello World !&amp;#34; 特殊字符用法 参数 说明 $# 传递到脚本的参数个数 $* 以一个单字符串显示所有向脚本传递的参数。 $$ 脚本运行的当前进程ID号 $! 后台运行的</description>
+    </item>
+    
     <item>
       <title>Hugo 集中管理图片地址</title>
       <link>https://visdot.com/data/hugo_url/</link>

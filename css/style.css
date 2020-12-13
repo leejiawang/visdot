@@ -40,6 +40,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 53px;
+  height:100%;
   box-sizing: inherit;
   background-color: #fff;
 }
@@ -200,7 +201,7 @@ table {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 20px auto;
+  margin: 10px auto;
   white-space: nowrap;
 }
 
@@ -237,8 +238,16 @@ th {
 .bg-black {background-color: #424242}
 
 .w-630 {max-width: 630px;margin: 0 auto;}
+.w-730 {max-width: 730px;margin: 0 auto;}
 .w-1012 {max-width: 1012px;margin: 0 auto;}
 .w-1150 {max-width: 1150px;margin: 0 auto;}
+
+.vd-fixed {position: fixed;}
+.vd-maxh {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+}
 
 .vd-glass-b {background: rgba(0,0,0,0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -278,10 +287,13 @@ th {
 
 .vd-l-title {
   margin: 0 auto 15px 3px; 
-  color: rgba(0,0,0,.7);
-  font-weight: 500;
-  font-size: 22px;
+  color: rgba(0,0,0,.3);
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #E6E6E6;
 }
+
 
 .vd-l-a a {padding: 3px 6px;border-radius: 4px;}
 .vd-l-a a:hover, .vd-a:hover, .next-btn:hover, .pre-btn:hover { background-color: rgba(0,0,0,.03);}
@@ -335,7 +347,7 @@ th {
   justify-content: center;
 }
 
-.main{ 
+.main{
   width: 100%;
   border-radius: 2px;
   background: #fff;
@@ -357,14 +369,30 @@ th {
 }
 
 .full-sidebar {
+  font-size: .95em;
   width: 350px;
   min-width: 350px;
   font-size: .95em;
   margin: 0 5px;
 }
 
-.sidebar-fixed {
+.left-sidebar {
   width: 290px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.doc-sidebar {
+  z-index: 10;
+  padding: 20px 15px;
+  width: 190px;
+  top: 53px;
+  bottom: 0px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar-fixed {
+  width: 250px;
   padding-top: 65px;
   position: fixed;
   top: 0;
@@ -610,7 +638,7 @@ th {
 .sidebar-toc {
   position: -webkit-sticky;
   position: sticky;
-  top: 63px;
+  top: 55px;
 }
 
 .sidebar-title {
@@ -665,21 +693,19 @@ th {
 
 
 /* Table Of Contents */
-
 #TableOfContents {
   white-space: nowrap;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0 0 15px 0;
 }
-
 
 #TableOfContents ul {
   margin: 0px;
 }
 
 #TableOfContents ul ul{
-  font-size: .95em;
+  font-size: .9em;
   padding-bottom: .5em;} 
 
 #TableOfContents ul ul li:before {
@@ -767,7 +793,6 @@ th {
 }
 
 .markdown p {
-  line-height: 1.8em;
   position: relative;
   z-index: 1;
   word-spacing: 0.05em;
@@ -776,6 +801,27 @@ th {
 .markdown img {
   text-indent: 0em !important;
   border-radius: 2px;
+}
+
+.markdown ul {
+  padding-left: 10px;
+}
+
+.markdown li {
+  margin: 0 0 1em 0;
+  list-style-type: none;
+  background-image: url(/img/list_style_type.png);
+  background-repeat: no-repeat;
+  background-position: left .7em;
+  padding: 0 0 0 1.2em;
+  -webkit-background-size: auto 8px;
+  -moz-background-size: auto 8px;
+  background-size: auto 8px;
+}
+
+.docs-meta {
+  padding-top: 15px;
+  margin: 0 auto;
 }
 
 .post-meta {
@@ -987,6 +1033,7 @@ th {
 
 /* Fooder */
 .footer {
+  z-index: 100;
   font-size: .8em;
   padding: 20px 0;
   text-align: center;
@@ -1013,6 +1060,10 @@ th {
   }
   table {
     display: block;
+    min-width: 100%;
+  }
+  td {
+    width: 100%;
   }
   .pace .pace-progress, .header-line {
     display: none;
@@ -1041,7 +1092,7 @@ th {
   border: 0px solid #dadce0;
   box-shadow: none;
 }
-.toc,.full-sidebar, .sidebar, .header, #fastSearch, .md-none {
+.toc, .left-sidebar, .full-sidebar, .sidebar, .header, #fastSearch, .md-none {
   display: none;
 }
 .mobile-header {
@@ -1058,7 +1109,5 @@ body {
 }
 
 @media (min-width: 1012px) {
-  #TableOfContents {
-    max-height: 500px;
-  }
+
 }
