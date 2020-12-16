@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>视点 › 快速给网站加上黑暗模式</title>
+    
+    <meta name="keywords" content="黑暗模式, Dark, mode, 网站, Hugo, Hexo, 建站, Blog, 教程, 视由, 视界事由, eyecus, 博客, Markdown">
+    
+    <meta name="description" property="og:description" content="随着各大电脑和移动操作系统纷纷推出了黑暗模式，越来越多的网站和 App 都跟进了该功能，为实现用户的一致体验，赶紧看看怎么添加吧。">
+    
+    
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#实现原理">实现原理</a></li>
+    <li><a href="#取值列表">取值列表</a></li>
+    <li><a href="#明暗切换">明暗切换</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">快速给网站加上黑暗模式</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/css">CSS</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hexo">Hexo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/vuepress">Vuepress</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20201216, have 805 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>随着各大电脑和移动操作系统纷纷推出了黑暗模式，越来越多的网站和 App 都跟进了该功能，为实现用户的一致体验，赶紧看看怎么添加吧。</p>
+<h2 id="实现原理">实现原理</h2>
+<p>本文所介绍的方法主要用到了 CSS 的 <code>filter</code>「滤镜属性」。用到了它的 <code>invert(%)</code>「颜色反转」和 <code>hue-rotate(deg)</code>「色相反转」。</p>
+<div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">html</span> <span class="p">{</span>
+  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><figcaption>可直接在网页的 CSS 样式表中加入上述代码预览效果。</figcaption>
+<ul>
+<li><code>invert(1)</code> 颜色反转，反向输出图像着色，值为「1」说明完全反转。</li>
+<li><code>hue-rotate(180deg)</code> 调整色相，值为「180deg」说明调整色相180°。</li>
+</ul>
+<blockquote>
+<p>实际使用中「invert」值取「0.85」效果最佳。</p>
+</blockquote>
+<p>通过这两步就基本实现了黑暗效果。但是我们会发现页面上的图片等媒体的颜色会变得不正常，影响观看，这时可以为他们新建规则来抵消颜色变化，仅添加一个亮度降低效果即可。</p>
+<div class="highlight"><pre class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">img</span><span class="o">,</span> <span class="nt">video</span> <span class="p">{</span>
+  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">0.9</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><figcaption>可为任何不希望颜色调整的元素添加上述样式。</figcaption>
+<ul>
+<li><code>brightness(0.9)</code> 调整亮度，值为「0.9」说明降低亮度为原来的 0.9 倍。</li>
+</ul>
+<h2 id="取值列表">取值列表</h2>
+<p>下表为 <code>filter</code> 的一些可取属性及其描述，可根据需求选择其它变化。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">取值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>none</code></td>
+<td style="text-align:left">默认值，无效果。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>blur(px)</code></td>
+<td style="text-align:left">设置高斯模糊，值越大越模糊。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>brightness(%)</code></td>
+<td style="text-align:left">调整亮度，值取 0% 显示全黑，值取 100% 无变化。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>contrast(%)</code></td>
+<td style="text-align:left">调整对比度，值取 0% 显示全黑，值取100% 保持原样，</br>超过 100% 则降低对比度。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>grayscale(%)</code></td>
+<td style="text-align:left">转化灰度图像，值取 100% 转为灰度显示，值取 0% 图像无变化。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hue-rotate(deg)</code></td>
+<td style="text-align:left">调整色相，取值为调整色环角度值。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>invert(%)</code></td>
+<td style="text-align:left">颜色反转，值定义调整比例。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opacity(%)</code></td>
+<td style="text-align:left">调整透明度，值定义调整比例。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>saturate(%)</code></td>
+<td style="text-align:left">调整饱和度，值取 100% 转为显示为黑白灰，值取 0% 图像无变化。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>sepia(%)</code></td>
+<td style="text-align:left">转化深褐色，值定义调整比例。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>url()</code></td>
+<td style="text-align:left">URL 函数接受一个 XML 文件，该文件设置了一个SVG滤镜，</br>且可以包含一个锚点来指定一个具体的滤镜元素。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>initial</code></td>
+<td style="text-align:left">设置属性为默认值。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inherit</code></td>
+<td style="text-align:left">从父元素继承该属性。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="明暗切换">明暗切换</h2>
+<p>在页面 <code>body</code> 中合适位置添加如下代码添加选择框，可根据页面风格给它指定样式，如何实现切换参考下文运用实例。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
+</code></pre></div><h2 id="运用实例">运用实例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
+  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mf">.85</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">img</span><span class="o">,</span>
+  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">XXX</span><span class="p">{</span>
+    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">.9</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
+  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span>
+    <span class="k">transition</span><span class="p">:</span><span class="kc">all</span> <span class="mi">200</span><span class="kt">ms</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></div><figcaption>「XXX」处可添加其它不需要颜色变化的元素标签。</figcaption>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/data/shell/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>笔记「Shell」</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img class="vd-photo" src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#实现原理">实现原理</a></li>
+    <li><a href="#取值列表">取值列表</a></li>
+    <li><a href="#明暗切换">明暗切换</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

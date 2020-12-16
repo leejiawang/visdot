@@ -6,7 +6,16 @@
     <description>Recent content in Q&amp;A on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/qa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/qa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速给网站加上黑暗模式</title>
+      <link>https://visdot.com/data/dark_mode/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/data/dark_mode/</guid>
+      <description>随着各大电脑和移动操作系统纷纷推出了黑暗模式，越来越多的网站和 App 都跟进了该功能，为实现用户的一致体验，赶紧看看怎么添加吧。 实现原理 本文所介绍</description>
+    </item>
+    
     <item>
       <title>Hugo 集中管理图片地址</title>
       <link>https://visdot.com/data/hugo_url/</link>

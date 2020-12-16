@@ -1,3 +1,12 @@
+
+/* html {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+img, video, .site-logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 /* Loading bar */
 .pace {-webkit-pointer-events: none;pointer-events: none;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
 .pace-inactive {display: none;}
