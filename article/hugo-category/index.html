@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Hugo 添加自定义分类 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Hugo, 模版, 自定义, 分类, 视由, category, tags, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片、视频等不同内容，它们各自都需单独设置分类和标签系统时，自带的两个就显得不够用了。这时就需要添加更多自定义的分类系统。Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#自带的分类及标签">自带的分类及标签</a></li>
+    <li><a href="#文章页信息格式">文章页信息格式</a></li>
+    <li><a href="#屏蔽自带的分类">屏蔽自带的分类</a></li>
+    <li><a href="#自定义分类">自定义分类</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">Hugo 添加自定义分类</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/grammar">Grammar</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20191105, have 623 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片、视频等不同内容，它们各自都需单独设置分类和标签系统时，自带的两个就显得不够用了。这时就需要添加更多自定义的分类系统。</p>
+<h2 id="自带的分类及标签">自带的分类及标签</h2>
+<p>在博客根目录的配置文件 <code>config.yaml</code>或者 <code>config.toml</code> 文件中的 <code>taxonomies</code> 选项定义了默认的分类和标签。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="l">// yaml</span><span class="w">
+</span><span class="w"></span><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// toml
+</span><span class="c1"></span><span class="p">[</span><span class="nx">taxonomies</span><span class="p">]</span>
+  <span class="nx">category</span> <span class="p">=</span> <span class="s">&#34;categories&#34;</span>
+  <span class="nx">tag</span> <span class="p">=</span> <span class="s">&#34;tags&#34;</span>
+</code></pre></div><p>下文以「yaml」文件为例介绍，「toml」只需对应修改即可。</p>
+<h2 id="文章页信息格式">文章页信息格式</h2>
+<p>要给文章添加分类或标签，支架在其头部按照下述格式添加信息即可。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">Blog</span><span class="w">
+</span><span class="w"></span>- <span class="l">Web</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">Html</span><span class="w">
+</span><span class="w"></span>- <span class="l">Hugo</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></div><h2 id="屏蔽自带的分类">屏蔽自带的分类</h2>
+<p>如果有统一格式或其它特殊需求需要屏蔽自带的分类和标签的话，可在配置文件 <code>config.yaml</code> 中添加如下代码进行屏蔽。其中 <code>categories</code>、<code>tags</code> 可按需选择其中一个或全选。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">disableKinds</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;categories, tags&#34;</span><span class="w">
+</span></code></pre></div><h2 id="自定义分类">自定义分类</h2>
+<p>添加自定义分类只需按照默认分类的格式在配置文件的 <code>taxonomies</code> 选项中添加即可。比方说在原有基础上添加「search」和「topic」分类。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
+</span><span class="w">  </span><span class="nt">topic</span><span class="p">:</span><span class="w"> </span><span class="l">topic</span><span class="w">
+</span></code></pre></div><p>相应的要想使用它，在文章页头部添加即可。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">search</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">Blog</span><span class="w">
+</span><span class="w"></span>- <span class="l">Web</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">topic</span><span class="p">:</span><span class="w">
+</span><span class="w"></span>- <span class="l">Html</span><span class="w">
+</span><span class="w"></span>- <span class="l">Hugo</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></div>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/hugo-prev-next-btn/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>Hugo 文章页添加翻页按钮</div></a>
+	
+	
+	<a href="https://visdot.com/article/hugo-navbar/"><div class="next-btn">Hugo 中添加导航栏激活效果<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#自带的分类及标签">自带的分类及标签</a></li>
+    <li><a href="#文章页信息格式">文章页信息格式</a></li>
+    <li><a href="#屏蔽自带的分类">屏蔽自带的分类</a></li>
+    <li><a href="#自定义分类">自定义分类</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

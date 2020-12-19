@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Hugo 集中管理图片地址 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Hugo, URL, 高效, 图片, 地址, 自定义, 分类, 视由, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="对于没有稳定服务器的人来说，经常在各种不同的图床中储存图片，随着内容的增多，更换图片地址就变得非常繁杂，集中管理图片 URL 势在必行。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用方法">使用方法</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">Hugo 集中管理图片地址</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20201204, have 243 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 <a href="/data/jsdelivr/">Jsdelivr</a> 对网站图片进行加速，集中管理图片 URL 势在必行。</p>
+<h2 id="使用方法">使用方法</h2>
+<p>使用到了「Hugo」自带的 <code>render-image</code> 功能，在主题目录如下路径创建后缀名为 <code>.html</code> 的 render-link 文件。</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">layouts/_default/_markup/render-link.html
+</code></pre></div><p><code>render-link.html</code>文件输入如下内容，详见 Hugo <a href="https://gohugo.io/getting-started/configuration-markup#render-hook-templates">官方文档</a>。</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;https://example.com{{ .Destination | safeURL }}&#34;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;{{ .Text }}&#34;</span> <span class="o">{{</span> with .Title<span class="o">}}</span> <span class="nv">title</span><span class="o">=</span><span class="s2">&#34;{{ . }}&#34;</span><span class="o">{{</span> end <span class="o">}}</span> /&gt;
+</code></pre></div><figcaption>其中 https://example.com 改为图片资源 URl 的通用部分。</figcaption>
+<h2 id="运用实例">运用实例</h2>
+<p>假设需要引入的资源地址为：</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/hugo.svg
+</code></pre></div><p>则 <code>render-link.html</code> 文件内容为:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;https://cdn.jsdelivr.net/gh/eyecus/cdn@master/{{ .Destination | safeURL }}&#34;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;{{ .Text }}&#34;</span> <span class="o">{{</span> with .Title<span class="o">}}</span> <span class="nv">title</span><span class="o">=</span><span class="s2">&#34;{{ . }}&#34;</span><span class="o">{{</span> end <span class="o">}}</span> /&gt;
+</code></pre></div><p>在 Markdown 中填写地址为:</p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">![<span class="nt">Hugo</span>](<span class="na">/img/hugo.svg</span>)
+</code></pre></div>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/jsdelivr/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>使用 jsdelivr 免费加速你的网站</div></a>
+	
+	
+	<a href="https://visdot.com/article/dark-mode/"><div class="next-btn">快速给网站加上黑暗模式<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用方法">使用方法</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

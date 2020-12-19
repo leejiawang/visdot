@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Markdown 基础语法 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Markdown, 视由, 视界事由, eyecus, 博客, blog">
+    
+    <meta name="description" property="og:description" content="Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#标题">标题</a>
+      <ul>
+        <li><a href="#标题3-eyecus">标题3 eyecus</a></li>
+      </ul>
+    </li>
+    <li><a href="#文本">文本</a></li>
+    <li><a href="#列表">列表</a></li>
+    <li><a href="#图片">图片</a></li>
+    <li><a href="#引用">引用</a></li>
+    <li><a href="#表格">表格</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container">
+	<div class="flex w-1150">
+		<div class="left-sidebar">
+			<div class="vd-l-a vd-fixed doc-sidebar vd-maxh bg-w">
+				<div class="vd-docs-title"> Markdown 基础语法</div>
+				<div class="vd-l-title pt-25">大纲</div>
+				<div class="">
+					<nav id="TableOfContents">
+  <ul>
+    <li><a href="#标题">标题</a>
+      <ul>
+        <li><a href="#标题3-eyecus">标题3 eyecus</a></li>
+      </ul>
+    </li>
+    <li><a href="#文本">文本</a></li>
+    <li><a href="#列表">列表</a></li>
+    <li><a href="#图片">图片</a></li>
+    <li><a href="#引用">引用</a></li>
+    <li><a href="#表格">表格</a></li>
+  </ul>
+</nav>
+				</div>
+			</div>
+
+		</div>
+		<div class="main">
+		<div class="markdown academic w-730">				
+			<div class="post-meta">
+				<div class="docs-title">Markdown 基础语法</div>
+				<span class="post-date">Built in 20190812</span>
+			</div>
+			<p>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。</p>
+<p>Markdown 的创始人为约翰·格鲁伯 John Gruber。它允许使用易读易写的纯文本格式编写文档，然后转换成有效的HTML文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性，目前许多网站都广泛使用 Markdown 来撰写说明文件或是用于论坛上发表讯息。本段文字摘自<a href="https://zh.wikipedia.org/wiki/Markdown">维基百科</a>。</p>
+<h2 id="标题">标题</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="gu">### 标题3 eyecus
+</span><span class="gu">#### 标题4 eyecus
+</span><span class="gu">##### 标题5 eyecus
+</span><span class="gu">###### 标题6 eyecus
+</span></code></pre></div><p><code>输出</code></p>
+<h3 id="标题3-eyecus">标题3 eyecus</h3>
+<h4 id="标题4-eyecus">标题4 eyecus</h4>
+<h5 id="标题5-eyecus">标题5 eyecus</h5>
+<h6 id="标题6-eyecus">标题6 eyecus</h6>
+<h2 id="文本">文本</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">正常文本 eyecus 
+<span class="gs">**粗体 eyecus**</span> 
+<span class="ge">*斜体 eyecus*</span> 
+<span class="gd">~~删除线 eyecus~~</span>
+[<span class="nt">链接 eyecus</span>](<span class="na">https://eyecus.com</span>)
+</code></pre></div><p><code>输出</code></p>
+<p>正常文本 eyecus</p>
+<p><strong>粗体 eyecus</strong></p>
+<p><em>斜体 eyecus</em></p>
+<p><del>删除线 eyecus</del></p>
+<p><a href="https://eyecus.com">链接 eyecus</a></p>
+<h2 id="列表">列表</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="k">1.</span> 正常文本1 eyecus
+<span class="k">1.</span> 正常文本2 eyecus
+<span class="k">1.</span> 正常文本3 eyecus
+</code></pre></div><p><code>输出</code></p>
+<ol>
+<li>正常文本1 eyecus</li>
+<li>正常文本2 eyecus</li>
+<li>正常文本3 eyecus</li>
+</ol>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="k">-</span> 正常文本4 eyecus
+<span class="k">-</span> 正常文本5 eyecus
+<span class="k">-</span> 正常文本6 eyecus
+</code></pre></div><p><code>输出</code></p>
+<ul>
+<li>正常文本4 eyecus</li>
+<li>正常文本5 eyecus</li>
+<li>正常文本6 eyecus</li>
+</ul>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="k">-</span> 正常文本7 eyecus
+<span class="k">-</span> 正常文本8 eyecus
+  <span class="k">-</span> 正常文本9 eyecus
+  <span class="k">-</span> 正常文本10 eyecus
+</code></pre></div><p><code>输出</code></p>
+<ul>
+<li>正常文本7 eyecus</li>
+<li>正常文本8 eyecus
+<ul>
+<li>正常文本9 eyecus</li>
+<li>正常文本10 eyecus</li>
+</ul>
+</li>
+</ul>
+<h2 id="图片">图片</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">![<span class="nt">eyecus</span>](<span class="na">https://www.eyecus.com/assets/images/eyecus_logo.png</span>)
+</code></pre></div><p><code>输出</code></p>
+<img src="https://www.eyecus.com/assets/images/eyecus_logo.png" height="60px">
+<h2 id="引用">引用</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="k">&gt; </span><span class="ge">引用文本1 eyecus
+</span></code></pre></div><p><code>输出</code></p>
+<blockquote>
+<p>引用文本1 eyecus</p>
+</blockquote>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md"><span class="sb">`引用文本2 eyecus`</span>
+</code></pre></div><p><code>输出</code></p>
+<p><code>引用文本2 eyecus</code></p>
+<h2 id="表格">表格</h2>
+<p><code>输入</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">| 表头1 | eyecus | 表头2 |
+| :--: | :-- | --: |
+| 居中文本1 | 左对齐文本1 | 右对齐文本1 |
+| 居中文本2 | 左对齐文本2 | 右对齐文本2 |
+</code></pre></div><p><code>输出</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">表头1</th>
+<th style="text-align:left">eyecus</th>
+<th style="text-align:right">表头2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">居中文本1</td>
+<td style="text-align:left">左对齐文本1</td>
+<td style="text-align:right">右对齐文本1</td>
+</tr>
+<tr>
+<td style="text-align:center">居中文本2</td>
+<td style="text-align:left">左对齐文本2</td>
+<td style="text-align:right">右对齐文本2</td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+		</div>
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

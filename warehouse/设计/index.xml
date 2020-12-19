@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浅谈网页设计与开发</title>
-      <link>https://visdot.com/data/web_design/</link>
+      <link>https://visdot.com/article/web-design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/web_design/</guid>
+      <guid>https://visdot.com/article/web-design/</guid>
       <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>https://visdot.com/data/symbol/</link>
+      <link>https://visdot.com/documentation/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/symbol/</guid>
+      <guid>https://visdot.com/documentation/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     

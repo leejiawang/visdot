@@ -9,172 +9,172 @@
     <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速给网站加上黑暗模式</title>
-      <link>https://visdot.com/data/dark_mode/</link>
+      <link>https://visdot.com/article/dark-mode/</link>
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/dark_mode/</guid>
+      <guid>https://visdot.com/article/dark-mode/</guid>
       <description>随着各大电脑和移动操作系统纷纷推出了黑暗模式，越来越多的网站和 App 都跟进了该功能，为实现用户的一致体验，赶紧看看怎么添加吧。 实现原理 本文所介绍</description>
     </item>
     
     <item>
       <title>Hugo 集中管理图片地址</title>
-      <link>https://visdot.com/data/hugo_url/</link>
+      <link>https://visdot.com/article/hugo-url/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_url/</guid>
+      <guid>https://visdot.com/article/hugo-url/</guid>
       <description>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 Jsdelivr 对网站图片进行加速，集中管</description>
     </item>
     
     <item>
       <title>使用 jsdelivr 免费加速你的网站</title>
-      <link>https://visdot.com/data/jsdelivr/</link>
+      <link>https://visdot.com/article/jsdelivr/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/jsdelivr/</guid>
+      <guid>https://visdot.com/article/jsdelivr/</guid>
       <description>使用「github pages」建立的博客虽然免费，但在国内加载速度实在太慢，使用国内服务器又被「备案」困扰，现在可以使用「jsdelivr」</description>
     </item>
     
     <item>
       <title>通过 pace.js 添加网页顶部加载进度条</title>
-      <link>https://visdot.com/data/loading_bar/</link>
+      <link>https://visdot.com/article/loading-bar/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/loading_bar/</guid>
+      <guid>https://visdot.com/article/loading-bar/</guid>
       <description>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过pace.js添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。 第1步 引</description>
     </item>
     
     <item>
       <title>Hugo 中添加导航栏激活效果</title>
-      <link>https://visdot.com/data/hugo_navbar/</link>
+      <link>https://visdot.com/article/hugo-navbar/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_navbar/</guid>
+      <guid>https://visdot.com/article/hugo-navbar/</guid>
       <description>原理概述 本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。 使用到了 {{ .Title }} 这个变量会随着页面的不同而对应着</description>
     </item>
     
     <item>
       <title>Hugo 添加自定义分类</title>
-      <link>https://visdot.com/data/hugo_category/</link>
+      <link>https://visdot.com/article/hugo-category/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_category/</guid>
+      <guid>https://visdot.com/article/hugo-category/</guid>
       <description>对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片</description>
     </item>
     
     <item>
       <title>Hugo 文章页添加翻页按钮</title>
-      <link>https://visdot.com/data/hugo_prev_next_btn/</link>
+      <link>https://visdot.com/article/hugo-prev-next-btn/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_prev_next_btn/</guid>
+      <guid>https://visdot.com/article/hugo-prev-next-btn/</guid>
       <description>在文章页底部为 Hugo 增加翻页按钮，并显示上一篇和下一篇的标题。这样做能增大读者在阅读完文章后继续在本站停留的几率。 使用方法 本功能利用了 .Next</description>
     </item>
     
     <item>
       <title>Vuepress 建站教程</title>
-      <link>https://visdot.com/data/vuepress/</link>
+      <link>https://visdot.com/article/vuepress/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/vuepress/</guid>
+      <guid>https://visdot.com/article/vuepress/</guid>
       <description>Vuepress 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。 相关站点 Vuepress 官网 Vuepress 仓库 Vuepress 模板 第1步 安装 Vuepress 框架</description>
     </item>
     
     <item>
       <title>HEXO 建站教程</title>
-      <link>https://visdot.com/data/hexo/</link>
+      <link>https://visdot.com/article/hexo/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hexo/</guid>
+      <guid>https://visdot.com/article/hexo/</guid>
       <description>Hexo 是一款快速、简洁且高效的博客框架，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。 相关站点： Hexo官网 Hexo</description>
     </item>
     
     <item>
       <title>Hugo 按需求添加文章列表</title>
-      <link>https://visdot.com/data/hugo_lists/</link>
+      <link>https://visdot.com/article/hugo-lists/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_lists/</guid>
+      <guid>https://visdot.com/article/hugo-lists/</guid>
       <description>全站文章列表 在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 single.html 中的适当位置添加如下代码。 &amp;lt;ul&amp;gt; {{ $pages := .Pages }} {{ $pages = .Site.RegularPages }} {{ range (where $pages &amp;#34;Section&amp;#34; &amp;#34;!=&amp;#34; &amp;#34;&amp;#34;) }} &amp;lt;li&amp;gt; &amp;lt;a</description>
     </item>
     
     <item>
       <title>Hugo 模板的原理及使用</title>
-      <link>https://visdot.com/data/hugo_template/</link>
+      <link>https://visdot.com/article/hugo-template/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_template/</guid>
+      <guid>https://visdot.com/article/hugo-template/</guid>
       <description>原理概述 Hugo 的模板功能大大简化了对网站页面中重复元素的编辑，同时也能更方便的实现整个网站的视觉统一，他将页面中多次出现的部分独立成各个功能模块</description>
     </item>
     
     <item>
       <title>Hugo 内容页添加发布时间、字数、关键词</title>
-      <link>https://visdot.com/data/hugo_post_meta/</link>
+      <link>https://visdot.com/article/hugo-post-meta/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_post_meta/</guid>
+      <guid>https://visdot.com/article/hugo-post-meta/</guid>
       <description>一般在文章页的头部信息区显示本文标题、发布时间、关键词或是全文字数等信息，能让读者快速的了解文章内容，提高获取信息的效率。 文章标题 在页面模板</description>
     </item>
     
     <item>
       <title>通过「highlight.js」给网站添加代码高亮</title>
-      <link>https://visdot.com/data/hugo_highlight/</link>
+      <link>https://visdot.com/article/hugo-highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_highlight/</guid>
+      <guid>https://visdot.com/article/hugo-highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     
     <item>
       <title>从零开始 Hugo 建站教程</title>
-      <link>https://visdot.com/data/hugo_install/</link>
+      <link>https://visdot.com/article/hugo-install/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/hugo_install/</guid>
+      <guid>https://visdot.com/article/hugo-install/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署,本站即为 Hugo 博客框架搭建。 相关站点： Hugo官网 Hugo主题 Hu</description>
     </item>
     
     <item>
       <title>笔记「Bootstrap」</title>
-      <link>https://visdot.com/data/bootstrap/</link>
+      <link>https://visdot.com/documentation/bootstrap/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/bootstrap/</guid>
+      <guid>https://visdot.com/documentation/bootstrap/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。 Bootstrap 是一套流行的前端</description>
     </item>
     
     <item>
       <title>笔记「CSS」</title>
-      <link>https://visdot.com/data/css/</link>
+      <link>https://visdot.com/documentation/css/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/css/</guid>
+      <guid>https://visdot.com/documentation/css/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。 层叠样式表 Cascading Style Sheets 是</description>
     </item>
     
     <item>
       <title>笔记「Html」</title>
-      <link>https://visdot.com/data/html/</link>
+      <link>https://visdot.com/documentation/html/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/html/</guid>
+      <guid>https://visdot.com/documentation/html/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。 HTML 称为超文本标记语</description>
     </item>
     
     <item>
       <title>笔记「JavaScript」</title>
-      <link>https://visdot.com/data/javascript/</link>
+      <link>https://visdot.com/documentation/javascript/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/javascript/</guid>
+      <guid>https://visdot.com/documentation/javascript/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。 JavaScript 作为 Web 浏览器的唯</description>
     </item>
     
     <item>
       <title>浅谈网页设计与开发</title>
-      <link>https://visdot.com/data/web_design/</link>
+      <link>https://visdot.com/article/web-design/</link>
       <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/data/web_design/</guid>
+      <guid>https://visdot.com/article/web-design/</guid>
       <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
     </item>
     

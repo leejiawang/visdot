@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Hugo 中添加导航栏激活效果 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Hugo, 导航栏, 激活, 排序, 视由, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="在 Hugo 中通过纯 Html加CSS的手段，实现导航栏根据所访问的页面强调对应的标签的效果。Hugo是由Go语言实现的静态网站生成器，简单、易用、高效、易扩展、快速部署。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#实现方法">实现方法</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">Hugo 中添加导航栏激活效果</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/css">CSS</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20191129, have 379 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/navbar.png" alt="youtube_pace"  /></p>
+<h2 id="原理概述">原理概述</h2>
+<p>本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。</p>
+<p>使用到了 <code>{{ .Title }}</code> 这个变量会随着页面的不同而对应着变化的特性，给需要激活效果的标签赋予 CSS 样式。下面以本站「检索」页面顶部分类导航栏为例进行分析。</p>
+<h2 id="实现方法">实现方法</h2>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ range .Site.Taxonomies.space }}
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+{{ end }}
+</code></pre></div><p>上面是一个常规调取分类列表的写法，现在要实现选中其中一个分类，跳转进对应分类的文章列表，然后给该分类标签加上一个黑底的效果，最终效果如最开头图片中的「建站」标签所示。</p>
+<p>要达到这个目的，首先给每个分类加入一个<code>id</code>标签，通过<code>{{ .Title }}</code>实现快速对应添加，写法如下。</p>
+<pre><code> id=&quot;{{ .Page.Title }}&quot;
+</code></pre><p>当网页结构较为复杂时，用，可在标签名前加上限定语，以避免标签名重复导致效果被错误引用。</p>
+<pre><code> id=&quot;Space{{ .Page.Title }}&quot;
+</code></pre><p>解决好标签后，在「HTML」中引入对应的<code>CSS</code>样式。</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css">  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#424242</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div><h2 id="运用实例">运用实例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span><span class="k">background-color</span><span class="p">:</span><span class="mh">#424242</span><span class="p">;}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+
+{{ range .Site.Taxonomies.space }}
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;{{ .Page.Title }}&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+{{ end }}
+</code></pre></div>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/hugo-category/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>Hugo 添加自定义分类</div></a>
+	
+	
+	<a href="https://visdot.com/article/windows-install/"><div class="next-btn">Windows 系统安装教程<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#原理概述">原理概述</a></li>
+    <li><a href="#实现方法">实现方法</a></li>
+    <li><a href="#运用实例">运用实例</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>
