@@ -736,13 +736,13 @@ th {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .gallery-items {
   width: 31%;
   border-radius: 2px;
-  margin: 0 10px 50px 10px;
+  margin: 0 10px 30px 10px;
   min-width: 220px;
   border: 1px solid #eee;
   border-radius: 16px;
@@ -753,7 +753,6 @@ th {
 }
 
 .gallery-items a img {
-  margin-top: -22px;
   object-fit: cover;
   width: 100%;
   height: 220px;
