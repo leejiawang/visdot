@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>善用「Sublime Text」 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Sublime, Text, code, 工具, 视由, 视界事由, eyecus, 博客, blog, Markdown">
+    
+    <meta name="description" property="og:description" content="Sublime Text 是一款全平台的代码编辑工具，界面简洁，搭配合适的插件能使你的效率更上一层楼。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载安装">下载安装</a></li>
+    <li><a href="#设置中文界面">设置中文界面</a></li>
+    <li><a href="#安装插件">安装插件</a></li>
+    <li><a href="#插件推荐">插件推荐</a></li>
+    <li><a href="#sublime-常用快捷操作">Sublime 常用快捷操作</a>
+      <ul>
+        <li><a href="#选择类">选择类</a></li>
+        <li><a href="#编辑类">编辑类</a></li>
+        <li><a href="#显示类">显示类</a></li>
+      </ul>
+    </li>
+    <li><a href="#emmet-插件常用快捷键">Emmet 插件常用快捷键</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">善用「Sublime Text」</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/css">CSS</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20201223, have 1651 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>Sublime Text 是一款全平台的代码编辑工具，界面简洁，搭配合适的插件能使你的效率更上一层楼。</p>
+<h2 id="下载安装">下载安装</h2>
+<p>从<a href="https://www.sublimetext.com/">官网</a>下载对应系统的安装文件并安装。</p>
+<h2 id="设置中文界面">设置中文界面</h2>
+<p>使用快捷键 <code>Shift+Ctrl+P</code> 调出查找框，输入：</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">Package Control: Install Package
+</code></pre></div><p>在弹出的插件列表中输入：</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">ChineseLocalizations
+</code></pre></div><p>选中回车安装，重启「Sublime Text」，依次点击顶部菜单栏 <code>Help</code>-<code>Language</code>-<code>简体中文</code>即可。</p>
+<h2 id="安装插件">安装插件</h2>
+<p>步骤与上文设置中文界面类似，在弹出的插件列表中输入插件名称：</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">emmet
+</code></pre></div><figcaption><a href="https://emmet.io/" target="_black">Emmet</a> 插件提供了一系列快速生成代码的命令，能大大提高输入效率。</figcaption>
+<h2 id="插件推荐">插件推荐</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">插件名</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Emmet</td>
+<td style="text-align:center">简写输入</td>
+<td style="text-align:center"><code>Tab</code></td>
+</tr>
+<tr>
+<td style="text-align:center">ColorPicker</td>
+<td style="text-align:center">调取系统取色窗口</td>
+<td style="text-align:center"><code>ctrl + shift + C</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Minify</td>
+<td style="text-align:center">压缩和美化代码</td>
+<td style="text-align:center"><code>ctrl + alt + M</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sublime-常用快捷操作">Sublime 常用快捷操作</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl+Shift+P</td>
+<td style="text-align:left">打开命令面板</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+P</td>
+<td style="text-align:left">搜索项目中的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+G</td>
+<td style="text-align:left">跳转到第几行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+W</td>
+<td style="text-align:left">关闭当前打开文件</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+W</td>
+<td style="text-align:left">关闭所有打开文件</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+V</td>
+<td style="text-align:left">粘贴并格式化</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+D</td>
+<td style="text-align:left">选择单词，重复可增加选择下一个相同的单词</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+L</td>
+<td style="text-align:left">选择行，重复可依次增加选择下一行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+L</td>
+<td style="text-align:left">选择多行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+Enter</td>
+<td style="text-align:left">在当前行前插入新行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+X</td>
+<td style="text-align:left">删除当前行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+M</td>
+<td style="text-align:left">跳转到对应括号</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+U</td>
+<td style="text-align:left">软撤销，撤销光标位置</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+J</td>
+<td style="text-align:left">选择标签内容</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+F</td>
+<td style="text-align:left">查找内容</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+F</td>
+<td style="text-align:left">查找并替换</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+H</td>
+<td style="text-align:left">替换</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+R</td>
+<td style="text-align:left">前往 method</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+N</td>
+<td style="text-align:left">新建窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+B</td>
+<td style="text-align:left">开关侧栏</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+M</td>
+<td style="text-align:left">选中当前括号内容，重复可选着括号本身</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+F2</td>
+<td style="text-align:left">设置/删除标记</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+/</td>
+<td style="text-align:left">注释当前行</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+/</td>
+<td style="text-align:left">当前位置插入注释</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Alt+/</td>
+<td style="text-align:left">块注释，并Focus到首行，写注释说明用的</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+A</td>
+<td style="text-align:left">选择当前标签前后，修改标签用的</td>
+</tr>
+<tr>
+<td style="text-align:center">F11</td>
+<td style="text-align:left">全屏</td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+F11</td>
+<td style="text-align:left">全屏免打扰模式，只编辑当前文件</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+F3</td>
+<td style="text-align:left">选择所有相同的词</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+.</td>
+<td style="text-align:left">闭合标签</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+数字</td>
+<td style="text-align:left">分屏显示</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+数字</td>
+<td style="text-align:left">切换打开第N个文件</td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+右键拖动</td>
+<td style="text-align:left">光标多不，用来更改或插入列内容</td>
+</tr>
+</tbody>
+</table>
+<h3 id="选择类">选择类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl+D</td>
+<td style="text-align:left">选中光标所占的文本，继续操作则会选中下一个相同的文本。</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+F3</td>
+<td style="text-align:left">选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+L、Shift+↓</td>
+<td style="text-align:left">选中整行，继续操作则继续选择下一行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+L</td>
+<td style="text-align:left">先选中多行，再按下快捷键，即可同时编辑这些行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+M</td>
+<td style="text-align:left">选择括号内的内容（继续选择父括号）。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+M</td>
+<td style="text-align:left">光标移动至括号内结束或开始的位置。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Enter</td>
+<td style="text-align:left">在下一行插入新行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+Enter</td>
+<td style="text-align:left">在上一行插入新行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+[</td>
+<td style="text-align:left">选中代码，按下快捷键，折叠代码。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+]</td>
+<td style="text-align:left">选中代码，按下快捷键，展开代码。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+0</td>
+<td style="text-align:left">展开所有折叠代码。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+←</td>
+<td style="text-align:left">向左单位性地移动光标，快速移动光标。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+→</td>
+<td style="text-align:left">向右单位性地移动光标，快速移动光标。</td>
+</tr>
+<tr>
+<td style="text-align:center">shift+↑</td>
+<td style="text-align:left">向上选中多行。</td>
+</tr>
+<tr>
+<td style="text-align:center">shift+↓</td>
+<td style="text-align:left">向下选中多行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+←</td>
+<td style="text-align:left">向左选中文本。</td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+→</td>
+<td style="text-align:left">向右选中文本。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+←</td>
+<td style="text-align:left">向左单位性地选中文本。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+→</td>
+<td style="text-align:left">向右单位性地选中文本。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+↑</td>
+<td style="text-align:left">将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+↓</td>
+<td style="text-align:left">将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Alt+↑</td>
+<td style="text-align:left">向上添加多行光标，可同时编辑多行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Alt+↓</td>
+<td style="text-align:left">向下添加多行光标，可同时编辑多行。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="编辑类">编辑类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl+J</td>
+<td style="text-align:left">合并选中的多行代码为一行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+D</td>
+<td style="text-align:left">复制光标所在整行，插入到下一行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Tab 向右缩进。</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+Tab</td>
+<td style="text-align:left">向左缩进。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+K</td>
+<td style="text-align:left">从光标处开始删除代码至行尾。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+K</td>
+<td style="text-align:left">删除整行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+/</td>
+<td style="text-align:left">注释单行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Shift+/</td>
+<td style="text-align:left">注释多行。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+U</td>
+<td style="text-align:left">转换大写。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+L</td>
+<td style="text-align:left">转换小写。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Z</td>
+<td style="text-align:left">撤销。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+Y</td>
+<td style="text-align:left">恢复撤销。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+U</td>
+<td style="text-align:left">软撤销，感觉和 Gtrl+Z 一样。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+F2</td>
+<td style="text-align:left">设置书签</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+T</td>
+<td style="text-align:left">左右字母互换。</td>
+</tr>
+<tr>
+<td style="text-align:center">F6</td>
+<td style="text-align:left">单词检测拼写</td>
+</tr>
+</tbody>
+</table>
+<h3 id="显示类">显示类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl+Tab</td>
+<td style="text-align:left">按文件浏览过的顺序，切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+PageDown</td>
+<td style="text-align:left">向左切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+PageUp</td>
+<td style="text-align:left">向右切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+1</td>
+<td style="text-align:left">窗口分屏，恢复默认1屏（非小键盘的数字）</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+2</td>
+<td style="text-align:left">左右分屏-2列</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+3</td>
+<td style="text-align:left">左右分屏-3列</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+4</td>
+<td style="text-align:left">左右分屏-4列</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+5</td>
+<td style="text-align:left">等分4屏</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+8</td>
+<td style="text-align:left">垂直分屏-2屏</td>
+</tr>
+<tr>
+<td style="text-align:center">Alt+Shift+9</td>
+<td style="text-align:left">垂直分屏-3屏</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+K+B</td>
+<td style="text-align:left">开启/关闭侧边栏。</td>
+</tr>
+<tr>
+<td style="text-align:center">F11</td>
+<td style="text-align:left">全屏模式</td>
+</tr>
+<tr>
+<td style="text-align:center">Shift+F11</td>
+<td style="text-align:left">免打扰模式</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+k+2</td>
+<td style="text-align:left">折叠注释和方法</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+k+3</td>
+<td style="text-align:left">折叠if</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+k+4</td>
+<td style="text-align:left">折叠switch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emmet-插件常用快捷键">Emmet 插件常用快捷键</h2>
+<p><code>!</code> <code>html:5</code></p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><code>p#info</code> <code>p.info</code> <code>a[href='#']</code></p>
+<pre><code>&lt;p id=&quot;info&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;info&quot;&gt;&lt;/p&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+</code></pre><p><code>div#warp&gt;ul&gt;li*10</code></p>
+<pre><code>&lt;div id=&quot;warp&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre><p><code>div#warp&gt;p.one+span.two</code></p>
+<pre><code>&lt;div id=&quot;warp&quot;&gt;
+        &lt;p class=&quot;one&quot;&gt;&lt;/p&gt;
+        &lt;span class=&quot;two&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre><p><code>p.class&gt;span^div.info</code> <code>ul&gt;li*10^ol&gt;li*6</code></p>
+<pre><code>&lt;p class=&quot;class&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;info&quot;&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;       
+</code></pre><p><code>(div.foo&gt;h1&gt;p)+(div.bar&gt;h3&gt;p)</code></p>
+<pre><code>&lt;div class=&quot;foo&quot;&gt;
+    &lt;h1&gt;
+        &lt;p&gt;&lt;/p&gt;
+    &lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bar&quot;&gt;
+    &lt;h3&gt;
+        &lt;p&gt;&lt;/p&gt;
+    &lt;/h3&gt;
+&lt;/div&gt;
+</code></pre><p><code>ul&gt;li*3</code></p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p><code>ul&gt;li.item$*3</code></p>
+<pre><code>&lt;ul&gt;
+    &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p><code>@f</code></p>
+<pre><code>@font-face {
+  font-family:;
+  src:url();
+}
+</code></pre><p><code>lg(left, #fff 50%, #000)</code></p>
+<pre><code>background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, #fff), to(#000));
+background-image: -webkit-linear-gradient(left, #fff 50%, #000);
+background-image: -moz-linear-gradient(left, #fff 50%, #000);
+background-image: -o-linear-gradient(left, #fff 50%, #000);
+background-image: linear-gradient(left, #fff 50%, #000);
+</code></pre><p><code>h$[title=item$]{Header $}*3</code></p>
+<pre><code>&lt;h1 title=&quot;item1&quot;&gt;Header 1&lt;/h1&gt;
+&lt;h2 title=&quot;item2&quot;&gt;Header 2&lt;/h2&gt;
+&lt;h3 title=&quot;item3&quot;&gt;Header 3&lt;/h3&gt;
+</code></pre><p><code>ul&gt;li.item$$${item $}*5</code></p>
+<pre><code>&lt;ul&gt;
+    &lt;li class=&quot;item001&quot;&gt;item 1&lt;/li&gt;
+    &lt;li class=&quot;item002&quot;&gt;item 2&lt;/li&gt;
+    &lt;li class=&quot;item003&quot;&gt;item 3&lt;/li&gt;
+    &lt;li class=&quot;item004&quot;&gt;item 4&lt;/li&gt;
+    &lt;li class=&quot;item005&quot;&gt;item 5&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p><code>ul&gt;li.item$@-*5</code></p>
+<pre><code>&lt;ul&gt;
+    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
+ &lt;/ul&gt;  
+</code></pre><p><code>ul&gt;li.item$@3*5</code></p>
+<pre><code> &lt;ul&gt;
+    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item6&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item7&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p><code>ul&gt;li.item$@-3*5</code></p>
+<pre><code> &lt;ul&gt;
+    &lt;li class=&quot;item7&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item6&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><figcaption>更多语法详见 <a href="https://docs.emmet.io/abbreviations/syntax/" target="_blank">官方文档</a></figcaption>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/dark-mode/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>快速给网站加上黑暗模式</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载安装">下载安装</a></li>
+    <li><a href="#设置中文界面">设置中文界面</a></li>
+    <li><a href="#安装插件">安装插件</a></li>
+    <li><a href="#插件推荐">插件推荐</a></li>
+    <li><a href="#sublime-常用快捷操作">Sublime 常用快捷操作</a>
+      <ul>
+        <li><a href="#选择类">选择类</a></li>
+        <li><a href="#编辑类">编辑类</a></li>
+        <li><a href="#显示类">显示类</a></li>
+      </ul>
+    </li>
+    <li><a href="#emmet-插件常用快捷键">Emmet 插件常用快捷键</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

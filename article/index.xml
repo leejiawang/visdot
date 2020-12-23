@@ -6,7 +6,16 @@
     <description>Recent content in Articles on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>善用「Sublime Text」</title>
+      <link>https://visdot.com/article/sublime/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/sublime/</guid>
+      <description>Sublime Text 是一款全平台的代码编辑工具，界面简洁，搭配合适的插件能使你的效率更上一层楼。 下载安装 从官网下载对应系统的安装文件并安装。 设置中文界面 使用</description>
+    </item>
+    
     <item>
       <title>快速给网站加上黑暗模式</title>
       <link>https://visdot.com/article/dark-mode/</link>
