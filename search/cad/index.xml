@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CAD on 视点</title>
+    <link>https://visdot.com/search/cad/</link>
+    <description>Recent content in CAD on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/cad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>免费获取电子版路网地图</title>
+      <link>https://visdot.com/article/map-download/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/map-download/</guid>
+      <description>简单一句话概括就是：从「OpenStreetMap」下载地图数据，并通过「fme」软件转化为 dwg 格式文件的方法获取电子版本地图，下面就看看如何</description>
+    </item>
+    
+  </channel>
+</rss>

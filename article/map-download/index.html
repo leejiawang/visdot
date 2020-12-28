@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>免费获取电子版路网地图 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="地图, 路网, CAD, dwg, 电子版, 免费, visdot, 视点, 教程, 视由, 视界事由, eyecus, 博客, Markdown">
+    
+    <meta name="description" property="og:description" content="本文介绍从 OpenStreetMap 下载地图数据，并通过 fme 软件转化为 dwg 格式文件的方法获取电子版本地图。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header vd-glass-w">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+      <ul class="nav">      
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
+      </ul>
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/projects">项目</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载地图数据">下载地图数据</a></li>
+    <li><a href="#文件格式转换">文件格式转换</a></li>
+    <li><a href="#外观处理">外观处理</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">免费获取电子版路网地图</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/qa">Q&amp;A</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/map">Map</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/cad">CAD</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20201228, have 471 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<div align="center"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/webgo/osm.svg" width="100px" height="100px"></div>
+<p>简单一句话概括就是：从「OpenStreetMap」下载地图数据，并通过「fme」软件转化为 <code>dwg</code> 格式文件的方法获取电子版本地图，下面就看看如何操作吧。</p>
+<h2 id="下载地图数据">下载地图数据</h2>
+<p>首先访问 <a href="https://www.openstreetmap.org/" target="_black">OpenStreetMap</a> 的官网，定位到需要下载的区域。</p>
+<p>这里已「株洲」为例，定位好后点击顶部的导出按钮。注意这个区域有大小限制，可通过鼠标滚轮调节范围，也可点击「手动选择不同的区域」按钮来框选区域。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/osm_1.png" alt="osm"  /></p>
+<p>选择好后点击下载，会得到一个以 <code>.osm</code> 为后缀名的文件。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/osm_2.png" alt="osm"  /></p>
+<h2 id="文件格式转换">文件格式转换</h2>
+<p>「OSM」文件是「OpenStreetMap」网站专有的数据格式，要转换为我们常用的 <code>.dwg</code> 格式需要用到「FME Desktop」工具。</p>
+<div align="center"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/webgo/safe.svg" width="200px" height="100px"></div>
+<p>该软件为付费软件，但有七天的免费试用时间，进入软件 <a href="https://www.safe.com/fme/trial/#desktop" target="_black">官网</a> 下载并安装。安装后在「OSM」文件图表上点击鼠标右键使用 <code>Quick Translator</code> 快速转换。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/osm_3.png" alt="osm"  /></p>
+<p>弹出的窗口，「Writer」中的「Format」值选择 <code>Autodesk AutoCAD DWG/DXF</code> 选项，「Dataset」选择好输出路径后，点击「OK」。</p>
+<img src="/img/osm_4.png">
+<p>此时会生成 <code>.dwg</code> 文件，整个流程走完。</p>
+<h2 id="外观处理">外观处理</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/osm_5.png" alt="osm"  /></p>
+<p>生成的文件所有线均为红色极其不利于阅读，好在大体上保留了图层数据，通过「AutoCAD」的简单处理，即可调整出一张可用的电子地图了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/osm_6.png" alt="osm"  /></p>
+
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/sublime/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>善用「Sublime Text」</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载地图数据">下载地图数据</a></li>
+    <li><a href="#文件格式转换">文件格式转换</a></li>
+    <li><a href="#外观处理">外观处理</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/leejiawang/visdot/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>
