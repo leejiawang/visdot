@@ -113,13 +113,13 @@
 <p>从<a href="https://www.sublimetext.com/">官网</a>下载对应系统的安装文件并安装。</p>
 <h2 id="设置中文界面">设置中文界面</h2>
 <p>使用快捷键 <code>Shift+Ctrl+P</code> 调出查找框，输入：</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">Package Control: Install Package
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">Package Control: Install Package
 </code></pre></div><p>在弹出的插件列表中输入：</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">ChineseLocalizations
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">ChineseLocalizations
 </code></pre></div><p>选中回车安装，重启「Sublime Text」，依次点击顶部菜单栏 <code>Help</code>-<code>Language</code>-<code>简体中文</code>即可。</p>
 <h2 id="安装插件">安装插件</h2>
 <p>步骤与上文设置中文界面类似，在弹出的插件列表中输入插件名称：</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">emmet
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">emmet
 </code></pre></div><figcaption><a href="https://emmet.io/" target="_black">Emmet</a> 插件提供了一系列快速生成代码的命令，能大大提高输入效率。</figcaption>
 <h2 id="插件推荐">插件推荐</h2>
 <table>
@@ -546,7 +546,7 @@
 </table>
 <h2 id="emmet-插件常用快捷键">Emmet 插件常用快捷键</h2>
 <p><code>!</code> <code>html:5</code></p>
-<pre><code>&lt;!doctype html&gt;
+<pre tabindex="0"><code>&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -557,11 +557,11 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><p><code>p#info</code> <code>p.info</code> <code>a[href='#']</code></p>
-<pre><code>&lt;p id=&quot;info&quot;&gt;&lt;/p&gt;
+<pre tabindex="0"><code>&lt;p id=&quot;info&quot;&gt;&lt;/p&gt;
 &lt;p class=&quot;info&quot;&gt;&lt;/p&gt;
 &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
 </code></pre><p><code>div#warp&gt;ul&gt;li*10</code></p>
-<pre><code>&lt;div id=&quot;warp&quot;&gt;
+<pre tabindex="0"><code>&lt;div id=&quot;warp&quot;&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;/li&gt;
         &lt;li&gt;&lt;/li&gt;
@@ -576,12 +576,12 @@
     &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre><p><code>div#warp&gt;p.one+span.two</code></p>
-<pre><code>&lt;div id=&quot;warp&quot;&gt;
+<pre tabindex="0"><code>&lt;div id=&quot;warp&quot;&gt;
         &lt;p class=&quot;one&quot;&gt;&lt;/p&gt;
         &lt;span class=&quot;two&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 </code></pre><p><code>p.class&gt;span^div.info</code> <code>ul&gt;li*10^ol&gt;li*6</code></p>
-<pre><code>&lt;p class=&quot;class&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+<pre tabindex="0"><code>&lt;p class=&quot;class&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;info&quot;&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -605,7 +605,7 @@
     &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;       
 </code></pre><p><code>(div.foo&gt;h1&gt;p)+(div.bar&gt;h3&gt;p)</code></p>
-<pre><code>&lt;div class=&quot;foo&quot;&gt;
+<pre tabindex="0"><code>&lt;div class=&quot;foo&quot;&gt;
     &lt;h1&gt;
         &lt;p&gt;&lt;/p&gt;
     &lt;/h1&gt;
@@ -616,34 +616,34 @@
     &lt;/h3&gt;
 &lt;/div&gt;
 </code></pre><p><code>ul&gt;li*3</code></p>
-<pre><code>&lt;ul&gt;
+<pre tabindex="0"><code>&lt;ul&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre><p><code>ul&gt;li.item$*3</code></p>
-<pre><code>&lt;ul&gt;
+<pre tabindex="0"><code>&lt;ul&gt;
     &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre><p><code>@f</code></p>
-<pre><code>@font-face {
+<pre tabindex="0"><code>@font-face {
   font-family:;
   src:url();
 }
 </code></pre><p><code>lg(left, #fff 50%, #000)</code></p>
-<pre><code>background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, #fff), to(#000));
+<pre tabindex="0"><code>background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, #fff), to(#000));
 background-image: -webkit-linear-gradient(left, #fff 50%, #000);
 background-image: -moz-linear-gradient(left, #fff 50%, #000);
 background-image: -o-linear-gradient(left, #fff 50%, #000);
 background-image: linear-gradient(left, #fff 50%, #000);
 </code></pre><p><code>h$[title=item$]{Header $}*3</code></p>
-<pre><code>&lt;h1 title=&quot;item1&quot;&gt;Header 1&lt;/h1&gt;
+<pre tabindex="0"><code>&lt;h1 title=&quot;item1&quot;&gt;Header 1&lt;/h1&gt;
 &lt;h2 title=&quot;item2&quot;&gt;Header 2&lt;/h2&gt;
 &lt;h3 title=&quot;item3&quot;&gt;Header 3&lt;/h3&gt;
 </code></pre><p><code>ul&gt;li.item$$${item $}*5</code></p>
-<pre><code>&lt;ul&gt;
+<pre tabindex="0"><code>&lt;ul&gt;
     &lt;li class=&quot;item001&quot;&gt;item 1&lt;/li&gt;
     &lt;li class=&quot;item002&quot;&gt;item 2&lt;/li&gt;
     &lt;li class=&quot;item003&quot;&gt;item 3&lt;/li&gt;
@@ -651,7 +651,7 @@ background-image: linear-gradient(left, #fff 50%, #000);
     &lt;li class=&quot;item005&quot;&gt;item 5&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre><p><code>ul&gt;li.item$@-*5</code></p>
-<pre><code>&lt;ul&gt;
+<pre tabindex="0"><code>&lt;ul&gt;
     &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
@@ -659,7 +659,7 @@ background-image: linear-gradient(left, #fff 50%, #000);
     &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
  &lt;/ul&gt;  
 </code></pre><p><code>ul&gt;li.item$@3*5</code></p>
-<pre><code> &lt;ul&gt;
+<pre tabindex="0"><code> &lt;ul&gt;
     &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
@@ -667,7 +667,7 @@ background-image: linear-gradient(left, #fff 50%, #000);
     &lt;li class=&quot;item7&quot;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre><p><code>ul&gt;li.item$@-3*5</code></p>
-<pre><code> &lt;ul&gt;
+<pre tabindex="0"><code> &lt;ul&gt;
     &lt;li class=&quot;item7&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item6&quot;&gt;&lt;/li&gt;
     &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
@@ -687,10 +687,10 @@ background-image: linear-gradient(left, #fff 50%, #000);
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

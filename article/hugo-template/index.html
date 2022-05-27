@@ -116,7 +116,7 @@
 <p>这当中的「菜」就是 Hugo <code>layouts/partials/</code>路径下的各个组件。而「菜单」则是<code>layouts/_default/</code>路径下的模板文件。</p>
 <h2 id="基本构成">基本构成</h2>
 <p>下面是 Hugo 常见的模板及组件搭配，它包含了一个<code>404.html</code>404页面模板、一个<code>index.html</code>首页模板、一个<code>_default</code>文件夹内的三个默认页面模板及<code>partials</code>文件夹内的<code>footer.html</code>、<code>header.html</code>、<code>head.html</code>三个最基本的页面组件。</p>
-<pre><code>themes
+<pre tabindex="0"><code>themes
 └── XXX
     └── layouts
         ├── 404.html
@@ -138,16 +138,16 @@
 <h2 id="自定义页面模板">自定义页面模板</h2>
 <p>在将页面分好类后，就要给他们定制专属页面模板了。</p>
 <p>在模板文件中使用下述代码导入组件，其中组件名为<code>header</code>，以<code>.html</code>为后缀名。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 </code></pre></div><p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//baseof.html
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//baseof.html
 </span><span class="c1"></span>
 <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
 <span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
 
 <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//list.html
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//list.html
 </span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
 <span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
@@ -164,7 +164,7 @@
 <span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
 
 <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//single.html
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//single.html
 </span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
 <span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
@@ -172,7 +172,7 @@
 <span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
 
 <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">//terms.html
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//terms.html
 </span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 
 <span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
@@ -188,11 +188,11 @@
 <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
 </code></pre></div><h2 id="基本语法介绍">基本语法介绍</h2>
 <h3 id="循环">循环</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
 
 <span class="c1">//遍历「变量」，输出「内容」。
 </span></code></pre></div><h3 id="条件判断">条件判断</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
 
 <span class="c1">//如果「条件」成立则输出「结果」，否则不输出。
 </span><span class="c1"></span>
@@ -206,7 +206,7 @@
 
 <span class="c1">//如果「条件」成立则输出「结果1」，否则输出「结果2」。
 </span></code></pre></div><p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
-<pre><code>{{ partial &quot;header.html&quot; . }}
+<pre tabindex="0"><code>{{ partial &quot;header.html&quot; . }}
 
 {{if not .IsHome }}
 &lt;h1&gt;{{ .Title | markdownify }}&lt;/h1&gt;
@@ -227,7 +227,7 @@
 
 {{ partial &quot;footer.html&quot; . }}
 </code></pre><h3 id="注释写法">注释写法</h3>
-<pre><code>{{/* 注释 */}}
+<pre tabindex="0"><code>{{/* 注释 */}}
 </code></pre>
 			</main>
 			<div class="pre-next vd-b-top">
@@ -241,10 +241,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

@@ -121,7 +121,7 @@
 			<main class="markdown academic w-630">
 				<p><code>Vuepress</code> 是一款 Vue 驱动的静态网站生成器，具有简洁至上、高性能、一键部署等特点，可方便快捷的建立自己的网站。</p>
 <div align="center"> 
-<img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vrepress.png" width=180 />
+<img src="/img/vrepress.png" width=180 />
 </div>
 <blockquote>
 <p><strong>相关站点</strong>
@@ -131,28 +131,28 @@
 </blockquote>
 <h2 id="第1步-安装-vuepress-框架">第1步 安装 Vuepress 框架</h2>
 <p>首先新建并进入博客文件夹<code>test</code>在终端中输入如下代码，命令中<code>test</code>是所创建的网站文件夹名称，由用户自定义，以下网站名均由<code>test</code>代指。</p>
-<pre><code>mkdir test
+<pre tabindex="0"><code>mkdir test
 cd test
 </code></pre><h3 id="yarn-安装">yarn 安装</h3>
 <p>可使用 yarn 或者 npm 进行安装，但推荐使用 <a href="https://www.yarnpkg.com/zh-Hans/">yarn</a> 安装 ，因为 yarn 更稳定，出错几率更少，在终端内输入如下命令全局安装 Vuepress。</p>
-<pre><code>yarn global add vuepress
+<pre tabindex="0"><code>yarn global add vuepress
 </code></pre><h3 id="npm-安装">npm 安装</h3>
 <p>在终端内输入如下命令全局安装 Vuepress。</p>
-<pre><code>npm install -g vuepress
+<pre tabindex="0"><code>npm install -g vuepress
 </code></pre><p>由于国内可能会有网络受限的问题，使用<code>npm</code>会出现安装极慢或者安装失败，可以用<code>cnpm</code>替代。使用如下命令安装。</p>
-<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+<pre tabindex="0"><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
 </code></pre><p>然后使用<code>cnpm</code>替换命令中的<code>npm</code>，例如使用下列代码全局安装 vuepress。</p>
-<pre><code>cnpm install -g hexo-cli
+<pre tabindex="0"><code>cnpm install -g hexo-cli
 </code></pre><blockquote>
 <p>执行安装操作前 macOS 用户终端输入<code>sudo su</code>命令并密码获取系统权限，Windows 用户以管理员身份运行<code>CMD</code>获取系统权限。</p>
 </blockquote>
 <h2 id="第2步-建立基本目录结构">第2步 建立基本目录结构</h2>
 <h3 id="克隆仓库">克隆仓库</h3>
 <p>新手可以通过克隆框架仓库来快速建立目录结构，这样不容易出问题，下面是一个仅包含 Vuepress 基本结构的 <a href="https://github.com/leejiawang/vuepress-template">GitHub 仓库</a>。</p>
-<pre><code>https://github.com/leejiawang/vuepress-template.git
+<pre tabindex="0"><code>https://github.com/leejiawang/vuepress-template.git
 </code></pre><h3 id="全新自建">全新自建</h3>
 <p>你也可以自己创建全新的站点，参考官方给的目录结构创建相关文件夹和文件，下面是 <a href="https://vuepress.vuejs.org/zh/guide/">Vuepress 文档</a> 推荐的目录结构。</p>
-<pre><code>test
+<pre tabindex="0"><code>test
 ├── docs
 │   ├── .vuepress (可选的)
 │   │   ├── components (可选的)
@@ -176,7 +176,7 @@ cd test
 └── package.json
 </code></pre><h2 id="第3步-网站配置">第3步 网站配置</h2>
 <p>网站配置文件 <code>.vuepress/config.js</code>，配置最基本的标题与页面描述。</p>
-<pre><code>module.exports = {
+<pre tabindex="0"><code>module.exports = {
   title: 'XXX',
   description: 'XXXX'
 }
@@ -184,18 +184,18 @@ cd test
 <p>在 <code>docs</code> 文件夹内添加新页面，页面内容采用 <a href="/web/markdown/">Markdown</a> 格式。</p>
 <h2 id="第5步-运行网站">第5步 运行网站</h2>
 <p>在终端中输入如下命令生成网页。浏览器访问 <a href="http://localhost:3000">localhost:3000</a> 预览效果，关闭预览使用组合键 <code>Ctrl+C</code> 退出当前命令。</p>
-<pre><code>yarn run docs:dev
+<pre tabindex="0"><code>yarn run docs:dev
 </code></pre><h2 id="第6步-生成静态网页">第6步 生成静态网页</h2>
 <p>在终端中输入如下命令生成静态网页。</p>
-<pre><code>yarn run docs:build
+<pre tabindex="0"><code>yarn run docs:build
 </code></pre><h2 id="第7步-部署-github-pages">第7步 部署 Github Pages</h2>
 <p>执行此操作前请确保拥有Github账号，并创建一个以 <code>XXX.github.io</code>命名的空仓库，其中 <code>XXX</code> 为你的 Github 用户名，修改 <code>docs/.vuepress/config.js</code> 文件中 <code>base</code>配置信息。</p>
-<pre><code>base: '/',
+<pre tabindex="0"><code>base: '/',
 </code></pre><p>如果你创建了其他名字的仓库，则 <code>base</code> 按如下格式填写，代码中<code>XXX</code> 为你的 Github 用户名，<code>XXXX</code>为仓库名。</p>
-<pre><code>base: https://XXX.github.io/XXXX/,
+<pre tabindex="0"><code>base: https://XXX.github.io/XXXX/,
 </code></pre><p>在 Vuepress 根目录创建 <code>deploy.sh</code> 文件，其内容如下，<strong>高亮区域只保留一条</strong>。成功后可浏览器输入 <code>http://XXX.github.io</code> 实现远程访问。</p>
 <p>除本文使用的 Github Pages 外，你还可以使用 Coding 和 Gitee 等。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/usr/bin/env sh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/usr/bin/env sh
 </span><span class="cp"></span>
 <span class="c1"># 确保脚本抛出遇到的错误</span>
 <span class="nb">set</span> -e
@@ -230,10 +230,10 @@ git push -f git@github.com:XXX/XXXX.git master:gh-pages
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

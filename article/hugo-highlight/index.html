@@ -111,7 +111,7 @@
 				<p>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。</p>
 <h2 id="下载安装-highlightjs">下载安装 <code>highlight.js</code></h2>
 <p>从<a href="https://highlightjs.org/download/">官网</a>选择需要的语言后下载文件。解压压缩包，在页面中引入自己选择风格对应的「CSS 文件」和<code>highlight.pack.js</code>。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- head --&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- head --&gt;</span>
 <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/highlight.css&#34;</span><span class="p">/&gt;</span>
 
 <span class="c">&lt;!-- body --&gt;</span>
@@ -122,20 +122,20 @@
 </blockquote>
 <h2 id="在线-cdn-资源安装">在线 cdn 资源安装</h2>
 <p>除了下载引用外，还可直接调取官方提供的在线 CDN 资源。</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css&quot;&gt;
+<pre tabindex="0"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css&quot;&gt;
 &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js&quot;&gt;&lt;/script&gt;
 </code></pre><figcaption> CDN 托管的 highlight.min.js 只包含常见语言，需要定制或完整语言版本可使用下载安装。</figcaption>
 <h2 id="使用方法">使用方法</h2>
 <p>在完成上述安装操作后，在需要高亮的代码上添加「语言类型标签」，支持的语言<a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">查询</a>。</p>
-<pre><code>&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
+<pre tabindex="0"><code>&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
 </code></pre><p>需要禁用高亮可使用 <code>plaintext</code> 或 <code>nohighlight</code> 标签。</p>
-<pre><code>&lt;pre&gt;&lt;code class=&quot;plaintext&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
+<pre tabindex="0"><code>&lt;pre&gt;&lt;code class=&quot;plaintext&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&quot;nohighlight&quot;&gt;...&lt;/code&gt;&lt;/pre&gt;
 </code></pre><h2 id="hugo-自带代码高亮">Hugo 自带代码高亮</h2>
 <p>打开根目录下的 <code>config.yaml</code>，添加以下条目即可使用 Hugo 预制高亮效果。</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span></code></pre></div><p>如果想使用更多其他风格的效果可使用上述方案安装第三方的 <code>highlight.js</code> 插件，安装后会自动识别代码语言类型并输出对应的配色方案，你也可以在「Code」符号后指定语言。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"> <span class="sb">```</span>html
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"> <span class="sb">```</span>html
  &lt;div&gt;XXXXX&lt;/div&gt;
  ...
 
@@ -157,10 +157,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

@@ -159,35 +159,34 @@
 			<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。</p>
 <p>JavaScript 作为 Web 浏览器的唯一编程语言，负责让网页“动”起来。它常用于构建具有动态功能的交互式网站。本页转载记录一些能实现一定功能的实例。</p>
 <h3 id="行内式写法">行内式写法</h3>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Button&#34;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;alert(&#39;text&#39;)&#34;</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="内嵌式写法">内嵌式写法</h3>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
     <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">)</span>
   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="外部式写法">外部式写法</h3>
 <p>新建一个 <code>XXX.js</code> 文件，然后在 html 中引用它。
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;XXX.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span></code></pre></div></p>
 <h3 id="注释方法">注释方法</h3>
-<pre><code>// 单行注释  快捷键：ctrl + /
+<pre tabindex="0"><code>// 单行注释  快捷键：ctrl + /
 
 /*
 多行注释  快捷键：shift + alt + a
 多行注释
 */
 </code></pre><h3 id="输入输出语句">输入输出语句</h3>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// 输入框
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// 输入框
 </span><span class="c1"></span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;XXX&#39;</span><span class="p">);</span>
 <span class="c1">// 弹窗
 </span><span class="c1"></span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;XXX&#39;</span><span class="p">);</span>
 <span class="c1">// console 控制台输出
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;XXX&#39;</span><span class="p">);</span>
-</code></pre></div>
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;XXX&#39;</span><span class="p">);</span></code></pre></div>
 <h2 id="变量">变量</h2>
 <p>变量是用于存放数据的 <code>容器</code>，是程序在设备内存中申请的一块存放数据的空间。</p>
 <ul>
@@ -201,7 +200,7 @@
 <p><strong>变量初始化</strong>：<code>var XXX ='XX';</code>（声明一个变量 XXX 并赋值为 XX）</p>
 </li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myName</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;请输入姓名&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myName</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;请输入姓名&#39;</span><span class="p">);</span>
 <span class="nx">alert</span><span class="p">(</span><span class="nx">myName</span><span class="p">);</span>
 </code></pre></div><blockquote>
 <p>需要同时声明多个变量时可只写一个 <code>var</code>，变量间用逗号隔开。</p>
@@ -257,7 +256,7 @@
 <h3 id="数字型-number">数字型 Number</h3>
 <p>数字型可以是整数也可以是小数，同时支持各种进制表示，其中在数字前加 <code>0</code> 为八进制，加 <code>0x</code> 为十六进制。</p>
 <p>NaN 表示非数字，<code>isNaN()</code> 可用于判断是否为非数字，是则返回 <code>false</code>，反之返回 <code>true</code>。</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="mf">0.17</span><span class="p">));</span> <span class="c1">// 显示 falsh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="mf">0.17</span><span class="p">));</span> <span class="c1">// 显示 falsh
 </span></code></pre></div>
 <h3 id="字符串型-string">字符串型 String</h3>
 <p>字符串型使用引号包含表示，推荐使用单引号，当存在多个引号嵌套时使用 <code>外单内双</code> 或者 <code>内双外单</code>，需要实现其他功能可参考下列字符串转义符表。</p>
@@ -296,7 +295,7 @@
 </tbody>
 </table>
 <p>字符串的拼接使用加号 <code>+</code> 连接即可，任何数据类型与字符串型拼接都将变成字符串型。</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;视由&#39;</span> <span class="o">+</span> <span class="s1">&#39;文化&#39;</span><span class="p">);</span>   <span class="c1">// 显示 视由文化
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;视由&#39;</span> <span class="o">+</span> <span class="s1">&#39;文化&#39;</span><span class="p">);</span>   <span class="c1">// 显示 视由文化
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;视由&#39;</span> <span class="o">+</span> <span class="mi">12</span><span class="p">);</span>   <span class="c1">// 显示 视由12
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;12&#39;</span> <span class="o">+</span> <span class="mi">12</span><span class="p">);</span>   <span class="c1">// 显示 1212
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">12</span> <span class="o">+</span> <span class="mi">12</span><span class="p">);</span>   <span class="c1">// 显示 24
@@ -305,13 +304,13 @@
 <p>布尔型数据包括 <code>ture</code> 和 <code>false</code>，其中当参与加法运算时 <code>ture</code> 当 <code>1</code> 来看， <code>flase</code> 当 <code>0</code> 来看。</p>
 <h3 id="未定义数据类型-undefinend">未定义数据类型 Undefinend</h3>
 <p>一个变量声明未赋值，则其类型为未定义数据类型。</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="nx">undefinend</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="nx">undefinend</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;X&#39;</span> <span class="o">+</span> <span class="s1">&#39;视由&#39;</span><span class="p">);</span>   <span class="c1">// 显示 undefinend视由
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;X&#39;</span> <span class="o">+</span> <span class="mi">12</span><span class="p">);</span>   <span class="c1">// 显示 NaN
 </span></code></pre></div>
 <h3 id="空值-nan">空值 NaN</h3>
 <p>当变量的值为 null，则它的数据类型为空值。</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;X&#39;</span> <span class="o">+</span> <span class="s1">&#39;视由&#39;</span><span class="p">);</span>   <span class="c1">// 显示 null视由
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;X&#39;</span> <span class="o">+</span> <span class="s1">&#39;12&#39;</span><span class="p">);</span>   <span class="c1">// 显示 12
 </span></code></pre></div>
@@ -319,59 +318,58 @@
 <ul>
 <li>可以使用 <code>length</code> 函数获取字符串长度。</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="s1">&#39;XXXXXX&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="s1">&#39;XXXXXX&#39;</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">X</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>   <span class="c1">// 显示 6
 </span></code></pre></div>
 <ul>
 <li>可以使用 <code>typeof</code> 函数获取字符串长度。</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="s1">&#39;XXXXXX&#39;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="s1">&#39;XXXXXX&#39;</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">X</span><span class="p">);</span>   <span class="c1">// 显示 string
 </span></code></pre></div>
 <h2 id="数据类型的转换">数据类型的转换</h2>
 <ul>
 <li>将数据转换为字符串型，下列三种方法均可，推荐使用方法三 <code>隐式转换</code>。</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">X</span><span class="p">));</span>   <span class="c1">// 显示 12 (字符串型)
 </span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">Y</span> <span class="o">=</span> <span class="nx">X</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Y</span><span class="p">);</span>   <span class="c1">// 显示 12 (字符串型)
 </span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">X</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">X</span> <span class="o">+</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>   <span class="c1">// 显示 12 (字符串型)
 </span></code></pre></div>
 <ul>
 <li>将数据转换为数值型，其中 <code>parseInt</code> 函数会将小数转换为向下取整的整数，推荐使用方法四 <code>隐式转换</code>。</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="mf">12.7</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="mi">12</span><span class="nx">px</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">px12</span><span class="p">));</span>   <span class="c1">// 显示 NaN (空值)
 </span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseFloat</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseFloat</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseFloat</span><span class="p">(</span><span class="mf">12.7</span><span class="p">));</span>   <span class="c1">// 显示 12.7 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseFloat</span><span class="p">(</span><span class="mi">12</span><span class="nx">px</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">px12</span><span class="p">));</span>   <span class="c1">// 显示 NaN (空值)
 </span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">));</span>   <span class="c1">// 显示 12 (数值型)
 </span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;12&#39;</span> <span class="o">-</span> <span class="mi">0</span><span class="p">);</span>   <span class="c1">// 显示 12 (数值型)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;12&#39;</span> <span class="o">-</span> <span class="mi">0</span><span class="p">);</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;12&#39;</span> <span class="o">*</span> <span class="mi">1</span><span class="p">);</span>   <span class="c1">// 显示 12 (数值型)
 </span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;17&#39;</span> <span class="o">-</span> <span class="s1">&#39;12&#39;</span><span class="p">);</span>   <span class="c1">// 显示 5 (数值型)
 </span></code></pre></div>
 <h2 id="部分实例">部分实例</h2>
 <h3 id="互换两个变量的值">互换两个变量的值</h3>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">temp</span><span class="p">;</span> <span class="c1">//临时变量
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">temp</span><span class="p">;</span> <span class="c1">//临时变量
 </span><span class="c1"></span><span class="kd">var</span> <span class="nx">A</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">B</span><span class="p">;</span>
 <span class="nx">temp</span> <span class="o">=</span> <span class="nx">A</span><span class="p">;</span>
 <span class="nx">A</span> <span class="o">=</span> <span class="nx">B</span><span class="p">;</span>
-<span class="nx">B</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
-</code></pre></div>
+<span class="nx">B</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span></code></pre></div>
 <h3 id="点击按钮替换文本">点击按钮替换文本</h3>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
@@ -387,7 +385,7 @@
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="点击按钮复制文本">点击按钮复制文本</h3>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
    <span class="p">.</span><span class="nc">wrapper</span> <span class="p">{</span><span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;}</span>
    <span class="p">#</span><span class="nn">input</span> <span class="p">{</span><span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span><span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span><span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span><span class="k">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span><span class="k">z-index</span><span class="p">:</span> <span class="mi">-10</span><span class="p">;}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
@@ -408,7 +406,7 @@
     <span class="p">}</span>
   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="顶部线形加载进度条">顶部线形加载进度条</h3>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;http://cdn.bootcss.com/pace/1.0.2/pace.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;http://cdn.bootcss.com/pace/1.0.2/pace.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">{</span>
 <span class="kd">function</span> <span class="nx">getElementsByClass</span><span class="p">(</span><span class="nx">key</span><span class="p">){</span>
@@ -489,10 +487,10 @@
 <span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="kp">-moz-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-<span class="kp">-webkit-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span><span class="p">;</span>
-<span class="kp">-moz-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span><span class="p">;</span>
-<span class="kp">-o-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span><span class="p">;</span>
-<span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span><span class="p">;</span>
+<span class="kp">-webkit-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
+<span class="kp">-moz-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
+<span class="kp">-o-</span><span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
+<span class="k">transition</span><span class="p">:</span> <span class="k">opacity</span> <span class="mf">0.8</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">.</span><span class="nc">pace-inactive</span> <span class="p">{</span>
 <span class="k">opacity</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>

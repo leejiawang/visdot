@@ -105,24 +105,24 @@
 <a class="eyecus-more-btn" href="https://github.com/git">Git 仓库</a></p>
 </blockquote>
 <h2 id="i-classfa-fa-chevron-righti-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</h2>
-<pre><code>git config --global user.name &quot;XXX&quot;
+<pre tabindex="0"><code>git config --global user.name &quot;XXX&quot;
 git config --global user.email &quot;XXX@gmail.com&quot;
 </code></pre><h2 id="i-classfa-fa-chevron-righti-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</h2>
-<pre><code>git clone git@gitlab.com:XXX/XXXX.git
+<pre tabindex="0"><code>git clone git@gitlab.com:XXX/XXXX.git
 cd XXX
 touch README.md
 git add README.md
 git commit -m &quot;add README&quot;
 git push -u origin master
 </code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</h2>
-<pre><code>cd XXXX
+<pre tabindex="0"><code>cd XXXX
 git init
 git remote add origin git@github.com:XXX/XXXX.git
 git add .
 git commit -m &quot;XXXX&quot;
 git push -u origin master
 </code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</h2>
-<pre><code>cd XXXX
+<pre tabindex="0"><code>cd XXXX
 git remote rename origin old-origin
 git remote add origin git@github.com:XXX/XXXX.git
 git push -u origin --all

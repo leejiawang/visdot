@@ -103,7 +103,7 @@
 				<p>在文章页底部为 Hugo 增加翻页按钮，并显示上一篇和下一篇的标题。这样做能增大读者在阅读完文章后继续在本站停留的几率。</p>
 <h2 id="使用方法">使用方法</h2>
 <p>本功能利用了 <code>.Next</code>、<code>.Prev</code> 这两个变量，在页面模板 <code>single.html</code> 的适当位置添加如下代码即可。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span><span class="nx">with</span> <span class="p">.</span><span class="nx">PrevInSection</span><span class="p">}}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span><span class="nx">with</span> <span class="p">.</span><span class="nx">PrevInSection</span><span class="p">}}</span>
 
   <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{.Permalink}}&#34;</span><span class="p">&gt;</span><span class="nx">前一页</span><span class="p">&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
 
@@ -116,7 +116,7 @@
 <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
 </code></pre></div><h2 id="运用实例">运用实例</h2>
 <p>下面是我使用的翻页按钮的「Html」及「CSS」配置，供大家参考。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;pre-next&#34;</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;pre-next&#34;</span><span class="p">&gt;</span>
 
   <span class="p">{{</span><span class="nx">with</span> <span class="p">.</span><span class="nx">PrevInSection</span><span class="p">}}</span>
 
@@ -131,10 +131,10 @@
   <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
 
 <span class="p">&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pre-next</span> <span class="p">{</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pre-next</span> <span class="p">{</span>
   <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
   <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space</span><span class="o">-</span><span class="n">between</span><span class="p">;</span>
+  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span>
   <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -165,10 +165,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

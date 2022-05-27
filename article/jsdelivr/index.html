@@ -106,19 +106,18 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				<div align="center"><img src="https://cdn.jsdelivr.net/www.jsdelivr.com/b12b739cba83c021b7611978b6c944758e6c2aef/img/logo-horizontal.svg"></div>
-<p>使用「github pages」建立的博客虽然免费，但在国内加载速度实在太慢，使用国内服务器又被「备案」困扰，现在可以使用「jsdelivr」免费加速你的网站。</p>
+				<p>使用「github pages」建立的博客虽然免费，但在国内加载速度实在太慢，使用国内服务器又被「备案」困扰，现在可以使用「jsdelivr」免费加速你的网站。</p>
 <p>CSS、JS、图片等资源均可用 <a href="https://www.jsdelivr.com/">Jsdelivr</a> 进行加速，本文主要介绍通过其与 <a href="https://github.com/">Github</a> 配合加速图片资源，下面就看看要如何操作吧。</p>
 <h2 id="配置-github-仓库">配置 Github 仓库</h2>
 <p>进入 Github 的<a href="https://github.com/">官网</a>，注册账户并登陆，建立一个仓库。将需要加速的图片、CSS、JS等资源上传至该仓库。</p>
 <p>给该仓库创建 「Releases」 版本，并记住自定义的版本号。</p>
 <h2 id="调用-jsdelivr">调用 Jsdelivr</h2>
 <p>使用如下命令调取资源，通过该链接访问的资源已被「Jsdelivr」进行加速，可直接在网页使用该链接调取资源。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/资源名.后缀名
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/资源名.后缀名
 </code></pre></div><p>假如 Github 用户名为 <code>eyecus</code>，仓库名为<code>cdn</code>，版本号为 <code>1.0</code> ，资源所在的子文件夹为 <code>img</code>，资源为 <code>hugo.svg</code>，则资源加速链接为：</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/eyecus/cdn@1.0/img/hugo.svg
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/eyecus/cdn@1.0/img/hugo.svg
 </code></pre></div><p>实际使用中也可不区分版本号，直接使用。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://cdn.jsdelivr.net/gh/eyecus/cdn@master/img/hugo.svg
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">/img/hugo.svg
 </code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
@@ -132,10 +131,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

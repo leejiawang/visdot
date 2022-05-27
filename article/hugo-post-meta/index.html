@@ -105,20 +105,20 @@
 				<p>一般在文章页的头部信息区显示本文标题、发布时间、关键词或是全文字数等信息，能让读者快速的了解文章内容，提高获取信息的效率。</p>
 <h2 id="文章标题">文章标题</h2>
 <p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .Title | markdownify }}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ .Title | markdownify }}
 </code></pre></div><h2 id="发布日期">发布日期</h2>
 <p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .Date.Format &#34;20060102&#34; }}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ .Date.Format &#34;20060102&#34; }}
 </code></pre></div><p>其中 <code>&quot;20060102&quot;</code> 定义了时间呈现的格式，可根据需要自定义。用你需要的方式写「2006年1月2号」填入即可。比如：「2006年1月2日」,「2006-01-02&quot;」,「2006/01/02」,「2006.01.02」,「2006.01」等。</p>
 <p>实际使用中可添加一个判定，当文章记录了时间才显示时间，写法如下。</p>
-<pre><code>{{ if (gt .Params.date 0)}}
+<pre tabindex="0"><code>{{ if (gt .Params.date 0)}}
 
   {{ .Date.Format &quot;20060102&quot; }}
 
 {{ end }}
 </code></pre><h2 id="分类关键词">分类、关键词</h2>
 <p>在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。其中<code>category</code>为需要展示的内容，可以是「Hugo」自带的分类「category」和标签「tags」，也可以是自定义的分类。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ with .Params.category }}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ with .Params.category }}
 
   {{ range . }}
 
@@ -130,9 +130,9 @@
 </code></pre></div><p>默认分类「category」和标签「tags」的使用及添加自定义分类可阅读<a href="/data/hugo_category">此文</a>。</p>
 <h2 id="文章字数">文章字数</h2>
 <p>本功能利用了 <code>.WordCount</code> 这个变量，在页面模板 <code>single.html</code> 的头部的适当位置添加如下代码。其中 <code>Words.</code> 根据排版和外观需要执行调整。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ .WordCount }} Words.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ .WordCount }} Words.
 </code></pre></div><p>如果识别出的字数明显少于文章字数，可能是没有计算中文字符，可在每个页面头部的信息区添加如下参数。</p>
-<pre><code>isCJKLanguage: true
+<pre tabindex="0"><code>isCJKLanguage: true
 </code></pre>
 			</main>
 			<div class="pre-next vd-b-top">
@@ -146,10 +146,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

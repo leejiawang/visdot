@@ -108,25 +108,25 @@
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/youtube_pace.png" alt="youtube_pace"  /></p>
+				<p><img src="/img/youtube_pace.png" alt="youtube_pace"  /></p>
 <p>如何给自己的网页添加类似于 Youtube 一样的顶部加载进度条，通过<code>pace.js</code>添加是一个比较简便且实现效果不错的方法，下面就看看要如何操作吧。</p>
 <h2 id="第1步-引入-pacejs">第1步 引入 pace.js</h2>
 <p>可进入<code>pace.js</code>的<a href="https://codebyzach.github.io/pace/">官网</a>下载文件到本地，或者直接通过 CDN 引入网页，国内可使用字节跳动CDN镜像链接。</p>
 <p><strong>示例</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">data-pace-options</span><span class="o">=</span><span class="s">&#39;{ &#34;ajax&#34;: false }&#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;pace.js&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">data-pace-options</span><span class="o">=</span><span class="s">&#39;{ &#34;ajax&#34;: false }&#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;pace.js&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div><p><strong>官方CDN镜像</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://raw.githubusercontent.com/CodeByZach/pace/master/pace.min.js
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://raw.githubusercontent.com/CodeByZach/pace/master/pace.min.js
 </code></pre></div><p><strong>字节跳动CDN镜像</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js
 </code></pre></div><p>创建独立的<code>JavaScript</code>文件并引入页面，内容如下。</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;pace&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">pace</span><span class="p">){</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;pace&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">pace</span><span class="p">){</span>
   <span class="nx">pace</span><span class="p">.</span><span class="nx">start</span><span class="p">({</span>
     <span class="nb">document</span><span class="o">:</span> <span class="kc">false</span>
   <span class="p">});</span>
 <span class="p">});</span>
 </code></pre></div><h2 id="第2步-添加样式">第2步 添加样式</h2>
 <p>可直接在页面<code>head</code>中添加默认样式，也可创建独立的<code>.css</code>文件引入页面。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
   <span class="p">.</span><span class="nc">pace</span> <span class="p">{</span>
     <span class="kp">-webkit-</span><span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
     <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
@@ -151,7 +151,7 @@
  <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </code></pre></div><p>通过修改样式表中 <code>.pace .pace-progress</code>的<code>background</code>和<code>height</code>属性可改进度条的颜色和宽度，已适应自己的页面风格。也可为其添加<code>box-shadow</code>属性来实现阴影。下面是我自定义的风格供大家参考。</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
   <span class="k">background</span><span class="p">:</span> <span class="mh">#2299dd</span><span class="p">;</span>
   <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
   <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
@@ -175,10 +175,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

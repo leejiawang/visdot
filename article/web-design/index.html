@@ -127,12 +127,12 @@
 <h2 id="字体">字体</h2>
 <h3 id="通用的字体家族">通用的字体家族</h3>
 <p>在网页设计中使用系统默认的界面字体能保证用户观感的统一性，同时也一定程度上提升了页面的加载速度，使得页面在不同平台都获得较好的观感和可读性。下面列出的 <code>font-family</code> 仅供参考，需与时俱进更新字体列表及排列顺序。</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
   <span class="k">font-family</span><span class="p">:</span> <span class="o">-</span><span class="n">apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="s1">&#39;Segoe UI&#39;</span><span class="p">,</span> <span class="s1">&#39;PingFang SC&#39;</span><span class="p">,</span> <span class="s1">&#39;Hiragino Sans GB&#39;</span><span class="p">,</span> <span class="s1">&#39;Microsoft YaHei&#39;</span><span class="p">,</span> <span class="s1">&#39;Helvetica Neue&#39;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">,</span> <span class="s1">&#39;Apple Color Emoji&#39;</span><span class="p">,</span> <span class="s1">&#39;Segoe UI Emoji&#39;</span><span class="p">,</span> <span class="s1">&#39;Segoe UI Symbol&#39;</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><h3 id="i-classfa-fa-caret-righti-等宽数字"><i class="fa fa-caret-right"></i> 等宽数字</h3>
 <p>在一些展示大量数字的页面中，非等宽的数字表示会使列表宽度不一导致排版混乱，同时也不利于数字比较，使用 <code>font-variant-numeric</code> 属性将数字等宽表示。</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
   <span class="k">font-variant-numeric</span><span class="p">:</span> <span class="n">tabular-nums</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><h3 id="i-classfa-fa-caret-righti-字体的尺寸"><i class="fa fa-caret-right"></i> 字体的尺寸</h3>
@@ -173,7 +173,7 @@
 <p>选取颜色的饱和度不应过高，字体颜色参考 <code>WCAG</code> 的标准，将文本和背景色之间保持在了 7:1 以上的 AAA 级对比度，不然会让用户很容易产生视觉疲劳。</p>
 <h2 id="样式表">样式表</h2>
 <h3 id="全局默认样式">全局默认样式</h3>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">*,</span> <span class="p">::</span><span class="nd">after</span><span class="o">,</span> <span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="o">*,</span> <span class="p">::</span><span class="nd">after</span><span class="o">,</span> <span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
   <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -185,20 +185,20 @@
 </code></pre></div><h3 id="去除浏览器默认样式">去除浏览器默认样式</h3>
 <p>大多数情况浏览器的默认样式会妨碍我们网页的外观设计，不利于各设备间的视觉统一。故在添加自定义样式之前可以先去除这些浏览器自带的默认样式。</p>
 <p><strong>输入框标签</strong> <code>input</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">input</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">input</span> <span class="p">{</span>
   <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
   <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
   <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><p><strong>按钮标签</strong> <code>button</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">button</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">button</span> <span class="p">{</span>
   <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
   <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
   <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
   <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><p><strong>列表标签</strong> <code>li</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">ul</span><span class="o">,</span><span class="nt">li</span> <span class="p">{</span> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">ul</span><span class="o">,</span><span class="nt">li</span> <span class="p">{</span> 
   <span class="k">padding</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
   <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
   <span class="k">list-style</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span>
@@ -239,7 +239,7 @@
 </table>
 <h3 id="使用注释">使用注释</h3>
 <p>在各大功能区块给出注释，同样有利于代码的快速检索与后期维护。</p>
-<pre><code>&lt;!- HTML 注释 -&gt;
+<pre tabindex="0"><code>&lt;!- HTML 注释 -&gt;
 /* CSS 注释 */
 </code></pre><h3 id="使用单独的样式文件">使用单独的样式文件</h3>
 <p>方便后期维护以及精简代码量，推荐将样式写在单独的 <code>CSS</code> 样式文件中。</p>
@@ -258,10 +258,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">

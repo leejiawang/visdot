@@ -105,7 +105,7 @@
 			<main class="markdown academic w-630">
 				<h2 id="全站文章列表">全站文章列表</h2>
 <p>在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 <code>single.html</code> 中的适当位置添加如下代码。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ $pages := .Pages }}
   {{ $pages = .Site.RegularPages }}
   {{ range (where $pages &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
@@ -118,7 +118,7 @@
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </code></pre></div><h2 id="具体某个分类的文章列表">具体某个分类的文章列表</h2>
 <p>要在内容页添加具体某个分类的文章列表，可在变量<code>.Site.RegularPages</code>后添加限定条件<code>&quot;Section&quot; &quot;XXX&quot;</code>，参考如下。</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ range where .Site.RegularPages &#34;Section&#34; &#34;XXX&#34; }}
   
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -166,10 +166,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="vd-photo" align="center">
-	<a href="https://visdot.com/go/"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.webgo.png"></a>
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
 </div>
 			<div class="vd-photo" align="center">
-  <a href="/warehouse"><img src="https://cdn.jsdelivr.net/gh/eyecus/cdn/img/vis.warehouse.png"></a>
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
