@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -153,11 +152,11 @@
 			<p>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。</p>
 <p>层叠样式表 Cascading Style Sheets 是一种用来表现HTML或XML等文件样式的计算机语言。不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
 <p>其中<code>p</code> ：<strong>选择器</strong> 是需要改变样式的元素；<code>color</code>：<strong>属性</strong> 是需要改变的样式属性；<code>red</code> ：<strong>值</strong> 是属性的描述值。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><h2 id="盒子模型">盒子模型</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="盒子模型">盒子模型</h2>
 <img src="/img/box-cn.png" width="400px">
 <p>上图是一个标准盒子模型的示意图，可以看出每个盒子由四个区域组成，由里到外依次是内容、内边框、边框和外边框。</p>
 <table>
@@ -222,10 +221,10 @@
 <h3 id="内边框-cpadding">内边框 cpadding</h3>
 <p>内边框算是内容的拓展，负责给内容排开周围的区域的其他元素，常用作“留白”。可通过 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code>、<code>padding-left</code>、<code>padding</code>来控制内边框的粗细。</p>
 <p>我们发现两个方块默认情况下紧贴在一起，可以通过增加内边框使他们看起来更协调。绿色区域仅为表示内边框，实际默认为透明。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><div align="center" style="padding-top: 20px">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div align="center" style="padding-top: 20px">
 <div style="display: flex; width: 220px; height: 80px; background: #d9ead3;">
   <div style="padding: 10px;">
     <div style="width: 90px; height: 45px; background: #eee; padding-top: 15px; color: #666"><strong>A</strong></div>
@@ -235,19 +234,19 @@
   </div>
 </div></div>
 <p>你还可以使用 <code>padding</code> 属性，一次性输入多个数值来调整四周的内边框，或者在后面增加方位来单独调整特定方位。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><div align="center" style="padding-top: 20px">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div align="center" style="padding-top: 20px">
 <div style="display: flex; width: 150px; height: 90px; background: #d9ead3;">
   <div style="padding: 10px 20px 30px 40px;">
     <div style="width: 90px; height: 55px; background: #eee; padding-top: 15px; color: #666"><strong>A</strong></div>
   </div>
 </div></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
-  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><div align="center" style="padding-top: 20px">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div align="center" style="padding-top: 20px">
 <div style="display: flex; width: 90px; height: 70px; background: #d9ead3;">
   <div style="padding-top: 10px;">
     <div style="width: 90px; height: 60px; background: #eee; padding-top: 15px; color: #666"><strong>A</strong></div>
@@ -255,19 +254,19 @@
 </div></div>
 <h3 id="边框-border">边框 border</h3>
 <p>边框算是内边框的拓展，是盒子模型实质上的边界，可通过 <code>border-width</code>来控制边框粗细，同样在后面增加方位可以单独调整特定方位。也可给定线形: <code>solid</code>(实线) <code>none</code>(无边框) <code>double</code>(双线) <code>dashed</code>(虚线) <code>dotted</code>(点划线)来控制边框风格。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ced4da</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><div align="center" style="padding-top: 20px">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ced4da</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div align="center" style="padding-top: 20px">
   <div style="width: 110px; height: 80px; background: #eee; padding-top: 15px; color: #666; border: 10px solid #ced4da;"><strong>A</strong></div>
 </div>
 <h3 id="外边框-margin">外边框 margin</h3>
 <p>外边框算是边框的拓展，它其实已经不算做该元素的范围，可通过 <code>margin-width</code>来控制边框粗细，同样在后面增加方位可以单独调整特定方位。</p>
 <p>不同元素的外边框是可以重叠的，可对比下图与内边框图观察两方块交界处的宽度来理解它们的不同之处。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><div align="center" style="padding-top: 20px">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div align="center" style="padding-top: 20px">
 <div style="display: flex; width: 210px; height: 80px; background: #fce5cd;">
   <div style="margin: 10px;">
     <div style="width: 90px; height: 45px; background: #eee; padding-top: 15px; color: #666"><strong>A</strong></div>
@@ -278,12 +277,12 @@
 </div></div>
 <h3 id="位置属性-position">位置属性 Position</h3>
 <p>进行 CSS 布局前，还得了解 <code>position</code> 位置属性，它用于确定元素的定位方式，选择合适的定位方式能快速实现布局需求。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-  <span class="k">left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">top</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">top</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th style="text-align:left">属性</th>
@@ -301,10 +300,10 @@
 </table>
 <h3 id="浮动属性-float">浮动属性 Float</h3>
 <p>在布局过程中，有事需要两个元素处于同一行，这时就要用到 <code>float</code> 和 <code>clear</code> 属性，它用于确定元素是否浮动。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th style="text-align:left">属性</th>
@@ -328,10 +327,10 @@
 <h2 id="弹性布局">弹性布局</h2>
 <img src="/img/flex.png" width="550px">
 <p>Flex 是 Flexible Box（弹性布局）的缩写，给盒子指定 Flex 属性能大大提升布局时的灵活性。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><h3 id="容器属性-container">容器属性 container</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="容器属性-container">容器属性 container</h3>
 <p>使用 Flex 布局的盒子称作 Flex容器，简称 <strong>容器 (container)</strong>。它所包含的全部子元素被称作 Flex项目，简称 <strong>项目 (item)</strong>。容器具有以下属性：</p>
 <table>
 <thead>
@@ -412,9 +411,9 @@
 </tbody>
 </table>
 <p>项目属性中的 <code>flex-grow</code>、<code>flex-shrink</code> 和 <code>flex-basis</code>可以简写为 <code>flex</code>，写法如下：
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">item</span> <span class="p">{</span>
-  <span class="k">flex</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">item</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">flex</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <h2 id="文本样式">文本样式</h2>
 <table>
 <thead>
@@ -491,10 +490,10 @@
 <div align="left">  
 <img src="/img/fonta.png" width="280">
 </div>
-<p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Times New Roman&#39;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
-  <span class="n">src</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;TimesNewRoman.ttf&#39;</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
+<p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Times New Roman&#39;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">src</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;TimesNewRoman.ttf&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
 <blockquote class="info">
   <p><strong><i class="fa fa-exclamation-circle"></i> 提示</strong></p>
 <p>除了加载本地字体外，你还可以选择直接调用 <a href="/posts/googlefonts"><strong>Google Fonts</strong></a> 在线字体库。</p>
@@ -533,14 +532,14 @@
 </tbody>
 </table>
 <h2 id="链接样式">链接样式</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
-  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#666666</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">a</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span>
-  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;»&#34;</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#666666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">a</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;»&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -588,20 +587,20 @@
 </tbody>
 </table>
 <h3 id="新窗口打开链接">新窗口打开链接</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">base</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.eyecus.com/&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">&gt;</span>视由<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">.eyecus-btn a:active {
- text:expression(target=&#34;_blank&#34;);
-}
-</code></pre></div><h2 id="背景样式">背景样式</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
-  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">base</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.eyecus.com/&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">&gt;</span>视由<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">.eyecus-btn a:active {
+</span></span><span class="line"><span class="cl"> text:expression(target=&#34;_blank&#34;);
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><h2 id="背景样式">背景样式</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th style="text-align:left">属性</th>
@@ -638,9 +637,9 @@
 </tbody>
 </table>
 <h2 id="阴影样式">阴影样式</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">nav</span> <span class="p">{</span>
-  <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">-10</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#666666</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">nav</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">-10</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#666666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -683,10 +682,10 @@
 </tbody>
 </table>
 <h2 id="边框样式">边框样式</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#666666</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">50</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#666666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">50</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -719,74 +718,74 @@
 </tbody>
 </table>
 <h2 id="动画延迟">动画延迟</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">btn</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
-  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">btn</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
 <h2 id="背景毛玻璃效果">背景毛玻璃效果</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">header</span> <span class="p">{</span>
-  <span class="kp">-webkit-</span><span class="n">backdrop-filter</span><span class="p">:</span> <span class="nb">saturate</span><span class="p">(</span><span class="mi">180</span><span class="kt">%</span><span class="p">)</span> <span class="nb">blur</span><span class="p">(</span><span class="mi">20</span><span class="kt">px</span><span class="p">);</span>
-  <span class="n">backdrop-filter</span><span class="p">:</span> <span class="nb">saturate</span><span class="p">(</span><span class="mi">180</span><span class="kt">%</span><span class="p">)</span> <span class="nb">blur</span><span class="p">(</span><span class="mi">20</span><span class="kt">px</span><span class="p">);</span>
-  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.72</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><h2 id="滚动条样式">滚动条样式</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">header</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kp">-webkit-</span><span class="n">backdrop-filter</span><span class="p">:</span> <span class="nb">saturate</span><span class="p">(</span><span class="mi">180</span><span class="kt">%</span><span class="p">)</span> <span class="nb">blur</span><span class="p">(</span><span class="mi">20</span><span class="kt">px</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">backdrop-filter</span><span class="p">:</span> <span class="nb">saturate</span><span class="p">(</span><span class="mi">180</span><span class="kt">%</span><span class="p">)</span> <span class="nb">blur</span><span class="p">(</span><span class="mi">20</span><span class="kt">px</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.72</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="滚动条样式">滚动条样式</h2>
 <p><strong>禁用竖向滚动条</strong>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
-  <span class="k">overflow</span><span class="p">:</span><span class="kc">scroll</span><span class="p">;</span>
-  <span class="k">overflow-y</span><span class="p">:</span><span class="kc">hidden</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow</span><span class="p">:</span><span class="kc">scroll</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow-y</span><span class="p">:</span><span class="kc">hidden</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <p><strong>自定义滚动条</strong>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar</span> <span class="p">{</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar-thumb</span> <span class="p">{</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-  <span class="kp">-webkit-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-  <span class="k">background</span><span class="p">:</span> <span class="mh">#535353</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar-track</span> <span class="p">{</span>
-  <span class="kp">-webkit-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">background</span><span class="p">:</span> <span class="mh">#ccc</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">height</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar-thumb</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kp">-webkit-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#535353</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="p">::</span><span class="nd">-webkit-scrollbar-track</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kp">-webkit-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#ccc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <h2 id="常用功能">常用功能</h2>
 <p><i class="fa fa-plus-circle"></i> 添加渐变色，线性渐变 / 圆心渐变
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">background</span><span class="o">:</span> <span class="nt">-webkit-gradient</span><span class="o">(</span><span class="nt">linear</span><span class="o">,</span> <span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nt">left</span> <span class="nt">bottom</span><span class="o">,</span> <span class="nt">from</span><span class="o">(</span><span class="p">#</span><span class="nn">3874AF</span><span class="o">),</span> <span class="nt">to</span><span class="o">(</span><span class="p">#</span><span class="nn">3598DB</span><span class="o">));</span>
-
-<span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">-180deg</span><span class="o">,</span><span class="p">#</span><span class="nn">fafbfc</span><span class="o">,</span><span class="p">#</span><span class="nn">eff3f6</span> <span class="nt">90</span><span class="o">%);</span>
-
-<span class="nt">linear-gradient</span><span class="o">(</span><span class="p">#</span><span class="nn">D1EEFC</span><span class="o">,</span> <span class="p">#</span><span class="nn">81F3FD</span><span class="o">);</span>
-<span class="nt">radial-gradient</span><span class="o">(</span><span class="p">#</span><span class="nn">FEFD58</span><span class="o">,</span> <span class="p">#</span><span class="nn">71FCA6</span><span class="o">,</span> <span class="p">#</span><span class="nn">52EDC7</span><span class="o">);</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">background</span><span class="o">:</span> <span class="nt">-webkit-gradient</span><span class="o">(</span><span class="nt">linear</span><span class="o">,</span> <span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nt">left</span> <span class="nt">bottom</span><span class="o">,</span> <span class="nt">from</span><span class="o">(</span><span class="p">#</span><span class="nn">3874AF</span><span class="o">),</span> <span class="nt">to</span><span class="o">(</span><span class="p">#</span><span class="nn">3598DB</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">-180deg</span><span class="o">,</span><span class="p">#</span><span class="nn">fafbfc</span><span class="o">,</span><span class="p">#</span><span class="nn">eff3f6</span> <span class="nt">90</span><span class="o">%);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">linear-gradient</span><span class="o">(</span><span class="p">#</span><span class="nn">D1EEFC</span><span class="o">,</span> <span class="p">#</span><span class="nn">81F3FD</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="nt">radial-gradient</span><span class="o">(</span><span class="p">#</span><span class="nn">FEFD58</span><span class="o">,</span> <span class="p">#</span><span class="nn">71FCA6</span><span class="o">,</span> <span class="p">#</span><span class="nn">52EDC7</span><span class="o">);</span></span></span></code></pre></div></p>
 <p><i class="fa fa-plus-circle"></i> 使链接在同一行显示
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">a</span> <span class="p">{</span> <span class="k">word-break</span><span class="p">:</span> <span class="n">keep-all</span><span class="p">;</span> <span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">a</span> <span class="p">{</span> <span class="k">word-break</span><span class="p">:</span> <span class="n">keep-all</span><span class="p">;</span> <span class="p">}</span></span></span></code></pre></div></p>
 <p><i class="fa fa-plus-circle"></i> 禁止浏览器为被激活的输入框添加边框
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="o">*</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
-  <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">*</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <p><i class="fa fa-plus-circle"></i> 载入本地字体
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-  <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">;</span>
-  <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
-  <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span>
-  <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.woff2&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff2&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.eot&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">);</span>
-<span class="p">}</span>
-<span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-  <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">;</span>
-  <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span><span class="o">;</span>
-  <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span>
-  <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Awesome Font Italic&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.woff2&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff2&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
-       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.eot&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">);</span>
-<span class="p">}</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.woff2&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff2&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome.eot&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;Awesome Font&#39;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Awesome Font Italic&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.woff2&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff2&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
+</span></span><span class="line"><span class="cl">       <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;/fonts/awesome-i.eot&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <h2 id="参考资料">参考资料</h2>
 <ol>
 <li><code>维基百科 https://zh.wikipedia.org/</code></li>

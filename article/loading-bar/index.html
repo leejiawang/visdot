@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -113,55 +112,55 @@
 <h2 id="第1步-引入-pacejs">第1步 引入 pace.js</h2>
 <p>可进入<code>pace.js</code>的<a href="https://codebyzach.github.io/pace/">官网</a>下载文件到本地，或者直接通过 CDN 引入网页，国内可使用字节跳动CDN镜像链接。</p>
 <p><strong>示例</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">data-pace-options</span><span class="o">=</span><span class="s">&#39;{ &#34;ajax&#34;: false }&#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;pace.js&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div><p><strong>官方CDN镜像</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://raw.githubusercontent.com/CodeByZach/pace/master/pace.min.js
-</code></pre></div><p><strong>字节跳动CDN镜像</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js
-</code></pre></div><p>创建独立的<code>JavaScript</code>文件并引入页面，内容如下。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;pace&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">pace</span><span class="p">){</span>
-  <span class="nx">pace</span><span class="p">.</span><span class="nx">start</span><span class="p">({</span>
-    <span class="nb">document</span><span class="o">:</span> <span class="kc">false</span>
-  <span class="p">});</span>
-<span class="p">});</span>
-</code></pre></div><h2 id="第2步-添加样式">第2步 添加样式</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">data-pace-options</span><span class="o">=</span><span class="s">&#39;{ &#34;ajax&#34;: false }&#39;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;pace.js&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>官方CDN镜像</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">https://raw.githubusercontent.com/CodeByZach/pace/master/pace.min.js
+</span></span></code></pre></div><p><strong>字节跳动CDN镜像</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">https://s2.pstatp.com/cdn/expire-1-M/pace/1.0.2/pace.min.js
+</span></span></code></pre></div><p>创建独立的<code>JavaScript</code>文件并引入页面，内容如下。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;pace&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">pace</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">pace</span><span class="p">.</span><span class="nx">start</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="o">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h2 id="第2步-添加样式">第2步 添加样式</h2>
 <p>可直接在页面<code>head</code>中添加默认样式，也可创建独立的<code>.css</code>文件引入页面。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="p">.</span><span class="nc">pace</span> <span class="p">{</span>
-    <span class="kp">-webkit-</span><span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-
-    <span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="kp">-moz-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">pace-inactive</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
-    <span class="k">background</span><span class="p">:</span> <span class="mh">#29d</span><span class="p">;</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
-    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">right</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
- <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</code></pre></div><p>通过修改样式表中 <code>.pace .pace-progress</code>的<code>background</code>和<code>height</code>属性可改进度条的颜色和宽度，已适应自己的页面风格。也可为其添加<code>box-shadow</code>属性来实现阴影。下面是我自定义的风格供大家参考。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
-  <span class="k">background</span><span class="p">:</span> <span class="mh">#2299dd</span><span class="p">;</span>
-  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-  <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
-  <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">right</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">3</span><span class="kt">px</span> <span class="mh">#2299dd</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>不仅是类似 Youtube 的顶部横条的样式，官方还提供了很多其他的样式，更多详情可阅读<a href="https://codebyzach.github.io/pace/docs/">官方文档</a>。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">pace</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-moz-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">pace-inactive</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="mh">#29d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">right</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>通过修改样式表中 <code>.pace .pace-progress</code>的<code>background</code>和<code>height</code>属性可改进度条的颜色和宽度，已适应自己的页面风格。也可为其添加<code>box-shadow</code>属性来实现阴影。下面是我自定义的风格供大家参考。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">pace</span> <span class="p">.</span><span class="nc">pace-progress</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#2299dd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">right</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">height</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">3</span><span class="kt">px</span> <span class="mh">#2299dd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>不仅是类似 Youtube 的顶部横条的样式，官方还提供了很多其他的样式，更多详情可阅读<a href="https://codebyzach.github.io/pace/docs/">官方文档</a>。</p>
 
 			</main>
 			<div class="pre-next vd-b-top">
@@ -169,7 +168,7 @@
 	<a href="https://visdot.com/article/macos-tips/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>macOS 常见问题解决办法</div></a>
 	
 	
-	<a href="https://visdot.com/article/jsdelivr/"><div class="next-btn">使用 jsdelivr 免费加速你的网站<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	<a href="https://visdot.com/article/jsdelivr/"><div class="next-btn">通过 jsdelivr 免费加速你的网站<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
 	
 </div>
 		</div>

@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -138,75 +137,75 @@
 <h2 id="自定义页面模板">自定义页面模板</h2>
 <p>在将页面分好类后，就要给他们定制专属页面模板了。</p>
 <p>在模板文件中使用下述代码导入组件，其中组件名为<code>header</code>，以<code>.html</code>为后缀名。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//baseof.html
-</span><span class="c1"></span>
-<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-
-<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
-
-<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//list.html
-</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-
-<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
-
-<span class="p">&lt;</span><span class="nx">ul</span><span class="p">&gt;</span>
-  <span class="p">{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="o">:=</span> <span class="p">.</span><span class="nx">Pages</span> <span class="p">}}</span>
-  <span class="p">{{</span> <span class="k">if</span> <span class="p">.</span><span class="nx">IsHome</span> <span class="p">}}{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="p">=</span> <span class="p">.</span><span class="nx">Site</span><span class="p">.</span><span class="nx">RegularPages</span> <span class="p">}}{{</span> <span class="nx">end</span> <span class="p">}}</span>
-  <span class="p">{{</span> <span class="k">range</span> <span class="p">(</span><span class="nx">where</span> <span class="err">$</span><span class="nx">pages</span> <span class="s">&#34;Section&#34;</span> <span class="s">&#34;!=&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">}}</span>
-  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nx">span</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;date&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Date</span><span class="p">.</span><span class="nx">Format</span> <span class="s">&#34;2006/01/02&#34;</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">span</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
-  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
-
-<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//single.html
-</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-
-<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
-
-<span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
-
-<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">//terms.html
-</span><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-
-<span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nx">ul</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;terms&#34;</span><span class="p">&gt;</span>
-  <span class="p">{{</span> <span class="k">range</span> <span class="p">.</span><span class="nx">Data</span><span class="p">.</span><span class="nx">Terms</span> <span class="p">}}</span>
-  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .Page.RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Page</span><span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span> <span class="p">({{</span> <span class="p">.</span><span class="nx">Count</span> <span class="p">}})</span>
-  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
-  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-<span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
-
-<span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
-</code></pre></div><h2 id="基本语法介绍">基本语法介绍</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span></code></pre></div><p>下面是一组较基本的 Hugo 模板配置，他包含<code>baseof.html</code>、<code>list.html</code>、<code>single.html</code>、<code>terms.html</code>四个页面模板。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">//baseof.html
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">//list.html
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nx">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="o">:=</span> <span class="p">.</span><span class="nx">Pages</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="k">if</span> <span class="p">.</span><span class="nx">IsHome</span> <span class="p">}}{{</span> <span class="err">$</span><span class="nx">pages</span> <span class="p">=</span> <span class="p">.</span><span class="nx">Site</span><span class="p">.</span><span class="nx">RegularPages</span> <span class="p">}}{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="k">range</span> <span class="p">(</span><span class="nx">where</span> <span class="err">$</span><span class="nx">pages</span> <span class="s">&#34;Section&#34;</span> <span class="s">&#34;!=&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nx">span</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;date&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Date</span><span class="p">.</span><span class="nx">Format</span> <span class="s">&#34;2006/01/02&#34;</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">//single.html
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">|</span> <span class="nx">markdownify</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="p">.</span><span class="nx">Content</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">//terms.html
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;header.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nx">h1</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nx">ul</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;terms&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="k">range</span> <span class="p">.</span><span class="nx">Data</span><span class="p">.</span><span class="nx">Terms</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nx">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .Page.RelPermalink }}&#34;</span><span class="p">&gt;{{</span> <span class="p">.</span><span class="nx">Page</span><span class="p">.</span><span class="nx">Title</span> <span class="p">}}&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span> <span class="p">({{</span> <span class="p">.</span><span class="nx">Count</span> <span class="p">}})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="o">/</span><span class="nx">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="o">/</span><span class="nx">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;footer.html&#34;</span> <span class="p">.</span> <span class="p">}}</span>
+</span></span></code></pre></div><h2 id="基本语法介绍">基本语法介绍</h2>
 <h3 id="循环">循环</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-
-<span class="c1">//遍历「变量」，输出「内容」。
-</span></code></pre></div><h3 id="条件判断">条件判断</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-
-<span class="c1">//如果「条件」成立则输出「结果」，否则不输出。
-</span><span class="c1"></span>
-
-<span class="p">{{</span> <span class="k">if</span> <span class="nx">not</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-
-<span class="c1">//如果「条件」不成立则输出「结果」，否则不输出。
-</span><span class="c1"></span>
-
-<span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果1</span> <span class="p">{{</span><span class="k">else</span><span class="p">}}</span> <span class="nx">结果2</span> <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
-
-<span class="c1">//如果「条件」成立则输出「结果1」，否则输出「结果2」。
-</span></code></pre></div><p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
-<pre tabindex="0"><code>{{ partial &quot;header.html&quot; . }}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">range</span> <span class="nx">变量</span><span class="p">}}</span> <span class="nx">内容</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//遍历「变量」，输出「内容」。
+</span></span></span></code></pre></div><h3 id="条件判断">条件判断</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//如果「条件」成立则输出「结果」，否则不输出。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="nx">not</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果</span> <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//如果「条件」不成立则输出「结果」，否则不输出。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="nx">条件</span> <span class="p">}}</span> <span class="nx">结果1</span> <span class="p">{{</span><span class="k">else</span><span class="p">}}</span> <span class="nx">结果2</span> <span class="p">{{</span><span class="nx">end</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//如果「条件」成立则输出「结果1」，否则输出「结果2」。
+</span></span></span></code></pre></div><p>通过简单的「条件判断」可将上文提到的基本模板中的前两个合二为一，当页面为首页时使用<code>baseof.html</code>模板，否则使用<code>list.html</code>模板，写法如下。</p>
+<pre tabindex="0"><code>{{ partial &#34;header.html&#34; . }}
 
 {{if not .IsHome }}
 &lt;h1&gt;{{ .Title | markdownify }}&lt;/h1&gt;
@@ -217,15 +216,15 @@
 &lt;ul&gt;
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;) }}
+  {{ range (where $pages &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
   &lt;li&gt;
-    &lt;span class=&quot;date&quot;&gt;{{ .Date.Format &quot;2006/01/02&quot; }}&lt;/span&gt;
-    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title | markdownify }}&lt;/a&gt;
+    &lt;span class=&#34;date&#34;&gt;{{ .Date.Format &#34;2006/01/02&#34; }}&lt;/span&gt;
+    &lt;a href=&#34;{{ .RelPermalink }}&#34;&gt;{{ .Title | markdownify }}&lt;/a&gt;
   &lt;/li&gt;
   {{ end }}
 &lt;/ul&gt;
 
-{{ partial &quot;footer.html&quot; . }}
+{{ partial &#34;footer.html&#34; . }}
 </code></pre><h3 id="注释写法">注释写法</h3>
 <pre tabindex="0"><code>{{/* 注释 */}}
 </code></pre>

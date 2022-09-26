@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://visdot.com/article/selenium/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://visdot.com/article/map-download/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -98,31 +101,40 @@
     <loc>https://visdot.com/documentation/markdown/</loc>
     <lastmod>2019-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/projects/eyecus/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/projects/hgdtzs/</loc>
-    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/documentation/git/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/projects/starwood/</loc>
-    <lastmod>2019-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/projects/3dsmax-jz/</loc>
-    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/documentation/symbol/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/cad/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/html/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/python/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/selenium/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/web/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/cad/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/map/</loc>
@@ -131,25 +143,10 @@
     <loc>https://visdot.com/search/qa/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/web/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/css/</loc>
-    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/html/</loc>
-    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/</loc>
@@ -229,12 +226,6 @@
   </url><url>
     <loc>https://visdot.com/search/hackintosh/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/projects/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/bootstrap/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>

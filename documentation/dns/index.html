@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -146,47 +145,47 @@
 <p>使用命令 <code>vim /etc/resolv.conf</code>，将首选「nameserver」修改并确定。</p>
 <h2 id="常用-dns">常用 DNS</h2>
 <h3 id="google-dns">Google DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">8.8.8.8 / 8.8.4.4
-</code></pre></div><figcaption><a href="http://www.alidns.com/" target="_blank">www.alidns.com</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">8.8.8.8 / 8.8.4.4
+</span></span></code></pre></div><figcaption><a href="http://www.alidns.com/" target="_blank">www.alidns.com</a></figcaption>
 <h3 id="腾讯-dns">腾讯 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">119.29.29.29 / 182.254.116.116
-</code></pre></div><figcaption><a href="https://www.dnspod.cn/Products/Public.DNS" target="_blank">www.dnspod.cn/Products/Public.DNS</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">119.29.29.29 / 182.254.116.116
+</span></span></code></pre></div><figcaption><a href="https://www.dnspod.cn/Products/Public.DNS" target="_blank">www.dnspod.cn/Products/Public.DNS</a></figcaption>
 <h3 id="阿里-dns">阿里 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">223.5.5.5 / 223.6.6.6
-</code></pre></div><figcaption><a href="http://www.alidns.com/" target="_blank">www.alidns.com</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">223.5.5.5 / 223.6.6.6
+</span></span></code></pre></div><figcaption><a href="http://www.alidns.com/" target="_blank">www.alidns.com</a></figcaption>
 <h3 id="百度-dns">百度 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">180.76.76.76
-</code></pre></div><h3 id="114-dns">114 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">114.114.114.114 / 114.114.115.115
-</code></pre></div><figcaption><a href="http://www.114dns.com/" target="_blank">www.114dns.com</a></figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">14.114.114.110 / 114.114.115.110
-</code></pre></div><figcaption>拦截钓鱼+病毒木马网站</figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">114.114.114.119 / 114.114.115.119
-</code></pre></div><figcaption>未成年人保护版</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">180.76.76.76
+</span></span></code></pre></div><h3 id="114-dns">114 DNS</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">114.114.114.114 / 114.114.115.115
+</span></span></code></pre></div><figcaption><a href="http://www.114dns.com/" target="_blank">www.114dns.com</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">14.114.114.110 / 114.114.115.110
+</span></span></code></pre></div><figcaption>拦截钓鱼+病毒木马网站</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">114.114.114.119 / 114.114.115.119
+</span></span></code></pre></div><figcaption>未成年人保护版</figcaption>
 <h3 id="opendns">OpenDNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">208.67.222.222 / 208.67.220.220 / 208.67.222.220 / 208.67.220.222
-</code></pre></div><figcaption><a href="https://www.opendns.com/" target="_blank">www.opendns.com</a></figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">208.67.222.123 / 208.67.220.123
-</code></pre></div><figcaption>未成年人保护版</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">208.67.222.222 / 208.67.220.220 / 208.67.222.220 / 208.67.220.222
+</span></span></code></pre></div><figcaption><a href="https://www.opendns.com/" target="_blank">www.opendns.com</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">208.67.222.123 / 208.67.220.123
+</span></span></code></pre></div><figcaption>未成年人保护版</figcaption>
 <h3 id="诺顿-dns">诺顿 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">198.153.192.40 / 198.153.194.40
-</code></pre></div><figcaption>过滤不安全网页</figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">198.153.192.50 / 198.153.194.50
-</code></pre></div><figcaption>过滤不安全网页+色情</figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">198.153.192.60 / 198.153.194.60
-</code></pre></div><figcaption>过滤不安全网页+色情+非家庭友好</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">198.153.192.40 / 198.153.194.40
+</span></span></code></pre></div><figcaption>过滤不安全网页</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">198.153.192.50 / 198.153.194.50
+</span></span></code></pre></div><figcaption>过滤不安全网页+色情</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">198.153.192.60 / 198.153.194.60
+</span></span></code></pre></div><figcaption>过滤不安全网页+色情+非家庭友好</figcaption>
 <h3 id="v2ex-dns">V2EX DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">199.91.73.222 / 178.79.131.110
-</code></pre></div><h3 id="微软-dns">微软 DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">4.2.2.1 / 4.2.2.2
-</code></pre></div><h3 id="cnnic-dns">CNNIC DNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">1.2.4.8 / 202.98.0.68
-</code></pre></div><figcaption>中国互联网络信息中心<a href="http://www.sdns.cn/" target="_blank">www.sdns.cn</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">199.91.73.222 / 178.79.131.110
+</span></span></code></pre></div><h3 id="微软-dns">微软 DNS</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">4.2.2.1 / 4.2.2.2
+</span></span></code></pre></div><h3 id="cnnic-dns">CNNIC DNS</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">1.2.4.8 / 202.98.0.68
+</span></span></code></pre></div><figcaption>中国互联网络信息中心<a href="http://www.sdns.cn/" target="_blank">www.sdns.cn</a></figcaption>
 <h3 id="onedns">OneDNS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">117.50.11.11 / 52.80.66.66
-</code></pre></div><figcaption>拦截版<a href="http://www.onedns.net/" target="_blank">www.onedns.net</a></figcaption>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">117.50.10.10 /52.80.52.52
-</code></pre></div><figcaption>纯净版</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">117.50.11.11 / 52.80.66.66
+</span></span></code></pre></div><figcaption>拦截版<a href="http://www.onedns.net/" target="_blank">www.onedns.net</a></figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">117.50.10.10 /52.80.52.52
+</span></span></code></pre></div><figcaption>纯净版</figcaption>
 <h2 id="运营商-dns-列表">运营商 DNS 列表</h2>
 <table>
 <thead>

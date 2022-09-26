@@ -6,7 +6,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>HEXO 建站教程 &nbsp;|&nbsp; 视点</title>
+    <title>从零开始 Hexo 建站教程 &nbsp;|&nbsp; 视点</title>
     
     <meta name="keywords" content="Hexo, 视由, 视界事由, eyecus, 博客, blog, Markdown">
     
@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -79,7 +78,7 @@
 		<div class="main">
 			<div class="post-meta">
 
-				<div class="post-title">HEXO 建站教程</div>
+				<div class="post-title">从零开始 Hexo 建站教程</div>
 				<div class="post-keywords">
 					<div class="post-terms">
 						
@@ -113,13 +112,11 @@
 <div align="center"> 
 <img src="/img/hexo.png" width=180 />
 </div>
-<blockquote>
 <p><strong>相关站点</strong>：
 <a href="https://hexo.io/" target="_blank">Hexo官网</a>
 <a href="https://hexo.io/themes/" target="_blank">Hexo主题</a>
 <a href="https://hexo.io/zh-cn/" target="_blank">Hexo中文</a>
 <a href="https://github.com/hexojs/hexo" target="_blank">Hexo仓库</a></p>
-</blockquote>
 <h2 id="第1步-安装-hexo-框架">第1步 安装 Hexo 框架</h2>
 <p>安装 Hugo 之前要确保设备装有 <a href="https://git-scm.com/"> Git </a> 和 <a href="https://nodejs.org/"> Node.js </a>(建议安装最新版本)。</p>
 <p>使用 <code>npm</code> 安装 <code>Hexo</code>，在终端输入如下命令。</p>
@@ -147,87 +144,87 @@ cd test
 </code></pre><p>在 <a href="https://hexo.io/themes/">主题商店</a> 中选择自己喜欢的主题，使用如代码代克隆主题至本地。代码中网址为主题Github仓库地址，<code>XXXX</code>为主题文件夹名称。</p>
 <pre tabindex="0"><code>git clone https://github.com/XXXXX/XXXX themes/XXXX
 </code></pre><p>编辑网站根目录中<code>_config.yml</code>文件，修改代码<code>theme: XXXX</code>以确认所使用的主题。<code>_config.yml</code>文件默认格式如下，参考 <a href="https://hexo.io/zh-cn/docs/configuration"> 官方文档</a> 根据需要修改相关内容。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Site</span>
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone: Asia/Shanghai
-
-<span class="c1"># URL</span>
-url: http://yoursite.com
-root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-
-<span class="c1"># Directory</span>
-source_dir: <span class="nb">source</span>
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
-
-<span class="c1"># Writing</span>
-new_post_name: :title.md <span class="c1"># File name of new posts</span>
-default_layout: post
-titlecase: <span class="nb">false</span> <span class="c1"># Transform title into titlecase</span>
-external_link: <span class="nb">true</span> <span class="c1"># Open external links in new tab</span>
-filename_case: <span class="m">0</span>
-render_drafts: <span class="nb">false</span>
-post_asset_folder: <span class="nb">false</span>
-relative_link: <span class="nb">false</span>
-future: <span class="nb">true</span>
-highlight:
-  enable: <span class="nb">true</span>
-  line_number: <span class="nb">true</span>
-  auto_detect: <span class="nb">false</span>
-  tab_replace:
-  
-<span class="c1"># Home page setting</span>
-<span class="c1"># path: Root path for your blogs index page. (default = &#39;&#39;)</span>
-<span class="c1"># per_page: Posts displayed per page. (0 = disable pagination)</span>
-<span class="c1"># order_by: Posts order. (Order by date descending by default)</span>
-index_generator:
-  path: <span class="s1">&#39;&#39;</span>
-  per_page: <span class="m">10</span>
-  order_by: -date
-  
-<span class="c1"># Category &amp; Tag</span>
-default_category: uncategorized
-category_map:
-tag_map:
-
-<span class="c1"># Date / Time format</span>
-<span class="c1">## Hexo uses Moment.js to parse and display date</span>
-<span class="c1">## You can customize the date format as defined in</span>
-<span class="c1">## http://momentjs.com/docs/#/displaying/format/</span>
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
-<span class="c1"># Pagination</span>
-<span class="c1">## Set per_page to 0 to disable pagination</span>
-per_page: <span class="m">10</span>
-pagination_dir: page
-
-<span class="c1"># Extensions</span>
-<span class="c1">## Plugins: https://hexo.io/plugins/</span>
-<span class="c1">## Themes: https://hexo.io/themes/</span>
-theme: landscape
-
-<span class="c1"># Deployment</span>
-<span class="c1">## Docs: https://hexo.io/docs/deployment.html</span>
-deploy:
-  type:
-</code></pre></div><h2 id="第4步-添加页面">第4步 添加页面</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Site</span>
+</span></span><span class="line"><span class="cl">title: Hexo
+</span></span><span class="line"><span class="cl">subtitle:
+</span></span><span class="line"><span class="cl">description:
+</span></span><span class="line"><span class="cl">author: John Doe
+</span></span><span class="line"><span class="cl">language:
+</span></span><span class="line"><span class="cl">timezone: Asia/Shanghai
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># URL</span>
+</span></span><span class="line"><span class="cl">url: http://yoursite.com
+</span></span><span class="line"><span class="cl">root: /
+</span></span><span class="line"><span class="cl">permalink: :year/:month/:day/:title/
+</span></span><span class="line"><span class="cl">permalink_defaults:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Directory</span>
+</span></span><span class="line"><span class="cl">source_dir: <span class="nb">source</span>
+</span></span><span class="line"><span class="cl">public_dir: public
+</span></span><span class="line"><span class="cl">tag_dir: tags
+</span></span><span class="line"><span class="cl">archive_dir: archives
+</span></span><span class="line"><span class="cl">category_dir: categories
+</span></span><span class="line"><span class="cl">code_dir: downloads/code
+</span></span><span class="line"><span class="cl">i18n_dir: :lang
+</span></span><span class="line"><span class="cl">skip_render:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Writing</span>
+</span></span><span class="line"><span class="cl">new_post_name: :title.md <span class="c1"># File name of new posts</span>
+</span></span><span class="line"><span class="cl">default_layout: post
+</span></span><span class="line"><span class="cl">titlecase: <span class="nb">false</span> <span class="c1"># Transform title into titlecase</span>
+</span></span><span class="line"><span class="cl">external_link: <span class="nb">true</span> <span class="c1"># Open external links in new tab</span>
+</span></span><span class="line"><span class="cl">filename_case: <span class="m">0</span>
+</span></span><span class="line"><span class="cl">render_drafts: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">post_asset_folder: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">relative_link: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">future: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">highlight:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  line_number: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  auto_detect: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  tab_replace:
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># Home page setting</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># path: Root path for your blogs index page. (default = &#39;&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># per_page: Posts displayed per page. (0 = disable pagination)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># order_by: Posts order. (Order by date descending by default)</span>
+</span></span><span class="line"><span class="cl">index_generator:
+</span></span><span class="line"><span class="cl">  path: <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">  per_page: <span class="m">10</span>
+</span></span><span class="line"><span class="cl">  order_by: -date
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># Category &amp; Tag</span>
+</span></span><span class="line"><span class="cl">default_category: uncategorized
+</span></span><span class="line"><span class="cl">category_map:
+</span></span><span class="line"><span class="cl">tag_map:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Date / Time format</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Hexo uses Moment.js to parse and display date</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## You can customize the date format as defined in</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## http://momentjs.com/docs/#/displaying/format/</span>
+</span></span><span class="line"><span class="cl">date_format: YYYY-MM-DD
+</span></span><span class="line"><span class="cl">time_format: HH:mm:ss
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Pagination</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Set per_page to 0 to disable pagination</span>
+</span></span><span class="line"><span class="cl">per_page: <span class="m">10</span>
+</span></span><span class="line"><span class="cl">pagination_dir: page
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Extensions</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Plugins: https://hexo.io/plugins/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Themes: https://hexo.io/themes/</span>
+</span></span><span class="line"><span class="cl">theme: landscape
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Deployment</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Docs: https://hexo.io/docs/deployment.html</span>
+</span></span><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">  type:
+</span></span></code></pre></div><h2 id="第4步-添加页面">第4步 添加页面</h2>
 <p>添加新页面，页面内容采用 <a href="/web/markdown/">Markdown</a> 格式。</p>
 <pre tabindex="0"><code>hexo new “my-first-post”
 </code></pre><p>页面默认格式如下，代码中<code>my-first-post</code>为Markdown页面文件名，<code>title: &quot;My First Post&quot;</code>所写内容才是网站显示的标题，页面格式根据主题不同略有不同，详见主题描述。</p>
 <pre tabindex="0"><code>---
-title: &quot;My First Post&quot;
+title: &#34;My First Post&#34;
 date: 2019/10/20 00:00:00
 categories:
 - 分类1
@@ -258,7 +255,7 @@ branch: master
 	<a href="https://visdot.com/article/hackintosh-tools/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>常用黑苹果系统安装相关工具</div></a>
 	
 	
-	<a href="https://visdot.com/article/vuepress/"><div class="next-btn">Vuepress 建站教程<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	<a href="https://visdot.com/article/vuepress/"><div class="next-btn">从零开始 Vuepress 建站教程<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
 	
 </div>
 		</div>

@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -111,10 +110,10 @@
 				<p>随着各大电脑和移动操作系统纷纷推出了黑暗模式，越来越多的网站和 App 都跟进了该功能，为实现用户的一致体验，赶紧看看怎么添加吧。</p>
 <h2 id="实现原理">实现原理</h2>
 <p>本文所介绍的方法主要用到了 CSS 的 <code>filter</code>「滤镜属性」。用到了它的 <code>invert(%)</code>「颜色反转」和 <code>hue-rotate(deg)</code>「色相反转」。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">html</span> <span class="p">{</span>
-  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><figcaption>可直接在网页的 CSS 样式表中加入上述代码预览效果。</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="line"><span class="cl"><span class="nt">html</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><figcaption>可直接在网页的 CSS 样式表中加入上述代码预览效果。</figcaption>
 <ul>
 <li><code>invert(1)</code> 颜色反转，反向输出图像着色，值为「1」说明完全反转。</li>
 <li><code>hue-rotate(180deg)</code> 调整色相，值为「180deg」说明调整色相180°。</li>
@@ -123,10 +122,10 @@
 <p>实际使用中「invert」值取「0.85」效果最佳。</p>
 </blockquote>
 <p>通过这两步就基本实现了黑暗效果。但是我们会发现页面上的图片等媒体的颜色会变得不正常，影响观看，这时可以为他们新建规则来抵消颜色变化，仅添加一个亮度降低效果即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="nt">img</span><span class="o">,</span> <span class="nt">video</span> <span class="p">{</span>
-  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">0.9</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><figcaption>可为任何不希望颜色调整的元素添加上述样式。</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="line"><span class="cl"><span class="nt">img</span><span class="o">,</span> <span class="nt">video</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">0.9</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><figcaption>可为任何不希望颜色调整的元素添加上述样式。</figcaption>
 <ul>
 <li><code>brightness(0.9)</code> 调整亮度，值为「0.9」说明降低亮度为原来的 0.9 倍。</li>
 </ul>
@@ -196,34 +195,34 @@
 </table>
 <h2 id="明暗切换">明暗切换</h2>
 <p>在页面 <code>body</code> 中合适位置添加如下代码添加选择框，可根据页面风格给它指定样式，如何实现切换参考下文运用实例。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="运用实例">运用实例</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
-  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
-    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mf">.85</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">img</span><span class="o">,</span>
-  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">XXX</span><span class="p">{</span>
-    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">.9</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
-  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
-    <span class="k">background-color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span>
-    <span class="k">transition</span><span class="p">:</span><span class="kc">all</span> <span class="mi">200</span><span class="kt">ms</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</code></pre></div><figcaption>「XXX」处可添加其它不需要颜色变化的元素标签。</figcaption>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="运用实例">运用实例</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;switch-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mf">.85</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">img</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span><span class="p">:</span><span class="nd">checked</span> <span class="o">~</span> <span class="nt">div</span> <span class="nt">XXX</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">filter</span><span class="p">:</span><span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">hue-rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">brightness</span><span class="p">(</span><span class="mf">.9</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">html</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">switch-btn</span> <span class="o">~</span> <span class="nt">div</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transition</span><span class="p">:</span><span class="kc">all</span> <span class="mi">200</span><span class="kt">ms</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></div><figcaption>「XXX」处可添加其它不需要颜色变化的元素标签。</figcaption>
 			</main>
 			<div class="pre-next vd-b-top">
 		
 	<a href="https://visdot.com/article/hugo-url/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>Hugo 集中管理图片地址</div></a>
 	
 	
-	<a href="https://visdot.com/article/sublime/"><div class="next-btn">善用「Sublime Text」<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	<a href="https://visdot.com/article/sublime/"><div class="next-btn">Sublime Text 使用技巧<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
 	
 </div>
 		</div>

@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -108,28 +107,28 @@
 <p>本方法在「Hugo」中通过纯 Html+CSS 的手段，实现导航栏根据所访问的页面强调对应的标签的效果。</p>
 <p>使用到了 <code>{{ .Title }}</code> 这个变量会随着页面的不同而对应着变化的特性，给需要激活效果的标签赋予 CSS 样式。下面以本站「检索」页面顶部分类导航栏为例进行分析。</p>
 <h2 id="实现方法">实现方法</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ range .Site.Taxonomies.space }}
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-{{ end }}
-</code></pre></div><p>上面是一个常规调取分类列表的写法，现在要实现选中其中一个分类，跳转进对应分类的文章列表，然后给该分类标签加上一个黑底的效果，最终效果如最开头图片中的「建站」标签所示。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ range .Site.Taxonomies.space }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></div><p>上面是一个常规调取分类列表的写法，现在要实现选中其中一个分类，跳转进对应分类的文章列表，然后给该分类标签加上一个黑底的效果，最终效果如最开头图片中的「建站」标签所示。</p>
 <p>要达到这个目的，首先给每个分类加入一个<code>id</code>标签，通过<code>{{ .Title }}</code>实现快速对应添加，写法如下。</p>
-<pre tabindex="0"><code> id=&quot;{{ .Page.Title }}&quot;
+<pre tabindex="0"><code> id=&#34;{{ .Page.Title }}&#34;
 </code></pre><p>当网页结构较为复杂时，用，可在标签名前加上限定语，以避免标签名重复导致效果被错误引用。</p>
-<pre tabindex="0"><code> id=&quot;Space{{ .Page.Title }}&quot;
+<pre tabindex="0"><code> id=&#34;Space{{ .Page.Title }}&#34;
 </code></pre><p>解决好标签后，在「HTML」中引入对应的<code>CSS</code>样式。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css">  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span>
-    <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#424242</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div><h2 id="运用实例">运用实例</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
-  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span><span class="k">background-color</span><span class="p">:</span><span class="mh">#424242</span><span class="p">;}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-
-{{ range .Site.Taxonomies.space }}
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;{{ .Page.Title }}&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-{{ end }}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#424242</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></div><h2 id="运用实例">运用实例</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="err">#</span><span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="p">}</span><span class="err">}</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span><span class="k">background-color</span><span class="p">:</span><span class="mh">#424242</span><span class="p">;}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ range .Site.Taxonomies.space }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;{{ .Page.Title }}&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Page.Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Page.Title }} <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ .Count }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
 		

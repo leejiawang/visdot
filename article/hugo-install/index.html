@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -119,7 +118,7 @@
 
 
 				
-				<div class="post-date">Published on 20190902, have 1915 Words.
+				<div class="post-date">Published on 20190902, have 1899 Words.
 				</div>
 				
 			</div>
@@ -141,11 +140,11 @@
 <p>macOS操作系统下直接使用 <a href="https://brew.sh">Homebrew</a> 安装，在终端中输入如下代码：</p>
 <pre tabindex="0"><code>brew install hugo
 </code></pre><p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
-<pre tabindex="0"><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&#34;
 </code></pre><p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
-<pre tabindex="0"><code>/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;
 </code></pre><h3 id="windows">Windows</h3>
-<p>在 <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a> 下载最新发布对应操作系统的<code>ZIP</code>，将所有内容提取到<code>C:\Hugo\bin</code>目录中，包含可执行文件<code>hugo.exe</code>、<code>LICENSE</code>和<code>README.md</code>。然后将Hugo添加到Windows的<code>PATH</code>设置中。</p>
+<p>在 <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a> 下载最新发布对应操作系统的<code>ZIP</code>，将文件内容解压到<code>C:\Hugo\bin</code>目录中，包含可执行文件<code>hugo.exe</code>、<code>LICENSE</code>和<code>README.md</code>。然后将Hugo添加到Windows的<code>PATH</code>设置中。</p>
 <ol>
 <li>右键单击「开始」按钮</li>
 <li>单击「系统」</li>
@@ -161,9 +160,9 @@
 <p>Linux操作系统下直接使用<a href="https://brew.sh"> Homebrew </a>安装，在终端中输入如下代码:</p>
 <pre tabindex="0"><code>brew install hugo
 </code></pre><p>在终端输入如下命令安装 <code>Homebrew</code>。</p>
-<pre tabindex="0"><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&#34;
 </code></pre><p>国内用户如果下载缓慢或安装失败，可使用国内加速源下载。</p>
-<pre tabindex="0"><code>/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;
 </code></pre><h3 id="openbsd">OpenBSD</h3>
 <p>OpenBSD通过<code>pkg_add</code>添加Hugo的软件包：</p>
 <pre tabindex="0"><code>doas pkg_add hugo
@@ -186,16 +185,16 @@ go get -v github.com/spf13/hugo
 <p>Hugo 主题商店地址: <a href="https://themes.gohugo.io/" target="_blank">Hugo 官方主题商店</a>、<a href="https://www.gohugo.org/theme/" target="_blank">Hugo 中文主题商店</a>。</p>
 <pre tabindex="0"><code>git clone https://github.com/XXXXX/XXXX themes/XXXX
 </code></pre><p>编辑网站根目录中<code>config.toml</code>文件，添加代码<code>theme = &quot;XXXX&quot;</code>以确认所使用的主题。<code>config.toml</code>文件默认格式如下：</p>
-<pre tabindex="0"><code>baseURL = &quot;https://example.org/&quot;
-languageCode = &quot;en-us&quot;
-title = &quot;test&quot;
-theme = &quot;XXXX&quot;
+<pre tabindex="0"><code>baseURL = &#34;https://example.org/&#34;
+languageCode = &#34;en-us&#34;
+title = &#34;test&#34;
+theme = &#34;XXXX&#34;
 </code></pre><h2 id="第4步-添加页面">第4步 添加页面</h2>
 <p>添加新页面，页面内容采用 <a href="/web/markdown/">Markdown</a> 格式。</p>
 <pre tabindex="0"><code>hugo new posts/my-first-post.md
 </code></pre><p>页面默认格式如下，代码中<code>my-first-post</code>为Markdown页面文件名，<code>title: &quot;My First Post&quot;</code>所写内容才是网站显示的标题，页面格式根据主题不同略有不同，详见主题描述。</p>
 <pre tabindex="0"><code>---
-title: &quot;My First Post&quot;
+title: &#34;My First Post&#34;
 date: 2019-10-20T00:00:00+01:00
 draft: true
 ---
@@ -208,13 +207,13 @@ draft: true
 <pre tabindex="0"><code>hugo
 </code></pre><h2 id="第7步-部署-github-pages">第7步 部署 Github Pages</h2>
 <p>执行此操作前请确保拥有Github账号，并创建一个以<code>XXX.github.io</code>命名的空仓库，其中<code>XXX</code>为你的Github用户名。在终端中输入如下代码生成最终页面。</p>
-<pre tabindex="0"><code>hugo --theme=XXXX --baseUrl=&quot;http://XXX.github.io/&quot;
+<pre tabindex="0"><code>hugo --theme=XXXX --baseUrl=&#34;http://XXX.github.io/&#34;
 </code></pre><p>在终端中输入下列代码将最终页面部署到 Github Pages。</p>
 <pre tabindex="0"><code>cd public
 git init
 git remote add origin https://github.com/XXX/XXX.github.io.git
 git add -A
-git commit -m &quot;first commit&quot;
+git commit -m &#34;first commit&#34;
 git push -u origin master
 </code></pre><p>浏览器输入<code>http://XXX.github.io</code>实现远程访问。除本文使用的 Github Pages 外，你还可以使用 Coding 和 Gitee 等。</p>
 <h2 id="第8步-日常维护">第8步 日常维护</h2>
@@ -230,21 +229,21 @@ git push -u origin master
 <p>将解压获得的 hugo 文件移入新建 hugo 文件夹中，如果安装过则替换原有文件即可覆盖安装。</p>
 <h3 id="hugo-版本降级方法">Hugo 版本降级方法</h3>
 <p>从  <a href="https://github.com/Homebrew/homebrew-core/tree/master/Formula">Homebrew 官方仓库</a> 找到所需要 hugo 版本对应的链接。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
-</code></pre></div><p>假如你要降级到 <code>hugo v.057.0</code>，通过查找得到相应地址，然后打开终端，输入如下代码：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">brew unlink hugo
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">brew install https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
-</code></pre></div><h3 id="卸载-hugo-框架">卸载 Hugo 框架</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
+</span></span></code></pre></div><p>假如你要降级到 <code>hugo v.057.0</code>，通过查找得到相应地址，然后打开终端，输入如下代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew unlink hugo
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install https://github.com/Homebrew/homebrew-core/raw/cf67d08dd1a6201be82ac93feeabe2fe834f50ab/Formula/hugo.rb
+</span></span></code></pre></div><h3 id="卸载-hugo-框架">卸载 Hugo 框架</h3>
 <p>打开终端并输入如下命令即可卸载 hugo 框架。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">brew uninstall hugo --force
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew uninstall hugo --force
+</span></span></code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
 		
 	<a href="https://visdot.com/article/speed-unit/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>充斥互联网的各种单位</div></a>
 	
 	
-	<a href="https://visdot.com/article/hugo-highlight/"><div class="next-btn">通过「highlight.js」给网站添加代码高亮<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	<a href="https://visdot.com/article/hugo-highlight/"><div class="next-btn">通过 highlight.js 给网站添加代码高亮<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
 	
 </div>
 		</div>

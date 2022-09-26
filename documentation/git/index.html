@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -105,21 +104,21 @@
 <a class="eyecus-more-btn" href="https://github.com/git">Git 仓库</a></p>
 </blockquote>
 <h2 id="i-classfa-fa-chevron-righti-git-全局设置"><i class="fa fa-chevron-right"></i> Git 全局设置</h2>
-<pre tabindex="0"><code>git config --global user.name &quot;XXX&quot;
-git config --global user.email &quot;XXX@gmail.com&quot;
+<pre tabindex="0"><code>git config --global user.name &#34;XXX&#34;
+git config --global user.email &#34;XXX@gmail.com&#34;
 </code></pre><h2 id="i-classfa-fa-chevron-righti-创建一个新仓库"><i class="fa fa-chevron-right"></i> 创建一个新仓库</h2>
 <pre tabindex="0"><code>git clone git@gitlab.com:XXX/XXXX.git
 cd XXX
 touch README.md
 git add README.md
-git commit -m &quot;add README&quot;
+git commit -m &#34;add README&#34;
 git push -u origin master
 </code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有文件夹"><i class="fa fa-chevron-right"></i> 推送现有文件夹</h2>
 <pre tabindex="0"><code>cd XXXX
 git init
 git remote add origin git@github.com:XXX/XXXX.git
 git add .
-git commit -m &quot;XXXX&quot;
+git commit -m &#34;XXXX&#34;
 git push -u origin master
 </code></pre><h2 id="i-classfa-fa-chevron-righti-推送现有的-git-仓库"><i class="fa fa-chevron-right"></i> 推送现有的 Git 仓库</h2>
 <pre tabindex="0"><code>cd XXXX

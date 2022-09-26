@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>通过 Selenium 实现浏览器自动控制 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Selenium, Python, WebDrive, Edge, 浏览器, 自动控制, 视由, 视界事由, eyecus, 博客, blog">
+    
+    <meta name="description" property="og:description" content="通过 Selenium 和 Python 两个工具实现对浏览器的自动控制，高效的处理一些重复繁琐操作。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+         
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+     
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第1步-安装-python">第1步 安装 Python</a></li>
+    <li><a href="#第2步-安装-selenium-库">第2步 安装 Selenium 库</a>
+      <ul>
+        <li><a href="#使用-pip-安装">使用 PIP 安装</a></li>
+        <li><a href="#使用-pycharm-安装">使用 PyCharm 安装</a></li>
+        <li><a href="#使用源码安装">使用源码安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#第3步-安装浏览器驱动">第3步 安装浏览器驱动</a></li>
+    <li><a href="#第4步-导入相关的库函数">第4步 导入相关的库函数</a></li>
+    <li><a href="#第6步-查询器的使用">第6步 查询器的使用</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">通过 Selenium 实现浏览器自动控制</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/selenium">Selenium</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/python">Python</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/html">Html</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20220925, have 1198 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>通过 <code>Selenium</code> 和 <code>Python</code> 两个工具实现对浏览器的自动控制，高效的处理一些重复繁琐操作。</p>
+<blockquote>
+<p>Selenium 通过使用 WebDriver 支持市场上所有主流浏览器的自动化。 Webdriver 是一个 API 和协议，它定义了一个语言中立的接口，用于控制 web 浏览器的行为。 每个浏览器都有一个特定的 WebDriver 实现，称为驱动程序。 驱动程序是负责委派给浏览器的组件，并处理与 Selenium 和浏览器之间的通信。</p>
+</blockquote>
+<p><strong>相关站点</strong>：
+<a href="https://www.selenium.dev/" target="_blank">Selenium官网</a>
+<a href="https://www.python.org/" target="_blank">Python官网</a>
+<a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm官网</a>
+<a href="https://chromedriver.chromium.org/downloads" target="_blank">Chrome驱动</a>
+<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/" target="_blank">Edge驱动</a></p>
+<h2 id="第1步-安装-python">第1步 安装 Python</h2>
+<div align="center"> 
+<img src="/img/python.png" width=300 />
+</div>
+<p>前往 <a href="https://www.python.org/downloads/">Python</a> 官网，选择自己操作系统对应的版本进行下载安装，本文使用的 Python 版本为 <code>Python 3.10</code>。</p>
+<p>安装完成后，使用 <code>win+R</code> 组合键，输入 <code>cmd</code> 调出命令提示符，输入 <code>Python</code>，按下回车进行验证，如出现相关版本提示则说明安装成功。</p>
+<h2 id="第2步-安装-selenium-库">第2步 安装 Selenium 库</h2>
+<h3 id="使用-pip-安装">使用 PIP 安装</h3>
+<p>接着进行 Selenium 库的安装，可以使用 <code>pip</code> 安装：</p>
+<pre tabindex="0"><code>pip install selenium
+</code></pre><p>国内用户如果下载缓慢或安装失败，可使用清华加速源下载。</p>
+<pre tabindex="0"><code>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple selenium
+</code></pre><h3 id="使用-pycharm-安装">使用 PyCharm 安装</h3>
+<p>初学者可使用 <code>PyCharm Community</code> 工具，可在其<a href="https://www.jetbrains.com/pycharm/download/">官网</a>免费下载安装。 打开软件后点击下方「Python Packages」按钮，搜索「Selenium」进行安装。</p>
+<h3 id="使用源码安装">使用源码安装</h3>
+<p>也可直接 <a href="https://pypi.org/project/selenium/#files">下载</a> 源码包<code>selenium-x.x.x.tar.gz</code> 使用 <code>setup.py</code> 进行安装。</p>
+<pre tabindex="0"><code>python setup.py install
+</code></pre><h2 id="第3步-安装浏览器驱动">第3步 安装浏览器驱动</h2>
+<p>首先进入浏览器设置界面获取浏览器版本号，进入浏览器的官方的 WebDriver 网站，根据安装的浏览器版本下载驱动文件。</p>
+<p>本文以 Windows 操作系统上的 Edge 浏览器为例。进入<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Edge WebDriver</a> 官网下载驱动包，其中包含可执行文件<code>msedgedriver.exe</code>、<code>LICENSE</code>和<code>README.md</code>，将文件内容解压到如下路径。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">C:<span class="se">\W</span>ebDriver<span class="se">\b</span>in
+</span></span></code></pre></div><p>然后将 WebDriver 添加到Windows的 <code>PATH</code> 环境变量中。</p>
+<ol>
+<li>右键单击「开始」按钮</li>
+<li>单击「系统」</li>
+<li>单击左侧的「高级系统设置」</li>
+<li>单击底部的「环境变量&hellip;」按钮</li>
+<li>在「用户变量」部分中找到以PATH开头的行（PATH全部大写）</li>
+<li>双击「PATH」</li>
+<li>单击「新建…」按钮</li>
+<li>键入<code>C:\WebDriver\bin</code>，完成输入后按「回车」</li>
+<li>在每个窗口中单击「确定」退出</li>
+</ol>
+<p>也可在命令提示符中输入如下命令快速添加 <code>PATH</code> 环境变量。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">setx PATH <span class="s2">&#34;%PATH%;C:\WebDriver\bin&#34;</span>
+</span></span></code></pre></div><p>填加完成后，在命令提示符中输入 <code>msedgedriver.exe</code> 进行验证。</p>
+<blockquote>
+<p>重新控制命令提示符可以使用组合键 <code>Ctrl+C</code>。</p>
+</blockquote>
+<h2 id="第4步-导入相关的库函数">第4步 导入相关的库函数</h2>
+<p>现在运行环境搭建完成，可以开始尝试 Selenium 脚本的编写了。首先需要导入相关的库函数，在 <code>PyCharm</code> 中新建项目，输入如下代码。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># 驱动浏览器</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 元素定位器 </span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 等待元素加载</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support.wait</span> <span class="kn">import</span> <span class="n">WebDriverWait</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 键盘按键操作</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.keys</span> <span class="kn">import</span> <span class="n">Keys</span>
+</span></span></code></pre></div><h2 id="第6步-查询器的使用">第6步 查询器的使用</h2>
+<p>Selenium 可通过多种方式进行页面元素查询，包括，我们需要通过目标元素的特点选择合适的定位器进行查询。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">定位器</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CLASS_NAME</td>
+<td style="text-align:left">定位class属性，不允许使用复合类名</td>
+</tr>
+<tr>
+<td style="text-align:left">CSS_SELECTOR</td>
+<td style="text-align:left">定位 CSS 选择器匹配的元素</td>
+</tr>
+<tr>
+<td style="text-align:left">ID</td>
+<td style="text-align:left">定位 id 属性</td>
+</tr>
+<tr>
+<td style="text-align:left">NAME</td>
+<td style="text-align:left">定位 name 属性</td>
+</tr>
+<tr>
+<td style="text-align:left">LINK_TEXT</td>
+<td style="text-align:left">定位link text可视文本</td>
+</tr>
+<tr>
+<td style="text-align:left">PARTIAL_LINK_TEXT</td>
+<td style="text-align:left">定位link text可视文本，如果匹配多个元素，则只选择第一个元素。</td>
+</tr>
+<tr>
+<td style="text-align:left">TAG_NAME</td>
+<td style="text-align:left">定位 tag 标签名称</td>
+</tr>
+<tr>
+<td style="text-align:left">XPATH</td>
+<td style="text-align:left">定位与 XPath 表达式</td>
+</tr>
+</tbody>
+</table>
+<p>举个例子，通过值等于 <code>XXXX</code> 的 XPath 表达式进行元素查询，并将地址赋值给变量 <code>item</code>，命令如下。</p>
+<pre tabindex="0"><code>item = driver.find_element(By.XPATH, value=&#39;XXXX&#39;)
+</code></pre>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/map-download/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>免费获取电子版路网地图</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="/img/vis.warehouse.png"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第1步-安装-python">第1步 安装 Python</a></li>
+    <li><a href="#第2步-安装-selenium-库">第2步 安装 Selenium 库</a>
+      <ul>
+        <li><a href="#使用-pip-安装">使用 PIP 安装</a></li>
+        <li><a href="#使用-pycharm-安装">使用 PyCharm 安装</a></li>
+        <li><a href="#使用源码安装">使用源码安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#第3步-安装浏览器驱动">第3步 安装浏览器驱动</a></li>
+    <li><a href="#第4步-导入相关的库函数">第4步 导入相关的库函数</a></li>
+    <li><a href="#第6步-查询器的使用">第6步 查询器的使用</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

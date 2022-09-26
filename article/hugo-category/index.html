@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -99,7 +98,7 @@
 
 
 				
-				<div class="post-date">Published on 20191105, have 623 Words.
+				<div class="post-date">Published on 20191105, have 523 Words.
 				</div>
 				
 			</div>
@@ -107,55 +106,55 @@
 				<p>对于一般用户而言，「Hugo」默认自带的分类「category」和标签「tags」已经够用了，但当网站呈现的内容变丰富时，比如说有文章、图片、视频等不同内容，它们各自都需单独设置分类和标签系统时，自带的两个就显得不够用了。这时就需要添加更多自定义的分类系统。</p>
 <h2 id="自带的分类及标签">自带的分类及标签</h2>
 <p>在博客根目录的配置文件 <code>config.yaml</code>或者 <code>config.toml</code> 文件中的 <code>taxonomies</code> 选项定义了默认的分类和标签。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="l">// yaml</span><span class="w">
-</span><span class="w"></span><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
-</span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
-</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// toml
-</span><span class="c1"></span><span class="p">[</span><span class="nx">taxonomies</span><span class="p">]</span>
-  <span class="nx">category</span> <span class="p">=</span> <span class="s">&#34;categories&#34;</span>
-  <span class="nx">tag</span> <span class="p">=</span> <span class="s">&#34;tags&#34;</span>
-</code></pre></div><p>下文以「yaml」文件为例介绍，「toml」只需对应修改即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">// yaml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// toml
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">[</span><span class="nx">taxonomies</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">category</span> <span class="p">=</span> <span class="s">&#34;categories&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tag</span> <span class="p">=</span> <span class="s">&#34;tags&#34;</span>
+</span></span></code></pre></div><p>下文以「yaml」文件为例介绍，「toml」只需对应修改即可。</p>
 <h2 id="文章页信息格式">文章页信息格式</h2>
 <p>要给文章添加分类或标签，支架在其头部按照下述格式添加信息即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
-</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
-</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
-</span><span class="w"></span>- <span class="l">Blog</span><span class="w">
-</span><span class="w"></span>- <span class="l">Web</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
-</span><span class="w"></span>- <span class="l">Html</span><span class="w">
-</span><span class="w"></span>- <span class="l">Hugo</span><span class="w">
-</span><span class="w"></span><span class="nn">---</span><span class="w">
-</span></code></pre></div><h2 id="屏蔽自带的分类">屏蔽自带的分类</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Blog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Web</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Html</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><h2 id="屏蔽自带的分类">屏蔽自带的分类</h2>
 <p>如果有统一格式或其它特殊需求需要屏蔽自带的分类和标签的话，可在配置文件 <code>config.yaml</code> 中添加如下代码进行屏蔽。其中 <code>categories</code>、<code>tags</code> 可按需选择其中一个或全选。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">disableKinds</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;categories, tags&#34;</span><span class="w">
-</span></code></pre></div><h2 id="自定义分类">自定义分类</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">disableKinds</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;categories, tags&#34;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="自定义分类">自定义分类</h2>
 <p>添加自定义分类只需按照默认分类的格式在配置文件的 <code>taxonomies</code> 选项中添加即可。比方说在原有基础上添加「search」和「topic」分类。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
-</span><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
-</span><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
-</span><span class="w">  </span><span class="nt">topic</span><span class="p">:</span><span class="w"> </span><span class="l">topic</span><span class="w">
-</span></code></pre></div><p>相应的要想使用它，在文章页头部添加即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
-</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
-</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">search</span><span class="p">:</span><span class="w">
-</span><span class="w"></span>- <span class="l">Blog</span><span class="w">
-</span><span class="w"></span>- <span class="l">Web</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="nt">topic</span><span class="p">:</span><span class="w">
-</span><span class="w"></span>- <span class="l">Html</span><span class="w">
-</span><span class="w"></span>- <span class="l">Hugo</span><span class="w">
-</span><span class="w"></span><span class="nn">---</span><span class="w">
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">taxonomies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">topic</span><span class="p">:</span><span class="w"> </span><span class="l">topic</span><span class="w">
+</span></span></span></code></pre></div><p>相应的要想使用它，在文章页头部添加即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hugo 添加自定义分类</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;世佳&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2019-11-05</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">search</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Blog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Web</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">topic</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Html</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
 		

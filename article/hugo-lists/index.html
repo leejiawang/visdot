@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -105,29 +104,29 @@
 			<main class="markdown academic w-630">
 				<h2 id="全站文章列表">全站文章列表</h2>
 <p>在分类页或者内容页里需要显示全部分类文章时使用，在页面模板 <code>single.html</code> 中的适当位置添加如下代码。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-  {{ $pages := .Pages }}
-  {{ $pages = .Site.RegularPages }}
-  {{ range (where $pages &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
-
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-
-  {{ end }}
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="具体某个分类的文章列表">具体某个分类的文章列表</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  {{ $pages := .Pages }}
+</span></span><span class="line"><span class="cl">  {{ $pages = .Site.RegularPages }}
+</span></span><span class="line"><span class="cl">  {{ range (where $pages &#34;Section&#34; &#34;!=&#34; &#34;&#34;) }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="具体某个分类的文章列表">具体某个分类的文章列表</h2>
 <p>要在内容页添加具体某个分类的文章列表，可在变量<code>.Site.RegularPages</code>后添加限定条件<code>&quot;Section&quot; &quot;XXX&quot;</code>，参考如下。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-  {{ range where .Site.RegularPages &#34;Section&#34; &#34;XXX&#34; }}
-  
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>    
-  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-
-  {{ end }}
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div><p>其中<code>Section</code>是自定义的分类变量，<code>XXX</code>为具体所需指定的分类名称。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  {{ range where .Site.RegularPages &#34;Section&#34; &#34;XXX&#34; }}
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span><span class="p">&gt;</span>{{ .Title | markdownify }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>    
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>其中<code>Section</code>是自定义的分类变量，<code>XXX</code>为具体所需指定的分类名称。</p>
 <h2 id="文章列表的排列顺序">文章列表的排列顺序</h2>
 <p>文章列表的排序默认遵循的优先级为: Weight &gt; Date &gt; LinkTitle &gt; FilePath 。</p>
 <p>可通过在 <code>range .Pages.</code>后按需求添加下列的属性来改变列表的排序方式。</p>

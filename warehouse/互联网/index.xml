@@ -6,9 +6,18 @@
     <description>Recent content in 互联网 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>善用「Sublime Text」</title>
+      <title>通过 Selenium 实现浏览器自动控制</title>
+      <link>https://visdot.com/article/selenium/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/selenium/</guid>
+      <description>通过 Selenium 和 Python 两个工具实现对浏览器的自动控制，高效的处理一些重复繁琐操作。 Selenium 通过使用 WebDriver 支持市场上所有主流浏览器的自动化。 Webdriver 是一个 API 和协议，它定义</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text 使用技巧</title>
       <link>https://visdot.com/article/sublime/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -44,7 +53,7 @@
     </item>
     
     <item>
-      <title>使用 jsdelivr 免费加速你的网站</title>
+      <title>通过 jsdelivr 免费加速你的网站</title>
       <link>https://visdot.com/article/jsdelivr/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -89,7 +98,7 @@
     </item>
     
     <item>
-      <title>Vuepress 建站教程</title>
+      <title>从零开始 Vuepress 建站教程</title>
       <link>https://visdot.com/article/vuepress/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
       
@@ -98,7 +107,7 @@
     </item>
     
     <item>
-      <title>HEXO 建站教程</title>
+      <title>从零开始 Hexo 建站教程</title>
       <link>https://visdot.com/article/hexo/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -134,7 +143,7 @@
     </item>
     
     <item>
-      <title>通过「highlight.js」给网站添加代码高亮</title>
+      <title>通过 highlight.js 给网站添加代码高亮</title>
       <link>https://visdot.com/article/hugo-highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       

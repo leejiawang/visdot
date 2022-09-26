@@ -6,7 +6,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Vuepress 建站教程 &nbsp;|&nbsp; 视点</title>
+    <title>从零开始 Vuepress 建站教程 &nbsp;|&nbsp; 视点</title>
     
     <meta name="keywords" content="vuepress, 建站, Blog, 教程, 视由, 视界事由, eyecus, 博客, Markdown">
     
@@ -29,21 +29,20 @@
       <a class="meun-button-expand" one-link-mark="yes"></a>
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
     </div>
-    <header class="header vd-glass-w">
+    <header class="header">
     <div class="container w-1150">
       <nav class="nav">
       <a class="site-logo" href="/"><img src="/img/msk-07.png"></a>
       <ul class="menu">
-        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavProjects" href="/projects">项目</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
       </ul>
 
-      <ul class="nav">      
+         
       <li id="fastSearch" >
         <input id="searchInput" placeholder="搜索…" tabindex="0" >
         <ul id="searchResults"></ul>
       </li>
-       <li class="nav-sub-button"><a href="/index.xml">订阅</a></li>
-      </ul>
+     
       </nav>
     </div>
     </header>
@@ -51,8 +50,8 @@
 <div class="mobile-sidebar">
   <div class="mobile-sidebar-inner">
   <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
   <a class="mobile-nav-button" href="/warehouse">仓库</a>
-  <a class="mobile-nav-button" href="/projects">项目</a>
   <a class="mobile-nav-button" href="/go">导航</a>
   <a class="mobile-nav-button" href="/about">关于</a>
   </div>
@@ -89,7 +88,7 @@
 		<div class="main">
 			<div class="post-meta">
 
-				<div class="post-title">Vuepress 建站教程</div>
+				<div class="post-title">从零开始 Vuepress 建站教程</div>
 				<div class="post-keywords">
 					<div class="post-terms">
 						
@@ -123,12 +122,10 @@
 <div align="center"> 
 <img src="/img/vrepress.png" width=180 />
 </div>
-<blockquote>
 <p><strong>相关站点</strong>
 <a class="eyecus-more-btn" href="https://vuepress.vuejs.org" target="_blank">Vuepress 官网</a>
 <a class="eyecus-more-btn" href="https://github.com/vuejs/vuepress" target="_blank">Vuepress 仓库</a>
 <a class="eyecus-more-btn" href="https://github.com/leejiawang/vuepress-template" target="_blank">Vuepress 模板</a></p>
-</blockquote>
 <h2 id="第1步-安装-vuepress-框架">第1步 安装 Vuepress 框架</h2>
 <p>首先新建并进入博客文件夹<code>test</code>在终端中输入如下代码，命令中<code>test</code>是所创建的网站文件夹名称，由用户自定义，以下网站名均由<code>test</code>代指。</p>
 <pre tabindex="0"><code>mkdir test
@@ -177,8 +174,8 @@ cd test
 </code></pre><h2 id="第3步-网站配置">第3步 网站配置</h2>
 <p>网站配置文件 <code>.vuepress/config.js</code>，配置最基本的标题与页面描述。</p>
 <pre tabindex="0"><code>module.exports = {
-  title: 'XXX',
-  description: 'XXXX'
+  title: &#39;XXX&#39;,
+  description: &#39;XXXX&#39;
 }
 </code></pre><h2 id="第4步-添加页面">第4步 添加页面</h2>
 <p>在 <code>docs</code> 文件夹内添加新页面，页面内容采用 <a href="/web/markdown/">Markdown</a> 格式。</p>
@@ -190,38 +187,38 @@ cd test
 <pre tabindex="0"><code>yarn run docs:build
 </code></pre><h2 id="第7步-部署-github-pages">第7步 部署 Github Pages</h2>
 <p>执行此操作前请确保拥有Github账号，并创建一个以 <code>XXX.github.io</code>命名的空仓库，其中 <code>XXX</code> 为你的 Github 用户名，修改 <code>docs/.vuepress/config.js</code> 文件中 <code>base</code>配置信息。</p>
-<pre tabindex="0"><code>base: '/',
+<pre tabindex="0"><code>base: &#39;/&#39;,
 </code></pre><p>如果你创建了其他名字的仓库，则 <code>base</code> 按如下格式填写，代码中<code>XXX</code> 为你的 Github 用户名，<code>XXXX</code>为仓库名。</p>
 <pre tabindex="0"><code>base: https://XXX.github.io/XXXX/,
 </code></pre><p>在 Vuepress 根目录创建 <code>deploy.sh</code> 文件，其内容如下，<strong>高亮区域只保留一条</strong>。成功后可浏览器输入 <code>http://XXX.github.io</code> 实现远程访问。</p>
 <p>除本文使用的 Github Pages 外，你还可以使用 Coding 和 Gitee 等。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/usr/bin/env sh
-</span><span class="cp"></span>
-<span class="c1"># 确保脚本抛出遇到的错误</span>
-<span class="nb">set</span> -e
-
-<span class="c1"># 生成静态文件</span>
-npm run docs:build
-
-<span class="c1"># 进入生成的文件夹</span>
-<span class="nb">cd</span> docs/.vuepress/dist
-
-git init
-git add -A
-git commit -m <span class="s1">&#39;deploy&#39;</span>
-
-<span class="c1"># 如果发布到 https://XXX.github.io</span>
-git push -f git@github.com:XXX/XXX.github.io.git master
-
-<span class="c1"># 如果发布到 https://XXX.github.io/XXXX</span>
-git push -f git@github.com:XXX/XXXX.git master:gh-pages
-
-<span class="nb">cd</span> -
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 确保脚本抛出遇到的错误</span>
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> -e
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 生成静态文件</span>
+</span></span><span class="line"><span class="cl">npm run docs:build
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 进入生成的文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> docs/.vuepress/dist
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add -A
+</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;deploy&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果发布到 https://XXX.github.io</span>
+</span></span><span class="line"><span class="cl">git push -f git@github.com:XXX/XXX.github.io.git master
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果发布到 https://XXX.github.io/XXXX</span>
+</span></span><span class="line"><span class="cl">git push -f git@github.com:XXX/XXXX.git master:gh-pages
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> -
+</span></span></code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
 		
-	<a href="https://visdot.com/article/hexo/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>HEXO 建站教程</div></a>
+	<a href="https://visdot.com/article/hexo/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>从零开始 Hexo 建站教程</div></a>
 	
 	
 	<a href="https://visdot.com/article/hugo-prev-next-btn/"><div class="next-btn">Hugo 文章页添加翻页按钮<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
