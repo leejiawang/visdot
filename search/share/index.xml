@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Share on 视点</title>
+    <link>https://visdot.com/search/share/</link>
+    <description>Recent content in Share on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/share/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地图资源网站分享</title>
+      <link>https://visdot.com/article/maps/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/maps/</guid>
+      <description>&lt;p&gt;作为地图爱好者，给大家分享一些我平时常访问的网站，喜欢看地图对地图感兴趣的伙伴不要错过。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

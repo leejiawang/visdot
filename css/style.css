@@ -988,25 +988,6 @@ th {
   z-index: 20;
 }
 
-.show-post-title {
-  z-index: 1;
-  position: absolute;
-  padding: 10px 20px;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 500;
-  overflow: hidden;
-  color: #fff;
-  background-color: #000;
-}
-
-.show-post-desc {
-  font-size: 0.8em;
-  color:  #9E9E9E;
-  padding: 0 23px 20px 25px;
-  line-height: 1.5em;
-}
-
 /* Projects */
 .projects {
   padding: 25px 25px 80px 25px;

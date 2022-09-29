@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://visdot.com/article/maps/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://visdot.com/article/selenium/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -108,10 +111,25 @@
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/map/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/share/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/html/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
@@ -119,13 +137,7 @@
     <loc>https://visdot.com/search/python/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/search/selenium/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/web/</loc>
@@ -137,13 +149,7 @@
     <loc>https://visdot.com/search/cad/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/map/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/search/qa/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/css/</loc>

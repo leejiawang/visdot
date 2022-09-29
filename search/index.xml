@@ -6,7 +6,25 @@
     <description>Recent content in Search on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Map</title>
+      <link>https://visdot.com/search/map/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Share</title>
+      <link>https://visdot.com/search/share/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/share/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Html</title>
       <link>https://visdot.com/search/html/</link>
@@ -49,15 +67,6 @@
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/cad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>https://visdot.com/search/map/</link>
-      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/map/</guid>
       <description></description>
     </item>
     

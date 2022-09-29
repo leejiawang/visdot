@@ -6,7 +6,16 @@
     <description>Recent content in Articles on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地图资源网站分享</title>
+      <link>https://visdot.com/article/maps/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/maps/</guid>
+      <description>&lt;p&gt;作为地图爱好者，给大家分享一些我平时常访问的网站，喜欢看地图对地图感兴趣的伙伴不要错过。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>通过 Selenium 实现浏览器自动控制</title>
       <link>https://visdot.com/article/selenium/</link>
