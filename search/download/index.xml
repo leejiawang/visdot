@@ -6,7 +6,34 @@
     <description>Recent content in Download on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/download/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/download/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地图资源网站分享</title>
+      <link>https://visdot.com/article/maps/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/maps/</guid>
+      <description>&lt;p&gt;作为地图爱好者，给大家分享一些我平时常访问的网站，喜欢看地图对地图感兴趣的伙伴不要错过。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>免费获取电子版路网地图</title>
+      <link>https://visdot.com/article/map-download/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/map-download/</guid>
+      <description>简单一句话概括就是：从「OpenStreetMap」下载地图数据，并通过「fme」软件转化为 dwg 格式文件的方法获取电子版本地图，下面就看看如何</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统使用技巧</title>
+      <link>https://visdot.com/article/windows-tips/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-tips/</guid>
+      <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
+    </item>
+    
     <item>
       <title>Windows 系统安装教程</title>
       <link>https://visdot.com/article/windows-install/</link>
@@ -36,10 +63,10 @@
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>https://visdot.com/documentation/symbol/</link>
+      <link>https://visdot.com/docs/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/symbol/</guid>
+      <guid>https://visdot.com/docs/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     

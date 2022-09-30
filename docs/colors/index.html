@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>色彩基础概念 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="Design, Color, 视由, 视界事由, eyecus, 博客, blog">
+    
+    <meta name="description" property="og:description" content="色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，但了解一些色彩的基本原理和 Web 设计规则是很有必要的。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+         
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+     
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#色彩的表示">色彩的表示</a></li>
+    <li><a href="#色彩空间">色彩空间</a></li>
+    <li><a href="#svg-中的-x11-颜色清单">SVG 中的 X11 颜色清单</a></li>
+    <li><a href="#i-classfa-fa-globei-推荐查色页面"><i class="fa fa-globe"></i> 推荐查色页面</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">色彩基础概念</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/design">Design</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20190821, have 571 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，但了解一些色彩的基本原理和 Web 设计规则是很有必要的。</p>
+<h2 id="色彩的表示">色彩的表示</h2>
+<p><strong>颜色名称表示</strong> </br>最直观的表示方法就是用颜色的英文名直接表示，但能表示的颜色数量有限。 </br>格式形如：<code>blue</code></p>
+<p><strong>RGB 十进制“函数”表示</strong> </br>光学三原色红绿蓝(RGB)，通过调整三种颜色的占比表示，每种颜色从低到高用数字0至256表示。</br>格式形如：<code>rgba(0,0,255,0.5)</code></p>
+<p><strong>HLS 十进制“函数”表示</strong> </br>通过色相、亮度、饱和度 这三个参数也能表示颜色。</br>格式形如：<code>hls(204,62%,40%)</code></p>
+<p><strong>HEX 十六进制数字表示</strong> </br>将RGB十进制转换为十六进制代码，以<code>#</code>号开头，后面分别为R G B的16位进制数。</br>格式形如：<code>#0000ff</code></p>
+<p>维基百科了解更多 <a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E9%A2%9C%E8%89%B2">https://zh.wikipedia.org</a></p>
+<h2 id="色彩空间">色彩空间</h2>
+<p><strong>色彩空间</strong>（Color space）是对色彩的组织方式。借助色彩空间和针对物理设备的测试，可以得到色彩的固定模拟和数字表示。色彩空间可以只通过任意挑选一些颜色来定义，也可以是基于严谨的数学定义。</p>
+<p><strong>Adobe RGB</strong> （网络上最常用）</p>
+<p><strong>sRGB</strong> （标准红绿蓝色彩空间）</p>
+<p><strong>CMYK</strong> （常用于彩色印刷）</p>
+<p><strong>Lab</strong> （常用来描述人眼可见的所有颜色）</p>
+<img src="/img/colorGraphic_wideColor.svg" width="230">
+<h2 id="svg-中的-x11-颜色清单">SVG 中的 X11 颜色清单</h2>
+<img src="/img/SVG_Recognized_color_keyword_names.png">
+<h2 id="i-classfa-fa-globei-推荐查色页面"><i class="fa fa-globe"></i> 推荐查色页面</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">站名</th>
+<th style="text-align:left">站点描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="http://www.atool9.com/colorpicker.php"> aTool在线工具 </a></td>
+<td style="text-align:left">在线颜色选择器、 RGB颜色查询转换</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://htmlcolorcodes.com">Color Picker</a></td>
+<td style="text-align:left">在线颜色选择器、RGB颜色查询转换</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.w3schools.com/colors/colors_picker.asp">w3schools</a></td>
+<td style="text-align:left">HTML 颜色选择器</td>
+</tr>
+</tbody>
+</table>
+
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/docs/markdown/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>Markdown 基础语法</div></a>
+	
+	
+	<a href="https://visdot.com/docs/dns/"><div class="next-btn">常用 DNS 速查表<svg t="1605930744277" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2981" width="22" height="22"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#515151" p-id="2982"></path></svg></div></a>
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="vd-photo" align="center">
+	<a href="https://visdot.com/go/"><img src="/img/vis.webgo.png"></a>
+</div>
+			<div class="vd-photo" align="center">
+  <a href="/warehouse"><img src="/img/vis.warehouse.svg"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#色彩的表示">色彩的表示</a></li>
+    <li><a href="#色彩空间">色彩空间</a></li>
+    <li><a href="#svg-中的-x11-颜色清单">SVG 中的 X11 颜色清单</a></li>
+    <li><a href="#i-classfa-fa-globei-推荐查色页面"><i class="fa fa-globe"></i> 推荐查色页面</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2020 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

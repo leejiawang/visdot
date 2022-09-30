@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Download</title>
+      <link>https://visdot.com/search/download/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Map</title>
       <link>https://visdot.com/search/map/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
@@ -26,15 +35,6 @@
     </item>
     
     <item>
-      <title>Html</title>
-      <link>https://visdot.com/search/html/</link>
-      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://visdot.com/search/python/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
@@ -44,20 +44,11 @@
     </item>
     
     <item>
-      <title>Selenium</title>
-      <link>https://visdot.com/search/selenium/</link>
+      <title>Tips</title>
+      <link>https://visdot.com/search/tips/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/search/selenium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
-      <link>https://visdot.com/search/web/</link>
-      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/web/</guid>
+      <guid>https://visdot.com/search/tips/</guid>
       <description></description>
     </item>
     
@@ -71,20 +62,11 @@
     </item>
     
     <item>
-      <title>Q&amp;A</title>
-      <link>https://visdot.com/search/qa/</link>
-      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/qa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CSS</title>
-      <link>https://visdot.com/search/css/</link>
+      <title>Tools</title>
+      <link>https://visdot.com/search/tools/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/search/css/</guid>
+      <guid>https://visdot.com/search/tools/</guid>
       <description></description>
     </item>
     
@@ -125,6 +107,15 @@
     </item>
     
     <item>
+      <title>Web</title>
+      <link>https://visdot.com/search/web/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Shell</title>
       <link>https://visdot.com/search/shell/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
@@ -134,18 +125,9 @@
     </item>
     
     <item>
-      <title>JavaScript</title>
-      <link>https://visdot.com/search/javascript/</link>
-      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>macOS</title>
       <link>https://visdot.com/search/macos/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/macos/</guid>
       <description></description>
@@ -154,36 +136,9 @@
     <item>
       <title>Windows</title>
       <link>https://visdot.com/search/windows/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tips</title>
-      <link>https://visdot.com/search/tips/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Download</title>
-      <link>https://visdot.com/search/download/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/search/download/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Color</title>
-      <link>https://visdot.com/search/color/</link>
-      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/color/</guid>
+      <guid>https://visdot.com/search/windows/</guid>
       <description></description>
     </item>
     
@@ -206,15 +161,6 @@
     </item>
     
     <item>
-      <title>Grammar</title>
-      <link>https://visdot.com/search/grammar/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/grammar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Google</title>
       <link>https://visdot.com/search/google/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
@@ -224,38 +170,11 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://visdot.com/search/git/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://visdot.com/search/markdown/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hackintosh</title>
       <link>https://visdot.com/search/hackintosh/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/hackintosh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bootstrap</title>
-      <link>https://visdot.com/search/bootstrap/</link>
-      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/bootstrap/</guid>
       <description></description>
     </item>
     

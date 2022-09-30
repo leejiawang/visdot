@@ -6,7 +6,25 @@
     <description>Recent content in Tips on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 Selenium 实现浏览器自动控制</title>
+      <link>https://visdot.com/article/selenium/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/selenium/</guid>
+      <description>通过 Selenium 和 Python 两个工具实现对浏览器的自动控制，高效的处理一些重复繁琐操作。 Selenium 通过使用 WebDriver 支持市场上所有主流浏览器的自动化。 Webdriver 是一个 API 和协议，它定义</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text 使用技巧</title>
+      <link>https://visdot.com/article/sublime/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/sublime/</guid>
+      <description>Sublime Text 是一款全平台的代码编辑工具，界面简洁，搭配合适的插件能使你的效率更上一层楼。 下载安装 从官网下载对应系统的安装文件并安装。 设置中文界面 使用</description>
+    </item>
+    
     <item>
       <title>macOS 常见问题解决办法</title>
       <link>https://visdot.com/article/macos-tips/</link>
@@ -28,6 +46,15 @@
     </item>
     
     <item>
+      <title>Windows 系统安装教程</title>
+      <link>https://visdot.com/article/windows-install/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-install/</guid>
+      <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>常用黑苹果系统安装相关工具</title>
       <link>https://visdot.com/article/hackintosh-tools/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
@@ -37,21 +64,30 @@
     </item>
     
     <item>
-      <title>浅谈网页设计与开发</title>
-      <link>https://visdot.com/article/web-design/</link>
-      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      <title>黑苹果系统简易安装教程</title>
+      <link>https://visdot.com/article/hackintosh-install/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/article/web-design/</guid>
-      <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
+      <guid>https://visdot.com/article/hackintosh-install/</guid>
+      <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
     </item>
     
     <item>
-      <title>色彩基础概念</title>
-      <link>https://visdot.com/documentation/colors/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      <title>常用 DNS 速查表</title>
+      <link>https://visdot.com/docs/dns/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/colors/</guid>
-      <description>色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，</description>
+      <guid>https://visdot.com/docs/dns/</guid>
+      <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
+    </item>
+    
+    <item>
+      <title>Git 基础语法</title>
+      <link>https://visdot.com/docs/git/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/git/</guid>
+      <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     
   </channel>

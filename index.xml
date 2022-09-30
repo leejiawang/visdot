@@ -54,10 +54,10 @@
     
     <item>
       <title>笔记「Shell」</title>
-      <link>https://visdot.com/documentation/shell/</link>
+      <link>https://visdot.com/docs/shell/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/shell/</guid>
+      <guid>https://visdot.com/docs/shell/</guid>
       <description>基本语法 #!/bin/bash echo &amp;#34;Hello World !&amp;#34; 特殊字符用法 参数 说明 $# 传递到脚本的参数个数 $* 以一个单字符串显示所有向脚本传递的参数。 $$ 脚本运行的当前进程ID号 $! 后台运行的</description>
     </item>
     
@@ -209,10 +209,10 @@
     
     <item>
       <title>通过 highlight.js 给网站添加代码高亮</title>
-      <link>https://visdot.com/article/hugo-highlight/</link>
+      <link>https://visdot.com/article/highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/article/hugo-highlight/</guid>
+      <guid>https://visdot.com/article/highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     
@@ -227,37 +227,37 @@
     
     <item>
       <title>笔记「Bootstrap」</title>
-      <link>https://visdot.com/documentation/bootstrap/</link>
+      <link>https://visdot.com/docs/bootstrap/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/bootstrap/</guid>
+      <guid>https://visdot.com/docs/bootstrap/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。 Bootstrap 是一套流行的前端</description>
     </item>
     
     <item>
       <title>笔记「CSS」</title>
-      <link>https://visdot.com/documentation/css/</link>
+      <link>https://visdot.com/docs/css/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/css/</guid>
+      <guid>https://visdot.com/docs/css/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。 层叠样式表 Cascading Style Sheets 是</description>
     </item>
     
     <item>
       <title>笔记「Html」</title>
-      <link>https://visdot.com/documentation/html/</link>
+      <link>https://visdot.com/docs/html/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/html/</guid>
+      <guid>https://visdot.com/docs/html/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。 HTML 称为超文本标记语</description>
     </item>
     
     <item>
       <title>笔记「JavaScript」</title>
-      <link>https://visdot.com/documentation/javascript/</link>
+      <link>https://visdot.com/docs/javascript/</link>
       <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/javascript/</guid>
+      <guid>https://visdot.com/docs/javascript/</guid>
       <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。 JavaScript 作为 Web 浏览器的唯</description>
     </item>
     
@@ -290,46 +290,46 @@
     
     <item>
       <title>常用 DNS 速查表</title>
-      <link>https://visdot.com/documentation/dns/</link>
+      <link>https://visdot.com/docs/dns/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/dns/</guid>
+      <guid>https://visdot.com/docs/dns/</guid>
       <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
     </item>
     
     <item>
       <title>色彩基础概念</title>
-      <link>https://visdot.com/documentation/colors/</link>
+      <link>https://visdot.com/docs/colors/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/colors/</guid>
+      <guid>https://visdot.com/docs/colors/</guid>
       <description>色彩对设计至关重要，能直接影响项目的第一观感。不同的动物所看到的颜色是不同的，不同的人所感受到的颜色也是不同的，故这其实算是个“玄学问题”，</description>
     </item>
     
     <item>
       <title>Markdown 基础语法</title>
-      <link>https://visdot.com/documentation/markdown/</link>
+      <link>https://visdot.com/docs/markdown/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/markdown/</guid>
+      <guid>https://visdot.com/docs/markdown/</guid>
       <description>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。 Markdown 的创始人为约翰·格鲁伯 John Grube</description>
     </item>
     
     <item>
       <title>Git 基础语法</title>
-      <link>https://visdot.com/documentation/git/</link>
+      <link>https://visdot.com/docs/git/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/git/</guid>
+      <guid>https://visdot.com/docs/git/</guid>
       <description>Git是一个免费开源的分布式版本控制系统，旨在快速高效地处理从小型到大型项目的所有内容。具有廉价的本地分支，方便的暂存区域和多个工作流等功能</description>
     </item>
     
     <item>
       <title>可直接引用特殊符号清单</title>
-      <link>https://visdot.com/documentation/symbol/</link>
+      <link>https://visdot.com/docs/symbol/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/symbol/</guid>
+      <guid>https://visdot.com/docs/symbol/</guid>
       <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
     </item>
     

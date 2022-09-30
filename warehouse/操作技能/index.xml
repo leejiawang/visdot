@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>操作技能 on 视点</title>
+    <link>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</link>
+    <description>Recent content in 操作技能 on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 Selenium 实现浏览器自动控制</title>
+      <link>https://visdot.com/article/selenium/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/selenium/</guid>
+      <description>通过 Selenium 和 Python 两个工具实现对浏览器的自动控制，高效的处理一些重复繁琐操作。 Selenium 通过使用 WebDriver 支持市场上所有主流浏览器的自动化。 Webdriver 是一个 API 和协议，它定义</description>
+    </item>
+    
+    <item>
+      <title>笔记「Shell」</title>
+      <link>https://visdot.com/docs/shell/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/shell/</guid>
+      <description>基本语法 #!/bin/bash echo &amp;#34;Hello World !&amp;#34; 特殊字符用法 参数 说明 $# 传递到脚本的参数个数 $* 以一个单字符串显示所有向脚本传递的参数。 $$ 脚本运行的当前进程ID号 $! 后台运行的</description>
+    </item>
+    
+    <item>
+      <title>macOS 常见问题解决办法</title>
+      <link>https://visdot.com/article/macos-tips/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/macos-tips/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;对于刚接触 macOS 的用户来说，突如其来的各种弹窗警告会让他们措手不及，下面我就来介绍一下一些弹窗的解决措施。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统使用技巧</title>
+      <link>https://visdot.com/article/windows-tips/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-tips/</guid>
+      <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统安装教程</title>
+      <link>https://visdot.com/article/windows-install/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-install/</guid>
+      <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>常用黑苹果系统安装相关工具</title>
+      <link>https://visdot.com/article/hackintosh-tools/</link>
+      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/hackintosh-tools/</guid>
+      <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
+    </item>
+    
+    <item>
+      <title>黑苹果系统简易安装教程</title>
+      <link>https://visdot.com/article/hackintosh-install/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/hackintosh-install/</guid>
+      <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
+    </item>
+    
+    <item>
+      <title>常用 DNS 速查表</title>
+      <link>https://visdot.com/docs/dns/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/dns/</guid>
+      <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
+    </item>
+    
+  </channel>
+</rss>

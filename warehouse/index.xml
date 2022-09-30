@@ -8,29 +8,38 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>地图</title>
-      <link>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</link>
+      <title>知识面</title>
+      <link>https://visdot.com/warehouse/%E7%9F%A5%E8%AF%86%E9%9D%A2/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</guid>
+      <guid>https://visdot.com/warehouse/%E7%9F%A5%E8%AF%86%E9%9D%A2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>互联网</title>
-      <link>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</link>
+      <title>操作技能</title>
+      <link>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</guid>
+      <guid>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>建站</title>
-      <link>https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/</link>
+      <title>软件</title>
+      <link>https://visdot.com/warehouse/%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/</guid>
+      <guid>https://visdot.com/warehouse/%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>https://visdot.com/warehouse/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/warehouse/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
     
@@ -40,24 +49,6 @@
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>科普</title>
-      <link>https://visdot.com/warehouse/%E7%A7%91%E6%99%AE/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/warehouse/%E7%A7%91%E6%99%AE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>系统</title>
-      <link>https://visdot.com/warehouse/%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/warehouse/%E7%B3%BB%E7%BB%9F/</guid>
       <description></description>
     </item>
     

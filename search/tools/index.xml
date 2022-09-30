@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on 视点</title>
+    <link>https://visdot.com/search/tools/</link>
+    <description>Recent content in Tools on 视点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sublime Text 使用技巧</title>
+      <link>https://visdot.com/article/sublime/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/sublime/</guid>
+      <description>Sublime Text 是一款全平台的代码编辑工具，界面简洁，搭配合适的插件能使你的效率更上一层楼。 下载安装 从官网下载对应系统的安装文件并安装。 设置中文界面 使用</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统使用技巧</title>
+      <link>https://visdot.com/article/windows-tips/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-tips/</guid>
+      <description>修改滚动条宽度 使用快捷键 Windows + R 打开 「运行」，输入 regedit 打开注册表编辑器。 依次进入如下路径： HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrices 在「WindowMetrices」选项中修改「Sc</description>
+    </item>
+    
+    <item>
+      <title>Windows 系统安装教程</title>
+      <link>https://visdot.com/article/windows-install/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/windows-install/</guid>
+      <description>&lt;p&gt;在用 Windows 系统的过程中操作不当经常会被“蓝屏伺候”，有时候系统自己修复不好，最简单粗暴的就是重装系统，只要不是硬件损坏几乎都能解决。本文带你掌握安装系统这项技能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>常用黑苹果系统安装相关工具</title>
+      <link>https://visdot.com/article/hackintosh-tools/</link>
+      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/hackintosh-tools/</guid>
+      <description>安装黑苹果不难，难的是后期上驱动及系统功能优化，本页提供了一些相关工具以及驱动文件的下载链接，希望能给大家安装带来帮助。 VMware Workstation Pro Workstation Pro 是由 VMware 提供</description>
+    </item>
+    
+    <item>
+      <title>黑苹果系统简易安装教程</title>
+      <link>https://visdot.com/article/hackintosh-install/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/hackintosh-install/</guid>
+      <description>非苹果设备却安装使用苹果操作系统的设备，被称为黑苹果「Hackintosh」，本教程简易描述了安装黑苹果系统的步骤，并提供一些相关工具以及驱</description>
+    </item>
+    
+    <item>
+      <title>充斥互联网的各种单位</title>
+      <link>https://visdot.com/article/speed-unit/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/speed-unit/</guid>
+      <description>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。 容量单位 要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表字</description>
+    </item>
+    
+    <item>
+      <title>可直接引用特殊符号清单</title>
+      <link>https://visdot.com/docs/symbol/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/symbol/</guid>
+      <description>使用特殊符号能丰富页面，使用得当能提升表现力和整体观感。为方便使用，本页面所提供特殊符号清单用于快速复制使用。 绘文字表情（emoji） 绘文字</description>
+    </item>
+    
+  </channel>
+</rss>

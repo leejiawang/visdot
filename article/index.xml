@@ -200,10 +200,10 @@
     
     <item>
       <title>通过 highlight.js 给网站添加代码高亮</title>
-      <link>https://visdot.com/article/hugo-highlight/</link>
+      <link>https://visdot.com/article/highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/article/hugo-highlight/</guid>
+      <guid>https://visdot.com/article/highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
     </item>
     

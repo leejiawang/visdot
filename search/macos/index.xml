@@ -6,7 +6,7 @@
     <description>Recent content in macOS on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS 常见问题解决办法</title>
       <link>https://visdot.com/article/macos-tips/</link>
@@ -37,20 +37,11 @@
     </item>
     
     <item>
-      <title>充斥互联网的各种单位</title>
-      <link>https://visdot.com/article/speed-unit/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/article/speed-unit/</guid>
-      <description>在互联网上冲浪时，总能接触到各种单位，虽然很面熟，你真的知道它们所代表的含义吗。 容量单位 要搞清楚它，首先得搞懂 B 和 b 的区别，其中大写 B 代表字</description>
-    </item>
-    
-    <item>
       <title>常用 DNS 速查表</title>
-      <link>https://visdot.com/documentation/dns/</link>
+      <link>https://visdot.com/docs/dns/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/documentation/dns/</guid>
+      <guid>https://visdot.com/docs/dns/</guid>
       <description>DNS，是英语 Domain Name System 的首字母缩写，中文名为域名系统。 域名系统是互联网的一项服务。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方</description>
     </item>
     

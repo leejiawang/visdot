@@ -307,12 +307,12 @@ th {
 }
 
 .vd-docs-title {
+  margin-top: 20px;
   font-size: 19px;
   line-height: 1.3em;
-  color: #2095FA;
+  color: #5890c5;
   font-weight: bold;
   padding-left: 10px;
-  border-left: 5px solid #2095FA;
 
 }
 
@@ -988,6 +988,20 @@ th {
   z-index: 20;
 }
 
+.show-post-title {
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  top: 81%;
+  right: 2%;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  color: #fff;
+  background-color: #3e3a39;
+}
+
 /* Projects */
 .projects {
   padding: 25px 25px 80px 25px;
@@ -1097,12 +1111,6 @@ th {
 }
 
 @media (max-width: 768px) {
-  .show-post-title {
-    font-size: 1.2em;
-  }
-  .show-post-desc {
-    font-size: .95em;
-  }
   table {
     display: block;
     min-width: 100%;

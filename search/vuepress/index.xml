@@ -45,11 +45,65 @@
     
     <item>
       <title>通过 highlight.js 给网站添加代码高亮</title>
-      <link>https://visdot.com/article/hugo-highlight/</link>
+      <link>https://visdot.com/article/highlight/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/article/hugo-highlight/</guid>
+      <guid>https://visdot.com/article/highlight/</guid>
       <description>给网站添加代码高亮，不仅大大提高代码的阅读效率，还能根据网站风格选择合适的配色方案，提高整个网站的颜值。 下载安装 highlight.js 从官网选择需要的语言后下载</description>
+    </item>
+    
+    <item>
+      <title>笔记「Bootstrap」</title>
+      <link>https://visdot.com/docs/bootstrap/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/bootstrap/</guid>
+      <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Bootstrap 过程中觉得实用的笔记。 Bootstrap 是一套流行的前端</description>
+    </item>
+    
+    <item>
+      <title>笔记「CSS」</title>
+      <link>https://visdot.com/docs/css/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/css/</guid>
+      <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 CSS 过程中觉得实用的笔记。 层叠样式表 Cascading Style Sheets 是</description>
+    </item>
+    
+    <item>
+      <title>笔记「Html」</title>
+      <link>https://visdot.com/docs/html/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/html/</guid>
+      <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 Html 过程中觉得实用的笔记。 HTML 称为超文本标记语</description>
+    </item>
+    
+    <item>
+      <title>笔记「JavaScript」</title>
+      <link>https://visdot.com/docs/javascript/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/javascript/</guid>
+      <description>前端的作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。本页主要记录我学习 JavaScript 过程中觉得实用的笔记。 JavaScript 作为 Web 浏览器的唯</description>
+    </item>
+    
+    <item>
+      <title>浅谈网页设计与开发</title>
+      <link>https://visdot.com/article/web-design/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/web-design/</guid>
+      <description>谈一谈我在网页设计过程中的一些经验与小技巧。分享在网页排版、设计的过程中经常遇到的问题的一些解决办法。推荐在掌握了前端基础后阅读。 字体 通用的</description>
+    </item>
+    
+    <item>
+      <title>Markdown 基础语法</title>
+      <link>https://visdot.com/docs/markdown/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/docs/markdown/</guid>
+      <description>Markdown 是一种轻量级标记语言，她轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，语法也极其简单易学。 Markdown 的创始人为约翰·格鲁伯 John Grube</description>
     </item>
     
   </channel>

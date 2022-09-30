@@ -17,7 +17,7 @@
     <loc>https://visdot.com/article/dark-mode/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/shell/</loc>
+    <loc>https://visdot.com/docs/shell/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/hugo-url/</loc>
@@ -68,22 +68,22 @@
     <loc>https://visdot.com/article/hugo-post-meta/</loc>
     <lastmod>2019-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/article/hugo-highlight/</loc>
+    <loc>https://visdot.com/article/highlight/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/hugo-install/</loc>
     <lastmod>2019-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/bootstrap/</loc>
+    <loc>https://visdot.com/docs/bootstrap/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/css/</loc>
+    <loc>https://visdot.com/docs/css/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/html/</loc>
+    <loc>https://visdot.com/docs/html/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/javascript/</loc>
+    <loc>https://visdot.com/docs/javascript/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/speed-unit/</loc>
@@ -95,22 +95,25 @@
     <loc>https://visdot.com/article/google-fonts/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/dns/</loc>
+    <loc>https://visdot.com/docs/dns/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/colors/</loc>
+    <loc>https://visdot.com/docs/colors/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/markdown/</loc>
+    <loc>https://visdot.com/docs/markdown/</loc>
     <lastmod>2019-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/git/</loc>
+    <loc>https://visdot.com/docs/git/</loc>
     <lastmod>2019-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/symbol/</loc>
+    <loc>https://visdot.com/docs/symbol/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/</loc>
+    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/download/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/</loc>
@@ -128,34 +131,25 @@
     <loc>https://visdot.com/warehouse/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/warehouse/%E5%9C%B0%E5%9B%BE/</loc>
+    <loc>https://visdot.com/warehouse/%E7%9F%A5%E8%AF%86%E9%9D%A2/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/html/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/python/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/selenium/</loc>
+    <loc>https://visdot.com/search/tips/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/web/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    <loc>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/cad/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/qa/</loc>
-    <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/css/</loc>
+    <loc>https://visdot.com/search/tools/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/warehouse/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://visdot.com/warehouse/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/blog/</loc>
@@ -170,7 +164,13 @@
     <loc>https://visdot.com/search/vuepress/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/documentation/</loc>
+    <loc>https://visdot.com/search/web/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/docs/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/shell/</loc>
@@ -179,35 +179,11 @@
     <loc>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/topic/hugo/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/javascript/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/topic/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/search/macos/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/windows/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E7%A7%91%E6%99%AE/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/tips/</loc>
-    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/download/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/color/</loc>
-    <lastmod>2019-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/design/</loc>
     <lastmod>2019-12-04T00:00:00+00:00</lastmod>
@@ -218,25 +194,15 @@
     <loc>https://visdot.com/warehouse/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2019-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/grammar/</loc>
-    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/search/google/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/git/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/markdown/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/hackintosh/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/bootstrap/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/about/</loc>
+  </url><url>
+    <loc>https://visdot.com/topic/</loc>
   </url><url>
     <loc>https://visdot.com/go/</loc>
   </url>
