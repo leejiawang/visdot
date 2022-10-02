@@ -964,7 +964,6 @@ th {
 
 .show-post-items {
   width: 50%;
-  height: 200px;
   min-width: 220px;
   outline: 2px solid #fff;
   background-color: #F5F5F5;
@@ -1108,6 +1107,9 @@ th {
   .show-post-items {
     width: 100% !important;
   }
+  .show-post-items img{
+    height: 150px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1123,7 +1125,7 @@ th {
   }
   .show-post-items {
     width: 100%;
-}
+  }
 }
 
 @media (max-width: 1012px) {
