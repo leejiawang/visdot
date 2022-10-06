@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://visdot.com/article/selenium-open-edge/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://visdot.com/article/maps/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -111,36 +114,45 @@
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/article/</loc>
-    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/download/</loc>
-    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/python/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/selenium/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/tips/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/windows/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</loc>
+    <lastmod>2022-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://visdot.com/search/download/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/map/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/</loc>
-    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://visdot.com/search/share/</loc>
-    <lastmod>2022-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/warehouse/%E7%9F%A5%E8%AF%86%E9%9D%A2/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://visdot.com/search/python/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/tips/</loc>
-    <lastmod>2022-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/</loc>
+    <loc>https://visdot.com/search/macos/</loc>
     <lastmod>2022-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/cad/</loc>
@@ -178,12 +190,6 @@
   </url><url>
     <loc>https://visdot.com/warehouse/%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/macos/</loc>
-    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://visdot.com/search/windows/</loc>
-    <lastmod>2019-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://visdot.com/search/design/</loc>
     <lastmod>2019-12-04T00:00:00+00:00</lastmod>

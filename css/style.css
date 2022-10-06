@@ -287,6 +287,10 @@ th {
   border-radius: 4px;
 }
 
+.vd-qrcode img {
+  max-width: 140px;
+}
+
 .vd-a {
   text-align: center;
   color: #18A0FB;
@@ -496,6 +500,7 @@ th {
 
 .site-logo img {
   height: 28px;
+  width: 78px;
 }
 
 .nav-sub-button {

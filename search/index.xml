@@ -6,7 +6,43 @@
     <description>Recent content in Search on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>https://visdot.com/search/python/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selenium</title>
+      <link>https://visdot.com/search/selenium/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/selenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>https://visdot.com/search/tips/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://visdot.com/search/windows/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/windows/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Download</title>
       <link>https://visdot.com/search/download/</link>
@@ -35,20 +71,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://visdot.com/search/python/</link>
+      <title>macOS</title>
+      <link>https://visdot.com/search/macos/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://visdot.com/search/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tips</title>
-      <link>https://visdot.com/search/tips/</link>
-      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/tips/</guid>
+      <guid>https://visdot.com/search/macos/</guid>
       <description></description>
     </item>
     
@@ -121,24 +148,6 @@
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>macOS</title>
-      <link>https://visdot.com/search/macos/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://visdot.com/search/windows/</link>
-      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/windows/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,16 @@
     <description>Recent content in Home on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>让 Selenium 直接控制已打开的浏览器</title>
+      <link>https://visdot.com/article/selenium-open-edge/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/selenium-open-edge/</guid>
+      <description>在使用 Selenium 的过程中发现每次都从新的浏览器窗口执行操作，不能直接使用浏览器已保存的账号、密码及已安装的插件，造成了很多不便。 如何直接从已打开的浏</description>
+    </item>
+    
     <item>
       <title>地图资源网站分享</title>
       <link>https://visdot.com/article/maps/</link>
