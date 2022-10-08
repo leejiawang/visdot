@@ -989,7 +989,7 @@ th {
 .show-post-items:hover {
   box-shadow: 0px 10px 80px rgba(167, 167, 167, 0.2);
   transform: scale(1.01, 1.01);
-  z-index: 20;
+  z-index: 10;
 }
 
 .show-post-title {
