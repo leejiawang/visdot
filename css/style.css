@@ -31,8 +31,8 @@ code {
 
 /* Base */
 ::selection {
-  color: #24292e;
-  background-color: #ffd33d;
+  color: #000;
+  background-color: #bababa;
 }
 
 *:focus {outline: none} 
@@ -239,6 +239,7 @@ th {
 .pt-25 {padding-top: 25px;}
 .pb-20 {padding-bottom: 20px;}
 .px-20 {padding: 0 20px;}
+.py-20 {padding: 20px 0;}
 .mr-10 {margin-right: 10px;}
 .mx-20 {margin: 0 20px;}
 
@@ -261,6 +262,12 @@ th {
   max-height: 100%;
 }
 
+.h-150 {height: 150px;}
+.h-125 {height: 125PX;}
+.h-100 {height: 100PX;}
+.h-80 {height: 80px;}
+.h-50 {height: 50px;}
+
 .vd-glass-b {background: rgba(0,0,0,0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);}
@@ -278,7 +285,7 @@ th {
 .vd-mobile{display: none;}
 .vd-title {font-size: 20px; font-weight: 500; margin-bottom:17px;font-style: italic;color: #D6D6D6;}
 .vd-element {
-  padding: 20px 15px 15px 15px;
+  padding: 20px 20px 15px 20px;
   margin: 0 0 10px 0;
 }
 
@@ -287,13 +294,9 @@ th {
   border-radius: 4px;
 }
 
-.vd-qrcode img {
-  max-width: 140px;
-}
-
 .vd-a {
   text-align: center;
-  color: #18A0FB;
+  color: #5b93c2;
   line-height: 35px;
   font-weight: bold;
   padding: 8px;
