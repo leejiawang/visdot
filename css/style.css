@@ -33,7 +33,8 @@ code {
 /* Base */
 ::selection {
   color: #000;
-  background-color: #bababa;
+  background-color: #ddd;
+  text-shadow: none;
 }
 
 *:focus {outline: none} 

@@ -90,25 +90,27 @@
 
 
 				
-				<div class="post-date">Published on 20201204, have 243 Words.
+				<div class="post-date">Published on 20201204, have 256 Words.
 				</div>
 				
 			</div>
 			<main class="markdown academic w-630">
-				<p>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 <a href="/data/jsdelivr/">Jsdelivr</a> 对网站图片进行加速，集中管理图片 URL 势在必行。</p>
+				<p>由于没有稳定服务器，我经常在各种不同的图床之间穿梭，随着内容的增多，更换图片地址就变得非常繁杂，加之最近开始使用 <a href="/article/jsdelivr/">Jsdelivr</a> 对网站图片进行加速，集中管理图片 URL 势在必行。</p>
 <h2 id="使用方法">使用方法</h2>
-<p>使用到了「Hugo」自带的 <code>render-image</code> 功能，在主题目录如下路径创建后缀名为 <code>.html</code> 的 render-link 文件。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">layouts/_default/_markup/render-link.html
+<p>使用到了「Hugo」自带的 <code>render-image</code> 功能，在主题目录如下路径创建后缀名为 <code>.html</code> 的 render-image 文件。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">layouts/_default/_markup/render-image.html
 </span></span></code></pre></div><p><code>render-link.html</code>文件输入如下内容，详见 Hugo <a href="https://gohugo.io/getting-started/configuration-markup#render-hook-templates">官方文档</a>。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;https://example.com{{ .Destination | safeURL }}&#34;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;{{ .Text }}&#34;</span> <span class="o">{{</span> with .Title<span class="o">}}</span> <span class="nv">title</span><span class="o">=</span><span class="s2">&#34;{{ . }}&#34;</span><span class="o">{{</span> end <span class="o">}}</span> /&gt;
 </span></span></code></pre></div><figcaption>其中 https://example.com 改为图片资源 URl 的通用部分。</figcaption>
 <h2 id="运用实例">运用实例</h2>
 <p>假设需要引入的资源地址为：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">/img/hugo.svg
-</span></span></code></pre></div><p>则 <code>render-link.html</code> 文件内容为:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;/{{ .Destination | safeURL }}&#34;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;{{ .Text }}&#34;</span> <span class="o">{{</span> with .Title<span class="o">}}</span> <span class="nv">title</span><span class="o">=</span><span class="s2">&#34;{{ . }}&#34;</span><span class="o">{{</span> end <span class="o">}}</span> /&gt;
-</span></span></code></pre></div><p>在 Markdown 中填写地址为:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Hugo</span>](<span class="na">/img/hugo.svg</span>)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">https://cdn.visdot.com/img/hugo.svg
+</span></span></code></pre></div><p>则 <code>render-image.html</code> 文件内容为:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;https://cdn.visdot.com{{ .Destination | safeURL }}&#34;</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;{{ .Text }}&#34;</span> <span class="o">{{</span> with .Title<span class="o">}}</span> <span class="nv">title</span><span class="o">=</span><span class="s2">&#34;{{ . }}&#34;</span><span class="o">{{</span> end <span class="o">}}</span> /&gt;
+</span></span></code></pre></div><p>在 Markdown 中填写:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Hugo</span>](<span class="na">/img/hugo.svg &#34;hugo-img&#34;</span>)
+</span></span></code></pre></div><p>将在 <code>HTML</code> 文件中将会生成：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.visdot.com/img/hugo.svg&#34;</span> <span class="na">atl</span><span class="o">=</span><span class="s">&#34;Hugo&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;hugo-img&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
 			</main>
 			<div class="pre-next vd-b-top">
@@ -122,10 +124,10 @@
 		</div>
 		<div class="sidebar">
 			<div class="py-20" align="center">
-	<a href="/go"><img class="h-125" src="/img/vis.webgo.png"></a>
+	<a href="/go"><img class="h-125" src="https://cdn.visdot.com/img/vis.webgo.png"></a>
 </div>
 			<div class="py-20" align="center">
-  <a href="/warehouse"><img class="h-50" src="/img/vis.warehouse.svg"></a>
+  <a href="/warehouse"><img class="h-50" src="https://cdn.visdot.com/img/vis.warehouse.svg"></a>
 </div>
 
 			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
