@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>使用字蛛完成字体文件压缩 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="字体, 压缩, woff, font-spider, 字蛛, Blog, 教程, 视由, 视界事由, eyecus, 博客">
+    
+    <meta name="description" property="og:description" content="当体积过大的字体文件导致页面加载速度大幅降低时，可以尝试本文介绍的压缩字体文件的方式解决。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes" href="javascript:;"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+         
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+     
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#将字体转换为-woff-格式">将字体转换为 woff 格式</a></li>
+    <li><a href="#使用字蛛进行字体文件压缩">使用字蛛进行字体文件压缩</a>
+      <ul>
+        <li><a href="#字蛛使用技巧">字蛛使用技巧</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">使用字蛛完成字体文件压缩</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/blog">Blog</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/web">Web</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hexo">Hexo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/hugo">Hugo</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/vuepress">Vuepress</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20230227, have 619 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>有时候需要用到非常规字体，由其是在用一些中文字体时，页面上仅用到很少的字，体积过大的字体文件却导致页面加载速度大幅降低。这时候可以选择压缩字体文件的方式解决。</p>
+<p> <strong>相关站点</strong>：
+<a href="https://convertio.co/zh/" target="_blank">在线文件转换器</a>
+<a href="https://github.com/aui/font-spider" target="_blank">字蛛 GitHub 页面</a></p>
+<h2 id="将字体转换为-woff-格式">将字体转换为 woff 格式</h2>
+<p><code>Woff</code> 格式比常规的 <code>ttf</code> 格式体积更小，并且对浏览器支持度高，可采用文件转换工具对字体格式进行转换，例如使用<a href="https://convertio.co/zh/" target="_blank">Convertio</a>等在线工具。</p>
+<blockquote>
+<p>Web开放字体格式（Web Open Font Format，简称WOFF）是一种网页所采用的字体格式标准。此字体格式发展于2009年，现在正由万维网联盟的Web字体工作小组标准化，以求成为推荐标准。此字体格式不但能够有效利用压缩来减少档案大小，并且不包含加密也不受DRM（数位著作权管理）限制。</p>
+</blockquote>
+<h2 id="使用字蛛进行字体文件压缩">使用字蛛进行字体文件压缩</h2>
+<blockquote>
+<p>字蛛是一个智能 WebFont 压缩工具，它能自动分析出页面使用的 WebFont 并进行按需压缩。其支持 woff2、woff、eot、svg 字体格式的生成。</p>
+</blockquote>
+<p>字蛛在使用过程中的一些限制：</p>
+<ol>
+<li>其不支持 <code>JavaScript</code> 动态插入的元素与样式；</li>
+<li><code>.otf</code> 字体格式需转换成 <code>.ttf</code> 格式才能被压缩；</li>
+<li>仅支持 <code>utf-8</code> 编码的 <code>HTML</code> 与 <code>CSS</code> 文件。</li>
+</ol>
+<p>首先进入<code>node.js</code>的<a href="https://nodejs.org/en/" target="_blank">官网</a>，下载最新稳定版并进行安装。安装完成后，在终端中输入如下命令安装字蛛。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm install font-spider -g
+</span></span></code></pre></div><p>使用如下命令指定网页路径，字蛛会自动完成字体识别及压缩。</p>
+<pre tabindex="0"><code>font-spider XXX/XXX.html
+</code></pre><h3 id="字蛛使用技巧">字蛛使用技巧</h3>
+<p>支持一个或多个页面地址。</p>
+<pre tabindex="0"><code>font-spider XXX/XXX.html XXX/XXXX.html
+</code></pre><p>支持使用通配符同时识别路径下的全部页面。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">font-spider XXX/*.html
+</span></span></code></pre></div><p>字蛛支持一个或多个页面地址，并且支持输入网址。</p>
+<pre tabindex="0"><code>font-spider XXX/XXX.html XXX/XXXX.html
+</code></pre><p>将线上的页面的 WebFont 映射到本地来进行压缩。</p>
+<pre tabindex="0"><code>font-spider --map &#34;XXX/font&#34; http://XXX.com/index.html
+</code></pre>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/revit-install/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>离线安装并配置 Revit</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="py-20" align="center">
+	<a href="/go"><img class="h-125" src="/img/vis.webgo.png"></a>
+</div>
+			<div class="py-20" align="center">
+  <a href="/warehouse"><img class="h-50" src="/img/vis.warehouse.svg"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#将字体转换为-woff-格式">将字体转换为 woff 格式</a></li>
+    <li><a href="#使用字蛛进行字体文件压缩">使用字蛛进行字体文件压缩</a>
+      <ul>
+        <li><a href="#字蛛使用技巧">字蛛使用技巧</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2023 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>

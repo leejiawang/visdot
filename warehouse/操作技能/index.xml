@@ -6,7 +6,16 @@
     <description>Recent content in 操作技能 on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用字蛛完成字体文件压缩</title>
+      <link>https://visdot.com/article/font-spider/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/font-spider/</guid>
+      <description>有时候需要用到非常规字体，由其是在用一些中文字体时，页面上仅用到很少的字，体积过大的字体文件却导致页面加载速度大幅降低。这时候可以选择压缩字</description>
+    </item>
+    
     <item>
       <title>离线安装并配置 Revit</title>
       <link>https://visdot.com/article/revit-install/</link>
