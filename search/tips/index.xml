@@ -6,7 +6,16 @@
     <description>Recent content in Tips on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 AutoIt 实现电脑的自动化操作</title>
+      <link>https://visdot.com/article/autoit/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/autoit/</guid>
+      <description>通过 AutoIt 实现电脑的自动化操作及批量操作，高效的处理一些重复繁琐操作。 AutoIt v3 是用以编写并生成具有 BASIC 语言风格的脚本程序的免费软件，它被设计用来在Wi</description>
+    </item>
+    
     <item>
       <title>离线安装并配置 Revit</title>
       <link>https://visdot.com/article/revit-install/</link>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>通过 AutoIt 实现电脑的自动化操作 &nbsp;|&nbsp; 视点</title>
+    
+    <meta name="keywords" content="AutoIt, Windows, 浏览器, 自动控制, 视由, 视界事由, eyecus, 博客, blog">
+    
+    <meta name="description" property="og:description" content="通过 AutoIt 实现电脑的自动化操作及批量操作，高效的处理一些重复繁琐操作。">
+    
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.jpg">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    
+    <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="header-line"></div>
+    <div class="mobile-header bg-w">
+      <a class="meun-button-expand" one-link-mark="yes" href="javascript:;"></a>
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+    </div>
+    <header class="header">
+    <div class="container w-1150">
+      <nav class="nav">
+      <a class="site-logo" href="/"><img src="/img/msk-07.svg"></a>
+      <ul class="menu">
+        <li class="menu-button active"><a id="NavHome" href="/">首页</a></li><li class="menu-button"><a id="NavWarehouse" href="/warehouse">仓库</a></li><li class="menu-button"><a id="NavWebGO" href="/go">导航</a></li>
+      </ul>
+
+         
+      <li id="fastSearch" >
+        <input id="searchInput" placeholder="搜索…" tabindex="0" >
+        <ul id="searchResults"></ul>
+      </li>
+     
+      </nav>
+    </div>
+    </header>
+
+<div class="mobile-sidebar">
+  <div class="mobile-sidebar-inner">
+  <div class="mobile-nav">
+    <a class="mobile-nav-button" href="/">首页</a>
+  <a class="mobile-nav-button" href="/warehouse">仓库</a>
+  <a class="mobile-nav-button" href="/go">导航</a>
+  <a class="mobile-nav-button" href="/about">关于</a>
+  </div>
+
+  <div class="mobile-nav-title">大 纲</div> 
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第1步-安装及配置-autoit">第1步 安装及配置 AutoIt</a></li>
+    <li><a href="#第2步-了解各组件功能">第2步 了解各组件功能</a></li>
+    <li><a href="#第3步-基本操作流程">第3步 基本操作流程</a></li>
+    <li><a href="#第4步-常用语句实例">第4步 常用语句实例</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<style type="text/css">
+	#NavWarehouse {color: rgba(0,0,0,.7);font-weight: bold;}
+</style>
+<div class="container w-1150">
+	<div class="flex">
+		<div class="main">
+			<div class="post-meta">
+
+				<div class="post-title">通过 AutoIt 实现电脑的自动化操作</div>
+				<div class="post-keywords">
+					<div class="post-terms">
+						
+						
+						<a class="keywords-btn" href="https://visdot.com/search/autoit">AutoIt</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/windows">Windows</a>
+						
+						<a class="keywords-btn" href="https://visdot.com/search/tips">Tips</a>
+						
+						
+					</div>
+				</div>
+
+
+				
+				<div class="post-date">Published on 20230725, have 991 Words.
+				</div>
+				
+			</div>
+			<main class="markdown academic w-630">
+				<p>通过 <code>AutoIt</code> 实现电脑的自动化操作及批量操作，高效的处理一些重复繁琐操作。</p>
+<blockquote>
+<p>AutoIt v3 是用以编写并生成具有 BASIC 语言风格的脚本程序的免费软件，它被设计用来在Windows GUI（用户界面）中进行自动操作。通过它可以组合使用模拟键击、鼠标移动和窗口/控件操作等来实现自动化任务，而这是其它语言所无法做到或尚无可靠方法实现的（比如VBScript和SendKeys）。</p>
+</blockquote>
+<p><strong>相关站点</strong>：
+<a href="https://www.autoitscript.com/site/" target="_blank">AutoIt官网</a>
+<a href="https://www.autoitx.com/Doc/" target="_blank">AutoIt在线文档</a>
+<a href="https://www.autoitscript.com/site/autoit/downloads/" target="_blank">AutoIt下载页面</a></p>
+<h2 id="第1步-安装及配置-autoit">第1步 安装及配置 AutoIt</h2>
+<div align="center"> 
+<img src="/img/autoit.png" width=300 />
+</div>
+<p>前往 <a href="https://www.autoitscript.com/site/autoit/downloads/">AutoIt</a> 官网，选择最新的版本进行下载安装，本文使用的版本为 3.3.16.1。</p>
+<p>编辑工具 <code>SciTE</code> 可根据需要安装中文界面补丁，进入 <a href="https://www.scintilla.org/SciTETranslation.html">AutoIt多国语言补丁下载页面</a> ，点击<code>Chinese 1.73 (Simplified - GB2312)</code>选项进行下载，将文件名修改为<code>locale.properties</code> 并移动至软件安装目录，默认安装目录为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">C:<span class="se">\P</span>rogram Files <span class="o">(</span>x86<span class="o">)</span><span class="se">\A</span>utoIt3<span class="se">\S</span>ciTE
+</span></span></code></pre></div><p>为避免 <code>SciTE</code> 中显示中文出现乱码，需依次点击<code>SciTE</code>菜单栏：<code>选项</code> - <code>打开User Options文件</code>在编辑框中输入如下代码并进行保存。</p>
+<pre tabindex="0"><code>code.page=936
+output.code.page=936
+character.set=134
+</code></pre><h2 id="第2步-了解各组件功能">第2步 了解各组件功能</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">组件名称</th>
+<th style="text-align:left">组件功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">SciTE</td>
+<td style="text-align:left">开源文本编辑器，用于编辑自动化代码，并可直接运行代码。</td>
+</tr>
+<tr>
+<td style="text-align:left">AutoIt Window Info</td>
+<td style="text-align:left">窗口信息工具，用于获取 windows 系统各项参数及坐标。</td>
+</tr>
+<tr>
+<td style="text-align:left">Compile Script to .exe</td>
+<td style="text-align:left">文件转换工具，用于将脚本转换为系统能直接执行的 <code>.exe</code> 文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">Run Script</td>
+<td style="text-align:left">执行代码工具，用于执行自动化代码。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="第3步-基本操作流程">第3步 基本操作流程</h2>
+<p>首先分析需要进行的操作的全流程，找出重复点击、重复输入等可循化的部分，必要时可绘制简易流程图已清晰思路。</p>
+<p>打开 <code>SciTE</code> 编辑自动化脚本，使用<code>AutoIt Window Info</code>工具查询窗口、按钮、输入框等位置信息。编辑过程中可在 <code>SciTE</code> 中依次点击菜单栏 <code>工具</code>-<code>执行</code> 执行代码，发现并修复错误。</p>
+<p>执行无问题后，使用 <code>Compile Script to .exe</code>工具将脚本转化为<code>.exe</code>可执行文件，方便随时使用。</p>
+<h2 id="第4步-常用语句实例">第4步 常用语句实例</h2>
+<p>下表为常用的语句，更多操作可访问 AutoIt 在线文档了解。</p>
+<ol>
+<li>增加全局按下Esc按钮强制退出功能</li>
+</ol>
+<pre tabindex="0"><code>HotKeySet(&#34;{Esc}&#34;, &#34;_Exit&#34;)
+Func _Exit()
+Exit
+EndFunc
+</code></pre><ol>
+<li>弹出提示框，需点击确定后继续</li>
+</ol>
+<pre tabindex="0"><code>MsgBox(64,&#34;操作提示&#34;,&#34;请使用浏览器打开并登陆“xxxx”，并将窗口最大化。执行完上述操作后鼠标单击“确定”按钮继续。&#34;,60)
+</code></pre><ol>
+<li>增加 1000ms 延迟</li>
+</ol>
+<pre tabindex="0"><code>Sleep(1000)
+</code></pre><ol>
+<li>鼠标左键单机操作</li>
+</ol>
+<pre tabindex="0"><code>MouseClick(&#34;left&#34;,55,45)
+</code></pre><ol>
+<li>文本输入操作</li>
+</ol>
+<pre tabindex="0"><code>Send(&#34;12345678&#34;)
+</code></pre><ol>
+<li>循环语句</li>
+</ol>
+<pre tabindex="0"><code>For $x=1 to 10
+  XXXXX
+Next
+</code></pre><ol>
+<li>用户判断操作</li>
+</ol>
+<pre tabindex="0"><code>$i = MsgBox(36,&#34;操作提示&#34;,&#34;是否继续执行？(若10秒内无操作将继续运行)&#34;,10)
+If $i =7 Then
+  Exit
+Else
+EndIf
+</code></pre>
+			</main>
+			<div class="pre-next vd-b-top">
+		
+	<a href="https://visdot.com/article/font-spider/"><div class="pre-btn"><svg t="1605930649708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2619" width="22" height="22"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#515151" p-id="2620"></path></svg>使用字蛛完成字体文件压缩</div></a>
+	
+	
+</div>
+		</div>
+		<div class="sidebar">
+			<div class="py-20" align="center">
+	<a href="/go"><img class="h-125" src="/img/vis.webgo.png"></a>
+</div>
+			<div class="py-20" align="center">
+  <a href="/warehouse"><img class="h-50" src="/img/vis.warehouse.svg"></a>
+</div>
+
+			<div class="sidebar-toc vd-element vd-b-bottom bg-w">
+  <div class="vd-l-a">
+    <div class="vd-l-title">大纲</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第1步-安装及配置-autoit">第1步 安装及配置 AutoIt</a></li>
+    <li><a href="#第2步-了解各组件功能">第2步 了解各组件功能</a></li>
+    <li><a href="#第3步-基本操作流程">第3步 基本操作流程</a></li>
+    <li><a href="#第4步-常用语句实例">第4步 常用语句实例</a></li>
+  </ul>
+</nav>
+	</div>
+   <a class="vd-a" href="javascript:scroll(0,0)">返回页首</a>
+</div>
+		</div>
+
+	</div>
+</div>
+  <div class="footer">
+  	Copyright &copy 2019-2023 <a target="_blank" href="https://github.com/leejiawang">世佳</a> ｜ <a href="/about">关于视点</a> ｜ </span><a href="javascript:scroll(0,0)">返回页首</a><svg t="1604653824882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3895" width="20" height="20"><path d="M794.453333 350.72l-213.333333-170.666667a42.666667 42.666667 0 0 0-52.906667 0l-213.333333 170.666667a42.666667 42.666667 0 0 0 52.906667 66.56L512 302.08V682.666667a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 0 0 85.333334h213.333333a128 128 0 0 0 128-128V302.08l144.213334 115.2A42.666667 42.666667 0 0 0 768 426.666667a42.666667 42.666667 0 0 0 33.28-16.213334 42.666667 42.666667 0 0 0-6.826667-59.733333z" p-id="3896" fill="#8a8a8a"></path></svg>
+</div>
+
+  </body>
+
+  <script src="/js/common.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/fuse.js/6.4.3/fuse.min.js"></script>
+  <script src="/js/fastsearch.js"></script>
+</html>
