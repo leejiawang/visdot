@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/warehouse/%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Stable Diffusion 简易安装教程</title>
+      <link>https://visdot.com/article/stable-diffusion/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/article/stable-diffusion/</guid>
+      <description>Stable Diffusion 前段时间大火的 AI 图像生成工具之一，为开源免费的工具，可在用户本地部署运行，要想快速出图，需要配备 NVIDIA 显卡，且具备一定的显卡性能及充裕的显存</description>
+    </item>
+    
+    <item>
       <title>通过 AutoIt 实现电脑的自动化操作</title>
       <link>https://visdot.com/article/autoit/</link>
       <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
