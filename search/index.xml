@@ -6,20 +6,11 @@
     <description>Recent content in Search on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AutoIt</title>
-      <link>https://visdot.com/search/autoit/</link>
-      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://visdot.com/search/autoit/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stable Diffusion</title>
       <link>https://visdot.com/search/stable-diffusion/</link>
-      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/stable-diffusion/</guid>
       <description></description>
@@ -28,7 +19,7 @@
     <item>
       <title>Tips</title>
       <link>https://visdot.com/search/tips/</link>
-      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/tips/</guid>
       <description></description>
@@ -37,9 +28,18 @@
     <item>
       <title>Windows</title>
       <link>https://visdot.com/search/windows/</link>
-      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/search/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AutoIt</title>
+      <link>https://visdot.com/search/autoit/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://visdot.com/search/autoit/</guid>
       <description></description>
     </item>
     

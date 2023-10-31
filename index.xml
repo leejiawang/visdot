@@ -6,14 +6,14 @@
     <description>Recent content in Home on 视点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://visdot.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stable Diffusion 简易安装教程</title>
       <link>https://visdot.com/article/stable-diffusion/</link>
-      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://visdot.com/article/stable-diffusion/</guid>
-      <description>Stable Diffusion 前段时间大火的 AI 图像生成工具之一，为开源免费的工具，可在用户本地部署运行，要想快速出图，需要配备 NVIDIA 显卡，且具备一定的显卡性能及充裕的显存</description>
+      <description>Stable Diffusion 是前段时间大火的 AI 图像生成工具之一，为开源免费的工具，可在用户本地部署运行，不过要想快速出图，需要配备 NVIDIA 显卡，且具备一定的显卡性能及充裕</description>
     </item>
     
     <item>
