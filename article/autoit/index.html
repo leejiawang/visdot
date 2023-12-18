@@ -65,6 +65,8 @@
     <li><a href="#第2步-了解各组件功能">第2步 了解各组件功能</a></li>
     <li><a href="#第3步-基本操作流程">第3步 基本操作流程</a></li>
     <li><a href="#第4步-常用语句实例">第4步 常用语句实例</a></li>
+    <li><a href="#第5步-常见按键操作">第5步 常见按键操作</a></li>
+    <li><a href="#第6步-常见窗口控件操作">第6步 常见窗口控件操作</a></li>
   </ul>
 </nav>
   </div>
@@ -94,7 +96,7 @@
 
 
 				
-				<div class="post-date">Published on 20230725, have 991 Words.
+				<div class="post-date">Published on 20230725, have 1541 Words.
 				</div>
 				
 			</div>
@@ -152,7 +154,20 @@ character.set=134
 <h2 id="第4步-常用语句实例">第4步 常用语句实例</h2>
 <p>下表为常用的语句，更多操作可访问 AutoIt 在线文档了解。</p>
 <ol>
-<li>增加全局按下Esc按钮强制退出功能</li>
+<li>增加全局按下<code>PAUSE</code>按钮强制暂停功能</li>
+</ol>
+<pre tabindex="0"><code>Global $Paused
+HotKeySet(&#34;{PAUSE}&#34;, &#34;TogglePause&#34;)
+Func TogglePause()
+    $Paused = NOT $Paused
+    While $Paused
+        sleep(100)
+        ToolTip(&#39;脚本暂停执行&#39;,0,0)
+    WEnd
+    ToolTip(&#34;&#34;)
+EndFunc
+</code></pre><ol>
+<li>增加全局按下<code>Esc</code>按钮强制退出功能</li>
 </ol>
 <pre tabindex="0"><code>HotKeySet(&#34;{Esc}&#34;, &#34;_Exit&#34;)
 Func _Exit()
@@ -188,7 +203,233 @@ If $i =7 Then
   Exit
 Else
 EndIf
-</code></pre>
+</code></pre><h2 id="第5步-常见按键操作">第5步 常见按键操作</h2>
+<ol>
+<li>键盘输入<code>Ctrl</code>+<code>A</code>操作</li>
+</ol>
+<pre tabindex="0"><code>Send(&#34;{CTRLDOWN}&#34;);
+Send(&#34;a&#34;);
+Sleep(10)
+Send(&#34;{CTRLUP}&#34;);
+</code></pre><ol>
+<li>关闭键盘大写锁定状态</li>
+</ol>
+<pre tabindex="0"><code>Send(&#34;{SHIFTDOWN}{SHIFTUP}&#34;);
+</code></pre><ol>
+<li>键盘重复输入<code>Del</code>键 8 次</li>
+</ol>
+<pre tabindex="0"><code>Send(&#34;{DEL 8}&#34;);
+</code></pre><ol>
+<li>键盘重复输入 <code>Del</code> 或 <code>a</code> 键 n（变量）次</li>
+</ol>
+<pre tabindex="0"><code>$n = 8
+Send(&#34;{DEL &#34; &amp; $n &amp; &#34;}&#34;);（适用于按键）
+Send(&#34;{&#34; &amp; $n &amp; &#34;} a&#34;);（适用于 ASCII 字符）
+</code></pre><ol>
+<li>键盘长按<code>A</code>键 800 毫秒</li>
+</ol>
+<pre tabindex="0"><code>Send(&#34;{CTRLDOWN}&#34;);
+Send(&#34;{a down}&#34;);
+Sleep(800)
+Send(&#34;{a up}&#34;);
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:center">代码</th>
+<th style="text-align:center">对应按键</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">代码</th>
+<th style="text-align:center">对应按键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>!</code></td>
+<td style="text-align:center"><code>Alt</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{UP}</code></td>
+<td style="text-align:center">向上箭头</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>+</code></td>
+<td style="text-align:center"><code>Shift</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{DOWN}</code></td>
+<td style="text-align:center">向下箭头</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>^</code></td>
+<td style="text-align:center"><code>Ctrl</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{LEFT}</code></td>
+<td style="text-align:center">向左箭头</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>#</code></td>
+<td style="text-align:center"><code>Windows</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{RIGHT}</code></td>
+<td style="text-align:center">向右箭头</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{!}</code></td>
+<td style="text-align:center"><code>!</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{HOME}</code></td>
+<td style="text-align:center"><code>Home</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{#}</code></td>
+<td style="text-align:center"><code>#</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{END}</code></td>
+<td style="text-align:center"><code>End</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{+}</code></td>
+<td style="text-align:center"><code>+</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{ESC}</code></td>
+<td style="text-align:center"><code>ESC</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{^}</code></td>
+<td style="text-align:center"><code>^</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{INS}</code></td>
+<td style="text-align:center"><code>Insert</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{{}</code></td>
+<td style="text-align:center"><code>{</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{PGUP}</code></td>
+<td style="text-align:center"><code>PageUp</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{}}</code></td>
+<td style="text-align:center"><code>}</code></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{PGDN}</code></td>
+<td style="text-align:center"><code>PageDown</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{SPACE}</code></td>
+<td style="text-align:center">空格</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{F12}</code></td>
+<td style="text-align:center"><code>F12</code>功能键</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{ENTER}</code></td>
+<td style="text-align:center">回车键</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{TAB}</code></td>
+<td style="text-align:center"><code>TAB</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{PRINTSCREEN}</code></td>
+<td style="text-align:center">截图键</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{PAUSE}</code></td>
+<td style="text-align:center"><code>PAUSE</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{LWIN}</code></td>
+<td style="text-align:center">左徽标键</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{ALTDOWN}</code></td>
+<td style="text-align:center">按住 <code>ALT</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{RWIN}</code></td>
+<td style="text-align:center">右徽标键</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{SHIFTUP}</code></td>
+<td style="text-align:center">松开 <code>SHIFT</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{SCROLLLOCK on}</code></td>
+<td style="text-align:center"><code>SCROLLLOCK</code>开</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{CTRLDOWN}</code></td>
+<td style="text-align:center">按住 <code>CTRL</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{CAPSLOCK off}</code></td>
+<td style="text-align:center"><code>CAPSLOCK</code>关</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{WINDOWN}</code></td>
+<td style="text-align:center">按住<code>Windows</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{NUMLOCK toggle}</code></td>
+<td style="text-align:center"><code>NUMLOCK</code>切换</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>{SLEEP}</code></td>
+<td style="text-align:center">系统休眠键</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>Fn</code>键无法被<code>AutoIt</code>模拟。</p>
+</blockquote>
+<h2 id="第6步-常见窗口控件操作">第6步 常见窗口控件操作</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">代码</th>
+<th style="text-align:center">对应控件操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>{TAB}</code></td>
+<td style="text-align:center">切换到（焦点切换）下一个控件（按钮、复选框等）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>+{TAB}</code></td>
+<td style="text-align:center">切换到上一个控件</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>^{TAB}</code></td>
+<td style="text-align:center">切换到下一个窗口标签</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>^+{TAB}</code></td>
+<td style="text-align:center">切换到上一个窗口标签</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{SPACE}</code></td>
+<td style="text-align:center">可用来切换复选框的选中状态或点击某个按钮</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{+}</code></td>
+<td style="text-align:center">选中某个复选框（如果它“确实是”复选框的话）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{-}</code></td>
+<td style="text-align:center">取消选中某个复选框</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{DOWN}</code></td>
+<td style="text-align:center">移动焦点到下一个菜单项</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{UP}</code></td>
+<td style="text-align:center">移动焦点到上一个菜单项</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{LEFT}</code></td>
+<td style="text-align:center">切换到左边的菜单或收缩子菜单</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>{RIGHT}</code></td>
+<td style="text-align:center">切换到右边的菜单或展开子菜单</td>
+</tr>
+</tbody>
+</table>
+
 			</main>
 			<div class="pre-next vd-b-top">
 		
@@ -216,6 +457,8 @@ EndIf
     <li><a href="#第2步-了解各组件功能">第2步 了解各组件功能</a></li>
     <li><a href="#第3步-基本操作流程">第3步 基本操作流程</a></li>
     <li><a href="#第4步-常用语句实例">第4步 常用语句实例</a></li>
+    <li><a href="#第5步-常见按键操作">第5步 常见按键操作</a></li>
+    <li><a href="#第6步-常见窗口控件操作">第6步 常见窗口控件操作</a></li>
   </ul>
 </nav>
 	</div>
